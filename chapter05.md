@@ -1,0 +1,124 @@
+# Capítulo V: Product Implementation, Validation & Deployment
+
+## 5.1. Software Configuration Management.
+
+### 5.1.1. Software Development Environment Configuration.
+
+### 5.1.2. Source Code Management.
+
+### 5.1.3. Source Code Style Guide & Conventions.
+
+### 5.1.4. Software Deployment Configuration.
+
+## 5.2. Landing Page, Services & Applications Implementation.
+
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Planning 1.
+
+<table>
+  <tbody>
+    <tr>
+     <td>Sprint #</td>
+     <td>Sprint n</td>
+    </tr>
+    <tr>
+     <td>Sprint Planning Background</td>
+    </tr>
+    <tr>
+     <td>Date</td>
+     <td>YYYY-MM-DD</td>
+    </tr>
+    <tr>
+     <td>Time</td>
+     <td>HH:MM AM/PM</td>
+    </tr>
+    <tr>
+     <td>Location</td>
+     <td>
+     (Descripción de la ubicación de la reunión, física ovirtual)
+     </td>
+    </tr>
+    <tr>
+     <td>Prepared By</td>
+     <td>Jiménez Rosas, Arturo Eduardo</td>
+    </tr>
+    <tr>
+     <td>
+     Attendees (to planning
+      meeting)
+    </td>
+     <td>Jiménez Rosas, Arturo Eduardo / Rodríguez Peña,Jorge Andrés / …
+     </td>
+    </tr>
+    <tr>
+     <td>Sprint n – 1 Review Summary</td>
+     <td>
+     (Resumen del Sprint anterior, en términos de resultados alcanzados a nivel de productos de software, opiniones de miembros y feedback de product owner.)</td>
+    </tr>
+    <tr>
+     <td>Sprint n – 1 Retrospective Summary</td>
+     <td>(Resumen del Sprint anterior, en términos de opiniones de miembros del equipo sobre aciertos u oportunidades de mejora en su forma de trabajo)</td>
+    </tr>
+    <tr>
+     <td>Sprint Goal & User Stories</td>
+    </tr>
+    <tr>
+     <td>Sprint n Goal</td>
+     <td> (Definir el Goal del Sprint n y la métrica de
+cumplimiento.)</td>
+    </tr>
+    <tr>
+     <td>Sprint n Velocity</td>
+     <td>(Definir el Velocity establecido para el Sprint n, es
+decir cuántos Story Points puede aceptar el equipo
+para este Sprint n.)</td>
+    </tr>
+    <tr>
+     <td>Sum of Story Points</td>
+     <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.2.1.2. Aspect Leaders and Collaborators.
+
+#### 5.2.1.3. Sprint Backlog 1.
+
+#### 5.2.1.4. Development Evidence for Sprint Review.
+
+#### 5.2.1.5. Execution Evidence for Sprint Review.
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint.
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+
+#### 5.2.2.3. Sprint Backlog 2.
+
+#### 5.2.2.4. Development Evidence for Sprint Review.
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+## 5.3. Validation Interviews.
+
+### 5.3.1. Diseño de Entrevistas.
+
+### 5.3.2. Registro de Entrevistas.
+
+### 5.3.3. Evaluaciones según heurísticas
+
+## 5.4. Video About-the-Product.
