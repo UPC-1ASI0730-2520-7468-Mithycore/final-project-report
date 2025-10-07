@@ -244,19 +244,80 @@ Listas de historias de usuario
   </tbody>
 </table>
 
-## 3.2. Impact Mapping.  
+## 3.2. Impact Mapping  
 
-Impact Mapping – Segmento 1: Paciente(epilepsia crónica):  
+El presente apartado muestra los **Impact Maps** elaborados en **UXPressia**, uno por cada segmento objetivo del proyecto **AuraNeuro**.  
+Esta técnica permitió vincular los **objetivos estratégicos del negocio digital (Business Goals)** con las **acciones esperadas de los usuarios (Impacts)**, los **entregables del producto (Deliverables)** y las **User Stories** que los harán posibles.  
+El análisis se realizó siguiendo el formato propuesto por *Impact Mapping (Gojko Adzic, 2012)*, asegurando que los objetivos cumplan criterios **SMART** (específicos, medibles, alcanzables, relevantes y con tiempo definido).
+
+---
+
+### Metodología de elaboración  
+1. Se revisaron los *User Personas* creados previamente para identificar cómo cada uno puede **contribuir a los objetivos del negocio**.  
+2. Se definieron **Business Goals medibles** basados en los resultados esperados del MVP.  
+3. Se formularon los **Impacts** como comportamientos o acciones observables que los usuarios deberían realizar.  
+4. A partir de los *Impacts*, se definieron los **Deliverables**, es decir, las funcionalidades o productos digitales que el equipo de desarrollo debe construir.  
+5. Finalmente, se redactaron **User Stories** en formato *“Como [rol], quiero [acción], para [beneficio]”*, que servirán de base para el *Product Backlog*.
+
+---
+
+### Impact Mapping – Segmento 1: Paciente (Epilepsia crónica)
 
 ![Impact Mapping - Paciente](./imagesChapter03/impactMapping/Segmento1IM.png)
 
-Impact Mapping - Segmento 2: Profesionales de la salud(neurólogos):  
+**Business Goal (SMART):**  
+> Alcanzar **500 pacientes activos** que registren de forma continua sus crisis neurológicas en la aplicación durante los **próximos 6 meses**.
 
-![Impact Mapping - Neuropsicólogo](./imagesChapter03/impactMapping/Segmento2IM.png)
+**Síntesis:**  
+El paciente **Xin Yu Shi Lin** necesita registrar crisis en tiempo real y recibir recordatorios automáticos para mejorar su adherencia al tratamiento.  
+Las *User Stories* derivadas priorizan la **automatización del registro** y la **personalización de notificaciones médicas**.  
+Esto permitirá medir el progreso del paciente y generar engagement sostenido en la app.
 
-Impact Mapping - Segmento 3: Proveedores IoT:  
+---
 
-![Impact Mapping - Proveedores](./imagesChapter03/impactMapping/Segmento3IM.png)
+### Impact Mapping – Segmento 2: Profesional de la salud (Neuróloga especialista)
+
+![Impact Mapping - Profesional](./imagesChapter03/impactMapping/Segmento2IM.png)
+
+**Business Goal (SMART):**  
+> Reducir en **30 %** las consultas presenciales innecesarias de pacientes neurológicos crónicos durante los **próximos 12 meses**.
+
+**Síntesis:**  
+La doctora **Karen Villanueva** busca optimizar su tiempo clínico y disponer de datos confiables para decisiones rápidas.  
+Las historias de usuario se orientan al **uso de dashboards en tiempo real** y a la **exportación FHIR**, facilitando diagnósticos más precisos y disminuyendo la carga administrativa.
+
+---
+
+### Impact Mapping – Segmento 3: Proveedores IoT  
+
+![Impact Mapping - Proveedores IoT](./imagesChapter03/impactMapping/Segmento3IM.png)
+
+**Business Goal (SMART):**  
+> Lograr la **integración de 200 dispositivos IoT activos** (wearables, EEG portátiles) con la plataforma **en los próximos 8 meses**.
+
+**Síntesis:**  
+El proveedor **Carlos Paredes** busca escalar sus productos al ecosistema médico mediante integraciones seguras.  
+Los impactos propuestos impulsan la **colaboración B2B** a través de APIs y SDKs abiertos, reforzando la interoperabilidad y la validación automática de datos biométricos.
+
+---
+
+### Interpretación general  
+
+| **Dimensión** | **Hallazgo transversal** | **Implicancia para el MVP de AuraNeuro** |
+|----------------|---------------------------|-------------------------------------------|
+| **Alineación estratégica** | Todos los segmentos contribuyen a objetivos medibles y alcanzables. | Las metas SMART permiten monitorear el progreso de adopción y valor. |
+| **Ecosistema conectado** | Los tres actores (paciente, médico, proveedor) dependen de datos sincronizados. | Se debe priorizar interoperabilidad IoT + FHIR desde la primera versión. |
+| **Entrega de valor** | Cada Deliverable representa una funcionalidad crítica validada por usuarios. | Los User Stories se convierten en base directa para el *Product Backlog*. |
+
+---
+
+### Conclusión  
+
+El **Impact Mapping** permitió visualizar cómo cada *User Persona* contribuye de manera medible al éxito del negocio digital de **AuraNeuro**.  
+Las relaciones entre *Goals–Impacts–Deliverables–User Stories* garantizan que el desarrollo del MVP mantenga **enfoque, trazabilidad y alineación con los resultados clínicos y de negocio**.
+
+---
+
 
 ## 3.3. Product Backlog.
 
