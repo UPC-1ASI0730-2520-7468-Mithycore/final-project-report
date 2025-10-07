@@ -126,74 +126,63 @@ La aplicación se desplegará en la nube mediante:
 
 #### 5.2.1.1. Sprint Planning 1.
 
-<table>
-  <tbody>
-    <tr>
-     <td>Sprint #</td>
-     <td>Sprint n</td>
-    </tr>
-    <tr>
-     <td>Sprint Planning Background</td>
-    </tr>
-    <tr>
-     <td>Date</td>
-     <td>YYYY-MM-DD</td>
-    </tr>
-    <tr>
-     <td>Time</td>
-     <td>HH:MM AM/PM</td>
-    </tr>
-    <tr>
-     <td>Location</td>
-     <td>
-     (Descripción de la ubicación de la reunión, física ovirtual)
-     </td>
-    </tr>
-    <tr>
-     <td>Prepared By</td>
-     <td>Jiménez Rosas, Arturo Eduardo</td>
-    </tr>
-    <tr>
-     <td>
-     Attendees (to planning
-      meeting)
-    </td>
-     <td>Jiménez Rosas, Arturo Eduardo / Rodríguez Peña,Jorge Andrés / …
-     </td>
-    </tr>
-    <tr>
-     <td>Sprint n – 1 Review Summary</td>
-     <td>
-     (Resumen del Sprint anterior, en términos de resultados alcanzados a nivel de productos de software, opiniones de miembros y feedback de product owner.)</td>
-    </tr>
-    <tr>
-     <td>Sprint n – 1 Retrospective Summary</td>
-     <td>(Resumen del Sprint anterior, en términos de opiniones de miembros del equipo sobre aciertos u oportunidades de mejora en su forma de trabajo)</td>
-    </tr>
-    <tr>
-     <td>Sprint Goal & User Stories</td>
-    </tr>
-    <tr>
-     <td>Sprint n Goal</td>
-     <td> (Definir el Goal del Sprint n y la métrica de
-cumplimiento.)</td>
-    </tr>
-    <tr>
-     <td>Sprint n Velocity</td>
-     <td>(Definir el Velocity establecido para el Sprint n, es
-decir cuántos Story Points puede aceptar el equipo
-para este Sprint n.)</td>
-    </tr>
-    <tr>
-     <td>Sum of Story Points</td>
-     <td></td>
-    </tr>
-  </tbody>
-</table>
+| Sprint # | Sprint 1 |
+|-----------|-----------|
+| **Sprint Planning Background** | El Sprint 1 tiene como objetivo implementar y validar el MVP de la **Landing Page de AuraNeuro**, enfocándose en comunicar la propuesta de valor del proyecto y permitir que los usuarios potenciales puedan contactar al equipo mediante un formulario funcional. |
+| **Date** | 2025-09-20 |
+| **Time** | 07:00 PM |
+| **Location** | Reunión virtual (Google Meet) |
+| **Prepared By** | Gutierrez Tume, Jeremy |
+| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutierrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
+| **Sprint Goal** | Validar que la **Landing Page MVP de AuraNeuro** comunique de manera efectiva la propuesta de valor del proyecto y permita que los usuarios potenciales interactúen a través del formulario de contacto, confirmando su usabilidad y consistencia visual en diferentes dispositivos. |
+| **Sprint 1 Velocity** | 20 Story Points |
+| **Sum of Story Points** | 20 |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
 
+Se identificaron los siguientes aspectos clave del Sprint:  
+
+- **Landing Page (Hero + Servicios principales)**  
+- **Formulario de Contacto**  
+- **Sección About & Careers**  
+- **Repositorio & Despliegue (CI/CD en GitHub + Vercel)**  
+- **Estilo y experiencia de usuario (UX/UI)**  
+
+Cada aspecto fue asignado a un **líder** (L) responsable de su entrega y uno o más **colaboradores** (C) que apoyan en la implementación, revisión y validación.  
+
+---
+
+| **Team Member (Last Name, First Name)** | **Role** | **GitHub Username** | **Landing Page (Hero + Servicios)** | **Formulario de Contacto** | **About & Careers** | **Repositorio & Despliegue (CI/CD)** | **Estilo UX/UI** |
+|-----------------------------------------|----------|---------------------|-------------------------------------|-----------------------------|---------------------|---------------------------------------|-----------------|
+| Gutierrez Tume, Stanley Jeremy           | Team Leader | `Stan-gt213891`   | L                                   | C                           | C                   | L                                     | C               |
+| Meza Huanacune, Juan José                | Backend Engineer | `JuanMHZ1250`   | C                                   | L                           | C                   | C                                     | C               |
+| Chacaliaza Minaya, Eduardo Fabián        | Frontend & UX/UI Engineer | `educmz`   | C                                   | C                           | C                   | C                                     | L               |
+| Quispe Barzola, Fabricio Fabián          | Data & IoT Integration Engineer | `BrooklynKarmis` | C                                   | C                           | C                   | L                                     | C               |
+| Romero Meza, Jhimy Pool                  | Frontend & UX/UI Engineer | `jhimyromeromeza` | C                                   | C                           | L                   | C                                     | L               |
+
+---
+
 #### 5.2.1.3. Sprint Backlog 1.
+
+El Sprint 1 se centró en implementar y desplegar el **Landing Page MVP** de Mithycore en un entorno web accesible mediante navegador, utilizando **HTML, CSS y JavaScript**.  
+El objetivo principal fue entregar un sitio mínimo viable que permita a los usuarios conocer la propuesta de valor de la plataforma y comunicarse a través de un formulario de contacto funcional.  
+
+| **Sprint #** | **User Story** | **Work-Item / Task** | **Descripción** | **Estimación (Horas)** | **Assigned To** | **Status** |
+|--------------|----------------|-----------------------|-----------------|-------------------------|-----------------|------------|
+| Sprint 1 | US06.1 – Sección principal (Hero) | T1.1 | Maquetar estructura HTML de la sección principal (hero con mensaje de valor y CTA). | 5h | Eduardo | Done |
+| Sprint 1 | US06.1 – Sección principal (Hero) | T1.2 | Estilizar hero con CSS (tipografía, botones, background). | 4h | Jhimy | Done |
+| Sprint 1 | US06.2 – Servicios destacados | T2.1 | Maquetar sección de servicios con HTML y CSS. | 5h | Jhimy | Done |
+| Sprint 1 | US06.2 – Servicios destacados | T2.2 | Implementar íconos/ilustraciones y verificar responsividad. | 3h | Eduardo | Done |
+| Sprint 1 | US06.3 – Quiénes somos / What we do | T3.1 | Redactar e integrar contenido de misión y visión. | 2h | Stanley | Done |
+| Sprint 1 | US06.3 – Quiénes somos / What we do | T3.2 | Estilizar sección en CSS y validar mobile-first. | 3h | Eduardo | Done |
+| Sprint 1 | US06.4 – About & Careers | T4.1 | Maquetar sección “About & Careers” en HTML. | 3h | Jhimy | Done |
+| Sprint 1 | US06.4 – About & Careers | T4.2 | Insertar contenido y enlaces de contacto/reclutamiento. | 2h | Fabricio | Done |
+| Sprint 1 | US06.5 – Formulario de contacto | T5.1 | Implementar formulario en HTML (nombre, email, mensaje). | 4h | Juan José | Done |
+| Sprint 1 | US06.5 – Formulario de contacto | T5.2 | Validaciones básicas con JavaScript. | 3h | Juan José | Done |
+| Sprint 1 | US06.5 – Formulario de contacto | T5.3 | Configurar envío de datos (mock o log en consola/backend). | 4h | Fabricio | Done |
+| Sprint 1 | General Task | T6.1 | Configurar repositorio GitHub y despliegue en Vercel/GitHub Pages. | 5h | Stanley | Done |
+
+---
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
