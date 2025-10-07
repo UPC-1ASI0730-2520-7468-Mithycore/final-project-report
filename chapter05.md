@@ -99,6 +99,20 @@ para este Sprint n.)</td>
 
 #### 5.2.2.1. Sprint Planning 2.
 
+| Sprint # | Sprint 2 |
+|-----------|-----------|
+| **Sprint Planning Background** | El Sprint 2 tiene como objetivo implementar la primera versión funcional de la Aplicación Web AuraNeuro, centrada en desarrollar los flujos iniciales del Frontend, la integración de servicios del Backend y la validación de la experiencia de usuario. |
+| **Date** | 2025-10-01 |
+| **Time** | 07:00 PM |
+| **Location** | Reunión virtual (Google meet) |
+| **Prepared By** | Stanley Jeremy Gutierrez Tume |
+| **Attendees (to planning meeting)** | Romero Meza Jhimy Pool / Eduardo Fabian Chacaliaza Minaya / Gutierrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 se logró desarrollar y desplegar el Landing Page MVP del proyecto AuraNeuro. Se validó la propuesta de valor y la comunicación visual del producto, asegurando su responsividad y accesibilidad. Se documentaron los endpoints del servicio de contacto y se estableció el flujo de despliegue con GitHub Pages y Vercel. |
+| **Sprint 1 Retrospective Summary** | El equipo identificó mejoras en la coordinación técnica, estableció reuniones intersemanales para sincronización de avances y estandarizó los mensajes de commits mediante Conventional Commits. Se decidió iniciar el desarrollo del Frontend principal en el siguiente Sprint. |
+| **Sprint Goal** | Desarrollar la primera versión funcional de la Aplicación Web AuraNeuro, que permita el registro, inicio de sesión y ejecución de una prueba cognitiva básica conectada con servicios de Backend. Se busca validar la integración inicial del Frontend y Backend, garantizando una experiencia de usuario fluida y funcional. |
+| **Sprint 2 Velocity** | 27 Story Points |
+| **Sum of Story Points** | 27 |
+
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
 #### 5.2.2.3. Sprint Backlog 2.
