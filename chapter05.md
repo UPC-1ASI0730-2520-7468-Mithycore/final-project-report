@@ -155,6 +155,21 @@ El objetivo principal fue entregar una versión que permitiera el registro de us
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
+Durante el Sprint 2 se desarrollaron las siguientes funcionalidades:
+- Registro e inicio de sesión de usuarios.  
+- Ejecución del test cognitivo desde el Frontend mediante API REST.  
+- Visualización de resultados en un Dashboard.  
+- Interfaz responsiva validada en diferentes dispositivos.  
+
+URL de despliegue: https://aura-frontend.vercel.app  
+
+Capturas de referencia:
+- Vista de registro  
+- Vista del test cognitivo  
+- Dashboard del usuario  
+
+Video de demostración:
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
