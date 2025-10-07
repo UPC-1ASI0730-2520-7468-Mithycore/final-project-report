@@ -134,6 +134,17 @@ Cada aspecto fue asignado a un líder (L) responsable de su entrega y a uno o m�
 
 #### 5.2.2.3. Sprint Backlog 2.
 
+El Sprint 2 se centró en la implementación del Frontend funcional de AuraNeuro y su integración con los servicios básicos del Backend.  
+El objetivo principal fue entregar una versión que permitiera el registro de usuarios, inicio de sesión y ejecución de una prueba cognitiva con resultados visibles.
+
+| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (Horas) | Assigned To | Status |
+|----------|------------|------------------|-------------|---------------------|-------------|--------|
+| Sprint 2 | US07.1 – Registro de usuario | T2.1 | Implementar vista y formulario de registro con validaciones de datos. | 8h | Eduardo | Done |
+| Sprint 2 | US07.2 – Inicio de sesión | T2.2 | Crear vista de login y conexión con API de autenticación. | 8h | Eduardo | Done |
+| Sprint 2 | US08.1 – Módulo de prueba cognitiva | T2.3 | Integrar API de preguntas y flujo de evaluación. | 10h | Fabricio | In Progress |
+| Sprint 2 | US09.1 – Dashboard de resultados | T2.4 | Diseñar e implementar la vista de resultados del test cognitivo. | 6h | Juan José | To Review |
+| Sprint 2 | US10.1 – UI/UX Enhancements | T2.5 | Ajustar estilos, tipografía y diseño responsivo general. | 5h | Jhimy | Done |
+
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
