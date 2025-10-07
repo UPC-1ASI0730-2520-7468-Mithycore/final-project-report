@@ -589,20 +589,101 @@ Estas relaciones confirman que AuraNeuro debe facilitar la **fluidez de informac
 **Conclusión:**  
 El **User Task Matrix** evidencia que las tareas más relevantes son aquellas que **conectan los flujos de datos** entre usuarios —desde la captura por el paciente, la interpretación por el médico y la validación técnica del proveedor—, lo cual guía directamente la definición de **requisitos funcionales prioritarios** en el *Product Backlog*.
 
-### 2.3.3. User Journey Mapping.  
+### 2.3.3. User Journey Mapping.    
 
-User Journey Mapping – Segmento 1: Paciente(epilepsia crónica):
+El presente apartado describe los **User Journey Maps** elaborados en **UXPressia**, uno por cada segmento objetivo de la startup **Mithycore**.  
+Estos diagramas visualizan el recorrido actual que los usuarios realizan **antes de la existencia de AuraNeuro**, evidenciando sus metas, procesos, canales, puntos de fricción y oportunidades de mejora.  
+
+---
+
+### Metodología de elaboración  
+
+Los *journeys* se desarrollaron a partir de:  
+- **Entrevistas semiestructuradas** realizadas a tres perfiles representativos (paciente, profesional y proveedor).  
+- **Observación contextual y benchmark** de soluciones digitales existentes (MySeizureDiary, Medtronic CareLink, NeuroSky, entre otras).  
+- Análisis de los *User Personas* previamente definidos, para identificar **motivaciones, frustraciones y canales de interacción reales**.  
+
+Cada mapa fue construido en la herramienta **UXPressia**, utilizando la versión **As-Is** (estado actual), lo que permite entender el **comportamiento previo a la adopción del producto**.
+
+---
+
+### User Journey Mapping – Segmento 1: Paciente (Epilepsia crónica)
 
 ![User Journey Mapping - Paciente](./imagesChapter02/userJourney/Segmento1JM.png)
 
-User Journey Mapping - Segmento 2: Profesionales de la salud(neurólogos):
+**Síntesis del recorrido:**  
+El paciente busca información sobre su enfermedad, prueba métodos manuales de registro y abandona aplicaciones que no le ofrecen resultados visibles.  
+Su experiencia emocional pasa de la **curiosidad inicial** a la **frustración y resignación**, debido a información dispersa, falta de apoyo y herramientas poco accesibles.
+
+**Pain points identificados:**  
+- Dificultad para validar información médica en línea.  
+- Pérdida de motivación por falta de resultados tangibles.  
+- Registro manual ineficiente y dependiente de la memoria.
+
+**Oportunidades detectadas:**  
+- Crear un repositorio confiable con recursos médicos validados.  
+- Incorporar registro automático mediante sensores IoT y recordatorios guiados.  
+- Implementar gamificación y retroalimentación médica que aumente la adherencia.
+
+---
+
+### User Journey Mapping – Segmento 2: Profesional de la salud (Neurólogos)
 
 ![User Journey Mapping - Neuropsicólogo](./imagesChapter02/userJourney/Segmento2JM.png)
 
-User Journey Mappinga - Segmento 3: Proveedores IoT:
+**Síntesis del recorrido:**  
+El profesional se muestra inicialmente interesado en tecnologías IoT, pero enfrenta **altos costos, poca validación local y registros incompletos**.  
+La sobrecarga de datos manuales y la falta de interoperabilidad lo llevan a perder interés en la digitalización.  
+Su experiencia emocional transita de la **curiosidad** a la **frustración y desconfianza**.
+
+**Pain points identificados:**  
+- Exceso de oferta sin validación científica.  
+- Costos y procesos burocráticos en adopción hospitalaria.  
+- Ausencia de integración entre sistemas clínicos e IoT.
+
+**Oportunidades detectadas:**  
+- Ofrecer pilotos gratuitos con soporte técnico y validación institucional.  
+- Diseñar un panel IoT centralizado que unifique HCE + métricas IoT.  
+- Integrar estándares HL7–FHIR y visualizaciones de diagnóstico preventivo.
+
+---
+
+### User Journey Mapping – Segmento 3: Proveedores IoT
 
 ![User Journey Mapping - Proveedores](./imagesChapter02/userJourney/Segmento3JM.png)
 
+**Síntesis del recorrido:**  
+Los proveedores buscan vender e integrar sus dispositivos en hospitales, pero enfrentan **desconfianza institucional, regulaciones complejas y baja estandarización local**.  
+Su experiencia emocional decae progresivamente hacia la **frustración y desmotivación**, al no encontrar condiciones que favorezcan la adopción tecnológica.
+
+**Pain points identificados:**  
+- Burocracia y desconfianza en hospitales.  
+- Procesos regulatorios extensos y costosos.  
+- Dificultad para lograr interoperabilidad con los sistemas clínicos.
+
+**Oportunidades detectadas:**  
+- Estrategias de *awareness* con casos locales y resultados medibles.  
+- Middleware plug-and-play para integración rápida y segura.  
+- Modelo SaaS escalable con menor riesgo financiero inicial.
+
+---
+
+### Interpretación general de los journeys  
+
+El análisis cruzado de los tres *User Journey Maps* evidencia patrones comunes:
+
+| **Aspecto** | **Hallazgo transversal** | **Implicancia para el diseño de AuraNeuro** |
+|--------------|---------------------------|---------------------------------------------|
+| **Emoción dominante** | Frustración y desconfianza en herramientas actuales. | Priorizar diseño empático y comunicación transparente. |
+| **Canales principales** | WhatsApp, correo, foros y herramientas móviles. | Integrar canales familiares en la app (notificaciones, chat seguro). |
+| **Pain point recurrente** | Falta de interoperabilidad entre actores. | Foco en integraciones FHIR/API y dashboards compartidos. |
+| **Oportunidad clave** | Automatizar registro de datos y ofrecer valor tangible desde el primer uso. | Prototipo MVP centrado en registro IoT + feedback inmediato. |
+
+---
+
+**Conclusión:**  
+Los *journeys As-Is* demuestran que los tres segmentos enfrentan un ecosistema fragmentado y dependiente de procesos manuales.  
+El diseño de **AuraNeuro** debe enfocarse en **integrar flujos y reducir la carga cognitiva del usuario**, fomentando confianza, interoperabilidad y adopción sostenida.
 
 ### 2.3.4. Empathy Mapping.  
 
