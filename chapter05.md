@@ -282,6 +282,14 @@ Video de demostración:
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
+| Endpoint | Método HTTP | Descripción | Ejemplo de Request | Ejemplo de Response |
+|----------|-------------|-------------|--------------------|---------------------|
+| /api/users/register | POST | Registra un nuevo usuario | { "email": "test@upc.edu", "password": "12345" } | { "status": "created", "userId": 1 } |
+| /api/tests/start | GET | Inicia una prueba cognitiva y devuelve las preguntas | /api/tests/start?userId=1 | [{ "id": 1, "question": "¿Te sientes concentrado hoy?" }] |
+| /api/tests/score | POST | Envía respuestas y calcula el puntaje obtenido | { "userId": 1, "answers": [...] } | { "score": 85, "level": "Normal" } |
+
+Repositorio API: https:
+
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
