@@ -110,15 +110,112 @@ Estas guías garantizan la consistencia en la estructura de clases, métodos y n
 - Framework guidelines:
   - Se siguieron las **Microsoft C# Coding Conventions** y las **ASP.NET Core Engineering Guidelines**.
 
-#### 5.1.4. Software Deployment Configuration  
+##### 5.2.1.4. Development Evidence for Sprint Review  
 
-La aplicación se desplegará en la nube mediante:
+Durante el Sprint 1 se avanzó con la implementación del **Landing Page MVP** de Mithycore en el repositorio `LandingpageAplicacionesWeb`.  
+Se realizaron ajustes en la estructura del archivo principal, correcciones en el footer y adición de secciones clave (Navbar, Hero, About, Footer).  
 
--Vercel para el Landing Page.
+A continuación, se listan los commits registrados en GitHub:
 
--Azure o AWS para el backend con API RESTful y base de datos.
+| Repository                  | Branch | Commit Id | Commit Message                                     | Committed on (Date) |
+|------------------------------|--------|-----------|---------------------------------------------------|----------------------|
+| LandingpageAplicacionesWeb  | main   | 16c192f   | fix resume file main to index                     | 21/09/2025           |
+| LandingpageAplicacionesWeb  | main   | 3d8b36a   | fix resume file                                   | 21/09/2025           |
+| LandingpageAplicacionesWeb  | main   | b39818d   | fix author in the footer                          | 21/09/2025           |
+| LandingpageAplicacionesWeb  | main   | 433f758   | fix change name index file                        | 21/09/2025           |
+| LandingpageAplicacionesWeb  | main   | fea442d   | fix: Add Sections, Navbar, hero, about and foter  | 20/09/2025           |
 
--Contenedores Docker para mantener consistencia en los entornos. 
+##### 5.2.1.5. Execution Evidence for Sprint Review  
+  
+Durante el Sprint 1 se implementó y desplegó el **Landing Page MVP** de Mithycore utilizando **HTML, CSS y JavaScript**.  
+El entregable principal fue una página accesible en navegador, con las siguientes secciones:  
+
+- Home
+- Como funciona
+- Nosotros
+- Beneficios
+- Contactanos
+
+![Landing Page – Home](images/landing-inicio-ingles.png)  
+![Landing Page – Cómo funciona](images/landing-works-ingles.png)  
+![Landing Page – Nosotros](images/landing-how-ingles.png)  
+![Landing Page – Beneficios](images/landing-beneficios-ingles.png)  
+
+URL del despliegue: https://upc-1asi0730-2520-7468-mithycore.github.io/LandingPageAuraNeuro/
+
+##### 5.2.1.6. Services Documentation Evidence for Sprint Review  
+
+Durante el Sprint 1, el equipo documentó e implementó el **Contact Service**, el cual se integra con el formulario de contacto del **Landing Page MVP**.  
+La documentación fue elaborada utilizando **OpenAPI (Swagger)**, permitiendo visualizar las rutas, métodos HTTP, parámetros, respuestas esperadas y ejemplos de uso.  
+
+---
+
+### Contact Service Endpoints 
+
+**Documentación de Endpoints – Contact API**
+
+| **Endpoint**   | **Acción Implementada**           | **Método HTTP** | **Sintaxis de Llamada**    | **Parámetros** |
+|----------------|----------------------------------|-----------------|----------------------------|----------------|
+| `/contact`     | Enviar un mensaje de contacto    | POST            | `/api/v1/contact`          | `name`, `email`, `message` (Body) |
+| `/contact`     | Obtener todos los mensajes       | GET             | `/api/v1/contact`          | Ninguno |
+| `/contact/{id}`| Obtener mensaje por ID           | GET             | `/api/v1/contact/{id}`     | `id` (Path) |
+
+---
+ 
+##### 5.2.1.7. Software Deployment Evidence for Sprint Review  
+
+Durante el Sprint 1, el equipo realizó el **despliegue del Landing Page MVP** .  
+Este proceso se llevó a cabo utilizando **GitHub Pages** como proveedor de hosting gratuito, lo que permitió que la página esté disponible públicamente en la web.  
+
+- Actividades realizadas en el Sprint
+
+1. **Creación y configuración del repositorio en GitHub**  
+   - Se creó el repositorio oficial del proyecto: https://github.com/UPC-1ASI0730-2520-7468-Mithycore
+   - Se estableció la estructura de ramas:  
+     - `main` → Rama principal y estable para despliegue.  
+     - `develop` → Rama de integración.  
+     - `feature/landing-page` → Rama dedicada al desarrollo del Landing Page.  
+
+2. **Configuración de GitHub Pages**  
+   - Se habilitó la opción de GitHub Pages en la rama `main`.  
+   - Se configuró el despliegue automático al realizar un **merge** en `main`.  
+   - El Landing Page se encuentra disponible en la siguiente URL:  
+  (https://github.com/UPC-1ASI0730-2520-7468-Mithycore/LandingPageAuraNeuro)
+
+3. **Validación del despliegue en navegador**  
+   - Se probó la visualización en diferentes navegadores (Chrome, Edge, Firefox).  
+  
+
+- Vista del Landing Page desplegado en navegador.
+
+ ![Aura Neuro](https://raw.githubusercontent.com/UPC-1ASI0730-2520-7468-Mithycore/project-report/main/img/AURANEURO.png)
+
+##### 5.2.1.8. Team Collaboration Insights during Sprint  
+
+Durante el Sprint 1, el equipo de Mithycore trabajó de manera colaborativa en la implementación y despliegue del **Landing Page MVP** utilizando **HTML, CSS y JavaScript**.  
+Cada integrante del equipo asumió un rol específico (frontend, backend, integración, UX/UI, CI/CD), pero también colaboró en revisión de código, pruebas y documentación.  
+
+---
+
+- **Distribución del trabajo:**  
+  - **Stanley Jeremy (Team Leader):** coordinación general y despliegue CI/CD.  
+  - **Juan José (Backend Engineer):** implementación inicial del endpoint `/api/contact`.  
+  - **Eduardo (Frontend & UX/UI):** desarrollo de la sección principal y estilos.  
+  - **Fabricio (Data & IoT Integration):** soporte en mock de backend y despliegue.  
+  - **Jhimy (Frontend & UX/UI):** implementación de secciones de servicios y About.  
+- **Revisiones de código:** se realizaron revisiones cruzadas en Pull Requests para garantizar calidad y consistencia del código.  
+- **Comunicación:** se utilizaron reuniones virtuales diarias de 15 min y un board de Trello para gestión de tareas.  
+
+---
+
+![Insights](https://raw.githubusercontent.com/UPC-1ASI0730-2520-7468-Mithycore/project-report/main/img/INSIGTHS.png)
+
+
+
+![Members](https://raw.githubusercontent.com/UPC-1ASI0730-2520-7468-Mithycore/project-report/main/img/MEMBERS.png)
+
+
+---
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 
