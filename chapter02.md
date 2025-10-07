@@ -687,19 +687,112 @@ El diseño de **AuraNeuro** debe enfocarse en **integrar flujos y reducir la car
 
 ### 2.3.4. Empathy Mapping.  
 
-PACIENTES:
+El presente apartado presenta los **Empathy Maps** elaborados por el equipo **Mithycore** en la herramienta **UXPressia**, uno por cada **User Persona** definido previamente.  
+Estos mapas permitieron **profundizar en la comprensión emocional y cognitiva** de cada usuario, identificando sus pensamientos, frustraciones, motivaciones y percepciones frente al problema actual de seguimiento neurológico.  
 
-Empathy Mapping – Segmento 1: Paciente(epilepsia crónica):
+---
+
+### Metodología de elaboración  
+
+El proceso de empatía se realizó en tres fases principales:
+
+1. **Preparación:** cada integrante del equipo analizó las entrevistas y observaciones asociadas a los tres segmentos (pacientes, profesionales y proveedores IoT).  
+2. **Colaboración:** se colocó al centro de la plantilla a cada *User Persona*, discutiendo en equipo las respuestas a las preguntas del modelo de empatía (*¿Qué ve?, ¿Qué dice?, ¿Qué piensa?, ¿Qué siente?, ¿Qué hace?, ¿Qué escucha?*).  
+3. **Síntesis:** se consolidaron los *pains* (dolores) y *gains* (ganancias) para identificar **insights clave** que orientan las hipótesis y oportunidades de diseño del producto **AuraNeuro**.
+
+---
+
+### Empathy Mapping – Segmento 1: Paciente (Epilepsia crónica)
 
 ![Empathy Mapping - Paciente](./imagesChapter02/empathyMapping/Segmento1EM.png)
 
-Empathy Mapping - Segmento 2: Profesionales de la salud(neurólogos):
+**Síntesis del mapa:**  
+El paciente **Xin Yu Shi Lin** muestra preocupación constante por su independencia y seguridad.  
+Registra manualmente sus crisis, pero suele olvidar detalles y perder datos.  
+Su entorno (familia y trabajo) lo percibe como vulnerable, lo que refuerza su miedo a tener una crisis en público.  
+
+**Pains:**  
+- Olvido de detalles importantes de sus crisis.  
+- Miedo a sufrir un episodio sin poder pedir ayuda.  
+- Escaso seguimiento digital y baja confianza en las apps actuales.  
+
+**Gains:**  
+- Un sistema que lo alerte y notifique automáticamente a sus contactos.  
+- Mayor seguridad y confianza personal y familiar.  
+- Un historial digital confiable con datos visuales.  
+
+**Interpretación:**  
+El mapa evidencia la necesidad de **seguridad, acompañamiento y simplicidad de uso**.  
+El paciente busca herramientas que no requieran esfuerzo técnico y que le ofrezcan **valor inmediato**, como alertas automáticas y seguimiento visual de su evolución.  
+Estos hallazgos sustentan el diseño del **módulo móvil de AuraNeuro** centrado en la accesibilidad, los recordatorios y la comunicación directa con el neurólogo.
+
+---
+
+### Empathy Mapping – Segmento 2: Profesional de la salud (Neuróloga especialista)
 
 ![Empathy Mapping - Neuropsicólogo](./imagesChapter02/empathyMapping/Segmento2EM.png)
 
-Empathy Mapping - Segmento 3: Proveedores IoT:
+**Síntesis del mapa:**  
+La doctora **Karen Villanueva** manifiesta frustración ante datos subjetivos y sistemas que no integran IoT ni ofrecen evidencia objetiva.  
+Su entorno hospitalario es burocrático y carece de interoperabilidad.  
+Ella escucha de sus colegas sobre soluciones innovadoras, pero teme los problemas regulatorios o la falta de certificación.  
+
+**Pains:**  
+- Dependencia de registros subjetivos y manuales.  
+- Integración deficiente entre sistemas (HCE + IoT).  
+- Riesgo de pérdida de tiempo en plataformas no validadas.  
+
+**Gains:**  
+- Acceso a datos continuos y objetivos (biometría, crisis, sueño).  
+- Reducción de consultas presenciales innecesarias.  
+- Soluciones con respaldo científico y certificación médica.  
+
+**Interpretación:**  
+El mapa evidencia una clara oportunidad de **credibilidad y eficiencia**.  
+La doctora representa al usuario que adopta tecnología solo si es **segura, validada y científicamente confiable**.  
+Este insight refuerza el enfoque de **interoperabilidad (HL7–FHIR)** y **certificación** como pilares técnicos de AuraNeuro, además de la necesidad de **visualizaciones clínicas precisas**.
+
+---
+
+### Empathy Mapping – Segmento 3: Proveedores IoT
 
 ![Empathy Mapping - Proveedores](./imagesChapter02/empathyMapping/Segmento3EM.png)
+
+**Síntesis del mapa:**  
+**Carlos Augusto Paredes**, proveedor de dispositivos IoT, busca integrar sus productos en hospitales, pero enfrenta **procesos regulatorios lentos**, **falta de estandarización** y **dependencia de aplicaciones móviles**.  
+Su equipo técnico siente presión por innovar rápidamente mientras lidia con limitaciones normativas locales.  
+
+**Pains:**  
+- Procesos de compra largos y burocráticos.  
+- Ecosistemas de salud poco integrados con IoT.  
+- Certificaciones costosas y lentas.  
+
+**Gains:**  
+- Integración bajo estándares internacionales (HL7 FHIR, HIPAA).  
+- Expansión hacia mercados internacionales.  
+- Reputación como proveedor validado y seguro.  
+
+**Interpretación:**  
+El mapa evidencia la necesidad de **facilitar la adopción tecnológica hospitalaria**.  
+El proveedor busca una plataforma confiable y rápida de integrar, con modelos SaaS que reduzcan riesgos financieros y barreras regulatorias.  
+Este insight fundamenta la estrategia de **API abierta, sandbox IoT y documentación técnica** que diferenciará a AuraNeuro frente a otras plataformas cerradas.
+
+---
+
+### Conclusión general  
+
+Los tres *Empathy Maps* revelan una cadena emocional conectada entre los actores del ecosistema neurológico:
+
+| **Actor** | **Emoción dominante** | **Necesidad clave** | **Oportunidad de diseño** |
+|------------|------------------------|----------------------|----------------------------|
+| **Paciente** | Miedo e inseguridad | Confianza y acompañamiento | Alertas IoT, registro guiado y visualización de evolución |
+| **Profesional de salud** | Frustración y escepticismo | Datos confiables y eficiencia | Dashboard validado, interoperable y certificado |
+| **Proveedor IoT** | Desmotivación y lentitud percibida | Simplificación y estandarización | API abierta y soporte técnico hospitalario |
+
+Estos resultados consolidan los *insights de empatía* que guían la siguiente fase de diseño:  
+**construir una experiencia integral, confiable y conectada entre paciente, médico y proveedor.**
+
+---
 
 ## 2.4. Big Picture EventStorming.  
 
