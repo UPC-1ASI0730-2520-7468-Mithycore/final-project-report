@@ -271,7 +271,7 @@ Durante el Sprint 2 se desarrollaron las siguientes funcionalidades:
 - Visualización de resultados en un Dashboard.  
 - Interfaz responsiva validada en diferentes dispositivos.  
 
-URL de despliegue: https://aura-frontend.vercel.app  
+URL de despliegue:
 
 Capturas de referencia:
 - Vista de registro  
@@ -292,8 +292,31 @@ Repositorio API: https:
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
+Frontend:
+- Desplegado en: 
+- Framework: Vue 3 + PrimeVue  
+- CI/CD: GitHub Actions + Vercel
+
+Backend:
+- Desplegado en: 
+- Framework: ASP.NET Core 8.0  
+- Documentación: /swagger
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
+Durante el Sprint 2, el equipo trabajó de manera colaborativa en la implementación del Frontend y la integración con los servicios del Backend. Se observó una mayor sincronización en las tareas y comunicación entre las áreas de desarrollo y diseño.
+
+- Distribución del trabajo:
+  - Stanley Jeremy (Team Leader): coordinación general y soporte en arquitectura de componentes.  
+  - Juan José (Backend Engineer): desarrollo de endpoints para registro y resultados.  
+  - Eduardo (Frontend & UX/UI): vistas de registro, login y dashboard, además de ajustes UX.  
+  - Fabricio (Data & IoT Integration): integración API y soporte de base de datos.  
+  - Jhimy (Frontend & UX/UI): optimización visual y diseño responsive.  
+
+- Revisiones de código: revisiones cruzadas de Pull Requests y validaciones de integración en GitHub.  
+- Comunicación: reuniones semanales de seguimiento y coordinación técnica.  
+- Colaboración técnica: uso del repositorio central para control de versiones y trazabilidad de cambios.
+  
 ## 5.3. Validation Interviews.
 
 ### 5.3.1. Diseño de Entrevistas.
