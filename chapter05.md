@@ -115,6 +115,23 @@ para este Sprint n.)</td>
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
+Se identificaron los siguientes aspectos clave del Sprint:  
+- User Authentication (Registro e Inicio de Sesión)  
+- Cognitive Test Module (Módulo de Pruebas Cognitivas)  
+- Frontend Navigation (Sistema de Navegación)  
+- API Integration (Integración de Servicios REST)  
+- UI Enhancements (Ajustes de Interfaz y Estilo)  
+
+Cada aspecto fue asignado a un líder (L) responsable de su entrega y a uno o más colaboradores (C) encargados del soporte técnico y revisión del desarrollo.
+
+| Team Member (Last Name, First Name) | Role | GitHub Username | User Authentication | Cognitive Test Module | Frontend Navigation | API Integration | UI Enhancements |
+|-------------------------------------|------|-----------------|---------------------|----------------------|---------------------|-----------------|-----------------|
+| Gutierrez Tume, Stanley Jeremy | Team Leader | `Stan-gt213891` | L | C | C | C | C |
+| Meza Huanacune, Juan José | Backend Engineer | `JuanMHZ1250` | C | C | L | C | C |
+| Chacaliaza Minaya, Eduardo Fabián | Frontend & UX/UI Engineer | `educmz` | C | C | L | L | L |
+| Quispe Barzola, Fabricio Fabián | Data & IoT Integration Engineer | `BrooklynKarmis` | C | L | C | L | C |
+| Romero Meza, Jhimy Pool | Frontend & UX/UI Engineer | `jhimyromeromeza` | C | C | C | C | L |
+
 #### 5.2.2.3. Sprint Backlog 2.
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
