@@ -551,29 +551,43 @@ Esta relación circular confirma que AuraNeuro debe diseñarse como un **ecosist
 
 ### 2.3.2. User Task Matrix.
 
-La siguiente matriz relaciona a los roles de usuario de la plataforma **Mythicore** con las principales tareas que realizan.  
-Cada tarea está asociada a una **prioridad** (Alta, Media, Baja) y una **frecuencia de uso** (Alta, Media, Baja).  
-Esto permite identificar qué funciones son críticas para cada segmento objetivo.
+En esta sección se presenta la matriz de tareas de usuario (**User Task Matrix**) que reúne las principales acciones que los tres **User Personas** de **AuraNeuro** realizan para cumplir sus objetivos, independientemente del uso del software.  
+Las tareas fueron identificadas a partir de entrevistas y observaciones de campo, clasificadas según su **frecuencia (Alta, Media, Baja)** y **importancia (Alta, Media, Baja)** para cada segmento.
 
-| Rol / Usuario | Tarea | Descripción | Prioridad | Frecuencia |
-|---------------|-------|-------------|-----------|------------|
-| **Paciente** | Usar dispositivo IoT | El paciente utiliza los sensores para registrar datos neurológicos. | Alta | Alta |
-| **Paciente** | Revisar reportes de adherencia | El paciente consulta sus métricas de uso y evolución. | Media | Media |
-| **Paciente** | Recibir recordatorios | El paciente recibe notificaciones para mantener la adherencia al tratamiento. | Alta | Alta |
-| **Paciente** | Participar en teleconsulta | El paciente asiste a consultas virtuales con su médico desde la plataforma. | Alta | Media |
-| **Paciente** | Consultar ensayos clínicos | El paciente revisa información sobre estudios relevantes a su condición. | Media | Baja |
-| **Médico** | Visualizar datos IoT | El médico consulta las señales neurológicas capturadas en tiempo real. | Alta | Alta |
-| **Médico** | Recibir alertas predictivas | El médico recibe notificaciones de crisis o riesgos detectados por la IA. | Alta | Alta |
-| **Médico** | Consultar dashboard de riesgos | El médico revisa el estado de riesgo de todos sus pacientes. | Alta | Media |
-| **Médico** | Atender teleconsultas | El médico realiza consultas virtuales con pacientes integrando datos IoT. | Alta | Media |
-| **Médico** | Exportar reportes a EHR | El médico genera exportaciones en formato FHIR para integrarlas al sistema clínico. | Media | Baja |
-| **Visitante (Landing Page)** | Revisar información general | El visitante accede al sitio para conocer misión, visión y beneficios de la plataforma. | Alta | Alta |
-| **Visitante (Landing Page)** | Explorar servicios | El visitante consulta la sección de telemedicina y farmacia/dispositivos. | Media | Media |
-| **Visitante (Landing Page)** | Revisar sección “Quiénes somos / Qué hacemos” | El visitante comprende la identidad y propuesta de valor del proyecto. | Media | Baja |
-| **Visitante (Landing Page)** | Usar formulario de contacto | El visitante envía sus datos para recibir más información. | Alta | Media |
-| **Developer (API)** | Registrar pacientes vía API | El developer usa el endpoint para crear pacientes en la plataforma. | Alta | Alta |
-| **Developer (API)** | Consultar datos de monitoreo | El developer obtiene información neurológica desde la API en formato JSON. | Alta | Alta |
-| **Developer (API)** | Manejar errores de la API | El developer recibe mensajes de error descriptivos en caso de requests inválidos. | Alta | Media |
+---
+
+| **Tareas principales** | **Paciente (Xin Yu Shi Lin)** |  | **Profesional de salud (Karen Villanueva)** |  | **Proveedor IoT (Carlos Paredes)** |  |
+|--------------------------|-------------------------------|--|---------------------------------------------|--|------------------------------------|--|
+|  | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Registrar síntomas o crisis neurológicas | Alta | Alta | Media | Alta | Baja | Media |
+| Revisar métricas o reportes de evolución | Media | Alta | Alta | Alta | Baja | Media |
+| Cumplir tratamiento o recordatorios médicos | Alta | Alta | Media | Alta | — | — |
+| Comunicarse con médico o cuidador | Alta | Alta | Alta | Alta | Baja | Media |
+| Analizar datos clínicos o biométricos | — | — | Alta | Alta | Alta | Alta |
+| Atender consultas o reuniones remotas | Media | Alta | Alta | Alta | Media | Media |
+| Integrar o configurar dispositivos IoT | Baja | Media | Media | Alta | Alta | Alta |
+| Validar interoperabilidad (FHIR/API) | — | — | Media | Alta | Alta | Alta |
+| Probar prototipos o nuevas funciones | Media | Media | Media | Media | Alta | Alta |
+| Compartir feedback sobre desempeño | Media | Alta | Media | Alta | Media | Alta |
+
+---
+
+**Interpretación de la matriz:**
+
+Las tareas con **mayor coincidencia de frecuencia e importancia** entre los tres segmentos son:  
+- **Comunicación médico–paciente:** clave para la continuidad del monitoreo.  
+- **Revisión de reportes y métricas:** tarea compartida por pacientes y médicos, indispensable para decisiones clínicas.  
+
+El **paciente** concentra su esfuerzo en tareas cotidianas (registro, adherencia, comunicación), que son **frecuentes y críticas** para su bienestar.  
+El **profesional de salud** se enfoca en **análisis y toma de decisiones** con datos objetivos, priorizando interoperabilidad y confiabilidad.  
+El **proveedor IoT** realiza tareas más técnicas y menos frecuentes, pero con **alta importancia estratégica** para la sostenibilidad del ecosistema (integración, validación y soporte de datos).
+
+Estas relaciones confirman que AuraNeuro debe facilitar la **fluidez de información entre los tres actores**, priorizando tareas donde las necesidades convergen.
+
+---
+
+**Conclusión:**  
+El **User Task Matrix** evidencia que las tareas más relevantes son aquellas que **conectan los flujos de datos** entre usuarios —desde la captura por el paciente, la interpretación por el médico y la validación técnica del proveedor—, lo cual guía directamente la definición de **requisitos funcionales prioritarios** en el *Product Backlog*.
 
 ### 2.3.3. User Journey Mapping.  
 
