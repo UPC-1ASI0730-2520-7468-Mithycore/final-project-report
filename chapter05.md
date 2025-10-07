@@ -1,14 +1,124 @@
 # Capítulo V: Product Implementation, Validation & Deployment
 
-## 5.1. Software Configuration Management.
+### 5.1. Software Configuration Management  
+#### 5.1.1. Software Development Environment Configuration  
+Esta sección detalla las herramientas utilizadas durante el desarrollo del software, organizadas según las distintas fases del proyecto.
 
-### 5.1.1. Software Development Environment Configuration.
+*Project Management
 
-### 5.1.2. Source Code Management.
+-Google Meet: https://meet.google.com/
 
-### 5.1.3. Source Code Style Guide & Conventions.
+-Plataforma utilizada para realizar reuniones virtuales con los miembros del equipo. Permite compartir pantalla, imágenes, texto y video, todo en tiempo real. Es compatible con navegadores web, dispositivos móviles y computadoras, y solo requiere una cuenta activa para su uso.
 
-### 5.1.4. Software Deployment Configuration.
+-Product UX/UI Design
+
+-UXpressia: https://uxpressia.com/
+
+Fue clave para construir perfiles detallados de usuarios, mapear sus emociones, metas y comportamientos mediante herramientas como User Personas, Journey Maps y Empathy Maps.
+
+-Figma: https://www.figma.com/ Plataforma colaborativa de diseño usada para crear wireframes y mockups. Su facilidad para compartir y editar en tiempo real la convirtió en una herramienta fundamental en el desarrollo de interfaces visuales.
+
+*Software Development
+
+-Landing Page
+
+Se desarrolló la landing page con tecnologías como HTML5, CSS3 y JavaScript, apoyados en Bootstrap para lograr un diseño responsivo y acelerar el desarrollo de una interfaz adaptable a diversos dispositivos.
+
+*IDE’s de desarrollo
+
+-Visual Studio Code: https://code.visualstudio.com/
+
+Usamos este IDE por su rendimiento, facilidad de uso y herramientas integradas para la edición, depuración y control de versiones. Fue esencial para implementar la landing page de forma ágil y ordenada.
+
+-GitHub: https://github.com/
+
+Plataforma para alojar el repositorio del proyecto y gestionar el control de versiones del código fuente y la documentación, facilitando la colaboración y el seguimiento de cambios.
+
+*Software Deployment
+
+-GitHub Pages
+
+Utilizamos GitHub Pages para desplegar la landing page de forma gratuita y directamente desde el repositorio del proyecto. Esta herramienta permite alojar sitios estáticos fácilmente, integrándose con el flujo de trabajo de GitHub y facilitando una publicación continua con cada cambio en el repositorio.
+
+*Software Documentation
+
+-Canva: https://www.canva.com/
+
+Empleamos Canva para la creación de material visual y presentaciones gráficas del proyecto. Su interfaz sencilla e intuitiva permite diseñar documentos importantes que ayudan a comunicar ideas de forma clara y profesional.
+
+-Markdown:
+
+Un lenguaje de marcado ligero y sencillo para crear documentos con formato, empleándose para redactar la documentación del proyecto de manera clara y estructurada.
+
+#### 5.1.2. Source Code Management  
+
+El equipo gestiona el código fuente utilizando **GitHub** como plataforma de control de versiones.  
+
+- **Landing Page**: https://github.com/UPC-1ASI0730-2520-7468-Mithycore/LandingPageAuraNeuro
+
+#### Workflow de Versionado – GitFlow
+Para el control de versiones se aplica la estrategia **GitFlow**.La organización de ramas es la siguiente:
+
+- **`main`**: contiene el código estable y liberado en producción.  
+- **`develop`**: integra el trabajo de todas las features y sirve como base para la preparación de releases.  
+- **Feature branches**: creados a partir de `develop` para nuevas funcionalidades. 
+- **Release branches**: creados a partir de `develop` cuando se prepara una nueva versión estable. 
+- **Hotfix branches**: creados a partir de `main` para resolver errores críticos detectados en producción. 
+
+#### Convenciones de Commits
+Se adoptó el estándar **Conventional Commits** para los mensajes de commit, garantizando claridad y trazabilidad.
+
+Esto permite generar changelogs automáticos y facilita la integración continua.  
+
+---
+
+#### 5.1.3. Source Code Style Guide & Conventions  
+
+En el proyecto **AuraNeuro**, se adoptaron convenciones de código para mantener consistencia, legibilidad y mantenibilidad. Todos los identificadores, clases, variables y comentarios se escriben en **inglés**. Las guías aplicadas se basan en estándares reconocidos para HTML, CSS, JavaScript y C#.
+
+## 1. HTML
+- Uso de HTML semántico: `<header>`, `<main>`, `<section>`, `<footer>`, `<article>`
+- Clases e IDs en **kebab-case**: `hero-content`, `contact-form`, `navbar-container`
+- Comentarios: `<!-- Comentario -->`
+- Imágenes siempre con `alt` descriptivo
+
+## 2. CSS
+- Archivo principal: `Styles.css`
+- Clases e IDs en **kebab-case**
+- Variables CSS: `--variable-name`
+- Responsividad con media queries
+
+## 3. JavaScript
+- Variables: `camelCase`
+- Constantes: `UPPER_SNAKE_CASE`
+- Funciones descriptivas; manejadores con prefijo `onEvent`
+- `"use strict";` al inicio de scripts
+
+## 4. C# (Backend – ASP.NET Core)
+En el desarrollo del backend de AuraNeuro, se empleó C# con el framework ASP.NET Core, siguiendo las convenciones oficiales de Microsoft para mantener un código limpio, modular y mantenible.  
+Estas guías garantizan la consistencia en la estructura de clases, métodos y nomenclatura de archivos dentro del API RESTful del proyecto.
+
+- Naming conventions:
+  - **Classes & Methods:** PascalCase → `PatientController`, `GetAllRecords()`
+  - **Variables & Parameters:** camelCase → `patientId`, `recordList`
+  - **Constants:** UPPER_SNAKE_CASE → `MAX_ATTEMPTS`
+- File organization:
+  - Estructura por capas: *Controllers*, *Models*, *Services*, *Data*
+  - Separación de responsabilidades para mejorar mantenibilidad y testing.
+- Comments:
+  - XML documentation comments (`///`) para describir clases y métodos públicos.
+- Framework guidelines:
+  - Se siguieron las **Microsoft C# Coding Conventions** y las **ASP.NET Core Engineering Guidelines**.
+
+#### 5.1.4. Software Deployment Configuration  
+
+La aplicación se desplegará en la nube mediante:
+
+-Vercel para el Landing Page.
+
+-Azure o AWS para el backend con API RESTful y base de datos.
+
+-Contenedores Docker para mantener consistencia en los entornos. 
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 
