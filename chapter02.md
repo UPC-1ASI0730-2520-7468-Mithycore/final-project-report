@@ -859,25 +859,43 @@ Esta representación constituye la base del entendimiento de negocio del proyect
 
 ## 2.5. Ubiquitous Language.  
 
-Este glosario define los términos clave que usamos en el proyecto para mantener un **lenguaje común** entre el equipo de desarrollo, los médicos especialistas y los demás stakeholders.    
+Este glosario define los términos clave del dominio de **AuraNeuro**, proyecto desarrollado por **Mithycore**, con el propósito de mantener un **lenguaje común y sin ambigüedades** entre los equipos de desarrollo, los profesionales de la salud, los proveedores de dispositivos IoT y los demás stakeholders involucrados.  
 
-| Term (English) | Definición (Español) |
-|----------------|-----------------------|
-| **Patient (Paciente)** | Persona diagnosticada con una enfermedad neurológica crónica, como epilepsia o Parkinson, que utiliza la plataforma para registrar, monitorear y compartir información de su condición. |
-| **Neurologist (Neurólogo/a)** | Médico especialista en el diagnóstico y tratamiento de enfermedades neurológicas, encargado de revisar la información registrada por los pacientes y ajustar tratamientos. |
-| **Caregiver (Cuidador/Familiar)** | Persona cercana al paciente que brinda apoyo en el manejo diario de la enfermedad y puede recibir alertas tempranas en situaciones de crisis. |
-| **Seizure (Crisis epiléptica)** | Episodio súbito generado por actividad eléctrica anormal en el cerebro, caracterizado por convulsiones, pérdida de conciencia u otros síntomas neurológicos. |
-| **Crisis log (Registro de crisis)** | Historial digital donde el paciente documenta la fecha, hora, duración y características de cada crisis. |
-| **Biometric data (Datos biométricos)** | Señales fisiológicas obtenidas mediante dispositivos IoT (ej. ritmo cardíaco, actividad cerebral, calidad del sueño) que permiten un seguimiento objetivo de la salud del paciente. |
-| **Wearable device (Dispositivo vestible/IoT)** | Tecnología portátil (reloj inteligente, sensor EEG, pulsera médica) que mide y transmite datos biométricos del paciente. |
-| **EEG – Electroencephalogram (Electroencefalograma)** | Examen que registra la actividad eléctrica cerebral a través de sensores en el cuero cabelludo; utilizado para diagnosticar y monitorear epilepsia y otras condiciones neurológicas. |
-| **Health Record (Historia clínica electrónica)** | Documento digital que almacena la información médica del paciente, accesible por el neurólogo para evaluar evolución y tratamientos. |
-| **Alert (Alerta temprana)** | Notificación automática que advierte al paciente, familiares o médicos sobre una crisis inminente o anomalía detectada por los sensores. |
-| **Medication adherence (Adherencia al tratamiento)** | Grado en el que el paciente sigue correctamente la toma de medicamentos prescritos por el neurólogo. |
-| **Sleep quality (Calidad de sueño)** | Indicador de descanso del paciente, medido por dispositivos IoT, que influye directamente en la frecuencia de crisis. |
-| **Dashboard (Panel de control clínico)** | Interfaz visual que muestra estadísticas, gráficos y tendencias de la evolución del paciente, accesible para médicos y pacientes. |
-| **Scientific community (Comunidad científica)** | Organismos y grupos de investigación internacionales (ej. ILAE, AAN) que validan y difunden prácticas y tecnologías para el tratamiento de enfermedades neurológicas. |
-| **Support group (Grupo de apoyo)** | Comunidad de pacientes que comparte experiencias, consejos y acompañamiento sobre el manejo de su condición neurológica. |
-| **Data privacy (Privacidad de datos)** | Principio que garantiza la protección de la información médica y biométrica del paciente frente a accesos no autorizados. |
+El proceso de elaboración se realizó en conjunto con el equipo multidisciplinario, tomando como referencia el libro *“Domain-Driven Design: Tackling Complexity in the Heart of Software”* de **Eric Evans (2003)**.  
+Durante la fase de *Event Storming* y *Needfinding*, se identificaron los conceptos más recurrentes en entrevistas, flujos y artefactos clínicos, los cuales se estandarizaron en este glosario.
+
+---
+
+| **Term (English)** | **Definición (Español)** |
+|---------------------|---------------------------|
+| **Patient (Paciente)** | Persona diagnosticada con una enfermedad neurológica crónica (epilepsia, Parkinson, Alzheimer) que utiliza la plataforma para registrar síntomas, monitorear su evolución y compartir información con su neurólogo. |
+| **Neurologist (Neurólogo/a)** | Especialista médico encargado del diagnóstico y tratamiento de enfermedades neurológicas. Usa el panel de AuraNeuro para visualizar métricas y ajustar tratamientos. |
+| **Caregiver (Cuidador/Familiar)** | Persona que apoya al paciente en su rutina diaria y puede recibir alertas ante una crisis neurológica. |
+| **Health event (Evento de salud)** | Suceso registrado por el sistema relacionado a una alteración neurológica o crisis detectada por sensores IoT. |
+| **Seizure (Crisis epiléptica)** | Episodio súbito de actividad eléctrica anormal en el cerebro, manifestado mediante convulsiones, pérdida de conciencia u otros síntomas neurológicos. |
+| **Crisis log (Registro de crisis)** | Bitácora digital donde el paciente documenta fecha, hora, duración y características de cada episodio. Puede generarse manualmente o automáticamente a partir de sensores IoT. |
+| **Biometric data (Datos biométricos)** | Señales fisiológicas capturadas por dispositivos IoT (EEG, frecuencia cardíaca, actividad cerebral, calidad del sueño) que permiten evaluar el estado neurológico del paciente. |
+| **Wearable device (Dispositivo vestible / IoT)** | Tecnología portátil (sensor EEG, smartwatch médico) que monitorea la actividad neurológica y transmite los datos a la nube de AuraNeuro. |
+| **EEG – Electroencephalogram (Electroencefalograma)** | Examen que registra la actividad eléctrica cerebral a través de electrodos, utilizado para diagnosticar y monitorear epilepsia y otras condiciones neurológicas. |
+| **Health Record (Historia clínica electrónica / HCE)** | Documento digital que almacena la información médica del paciente, interoperable mediante estándares **HL7–FHIR**. |
+| **Alert (Alerta temprana)** | Notificación automática que advierte a paciente, cuidador o médico sobre una crisis inminente o irregularidad biométrica. |
+| **Medication adherence (Adherencia al tratamiento)** | Nivel en que el paciente sigue correctamente la medicación prescrita por su neurólogo, controlada mediante recordatorios y registro de cumplimiento. |
+| **Sleep quality (Calidad del sueño)** | Indicador de descanso medido por sensores IoT; factor asociado a la frecuencia de crisis y evolución del paciente. |
+| **Dashboard (Panel de control clínico)** | Interfaz que muestra métricas, tendencias y alertas de evolución en tiempo real, accesible a médicos y pacientes. |
+| **Scientific community (Comunidad científica)** | Grupos o instituciones que validan, difunden y promueven evidencia científica sobre tratamientos neurológicos y tecnologías médicas. |
+| **Support group (Grupo de apoyo)** | Comunidad de pacientes y cuidadores que comparten experiencias, consejos y acompañamiento emocional en el manejo de enfermedades neurológicas. |
+| **Data privacy (Privacidad de datos)** | Principio que garantiza la protección de los datos personales, médicos y biométricos frente a accesos no autorizados, conforme a HIPAA e ISO 27001. |
+| **AuraNeuro Platform (Plataforma AuraNeuro)** | Sistema desarrollado por Mithycore que integra datos IoT, algoritmos de IA y paneles clínicos para monitoreo neurológico continuo. |
+| **Early detection (Detección temprana)** | Capacidad del sistema para identificar patrones anómalos y advertir posibles crisis antes de su ocurrencia. |
+| **Data integrity (Integridad de datos)** | Garantía de que la información biométrica transmitida por los sensores no ha sido alterada y se mantiene completa y verificable. |
+| **Pilot implementation (Implementación piloto)** | Prueba controlada con usuarios reales (pacientes, médicos y proveedores) que permite validar hipótesis del producto antes de su despliegue total. |
+
+---
+
+### Conclusión  
+
+El **Ubiquitous Language** establece una base de comunicación compartida entre los dominios médico, tecnológico y de negocio.  
+Gracias a este glosario, el equipo puede **mantener coherencia conceptual** en el modelado de software, los flujos de trabajo clínico y la documentación del proyecto.  
+Este lenguaje común será actualizado de manera iterativa conforme se avance hacia el modelado de dominio y la implementación del MVP.
 
 ---
