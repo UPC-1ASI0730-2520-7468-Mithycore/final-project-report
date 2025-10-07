@@ -288,17 +288,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 
 | Sprint # | Sprint 2 |
 |-----------|-----------|
-| **Sprint Planning Background** | El Sprint 2 tiene como objetivo implementar la primera versión funcional de la Aplicación Web AuraNeuro, centrada en desarrollar los flujos iniciales del Frontend, la integración de servicios del Backend y la validación de la experiencia de usuario. |
-| **Date** | 2025-10-01 |
-| **Time** | 07:00 PM |
-| **Location** | Reunión virtual (Google meet) |
-| **Prepared By** | Stanley Jeremy Gutierrez Tume |
-| **Attendees (to planning meeting)** | Romero Meza Jhimy Pool / Eduardo Fabian Chacaliaza Minaya / Gutierrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
-| **Sprint 1 Review Summary** | Durante el Sprint 1 se logró desarrollar y desplegar el Landing Page MVP del proyecto AuraNeuro. Se validó la propuesta de valor y la comunicación visual del producto, asegurando su responsividad y accesibilidad. Se documentaron los endpoints del servicio de contacto y se estableció el flujo de despliegue con GitHub Pages y Vercel. |
-| **Sprint 1 Retrospective Summary** | El equipo identificó mejoras en la coordinación técnica, estableció reuniones intersemanales para sincronización de avances y estandarizó los mensajes de commits mediante Conventional Commits. Se decidió iniciar el desarrollo del Frontend principal en el siguiente Sprint. |
-| **Sprint Goal** | Desarrollar la primera versión funcional de la Aplicación Web AuraNeuro, que permita el registro, inicio de sesión y ejecución de una prueba cognitiva básica conectada con servicios de Backend. Se busca validar la integración inicial del Frontend y Backend, garantizando una experiencia de usuario fluida y funcional. |
-| **Sprint 2 Velocity** | 27 Story Points |
-| **Sum of Story Points** | 27 |
+
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
@@ -326,27 +316,17 @@ El objetivo principal fue entregar una versión que permitiera el registro de us
 
 | Sprint # | User Story | Work-Item / Task | Descripción | Estimación (Horas) | Assigned To | Status |
 |----------|------------|------------------|-------------|---------------------|-------------|--------|
-| Sprint 2 | US07.1 – Registro de usuario | T2.1 | Implementar vista y formulario de registro con validaciones de datos. | 8h | Eduardo | In Progress |
-| Sprint 2 | US07.2 – Inicio de sesión | T2.2 | Crear vista de login y conexión con API de autenticación. | 8h | Eduardo | In Progress |
-| Sprint 2 | US08.1 – Módulo de prueba cognitiva | T2.3 | Integrar API de preguntas y flujo de evaluación. | 10h | Fabricio | In Progress |
-| Sprint 2 | US09.1 – Dashboard de resultados | T2.4 | Diseñar e implementar la vista de resultados del test cognitivo. | 6h | Juan José | In Progress |
-| Sprint 2 | US10.1 – UI/UX Enhancements | T2.5 | Ajustar estilos, tipografía y diseño responsivo general. | 5h | Jhimy | In Progress |
+
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|
-| aura-frontend | feature/auth | b23c4df | feat: add login and signup view with router guard |  |
-| aura-backend  | feature/api-tests | f92a11a | test: add endpoint for user cognitive results |  |
-| aura-frontend | feature/dashboard | 7a11cc9 | feat: create dashboard with score charts |  |
+
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
 Durante el Sprint 2 se desarrollaron las siguientes funcionalidades:
-- Registro e inicio de sesión de usuarios.  
-- Ejecución del test cognitivo desde el Frontend mediante API REST.  
-- Visualización de resultados en un Dashboard.  
-- Interfaz responsiva validada en diferentes dispositivos.  
 
 URL de despliegue:
 
@@ -361,9 +341,7 @@ Video de demostración:
 
 | Endpoint | Método HTTP | Descripción | Ejemplo de Request | Ejemplo de Response |
 |----------|-------------|-------------|--------------------|---------------------|
-| /api/users/register | POST | Registra un nuevo usuario | { "email": "test@upc.edu", "password": "12345" } | { "status": "created", "userId": 1 } |
-| /api/tests/start | GET | Inicia una prueba cognitiva y devuelve las preguntas | /api/tests/start?userId=1 | [{ "id": 1, "question": "¿Te sientes concentrado hoy?" }] |
-| /api/tests/score | POST | Envía respuestas y calcula el puntaje obtenido | { "userId": 1, "answers": [...] } | { "score": 85, "level": "Normal" } |
+
 
 Repositorio API: https:
 
@@ -377,7 +355,7 @@ Frontend:
 Backend:
 - Desplegado en: 
 - Framework: ASP.NET Core 8.0  
-- Documentación: /swagger
+- Documentación: 
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
