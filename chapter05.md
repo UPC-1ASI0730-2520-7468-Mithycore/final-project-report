@@ -326,19 +326,19 @@ El objetivo principal fue entregar una versión que permitiera el registro de us
 
 | Sprint # | User Story | Work-Item / Task | Descripción | Estimación (Horas) | Assigned To | Status |
 |----------|------------|------------------|-------------|---------------------|-------------|--------|
-| Sprint 2 | US07.1 – Registro de usuario | T2.1 | Implementar vista y formulario de registro con validaciones de datos. | 8h | Eduardo | Done |
-| Sprint 2 | US07.2 – Inicio de sesión | T2.2 | Crear vista de login y conexión con API de autenticación. | 8h | Eduardo | Done |
+| Sprint 2 | US07.1 – Registro de usuario | T2.1 | Implementar vista y formulario de registro con validaciones de datos. | 8h | Eduardo | In Progress |
+| Sprint 2 | US07.2 – Inicio de sesión | T2.2 | Crear vista de login y conexión con API de autenticación. | 8h | Eduardo | In Progress |
 | Sprint 2 | US08.1 – Módulo de prueba cognitiva | T2.3 | Integrar API de preguntas y flujo de evaluación. | 10h | Fabricio | In Progress |
-| Sprint 2 | US09.1 – Dashboard de resultados | T2.4 | Diseñar e implementar la vista de resultados del test cognitivo. | 6h | Juan José | To Review |
-| Sprint 2 | US10.1 – UI/UX Enhancements | T2.5 | Ajustar estilos, tipografía y diseño responsivo general. | 5h | Jhimy | Done |
+| Sprint 2 | US09.1 – Dashboard de resultados | T2.4 | Diseñar e implementar la vista de resultados del test cognitivo. | 6h | Juan José | In Progress |
+| Sprint 2 | US10.1 – UI/UX Enhancements | T2.5 | Ajustar estilos, tipografía y diseño responsivo general. | 5h | Jhimy | In Progress |
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|
-| aura-frontend | feature/auth | b23c4df | feat: add login and signup view with router guard | 22/09/2025 |
-| aura-backend  | feature/api-tests | f92a11a | test: add endpoint for user cognitive results | 23/09/2025 |
-| aura-frontend | feature/dashboard | 7a11cc9 | feat: create dashboard with score charts | 24/09/2025 |
+| aura-frontend | feature/auth | b23c4df | feat: add login and signup view with router guard |  |
+| aura-backend  | feature/api-tests | f92a11a | test: add endpoint for user cognitive results |  |
+| aura-frontend | feature/dashboard | 7a11cc9 | feat: create dashboard with score charts |  |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
