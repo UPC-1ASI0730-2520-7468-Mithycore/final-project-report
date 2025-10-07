@@ -14,6 +14,18 @@ Conectar a pacientes neurológicos, profesionales de la salud y dispositivos IoT
 **Visión**  
 Ser la referencia latinoamericana en soluciones digitales de neuro-salud basadas en datos, integrando IoT, análisis inteligente y diseño inclusivo para transformar la relación entre paciente y médico en un proceso continuo y colaborativo.
 
+### Objetivo general
+
+Desarrollar una **plataforma digital de monitoreo neurológico continuo** que integre **dispositivos IoT** y **analítica de datos** para transformar los registros biométricos en información clínica útil, fortaleciendo la comunicación entre paciente y especialista y mejorando la **adherencia terapéutica** en enfermedades neurológicas crónicas.
+
+### Objetivos específicos
+
+- **OE1:** Implementar un sistema de registro y visualización de datos neurológicos (crisis, sueño, adherencia) accesible para pacientes y cuidadores.  
+- **OE2:** Desarrollar un **panel clínico** para neurólogos que consolide datos en tiempo real y facilite decisiones médicas basadas en evidencia.  
+- **OE3:** Integrar sensores IoT y protocolos seguros de comunicación (MQTT/HTTPS) que garanticen la transmisión confiable de información biométrica.  
+- **OE4:** Asegurar la **interoperabilidad con sistemas clínicos** bajo estándares internacionales (**HL7–FHIR**) y almacenamiento cifrado.  
+- **OE5:** Validar la adopción de la plataforma mediante **pruebas piloto** con usuarios reales, midiendo adherencia, satisfacción y reducción de reingresos hospitalarios.
+
 **Propuesta de valor por actor**
 - **Pacientes y cuidadores:** registro digital de crisis y síntomas, recordatorios de medicación y visualización de avances en su tratamiento.  
 - **Profesionales de salud:** panel web con métricas de evolución (tendencias de sueño, frecuencia de crisis, adherencia a tratamientos) para optimizar decisiones clínicas.  
