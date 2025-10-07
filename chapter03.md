@@ -1,7 +1,25 @@
 # Capítulo III: Requirements Specification  
 
 ## 3.1. User Stories.  
+Lista de Epicas  
 
+| Epic ID | Tipo                          | Descripción (Como / quiero / para)                                                                                      | Nombre de la épica                                   |
+|---------|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| EP-01  | Funcional                      | Como **usuario (paciente o neurólogo)**, quiero **registrarme e iniciar sesión de forma segura** para **acceder a mi cuenta y servicios personalizados**. | Autenticación y Gestión de Cuentas                   |
+| EP-02  | Funcional                      | Como **profesional o paciente**, quiero **editar y consultar mi perfil clínico y datos personales** para **mantener información actualizada y útil en la atención**. | Gestión de Perfiles Médicos y Datos                  |
+| EP-03  | Funcional                      | Como **paciente o neurólogo**, quiero **gestionar citas y disponibilidad** para **programar, confirmar y recibir recordatorios de consultas**. | Gestión de Citas y Agenda Médica                     |
+| EP-04  | Funcional                      | Como **paciente**, quiero **iniciar videollamadas one-click con mi neurólogo** para **realizar teleconsultas y seguimiento remoto**. | Videollamadas y Teleconsulta                         |
+| EP-05  | Funcional                      | Como **paciente**, quiero **enviar y recibir mensajes seguros con mi neurólogo** para **aclarar dudas y comunicar síntomas entre consultas**. | Comunicación por Chat Seguro                         |
+| EP-06  | Funcional                      | Como **neurólogo**, quiero **emitir y enviar recetas electrónicas** para **facilitar la adherencia al tratamiento y mantener un historial prescriptivo**. | Gestión de Recetas y Tratamientos                    |
+| EP-07  | Funcional                      | Como **paciente**, quiero **emparejar y sincronizar mis dispositivos IoT** para **registrar automáticamente biomarcadores en mi historial clínico**. | Monitoreo IoT y Registro de Datos                    |
+| EP-08  | Funcional / Seguridad         | Como **sistema clínico**, quiero **detectar anomalías y enviar alertas (con geolocalización con consentimiento)** para **activar respuestas rápidas ante eventos críticos**. | Alertas, Geolocalización y Respuesta                 |
+| EP-09  | No funcional / Seguridad      | Como **administrador del sistema**, quiero **garantizar cifrado, control de accesos y logs de auditoría** para **proteger la confidencialidad y cumplir normativas**. | Privacidad, Seguridad y Cumplimiento                 |
+| EP-10  | No funcional / Rendimiento    | Como **usuario**, quiero **tiempos de respuesta y escalabilidad garantizados** para **tener una experiencia fluida incluso con uso concurrente**. | Escalabilidad y Rendimiento                          |
+| EP-11  | Funcional / Analítica         | Como **neurólogo**, quiero **recibir análisis e informes generados por IA** para **identificar patrones, priorizar pacientes y apoyar decisiones clínicas**. | Analítica con IA y Dashboard Clínico                 |
+| EP-12  | Funcional / UX                | Como **usuario (paciente o profesional)**, quiero **personalizar accesibilidad y apariencia de la interfaz** para **adaptarla a mis preferencias y necesidades**. | Usabilidad, Personalización y Accesibilidad          |
+
+
+Listas de historias de usuario
 <table>
   <tbody>
     <tr>
