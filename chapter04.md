@@ -14,7 +14,7 @@ La simplicidad del diseño asegura legibilidad en cualquier soporte digital o f�
 El conjunto proyecta confianza médica, innovación tecnológica y humanización de la salud digital.  
 
 ![Logo](./imagesChapter04/PaletaColores/Logo.png)  
-![Logo](./img/PaletaColores/LogoFondoBlanco.png)  
+![Logo](./imagesChapter04/PaletaColores/LogoFondoBlanco.png)  
 
 
 **Variantes de logo**  
@@ -545,7 +545,7 @@ Los prototipos móviles priorizan la navegación simplificada en pantallas peque
 4. **Sección de contacto optimizada en formulario vertical.**  
 
 **Screenshot de ejemplo (Mobile):**  
-![Inicio Mobile](img/info.png)
+![Inicio Mobile](./imagesChapter04/MockupsLandingPageMovile/CardsServices.png)
 
 Enlace al video de simulación (Microsoft Stream):  
  [Video Prototipo Mobile](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EVOCLtICjRlCnIbePhVTKRkBQjhxFgmXg-lHkXVoBIPzgA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=r7TzqS) 
@@ -563,19 +563,19 @@ Los prototipos presentados corresponden directamente a los **User Flows** defini
 **Screenshots de secciones clave:**
 
 - Quiénes somos  
-  ![Quienes somos](img/quienessomos.png)
+  ![Quienes somos](./imagesChapter04/MockupsLandingPageMovile/WhoWeAre.png)
 
 - Acerca de nosotros  
-  ![Acerca de nosotros](img/nosotros.png)
+  ![Acerca de nosotros](./imagesChapter04/MockupsLandingPageMovile/About.png)
 
 - Beneficios  
-  ![Beneficios](img/beneficios.png)
+  ![Beneficios](./imagesChapter04/MockupsLandingPageMovile/Benefits.png)
 
 - Cómo funciona  
-  ![Cómo funciona](img/comofunciona.png)
+  ![Cómo funciona](./imagesChapter04/MockupsLandingPageMovile/HowItWork.png)
 
 - Contacto  
-  ![Contacto](img/sobrenosotros.png)
+  ![Contacto](./imagesChapter04/MockupsLandingPageMovile/Contact.png)
 
 ---
 
@@ -587,7 +587,7 @@ En conclusión, los prototipos de **AuraNeuro** permiten visualizar cómo los us
 Nuestro objetivo es estructurar el dominio de AuraNeuro en contextos claros, detallando los principales flujos de interacción (monitoreo de pacientes → procesamiento de datos IoT → análisis mediante IA → alertas y notificaciones → acceso de profesionales de la salud) y los cruces entre contextos (suscripciones, telemedicina, notificaciones).
 
 **Captura:**  
-![EventStorming](img/eventstorming.png)
+![EventStorming](./imagesChapter04/eventstorming.png)
 
 **Bounded Contexts identificados:**
 - **Identity & Access (IAM):** registro, login, autorización de usuarios.  
@@ -620,7 +620,7 @@ Nuestro objetivo es estructurar el dominio de AuraNeuro en contextos claros, det
 El diagrama de contexto muestra la interacción de los tres segmentos principales (Pacientes, Cuidadores/Familiares y Proveedores IoT), junto con los neurólogos/terapeutas, dentro del ecosistema AuraNeuro. También se evidencian las integraciones externas (EHR/HIS, pasarelas de pago, servicios de mensajería y notificaciones).  
 
 **Captura del diagrama de contexto:**  
-![Context Diagram](img/contexto.png)
+![Context Diagram](./imagesChapter04/contexto.png)
 
 ---
 
@@ -633,7 +633,7 @@ El container diagram representa los principales contenedores de la plataforma Au
 - **Integraciones externas:** EHR/HIS, servicios clínicos externos, pasarela de pago, mensajería (email/SMS/push).  
 
 **Captura del container diagram:**  
-![Container Diagram](img/container.png)
+![Container Diagram](./imagesChapter04/container.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.  
 
@@ -646,7 +646,7 @@ El component diagram detalla los servicios internos que conforman el Domain Core
 - **Telemed Orchestrator** para habilitar videollamadas seguras.  
 
 **Captura del component diagram:**  
-![Component Diagram](img/component.png)
+![Component Diagram](./imagesChapter04/component.png)
 
 ---
 
@@ -665,7 +665,7 @@ Este diagrama modela el proceso de **registro, autenticación y gestión de sesi
 Incluye las clases principales `Usuario`, `Sesion` y las interfaces de autenticación (`AuthProvider`).  
 Se utiliza la enumeración `EstadoUsuario` para controlar el estado de la cuenta.  
 
-![Identity & Access](img/identity.png)
+![Identity & Access](./imagesChapter04/identity.png)
 
 ---
 
@@ -673,7 +673,7 @@ Se utiliza la enumeración `EstadoUsuario` para controlar el estado de la cuenta
 Este diagrama representa la **gestión de perfiles de usuario** y sus preferencias de notificación.  
 Incluye la clase `Perfil`, que se relaciona con `Preferencias` y las enumeraciones `Genero` y `CanalNotificacion`.  
 
-![Profiles & Preferences](img/preferences.png)
+![Profiles & Preferences](./imagesChapter04/preferences.png)
 
 ---
 
@@ -681,7 +681,7 @@ Incluye la clase `Perfil`, que se relaciona con `Preferencias` y las enumeracion
 Este diagrama modela la integración con **dispositivos IoT** (wearables, EEG, EMG) y la recolección de señales biométricas.  
 La clase `Dispositivo` se relaciona con `SeñalBiometrica`, y se utiliza la enumeración `TipoDispositivo` para clasificar el hardware.  
 
-![IoT & Biometrics](img/iot.png)
+![IoT & Biometrics](./imagesChapter04/iot.png)
 
 ---
 
@@ -689,7 +689,7 @@ La clase `Dispositivo` se relaciona con `SeñalBiometrica`, y se utiliza la enum
 Este diagrama representa el flujo de la **telemedicina**, con clases que gestionan las citas (`Cita`), salas virtuales (`Sala`) y mensajería instantánea (`MensajeChat`).  
 Se incluye la enumeración `EstadoCita` para el ciclo de vida de la consulta.  
 
-![Telemedicine](img/telemedicine.png)
+![Telemedicine](./imagesChapter04/telemedicine.png)
 
 ---
 
@@ -698,7 +698,7 @@ Este diagrama describe la gestión de **planes de suscripción y pagos**.
 Las entidades principales son `Suscripcion`, `Plan` y `Pago`, relacionadas con la pasarela de pago (`PasarelaPago`).  
 Se emplean las enumeraciones `EstadoSuscripcion`, `EstadoPago` y `MetodoPago`.  
 
-![Subscriptions & Payments](img/suscripciones.png)
+![Subscriptions & Payments](./imagesChapter04/suscripciones.png)
 
 ---
 
@@ -706,7 +706,7 @@ Se emplean las enumeraciones `EstadoSuscripcion`, `EstadoPago` y `MetodoPago`.
 El diagrama de **notificaciones** modela cómo se generan, envían y marcan como entregadas o fallidas las alertas al usuario.  
 Se incluyen las clases `Notificacion`, `ServicioCorreo` y `SMTPProvider`, junto con las enumeraciones `Canal` y `EstadoEnvio`.  
 
-![Notifications](img/notificaciones.png)
+![Notifications](./imagesChapter04/notificaciones.png)
 
 ---
 
@@ -715,7 +715,7 @@ Este diagrama muestra el uso de **IA y reglas de detección de anomalías**.
 Incluye las clases `MotorIA`, `Regla`, `EventoAnomalia` y `Alerta`.  
 La severidad de los eventos se gestiona con la enumeración `NivelSeveridad`.  
 
-![Analytics & Alerting](img/alerting.png)
+![Analytics & Alerting](./imagesChapter04/alerting.png)
 
 ---
 
@@ -723,7 +723,7 @@ La severidad de los eventos se gestiona con la enumeración `NivelSeveridad`.
 Este diagrama representa la integración con sistemas clínicos externos vía **FHIR**.  
 Se definen las clases `FHIRAdapter`, `Observacion` y `PacienteRef`, junto con la enumeración `TipoObservacion` (ej. frecuencia cardiaca, saturación, sueño).  
 
-![EHR/FHIR Adapter](img/adapter.png)
+![EHR/FHIR Adapter](./imagesChapter04/adapter.png)
 
 ---
 
@@ -776,7 +776,7 @@ El diseño busca garantizar **persistencia confiable**, **integridad referencial
 El siguiente diagrama evidencia las tablas, atributos principales, claves primarias (PK), foráneas (FK) y relaciones entre los bounded contexts:
 
 <p align="center">
-  <img src="img/Basededatos.png" alt="Basededatos" width="800"/>
+  <img src="./imagesChapter04/Basededatos.png" alt="Basededatos" width="800"/>
 </p>
 
 ---

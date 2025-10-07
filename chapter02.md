@@ -203,31 +203,40 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
     </td>
   </tr>
   <tr>
-    <td><b>Nombre y Apellido:</b> Cesar Aaron Cornejo</td>
-    <td><b>Edad:</b> </td>
+    <td><b>Nombre y Apellido:</b>Cesar Aaron Cornejo</td>
+    <td><b>Edad:</b> 21</td>
   </tr>
   <tr>
-    <td><b>Profesión:</b> ...</td>
+    <td><b>Residencia:</b> Lima - San Juan de Lurigancho</td>
     <td><b>Sexo:</b> Masculino</td>
   </tr>
   <tr>
-    <td><b>Instante de inicio:</b> 10:40</td>
-    <td><b>Duración:</b> 11:00</td>
+    <td><b>Instante de inicio:</b> 0:10</td>
+    <td><b>Duración:</b>  4:21 </td>
   </tr>
   <tr>
     <td><b>Link de entrevista:</b> </td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EZxZ3WlYjT1Cp7yqP_OKdSIBRR0IFKAnrzwQjBEJNXY9YQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=j1Yf0B</td>
   </tr>
   <tr>
     <td colspan="2">
       <b>Resumen de entrevista:</b><br>
-      ...
+      - El entrevistado se llama **Cesar Aaron Cornejo**, tiene 21 años, vive en Lima y está diagnosticado con epilepsia.  
+      - Su principal dificultad es la **imprevisibilidad de las crisis**, lo que genera ansiedad en él y preocupación en su familia.  
+      - Actualmente lleva un **registro manual** de sus episodios, pero reconoce que es incompleto y poco confiable.  
+      - Considera muy útil contar con **alertas tempranas** que detecten anomalías en tiempo real, para actuar con mayor seguridad.  
+      - Le gustaría consultar en una app móvil registros de crisis, calidad del sueño y factores desencadenantes, con **gráficos y estadísticas claras**.  
+      - Tiene **confianza en wearables** como Garmin y Fitbit, y aceptaría sensores implantables si son seguros y certificados.  
+      - Valora que su neuróloga pueda **acceder a sus datos desde una plataforma web** conectada a la historia clínica.  
+      - Ha participado en **comunidades online** de pacientes, lo que le ha dado apoyo emocional.  
+      - Cree que estas herramientas digitales le darían **independencia, seguridad y tranquilidad familiar**.  
     </td>
   </tr>
 </table>
 
 <table style="width: 100%">
   <tr>
-    <th colspan="2">Entrevistado N° 1</th>
+    <th colspan="2">Entrevistado N° 2</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center;">
@@ -235,31 +244,40 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
     </td>
   </tr>
   <tr>
-    <td><b>Nombre y Apellido:</b> ...</td>
-    <td><b>Edad:</b> ...</td>
+    <td><b>Nombre y Apellido:</b> Xin Yu Shi Lin</td>
+    <td><b>Edad:</b> 25</td>
   </tr>
   <tr>
-    <td><b>Profesión:</b> ...</td>
-    <td><b>Sexo:</b> ....</td>
+    <td><b>Residencia:</b> Lima - Perú</td>
+    <td><b>Sexo:</b> Maculino</td>
   </tr>
   <tr>
-    <td><b>Instante de inicio:</b> ...</td>
-    <td><b>Duración:</b> ...</td>
+    <td><b>Instante de inicio:</b> 0:05</td>
+    <td><b>Duración:</b> 4:22</td>
   </tr>
   <tr>
-    <td><b>Link de entrevista:</b> ...</td>
+    <td><b>Link de entrevista:</b> </td><
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320442_upc_edu_pe/EVgqZffZGQtFmtniG8D9sCMBK5K39T_bMbQSLhM_WlAlsg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=h8BhtU</td>
   </tr>
   <tr>
     <td colspan="2">
       <b>Resumen de entrevista:</b><br>
-      ...
+      - El entrevistado se llama Xin Yu Shi Lin, tiene 25 años, vive en Lima y está diagnosticado con epilepsia.  
+      - Su mayor preocupación es sufrir una crisis en el trabajo y no poder avisar a tiempo.  
+      - Actualmente lleva un control incompleto, anotando de manera poco confiable o recordando de memoria.  
+      - Considera muy útil contar con alertas tempranas que anticipen crisis y den seguridad a su familia.  
+      - Le gustaría usar una app móvil con registros claros, gráficos de evolución y recordatorios de medicación.  
+      - Está dispuesto a usar dispositivos IoT como relojes inteligentes (ej. Fitbit Ionic), siempre que sean seguros.  
+      - Sus principales preocupaciones son fallas técnicas y la protección de datos personales.  
+      - Participa en comunidades de apoyo como la Asociación Peruana de Epilepsia, lo que le ha dado orientación y acompañamiento.  
+      - Sus habilidades digitales son básicas en smartphones y medias en laptops, con uso frecuente de WhatsApp, Gmail y SMS. 
     </td>
   </tr>
 </table>
 
 <table style="width: 100%">
   <tr>
-    <th colspan="2">Entrevistado N° 1</th>
+    <th colspan="2">Entrevistado N° 3</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center;">
@@ -267,24 +285,33 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
     </td>
   </tr>
   <tr>
-    <td><b>Nombre y Apellido:</b> ...</td>
-    <td><b>Edad:</b> ...</td>
+    <td><b>Nombre y Apellido:</b> Eduardo Gabriel Díaz Veliz</td>
+    <td><b>Edad:</b> 27</td>
   </tr>
   <tr>
-    <td><b>Profesión:</b> ...</td>
-    <td><b>Sexo:</b> ....</td>
+    <td><b>Profesión:</b>Ingeniero de telecomunicaciones – Desarrollador de soluciones IoT para salud</td>
+    <td><b>Sexo:</b> Masculino</td>
   </tr>
   <tr>
-    <td><b>Instante de inicio:</b> ...</td>
-    <td><b>Duración:</b> ...</td>
+    <td><b>Instante de inicio:</b> 0:10</td>
+    <td><b>Duración:</b> 4:47</td>
   </tr>
   <tr>
     <td><b>Link de entrevista:</b> ...</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EYkNwKwupDNBubgFbxYToRcBjpdK5VuueGVGPPJ4TGq2NA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=eZbHLJ</td>
   </tr>
   <tr>
     <td colspan="2">
       <b>Resumen de entrevista:</b><br>
-      ...
+      - El entrevistado es **Eduardo Gabriel Díaz Veliz**, ingeniero de telecomunicaciones de 27 años.  
+- Se especializa en **infraestructura IoT aplicada a la salud neurológica**.  
+- Ha trabajado con **pulseras biométricas y EEG portátiles**.  
+- Identifica como retos la **conectividad deficiente en provincias** y la **falta de estandarización** de dispositivos.  
+- Confía en **Empatica, NeuroSky** y **Fitbit Health Solutions**.  
+- Domina **LoRaWAN, 4G/5G, Wi-Fi industrial, Azure IoT, AWS, Python y Grafana**.  
+- Su **frustración** es la falta de presupuesto y personal capacitado para escalar pilotos en hospitales.  
+- Su **objetivo** es implementar soluciones IoT accesibles en hospitales públicos sin comprometer la seguridad y calidad de los datos.  
+
     </td>
   </tr>
 </table>
@@ -293,7 +320,7 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
 
 <table style="width: 100%">
   <tr>
-    <th colspan="2">Entrevistado N° 4</th>
+    <th colspan="2">Entrevistado N° 1</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center;">
@@ -301,24 +328,72 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
     </td>
   </tr>
   <tr>
-    <td><b>Nombre y Apellido:</b> ...</td>
-    <td><b>Edad:</b> ...</td>
+    <td><b>Nombre y Apellido:</b> Karen Guadalupe Villanueva Castillo</td>
+    <td><b>Edad:</b> 27</td>
   </tr>
   <tr>
-    <td><b>Profesión:</b> ...</td>
-    <td><b>Sexo:</b> ....</td>
+    <td><b>Profesión:</b> Neuróloga especialista </td>
+    <td><b>Sexo:</b> Femenino</td>
   </tr>
   <tr>
-    <td><b>Instante de inicio:</b> ...</td>
-    <td><b>Duración:</b> ...</td>
+    <td><b>Instante de inicio:</b> 0:04</td>
+    <td><b>Duración:</b> 6:58</td>
   </tr>
   <tr>
-    <td><b>Link de entrevista:</b> ...</td>
+    <td><b>Link de entrevista:</b> </td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EQiEyBrJx-JGoHK_l4x45sYBAWGLVSJzu40JYMV2arNWBA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=dL6y9t</td>
   </tr>
   <tr>
     <td colspan="2">
       <b>Resumen de entrevista:</b><br>
-      ...
+      - La entrevistada es **Karen Guadalupe Villanueva Castillo**, neuróloga especialista de 27 años.  
+      - Señala que actualmente depende de registros manuales de los pacientes, lo que dificulta diagnósticos precisos.  
+      - Considera muy valiosa una plataforma que integre **datos de crisis, sueño y biometría en tiempo real**.  
+      - Confía en software clínico como **Epic** y **Cerner**, y en dispositivos de monitoreo de **Medtronic** y **Empatica**.  
+      - Valora el acceso remoto a datos de pacientes mediante aplicaciones web en la nube.  
+      - Forma parte de comunidades científicas como la **ILAE** y la **AAN**.  
+      - Opina que estas herramientas reducirán costos hospitalarios, mejorarán la prevención y harán más eficiente al sistema de salud.  
+      - Visualiza la neurología del futuro como **preventiva, personalizada y soportada por IoT**.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%">
+  <tr>
+    <th colspan="2">Entrevistado N° 2</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <img src="" width="90%" style="text-align: center;"/>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y Apellido:</b> Nicol Buendía</td>
+    <td><b>Edad:</b> 26</td>
+  </tr>
+  <tr>
+    <td><b>Profesión:</b> Terapeuta en rehabilitación neurológica</td>
+    <td><b>Sexo:</b> Femenino</td>
+  </tr>
+  <tr>
+    <td><b>Instante de inicio:</b> 0:33</td>
+    <td><b>Duración:</b> 7:50</td>
+  </tr>
+  <tr>
+    <td><b>Link de entrevista:</b> </td><
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/ERy66J4mXqlEjW4IcsmtsVwBdu-vmnMGzi9ZldbU61cQnQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=YYQLlB</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Resumen de entrevista:</b><br>
+      <td>- La entrevistada es **Nicol Buendía**, terapeuta en rehabilitación neurológica de 26 años.  
+      - Señala que el seguimiento actual depende de observaciones presenciales y reportes familiares.  
+      - Considera muy útil una plataforma que integre **actividad motora, crisis y sueño en tiempo real**.  
+      - Confía en plataformas como **Rehametrics** y **MindMotion**, y en dispositivos de **Empatica** y **NeuroPace**.  
+      - Destaca la importancia de un **dashboard en la nube** para colaboración con neurólogos y familiares.  
+      - Forma parte de comunidades como la **WFNR** y la **Sociedad Española de Neurorrehabilitación**.  
+      - Opina que estas herramientas reducirían hospitalizaciones y facilitarían terapias en casa.  
+      - Visualiza la rehabilitación del futuro como **personalizada, digital e integrada con IoT**. </td>
     </td>
   </tr>
 </table>
@@ -333,56 +408,32 @@ Muchas gracias por tu tiempo hoy. Tu opinión y las ideas que compartiste nos ay
     </td>
   </tr>
   <tr>
-    <td><b>Nombre y Apellido:</b> ...</td>
+    <td><b>Nombre y Apellido:</b> Carlos Paredes</td>
     <td><b>Edad:</b> ...</td>
   </tr>
   <tr>
-    <td><b>Profesión:</b> ...</td>
-    <td><b>Sexo:</b> ....</td>
+    <td><b>Profesión:</b> Ingeniero electrónico – Proveedor de soluciones IoT</td>
+    <td><b>Sexo:</b> Masculino</td>
   </tr>
   <tr>
-    <td><b>Instante de inicio:</b> ...</td>
-    <td><b>Duración:</b> ...</td>
+    <td><b>Instante de inicio:</b> 0:09</td>
+    <td><b>Duración:</b> 13:09</td>
   </tr>
   <tr>
     <td><b>Link de entrevista:</b> ...</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EabaC7sEU_9GrDDU69Xv9owBK49d_g1TTHwcW7RoBKtmZg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=CKbOGC</td>
   </tr>
   <tr>
     <td colspan="2">
       <b>Resumen de entrevista:</b><br>
-      ...
-    </td>
-  </tr>
-</table>
-
-<table style="width: 100%">
-  <tr>
-    <th colspan="2">Entrevistado N° 1</th>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align: center;">
-      <img src="" width="90%" style="text-align: center;"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Nombre y Apellido:</b> ...</td>
-    <td><b>Edad:</b> ...</td>
-  </tr>
-  <tr>
-    <td><b>Profesión:</b> ...</td>
-    <td><b>Sexo:</b> ....</td>
-  </tr>
-  <tr>
-    <td><b>Instante de inicio:</b> ...</td>
-    <td><b>Duración:</b> ...</td>
-  </tr>
-  <tr>
-    <td><b>Link de entrevista:</b> ...</td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <b>Resumen de entrevista:</b><br>
-      ...
+      - El entrevistado es **Carlos Paredes**, ingeniero electrónico de 32 años, proveedor de soluciones IoT.  
+      - Explica que desarrolla proyectos con **sensores biométricos, wearables y EEG portátiles**.  
+      - Señala como reto principal la **interoperabilidad** de datos y la **seguridad** bajo normas como HIPAA.  
+      - Confía en dispositivos de **Empatica, Medtronic y NeuroSky**.  
+      - Domina **protocolos IoT (MQTT, BLE, Wi-Fi seguro)** y plataformas como **AWS IoT, Grafana y Power BI**.  
+      - Considera que una alianza con startups como **Mithycore** puede agilizar pilotos y soluciones personalizadas.  
+      - Menciona como **frustración** la resistencia institucional por falta de presupuesto o desconocimiento.  
+      - Su **objetivo** es integrar IoT con historias clínicas electrónicas y telemedicina para dar soporte en tiempo real a médicos y pacientes.  
     </td>
   </tr>
 </table>
