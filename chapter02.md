@@ -796,13 +796,66 @@ Estos resultados consolidan los *insights de empatía* que guían la siguiente f
 
 ## 2.4. Big Picture EventStorming.  
 
-El Big Picture Event Storming es una técnica colaborativa que nos permitió visualizar el dominio completo de nuestra solución, identificando actores, eventos clave, problemas, dudas, sistemas externos y oportunidades. A través de esta dinámica, el equipo logró comprender de manera compartida el flujo de procesos en la atención neurológica digital y cómo nuestra plataforma Mythicore puede integrarse para resolver brechas críticas.  
+El **Big Picture Event Storming** es una técnica colaborativa aplicada por el equipo **Mithycore** para comprender el dominio completo del negocio y descubrir oportunidades de mejora dentro del ecosistema de **AuraNeuro**.  
+Mediante esta sesión se representaron los procesos de la atención neurológica digital, los actores involucrados, los eventos clave, los problemas existentes, las preguntas que surgen en el flujo, los sistemas externos conectados y las posibles oportunidades de solución.  
 
-**Big Picture Event Storming - Leyenda de Colores**    
+---
+
+### Metodología aplicada  
+
+La sesión se desarrolló siguiendo el *Step-by-Step Guide to Run Your Big Picture EventStorming* de **EventStorming Journal (2023)**, adaptado al contexto del proyecto.  
+
+#### Fase 1 – Open the system  
+- Se identificaron los **actores principales**: paciente, profesional de salud, proveedor IoT y sistema Mithycore.  
+- Cada actor fue analizado en sus interacciones iniciales dentro del proceso de seguimiento neurológico: registro de crisis, envío de datos biométricos, revisión médica y generación de alertas.  
+- Se mapearon **eventos de dominio** que representan acciones críticas como *registrar crisis*, *integrar datos en HCE*, *ajustar tratamiento* o *procesar pago/licencia*.  
+
+#### Fase 2 – Explore  
+- En esta etapa se clasificaron los eventos según **problemas**, **dudas** y **sistemas externos**:  
+  - Los **problemas (rojo)** reflejan fricciones como *historial subjetivo*, *notificaciones tardías*, *baja interoperabilidad* y *dependencia de la app móvil*.  
+  - Las **dudas (azul)** evidencian incertidumbres sobre confiabilidad de datos IoT, pérdidas de conexión y procesos de pago.  
+  - Los **sistemas externos (violeta)** incluyen herramientas actuales usadas por los actores: *WhatsApp API*, *EPIC / Cerner*, *AWS HealthLake* y *Azure IoT Hub*.  
+
+#### Fase 3 – Close the loop  
+- En el cierre se identificaron **oportunidades (verde)** alineadas con los hallazgos anteriores:  
+  - *Validación automática de biometría.*  
+  - *Dashboard IoT integrado y redundante.*  
+  - *Middleware plug-and-play para integración rápida.*  
+  - *Reintento / validación automática ante fallas.*  
+  - *Personalización de notificaciones y escalado a familiares / médicos.*  
+- Estas oportunidades fueron priorizadas como **requisitos potenciales del MVP de AuraNeuro**, reflejando la visión compartida del equipo sobre cómo resolver los problemas detectados.
+
+---
+
+### Big Picture Event Storming – Leyenda de colores  
 ![BigPicture](./imagesChapter02/bigPicture/bigpicture1.png) 
 
-**Big Picture Event Storming - Mapa General**   
+### Big Picture Event Storming – Mapa General  
 ![BigPicture](./imagesChapter02/bigPicture/bigpicture2.png) 
+
+---
+
+### Interpretación y hallazgos clave  
+
+| **Categoría** | **Hallazgo principal** | **Implicancia para el diseño de AuraNeuro** |
+|----------------|------------------------|---------------------------------------------|
+| **Problemas (rojo)** | Procesos manuales, datos subjetivos y falta de interoperabilidad. | Priorizar registro automático, conectividad IoT y exportación FHIR. |
+| **Dudas (azul)** | Inseguridad en datos auto-reportados y fallas de conexión. | Implementar redundancia de datos, sincronización offline y monitoreo de integridad. |
+| **Sistemas externos (violeta)** | Dependencia de herramientas no integradas (WhatsApp, EPIC). | Integrar APIs seguras con mensajería y HCE. |
+| **Oportunidades (verde)** | Validación automática, personalización y middleware adaptable. | Diseñar un MVP modular con enfoque de interoperabilidad escalable. |
+
+---
+
+### Conclusión  
+
+El **Big Picture Event Storming** permitió al equipo:  
+- Entender de forma visual y compartida el dominio de la atención neurológica digital.  
+- Identificar **brechas críticas de integración** entre pacientes, médicos y proveedores IoT.  
+- Transformar los problemas detectados en **requisitos de oportunidad**, que guiarán las fases de **Domain Modeling** y **Design Sprint**.  
+
+Esta representación constituye la base del entendimiento de negocio del proyecto **AuraNeuro**, alineando al equipo en una visión común sobre cómo **convertir datos biométricos en decisiones clínicas inteligentes**.
+
+---
 
 ## 2.5. Ubiquitous Language.  
 
