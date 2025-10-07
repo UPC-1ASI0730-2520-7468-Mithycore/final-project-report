@@ -147,6 +147,12 @@ El objetivo principal fue entregar una versión que permitiera el registro de us
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|
+| aura-frontend | feature/auth | b23c4df | feat: add login and signup view with router guard | 22/09/2025 |
+| aura-backend  | feature/api-tests | f92a11a | test: add endpoint for user cognitive results | 23/09/2025 |
+| aura-frontend | feature/dashboard | 7a11cc9 | feat: create dashboard with score charts | 24/09/2025 |
+
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
