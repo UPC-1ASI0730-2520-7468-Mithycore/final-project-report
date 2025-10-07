@@ -137,7 +137,7 @@ Nuestro objetivo es conocer su experiencia y su perspectiva, ya que buscamos val
 - ¿Qué tan dispuesto estarías a usar dispositivos IoT para mejorar tu seguimiento médico?  
 - ¿Cuáles serían tus principales preocupaciones respecto al uso de esta tecnología?  
 
-
+ 
 ### Segmento #2: Psicólogos clínicos / Neuropsicólogos  
 
 **Preguntas complementarias:**  
