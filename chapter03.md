@@ -3,20 +3,27 @@
 ## 3.1. User Stories.  
 Lista de Epicas  
 
-| Epic ID | Tipo                          | Descripción (Como / quiero / para)                                                                                      | Nombre de la épica                                   |
-|---------|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| EP-01  | Funcional                      | Como **usuario (paciente o neurólogo)**, quiero **registrarme e iniciar sesión de forma segura** para **acceder a mi cuenta y servicios personalizados**. | Autenticación y Gestión de Cuentas                   |
-| EP-02  | Funcional                      | Como **profesional o paciente**, quiero **editar y consultar mi perfil clínico y datos personales** para **mantener información actualizada y útil en la atención**. | Gestión de Perfiles Médicos y Datos                  |
-| EP-03  | Funcional                      | Como **paciente o neurólogo**, quiero **gestionar citas y disponibilidad** para **programar, confirmar y recibir recordatorios de consultas**. | Gestión de Citas y Agenda Médica                     |
-| EP-04  | Funcional                      | Como **paciente**, quiero **iniciar videollamadas one-click con mi neurólogo** para **realizar teleconsultas y seguimiento remoto**. | Videollamadas y Teleconsulta                         |
-| EP-05  | Funcional                      | Como **paciente**, quiero **enviar y recibir mensajes seguros con mi neurólogo** para **aclarar dudas y comunicar síntomas entre consultas**. | Comunicación por Chat Seguro                         |
-| EP-06  | Funcional                      | Como **neurólogo**, quiero **emitir y enviar recetas electrónicas** para **facilitar la adherencia al tratamiento y mantener un historial prescriptivo**. | Gestión de Recetas y Tratamientos                    |
-| EP-07  | Funcional                      | Como **paciente**, quiero **emparejar y sincronizar mis dispositivos IoT** para **registrar automáticamente biomarcadores en mi historial clínico**. | Monitoreo IoT y Registro de Datos                    |
-| EP-08  | Funcional / Seguridad         | Como **sistema clínico**, quiero **detectar anomalías y enviar alertas (con geolocalización con consentimiento)** para **activar respuestas rápidas ante eventos críticos**. | Alertas, Geolocalización y Respuesta                 |
-| EP-09  | No funcional / Seguridad      | Como **administrador del sistema**, quiero **garantizar cifrado, control de accesos y logs de auditoría** para **proteger la confidencialidad y cumplir normativas**. | Privacidad, Seguridad y Cumplimiento                 |
-| EP-10  | No funcional / Rendimiento    | Como **usuario**, quiero **tiempos de respuesta y escalabilidad garantizados** para **tener una experiencia fluida incluso con uso concurrente**. | Escalabilidad y Rendimiento                          |
-| EP-11  | Funcional / Analítica         | Como **neurólogo**, quiero **recibir análisis e informes generados por IA** para **identificar patrones, priorizar pacientes y apoyar decisiones clínicas**. | Analítica con IA y Dashboard Clínico                 |
-| EP-12  | Funcional / UX                | Como **usuario (paciente o profesional)**, quiero **personalizar accesibilidad y apariencia de la interfaz** para **adaptarla a mis preferencias y necesidades**. | Usabilidad, Personalización y Accesibilidad          |
+| Epic ID | Tipo                         | Descripción (Como / quiero / para)                                                                                      | Nombre de la épica                                   |
+|---------|------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| EP-01   | Funcional                    | Como **usuario (paciente o neurólogo)**, quiero **registrarme e iniciar sesión de forma segura** para **acceder a mi cuenta y servicios personalizados**. | Autenticación y Gestión de Cuentas                   |
+| EP-02   | Funcional                    | Como **profesional o paciente**, quiero **editar y consultar mi perfil clínico y datos personales** para **mantener información actualizada y útil en la atención**. | Gestión de Perfiles Médicos y Datos                  |
+| EP-03   | Funcional                    | Como **paciente o neurólogo**, quiero **gestionar citas y disponibilidad** para **programar, confirmar y recibir recordatorios de consultas**. | Gestión de Citas y Agenda Médica                     |
+| EP-04   | Funcional                    | Como **paciente**, quiero **iniciar videollamadas one-click con mi neurólogo** para **realizar teleconsultas y seguimiento remoto**. | Videollamadas y Teleconsulta                         |
+| EP-05   | Funcional                    | Como **paciente**, quiero **enviar y recibir mensajes seguros con mi neurólogo** para **aclarar dudas y comunicar síntomas entre consultas**. | Comunicación por Chat Seguro                         |
+| EP-06   | Funcional                    | Como **neurólogo**, quiero **emitir y enviar recetas electrónicas** para **facilitar la adherencia al tratamiento y mantener un historial prescriptivo**. | Gestión de Recetas y Tratamientos                    |
+| EP-07   | Funcional                    | Como **paciente**, quiero **emparejar y sincronizar mis dispositivos IoT** para **registrar automáticamente biomarcadores en mi historial clínico**. | Monitoreo IoT y Registro de Datos                    |
+| EP-08   | Funcional / Seguridad        | Como **sistema clínico**, quiero **detectar anomalías y enviar alertas (con geolocalización con consentimiento)** para **activar respuestas rápidas ante eventos críticos**. | Alertas, Geolocalización y Respuesta                 |
+| EP-09   | No funcional / Seguridad     | Como **administrador del sistema**, quiero **garantizar cifrado, control de accesos y logs de auditoría** para **proteger la confidencialidad y cumplir normativas**. | Privacidad, Seguridad y Cumplimiento                 |
+| EP-10   | No funcional / Rendimiento   | Como **usuario**, quiero **tiempos de respuesta y escalabilidad garantizados** para **tener una experiencia fluida incluso con uso concurrente**. | Escalabilidad y Rendimiento                          |
+| EP-11   | Funcional / Analítica        | Como **neurólogo**, quiero **recibir análisis e informes generados por IA** para **identificar patrones, priorizar pacientes y apoyar decisiones clínicas**. | Analítica con IA y Dashboard Clínico                 |
+| EP-12   | Funcional / UX               | Como **usuario (paciente o profesional)**, quiero **personalizar accesibilidad y apariencia de la interfaz** para **adaptarla a mis preferencias y necesidades**. | Usabilidad, Personalización y Accesibilidad          |
+| EP-21   | Funcional / Contenido        | Como **visitante**, quiero **encontrar información clara y convincente en la landing (hero, how-it-works, features y sección About)** para **comprender la propuesta de valor y decidir registrarme o contactar**. | Landing — Contenido y CTA principal                  |
+| EP-22   | Funcional / UI               | Como **usuario en distintos dispositivos**, quiero **una navegación responsiva y un layout adaptable** para **acceder fácilmente a secciones clave desde desktop y móvil**. | Navegación y Responsive                              |
+| EP-23   | Funcional / Conversión       | Como **visitante o responsable comercial**, quiero **canales de contacto y medición (formulario, footer, tracking)** para **comunicarme con el equipo y medir conversiones**. | Contacto, Footer y Analytics                         |
+| EP-24   | No funcional / Técnica       | Como **usuario y SEO manager**, quiero **que la landing cargue rápido y tenga meta tags configurados** para **mejorar UX y visibilidad en motores de búsqueda**. | Performance, SEO y Optimización                      |
+| EP-25   | Funcional / Contenido        | Como **equipo de marketing**, quiero **un CMS que permita editar contenidos de la landing sin despliegues** para **iterar mensajes, imágenes y CTAs con rapidez**. | CMS y Gestión de Contenido                           |
+| EP-26   | No funcional / Legal & UX    | Como **usuario**, quiero **controles de privacidad y accesibilidad (cookies, política, WCAG)** para **tener control sobre mis datos y asegurar acceso básico**. | Privacidad (Cookies) y Accesibilidad                 |
+
 
 
 Listas de historias de usuario
@@ -241,6 +248,188 @@ Listas de historias de usuario
       </td>
       <td>EP-07</td>
     </tr>
+    <tr>
+  <td>US21</td>
+  <td>Navegación responsiva</td>
+  <td>Como <strong>visitante</strong> en desktop o móvil, quiero una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones (How it works, About, Contact).</td>
+  <td>
+    <strong>Escenario A (desktop):</strong><br>
+    Given usuario en desktop, When ve la cabecera, Then muestra links horizontales y botón destacado de Contact.<br><br>
+    <strong>Escenario B (móvil):</strong><br>
+    Given usuario en móvil, When pulsa el icono hamburguesa, Then se abre menú vertical con enlaces a secciones y CTA visible.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US22</td>
+  <td>Sección “How it works” con pasos</td>
+  <td>Como <strong>visitante</strong>, quiero ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.</td>
+  <td>
+    <strong>Escenario A (contenido visible):</strong><br>
+    Given landing cargada, When se desplaza a How it works, Then muestra los 3 pasos con título, descripción e imagen.<br><br>
+    <strong>Escenario B (accesibilidad):</strong><br>
+    Given lector de pantalla activo, When navega la sección, Then los pasos tienen texto alternativo y semántica para ser leídos correctamente.
+  </td>
+  <td style="text-align:center;">2</td>
+</tr>
+
+<tr>
+  <td>US23</td>
+  <td>Bloque de Features / Cards</td>
+  <td>Como <strong>visitante</strong>, quiero ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio.</td>
+  <td>
+    <strong>Escenario A (hover/acción):</strong><br>
+    Given usuario en desktop, When pone cursor sobre card, Then la card muestra efecto y enlace "Try" o "Más info".<br><br>
+    <strong>Escenario B (clic en card):</strong><br>
+    Given usuario hace clic en una card, When confirma la acción, Then lo redirige a la sección interna o abre modal con detalles.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US24</td>
+  <td>Sección About / Who we are</td>
+  <td>Como <strong>visitante</strong>, quiero leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.</td>
+  <td>
+    <strong>Escenario A (texto visible):</strong><br>
+    Given landing cargada, When se desplaza a About, Then el contenido muestra título, párrafos e imágenes correctamente alineados.<br><br>
+    <strong>Escenario B (descarga/print):</strong><br>
+    Given un usuario desea guardar info, When imprime o guarda página, Then la sección About se muestra de forma adecuada en impresión/PDF.
+  </td>
+  <td style="text-align:center;">2</td>
+</tr>
+
+<tr>
+  <td>US25</td>
+  <td>Beneficios y “Good for business”</td>
+  <td>Como <strong>decisor institucional</strong>, quiero ver beneficios clínicos y comerciales para evaluar el caso de negocio.</td>
+  <td>
+    <strong>Escenario A (listado):</strong><br>
+    Given landing cargada, When llega a Benefits, Then muestra bullets de beneficios para pacientes y empresas.<br><br>
+    <strong>Escenario B (cta institucional):</strong><br>
+    Given interesado, When pulsa CTA de contacto al final de la sección, Then envía pre-fill indicando interés institucional al formulario.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US26</td>
+  <td>Formulario de contacto validado</td>
+  <td>Como <strong>visitante</strong>, quiero completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.</td>
+  <td>
+    <strong>Escenario A (envío válido):</strong><br>
+    Given usuario completa campos obligatorios con formato correcto, When envía formulario, Then se muestra confirmación y correo al equipo se crea/toma en CRM.<br><br>
+    <strong>Escenario B (errores de validación):</strong><br>
+    Given campo email inválido o campo obligatorio vacío, When intenta enviar, Then se muestran errores y no se envía el formulario.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US27</td>
+  <td>Footer con enlaces y redes sociales</td>
+  <td>Como <strong>visitante</strong>, quiero ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.</td>
+  <td>
+    <strong>Escenario A (enlaces funcionan):</strong><br>
+    Given landing cargada, When hace clic en un enlace de política o social, Then se abre la página correspondiente o red social en nueva pestaña.<br><br>
+    <strong>Escenario B (accesibilidad footer):</strong><br>
+    Given navegación por teclado, When tabula hasta footer, Then los enlaces son accesibles y visibles.
+  </td>
+  <td style="text-align:center;">1</td>
+</tr>
+
+<tr>
+  <td>US28</td>
+  <td>Responsive layout y comportamiento mobile</td>
+  <td>Como <strong>usuario móvil</strong>, quiero que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.</td>
+  <td>
+    <strong>Escenario A (pantallas pequeñas):</strong><br>
+    Given viewport &lt; 768px, When carga la página, Then el diseño se reorganiza (columnas → stack), texto se redimensiona y CTAs siguen visibles.<br><br>
+    <strong>Escenario B (pruebas tablet):</strong><br>
+    Given tablet, When gira pantalla, Then elementos no se solapan y navegación funciona.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US29</td>
+  <td>Performance y optimización de imágenes</td>
+  <td>Como <strong>usuario</strong>, quiero que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.</td>
+  <td>
+    <strong>Escenario A (carga inicial):</strong><br>
+    Given visita primero, When carga la landing, Then el LCP se carga &lt; 2.5s (imágenes optimizadas y lazy load en secciones bajas).<br><br>
+    <strong>Escenario B (navegación):</strong><br>
+    Given navegación a secciones, When se desplaza, Then imágenes se muestran sin salto de layout (CLS controlado).
+  </td>
+  <td style="text-align:center;">5</td>
+</tr>
+
+<tr>
+  <td>US30</td>
+  <td>SEO básico y meta tags</td>
+  <td>Como <strong>equipo de marketing</strong>, quiero meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.</td>
+  <td>
+    <strong>Escenario A (meta tags):</strong><br>
+    Given HTML entregado, When inspecciona head, Then meta title, description y OG tags están presentes y relevantes.<br><br>
+    <strong>Escenario B (prueba social share):</strong><br>
+    Given URL compartida en redes, When se genera el preview, Then muestra título, descripción e imagen correcta.
+  </td>
+  <td style="text-align:center;">2</td>
+</tr>
+
+<tr>
+  <td>US31</td>
+  <td>Cookie consent y política de privacidad</td>
+  <td>Como <strong>visitante</strong>, quiero aceptar/ rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.</td>
+  <td>
+    <strong>Escenario A (mostrar consentimiento):</strong><br>
+    Given primera visita, When carga la página, Then se muestra banner de cookies con opciones Aceptar/Rechazar y enlace a política.<br><br>
+    <strong>Escenario B (rechazo):</strong><br>
+    Given usuario rechaza cookies, When navega, Then cookies no esenciales quedan deshabilitadas y no se ejecutan trackers.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
+<tr>
+  <td>US32</td>
+  <td>Tracking de eventos y analytics</td>
+  <td>Como <strong>product owner</strong>, quiero trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.</td>
+  <td>
+    <strong>Escenario A (evento CTA):</strong><br>
+    Given visitante hace clic en CTA Try, When ocurre el clic, Then se registra evento en analytics (label + page) y se verifica en dashboard.<br><br>
+    <strong>Escenario B (form submit):</strong><br>
+    Given formulario enviado con éxito, When se confirma envío, Then se dispara evento de conversión con atributos (source/utm).
+  </td>
+  <td style="text-align:center;">2</td>
+</tr>
+
+<tr>
+  <td>US33</td>
+  <td>Contenidos editables (CMS)</td>
+  <td>Como <strong>marketing</strong>, quiero poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.</td>
+  <td>
+    <strong>Escenario A (editar hero):</strong><br>
+    Given acceso al CMS con permisos, When actualiza título/subtítulo/imagen y publica, Then la landing muestra los cambios inmediatamente.<br><br>
+    <strong>Escenario B (rollback):</strong><br>
+    Given se publica contenido erróneo, When se solicita rollback, Then se restaura versión anterior desde el CMS.
+  </td>
+  <td style="text-align:center;">5</td>
+</tr>
+
+<tr>
+  <td>US34</td>
+  <td>Accesibilidad (WCAG 2.1 básico)</td>
+  <td>Como <strong>usuario con necesidades de accesibilidad</strong>, quiero que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).</td>
+  <td>
+    <strong>Escenario A (contraste):</strong><br>
+    Given elementos visuales, When se evalúa contraste, Then colores cumplen ratio mínimo WCAG AA para texto principal.<br><br>
+    <strong>Escenario B (navegación por teclado):</strong><br>
+    Given navegación sin mouse, When tabula por la página, Then todos los CTAs y links son alcanzables y el foco es visible.
+  </td>
+  <td style="text-align:center;">3</td>
+</tr>
+
   </tbody>
 </table>
 
@@ -321,8 +510,10 @@ Las relaciones entre *Goals–Impacts–Deliverables–User Stories* garantizan 
 
 ## 3.3. Product Backlog.
 
+# 🧩 Plataforma AuraNeuro
+
 | Order | User Story Id | Título                            | Descripción (Como... deseo... para...)                                                                                                 | Story Points (1 / 2 / 3 / 5 / 8) |
-|-------|---------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+|-------:|:-------------:|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------:|
 | 1     | US01          | Inicio de sesión                  | Como usuario (paciente o neurólogo) deseo iniciar sesión con mis credenciales para acceder de forma segura a mi panel personal.         | 2                                |
 | 2     | US02          | Registro de paciente              | Como paciente deseo registrarme con mis datos personales para crear una cuenta y acceder a los servicios de atención remota.            | 3                                |
 | 3     | US03          | Registro de neurólogo             | Como neurólogo deseo registrarme aportando credenciales profesionales para ofrecer consultas remotas y ser verificado por el sistema.   | 3                                |
@@ -343,3 +534,52 @@ Las relaciones entre *Goals–Impacts–Deliverables–User Stories* garantizan 
 | 18    | US18          | Analítica de salud con IA         | Como neurólogo deseo que la plataforma analice datos con IA para sugerir patrones o riesgos que apoyen la toma de decisiones.             | 8                                |
 | 19    | US19          | Recordatorios de citas            | Como paciente deseo recibir recordatorios automáticos (email/push) sobre mis próximas citas para asegurar mi asistencia.                 | 2                                |
 | 20    | US20          | Personalización de la interfaz    | Como usuario deseo personalizar la UI (tema, tamaño de fuente) para adaptar la plataforma a mis preferencias y necesidades de accesibilidad. | 2                             |
+| 21    | US21          | Hero con CTA principal            | Como visitante deseo ver un hero claro con título, subtítulo y CTA (Try / Contact) para entender la propuesta y poder actuar rápido.     | 2                                |
+| 22    | US22          | Navegación responsiva             | Como visitante en desktop o móvil deseo una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones clave.        | 3                                |
+| 23    | US23          | Sección “How it works” con pasos  | Como visitante deseo ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.            | 2                                |
+| 24    | US24          | Bloque de Features / Cards        | Como visitante deseo ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio.     | 3                                |
+| 25    | US25          | Sección About / Who we are        | Como visitante deseo leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.                  | 2                                |
+| 26    | US26          | Beneficios y “Good for business”  | Como decisor institucional deseo ver beneficios clínicos y comerciales para evaluar el caso de negocio.                                  | 3                                |
+| 27    | US27          | Formulario de contacto validado   | Como visitante deseo completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.               | 3                                |
+| 28    | US28          | Footer con enlaces y redes sociales | Como visitante deseo ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.                             | 1                                |
+| 29    | US29          | Responsive layout y comportamiento mobile | Como usuario móvil deseo que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.               | 3                                |
+| 30    | US30          | Performance y optimización de imágenes | Como usuario deseo que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.                  | 5                                |
+| 31    | US31          | SEO básico y meta tags            | Como equipo de marketing deseo meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.        | 2                                |
+| 32    | US32          | Cookie consent y política de privacidad | Como visitante deseo aceptar/rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.       | 3                                |
+| 33    | US33          | Tracking de eventos y analytics   | Como product owner deseo trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.        | 2                                |
+| 34    | US34          | Contenidos editables (CMS)        | Como marketing deseo poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.                  | 5                                |
+| 35    | US35          | Accesibilidad (WCAG 2.1 básico)   | Como usuario con necesidades de accesibilidad deseo que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).           | 3                                |
+
+---
+
+## Épicas principales
+
+- Épica 1: **Gestión de usuarios y autenticación**
+  - Registro de paciente y neurólogo (US02, US03)  
+  - Inicio de sesión (US01)  
+  - Gestión de perfil (US04)
+
+- Épica 2: **Atención remota y citas médicas**
+  - Agenda y solicitud de citas (US05, US06, US07, US19)  
+  - Videollamada médica (US08)  
+- Chat paciente-neurólogo (US11)
+
+- Épica 3: **Gestión clínica e IoT**
+  - Recetas electrónicas (US09, US10)  
+  - Integración IoT y alertas automáticas (US13, US14)  
+  - Analítica con IA (US18)
+
+- Épica 4: **Seguridad, rendimiento y cumplimiento**
+  - Seguridad y privacidad (US15, US17)  
+  - Rendimiento (US16, US30)  
+  - Accesibilidad (US35)
+
+- Épica 5: **Landing Page informativa y marketing**
+  - Hero, navegación y secciones informativas (US21–US26)  
+  - Formulario de contacto (US27)  
+  - Footer y redes (US28)  
+  - SEO, analytics y CMS (US31–US34)
+
+---
+
+
