@@ -429,7 +429,106 @@ Listas de historias de usuario
   </td>
   <td style="text-align:center;">3</td>
 </tr>
-
+<tr>
+      <td>US-35</td>
+      <td>Autenticación por número de celular</td>
+      <td>Como usuario (paciente o neurólogo) quiero poder registrarme e iniciar sesión usando mi número de celular para acceder de forma rápida y sin contraseña.</td>
+      <td>
+        <strong>Escenario A (login con teléfono existente):</strong><br>
+        Given que el usuario introduce un número de celular registrado y solicita código OTP. <br>
+        When recibe e ingresa el OTP correcto dentro del periodo de validez. <br>
+        Then el sistema autentica al usuario y lo redirige a su panel.<br><br>
+        <strong>Escenario B (registro con teléfono nuevo):</strong><br>
+        Given que el número no está registrado en la plataforma. <br>
+        When el usuario inicia el flujo de registro introduciendo el número y verifica con OTP. <br>
+        Then el sistema crea la cuenta (o completa el registro) tras la verificación y solicita datos faltantes si procede.<br><br>
+        <strong>Escenario C (número inválido o formato incorrecto):</strong><br>
+        Given que el usuario introduce un número en formato inválido. <br>
+        When intenta continuar. <br>
+        Then el sistema muestra un error de formato y no envía OTP.
+      </td>
+      <td>EP-01</td>
+    </tr>
+    <tr>
+      <td>US-36</td>
+      <td>Verificación de número de celular (OTP)</td>
+      <td>Como usuario quiero verificar mi número de celular mediante un código OTP para confirmar la titularidad y asegurar la autenticación basada en SMS.</td>
+      <td>
+        <strong>Escenario A (OTP correcto y válido):</strong><br>
+        Given que el sistema envió un OTP al número proporcionado y este no ha expirado. <br>
+        When el usuario ingresa el OTP correcto. <br>
+        Then la verificación se completa, el número queda confirmado y se permite continuar (login o registro).<br><br>
+        <strong>Escenario B (OTP incorrecto / reintento):</strong><br>
+        Given que el usuario ingresa un OTP incorrecto. <br>
+        When lo ingresa nuevamente (hasta límite permitido). <br>
+        Then el sistema muestra error, decrementa contador de intentos y permite reintentar hasta el límite; al agotarlo bloquea temporalmente el envío.<br><br>
+        <strong>Escenario C (OTP expirado / reenvío):</strong><br>
+        Given que el OTP expiró antes de ser usado. <br>
+        When el usuario solicita reenvío. <br>
+        Then el sistema genera un nuevo OTP y lo envía, registrando timestamp y limitando reenvíos según política.
+      </td>
+      <td>EP-01</td>
+    </tr>
+    <tr>
+      <td>US-37</td>
+      <td>Inicio de sesión con Google (OAuth)</td>
+      <td>Como usuario quiero poder autenticarme con mi cuenta de Google para agilizar el acceso y evitar recordar contraseñas.</td>
+      <td>
+        <strong>Escenario A (primer login con Google - creación de cuenta):</strong><br>
+        Given que el usuario elige “Iniciar con Google” y autoriza los permisos básicos (email, nombre). <br>
+        When la plataforma recibe el token y verifica el email. <br>
+        Then se crea (o completa) una cuenta vinculada a ese email y el usuario queda autenticado; se solicita completar datos faltantes si los hubiera.<br><br>
+        <strong>Escenario B (Google email ya asociado a cuenta existente):</strong><br>
+        Given que el email de Google ya existe en la plataforma (registro previo). <br>
+        When el usuario intenta iniciar con Google. <br>
+        Then el sistema propone vincular la cuenta Google al usuario existente tras autenticación adicional (p. ej. ingreso por contraseña o verificación OTP) para evitar duplicados.<br><br>
+        <strong>Escenario C (usuario revoca permisos o cancela):</strong><br>
+        Given que el usuario cancela el flujo de autorización en Google. <br>
+        When retorna al sitio sin token. <br>
+        Then la plataforma muestra mensaje de cancelación y permite elegir otro método de ingreso.
+      </td>
+      <td>EP-01</td>
+    </tr>
+    <tr>
+      <td>US-38</td>
+      <td>Consentimiento para uso del número de teléfono y comunicación SMS</td>
+      <td>Como usuario quiero dar (y poder revocar) consentimiento explícito para que mi número de celular sea usado en autenticación y para recibir notificaciones/alertas por SMS, cumpliendo privacidad.</td>
+      <td>
+        <strong>Escenario A (consentimiento otorgado):</strong><br>
+        Given que el usuario marca la casilla de consentimiento durante registro o en configuración. <br>
+        When se almacena la elección con timestamp y alcance. <br>
+        Then el sistema puede enviar OTP y notificaciones por SMS según la preferencia y queda registrada la autorización.<br><br>
+        <strong>Escenario B (revocación de consentimiento):</strong><br>
+        Given que el usuario revoca el consentimiento desde su cuenta. <br>
+        When la acción es confirmada. <br>
+        Then la plataforma deja de enviar SMS no esenciales y actualiza la política de comunicación; se notifica al usuario sobre las implicancias (p. ej. perder opción de login por SMS si procede).<br><br>
+        <strong>Escenario C (consentimiento requerido y no otorgado):</strong><br>
+        Given que el usuario no otorga consentimiento. <br>
+        When intenta usar funciones que requieren SMS (OTP, alertas). <br>
+        Then el sistema bloquea esas acciones y sugiere métodos alternativos (correo, autenticación social).
+      </td>
+      <td>EP-09</td>
+    </tr>
+    <tr>
+      <td>US-39</td>
+      <td>Protección y límites en el flujo OTP (rate-limiting & fraude)</td>
+      <td>Como plataforma quiero implementar límites de envío y verificación de OTP y detección básica de fraude para prevenir abuso y proteger a los usuarios.</td>
+      <td>
+        <strong>Escenario A (limitación de envíos):</strong><br>
+        Given que se han solicitado múltiples OTP desde el mismo número/IP en un corto periodo. <br>
+        When se supera el umbral definido. <br>
+        Then el sistema bloquea temporalmente nuevos envíos y muestra mensaje de espera con tiempo estimado para reintentar.<br><br>
+        <strong>Escenario B (detección de intentos masivos de verificación):</strong><br>
+        Given múltiples intentos fallidos de ingreso de OTP desde la misma IP/número. <br>
+        When el contador excede el límite. <br>
+        Then la cuenta se bloquea temporalmente para verificación manual/recuperación segura y se registra el evento en logs de seguridad.<br><br>
+        <strong>Escenario C (registro y notificación al usuario):</strong><br>
+        Given que una cuenta sufre bloqueo por actividad sospechosa. <br>
+        When ocurre el bloqueo. <br>
+        Then el sistema notifica al propietario (por correo o SMS si permitido) e instruye los pasos a seguir para recuperar el acceso.
+      </td>
+      <td>EP-09</td>
+    </tr>
   </tbody>
 </table>
 
