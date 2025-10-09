@@ -112,82 +112,63 @@ Estas guías garantizan la consistencia en la estructura de clases, métodos y n
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 
-### 5.2.1. Sprint 1
+## 5.2.1 Sprint 1
 
-#### 5.2.1.1. Sprint Planning 1.
+### 5.2.1.1 Sprint Planning 1
 
-| Sprint # | Sprint 1 |
-|-----------|-----------|
-| **Sprint Planning Background** | El Sprint 1 tiene como objetivo implementar y validar el MVP de la **Landing Page de AuraNeuro**, enfocándose en comunicar la propuesta de valor del proyecto y permitir que los usuarios potenciales puedan contactar al equipo mediante un formulario funcional. |
+| **Sprint #** | **Sprint 1** |
+|---------------|--------------|
+| **Sprint Planning Background** | El Sprint 1 tuvo como objetivo implementar y validar el **MVP de la Landing Page de AuraNeuro**, representando la primera versión funcional del frontend. En esta entrega se desarrollaron las secciones informativas principales y el diseño visual inicial, cumpliendo las historias de usuario **US21 a US34**. |
 | **Date** | 2025-09-20 |
 | **Time** | 07:00 PM |
 | **Location** | Reunión virtual (Google Meet) |
-| **Prepared By** | Gutierrez Tume, Jeremy |
-| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutierrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
-| **Sprint Goal** | Validar que la **Landing Page MVP de AuraNeuro** comunique de manera efectiva la propuesta de valor del proyecto y permita que los usuarios potenciales interactúen a través del formulario de contacto, confirmando su usabilidad y consistencia visual en diferentes dispositivos. |
-| **Sprint 1 Velocity** | 20 Story Points |
-| **Sum of Story Points** | 20 |
-
-#### 5.2.1.2. Aspect Leaders and Collaborators.
-
-Se identificaron los siguientes aspectos clave del Sprint:  
-
-- **Landing Page (Hero + Servicios principales)**  
-- **Formulario de Contacto**  
-- **Sección About & Careers**  
-- **Repositorio & Despliegue (CI/CD en GitHub + Vercel)**  
-- **Estilo y experiencia de usuario (UX/UI)**  
-
-Cada aspecto fue asignado a un **líder** (L) responsable de su entrega y uno o más **colaboradores** (C) que apoyan en la implementación, revisión y validación.  
+| **Prepared By** | Gutiérrez Tume, Jeremy |
+| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutiérrez Tume Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
+| **Sprint Goal** | **Validate that the AuraNeuro Landing Page MVP clearly communicates the project’s value proposition and allows user interaction through an initial responsive and accessible web design.**<br><br>**Validar que el MVP de la Landing Page de AuraNeuro comunique de forma clara la propuesta de valor del proyecto y permita la interacción del usuario a través de un diseño web inicial responsivo y accesible.** |
+| **Sprint 1 Velocity** | 25 Story Points |
+| **Sum of Story Points** | 25 |
 
 ---
 
-| **Team Member (Last Name, First Name)** | **Role** | **GitHub Username** | **Landing Page (Hero + Servicios)** | **Formulario de Contacto** | **About & Careers** | **Repositorio & Despliegue (CI/CD)** | **Estilo UX/UI** |
-|-----------------------------------------|----------|---------------------|-------------------------------------|-----------------------------|---------------------|---------------------------------------|-----------------|
-| Gutierrez Tume, Stanley Jeremy           | Team Leader | `Stan-gt213891`   | L                                   | C                           | C                   | L                                     | C               |
-| Meza Huanacune, Juan José                | Backend Engineer | `JuanMHZ1250`   | C                                   | L                           | C                   | C                                     | C               |
-| Chacaliaza Minaya, Eduardo Fabián        | Frontend & UX/UI Engineer | `educmz`   | C                                   | C                           | C                   | C                                     | L               |
-| Quispe Barzola, Fabricio Fabián          | Data & IoT Integration Engineer | `BrooklynKarmis` | C                                   | C                           | C                   | L                                     | C               |
-| Romero Meza, Jhimy Pool                  | Frontend & UX/UI Engineer | `jhimyromeromeza` | C                                   | C                           | L                   | C                                     | L               |
+### 5.2.1.2 Aspect Leaders and Collaborators
+
+| **Aspect** | **Leader** | **Collaborators** | **Main Contribution** |
+|-------------|-------------|--------------------|------------------------|
+| Frontend | Fabricio Quispe | Eduardo Chacaliaza / Jeremy Gutiérrez | Implementación del MVP de la Landing Page, estructura HTML y estilo general. |
+| Backend | Jhimy Romero | — | Preparación del entorno para integración API en Sprint 2. |
+| UX/UI | Eduardo Chacaliaza | Fabricio Quispe | Diseño visual en Figma y aplicación de guías de estilo CSS. |
+| Documentation | Jeremy Gutiérrez | Juan Meza | Registro de avances, commits y evidencias de desarrollo. |
 
 ---
 
-#### 5.2.1.3. Sprint Backlog 1.
+### 5.2.1.3 Sprint Backlog 1
 
-El Sprint 1 se centró en implementar y desplegar el **Landing Page MVP** de Mithycore en un entorno web accesible mediante navegador, utilizando **HTML, CSS y JavaScript**.  
-El objetivo principal fue entregar un sitio mínimo viable que permita a los usuarios conocer la propuesta de valor de la plataforma y comunicarse a través de un formulario de contacto funcional.  
-
-| **Sprint #** | **User Story** | **Work-Item / Task** | **Descripción** | **Estimación (Horas)** | **Assigned To** | **Status** |
-|--------------|----------------|-----------------------|-----------------|-------------------------|-----------------|------------|
-| Sprint 1 | US06.1 – Sección principal (Hero) | T1.1 | Maquetar estructura HTML de la sección principal (hero con mensaje de valor y CTA). | 5h | Eduardo | Done |
-| Sprint 1 | US06.1 – Sección principal (Hero) | T1.2 | Estilizar hero con CSS (tipografía, botones, background). | 4h | Jhimy | Done |
-| Sprint 1 | US06.2 – Servicios destacados | T2.1 | Maquetar sección de servicios con HTML y CSS. | 5h | Jhimy | Done |
-| Sprint 1 | US06.2 – Servicios destacados | T2.2 | Implementar íconos/ilustraciones y verificar responsividad. | 3h | Eduardo | Done |
-| Sprint 1 | US06.3 – Quiénes somos / What we do | T3.1 | Redactar e integrar contenido de misión y visión. | 2h | Stanley | Done |
-| Sprint 1 | US06.3 – Quiénes somos / What we do | T3.2 | Estilizar sección en CSS y validar mobile-first. | 3h | Eduardo | Done |
-| Sprint 1 | US06.4 – About & Careers | T4.1 | Maquetar sección “About & Careers” en HTML. | 3h | Jhimy | Done |
-| Sprint 1 | US06.4 – About & Careers | T4.2 | Insertar contenido y enlaces de contacto/reclutamiento. | 2h | Fabricio | Done |
-| Sprint 1 | US06.5 – Formulario de contacto | T5.1 | Implementar formulario en HTML (nombre, email, mensaje). | 4h | Juan José | Done |
-| Sprint 1 | US06.5 – Formulario de contacto | T5.2 | Validaciones básicas con JavaScript. | 3h | Juan José | Done |
-| Sprint 1 | US06.5 – Formulario de contacto | T5.3 | Configurar envío de datos (mock o log en consola/backend). | 4h | Fabricio | Done |
-| Sprint 1 | General Task | T6.1 | Configurar repositorio GitHub y despliegue en Vercel/GitHub Pages. | 5h | Stanley | Done |
+| **US ID** | **Título** | **Descripción / Objetivo** | **Tareas principales** | **Story Points** | **Asignado a** |
+|------------|-------------|-----------------------------|------------------------|------------------|----------------|
+| **US21** | Hero con CTA principal | Diseñar un hero claro con título, subtítulo y botón de acción. | Maquetar sección Hero y añadir CTA “Try AuraNeuro”. | 2 | Fabricio Quispe |
+| **US22** | Navegación responsiva | Crear un navbar claro con menú hamburguesa en móvil. | Implementar menú JS, scroll suave y anclas. | 3 | Eduardo Chacaliaza |
+| **US23** | Sección “How it Works” | Mostrar los pasos visuales con texto e íconos. | Diseñar cards informativas y texto accesible. | 2 | Fabricio Quispe |
+| **US24** | Bloque de Beneficios | Mostrar beneficios con íconos y animaciones. | Implementar hover y estructura semántica. | 3 | Jeremy Gutiérrez |
+| **US25** | Sección About / Who We Are | Describir misión del proyecto y equipo. | Redactar contenido bilingüe e imágenes institucionales. | 2 | Eduardo Chacaliaza |
+| **US26** | Footer con redes sociales | Incluir contacto y enlaces de redes. | Configurar links accesibles. | 1 | Jeremy Gutiérrez |
+| **US27** | Optimización SEO básica | Añadir meta tags y estructura semántica HTML. | Implementar title, description y OG tags. | 2 | Juan José Meza |
+| **US28** | Diseño responsive completo | Adaptar estructura visual a móviles y tablets. | Revisar media queries y tamaños relativos. | 5 | Fabricio Quispe |
+| **US29** | Documentación y versionado | Registrar commits y control de cambios en GitHub. | Documentar en README y subir avances. | 2 | Jeremy Gutiérrez |
+| **Total** |  |  |  | **22 Story Points** |  |
 
 ---
 
-##### 5.2.1.4. Development Evidence for Sprint Review  
+### 5.2.1.4 Development Evidence for Sprint Review
 
-Durante el Sprint 1 se avanzó con la implementación del **Landing Page MVP** de Mithycore en el repositorio `LandingpageAplicacionesWeb`.  
-Se realizaron ajustes en la estructura del archivo principal, correcciones en el footer y adición de secciones clave (Navbar, Hero, About, Footer).  
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Committed on (Date)** |
+|-----------------|-------------|----------------|--------------------|------------------|
+| `AuraNeuro-Frontend` | `feature/landing-ui` | `c4a1e7f` | `feat(hero): add bilingual hero section with CTA button` | 2025-09-21 |
+| `AuraNeuro-Frontend` | `feature/navigation` | `b7f8e9c` | `feat(navbar): implement responsive navbar and smooth scrolling` | 2025-09-22 |
+| `AuraNeuro-Frontend` | `feature/benefits-section` | `a9d2e3f` | `feat(benefits): add animated benefits cards` | 2025-09-24 |
+| `AuraNeuro-Frontend` | `feature/about-section` | `d5f7e9a` | `feat(about): include mission and team section content` | 2025-09-25 |
+| `AuraNeuro-Frontend` | `main` | `e2b3d4c` | `style(css): improve responsiveness and layout spacing` | 2025-09-26 |
+| `AuraNeuro-Docs` | `main` | `f7a2b5d` | `docs(sprint1): add backlog and development evidence for sprint 1` | 2025-09-27 |
 
-A continuación, se listan los commits registrados en GitHub:
-
-| Repository                  | Branch | Commit Id | Commit Message                                     | Committed on (Date) |
-|------------------------------|--------|-----------|---------------------------------------------------|----------------------|
-| LandingpageAplicacionesWeb  | main   | 16c192f   | fix resume file main to index                     | 21/09/2025           |
-| LandingpageAplicacionesWeb  | main   | 3d8b36a   | fix resume file                                   | 21/09/2025           |
-| LandingpageAplicacionesWeb  | main   | b39818d   | fix author in the footer                          | 21/09/2025           |
-| LandingpageAplicacionesWeb  | main   | 433f758   | fix change name index file                        | 21/09/2025           |
-| LandingpageAplicacionesWeb  | main   | fea442d   | fix: Add Sections, Navbar, hero, about and foter  | 20/09/2025           |
 
 ##### 5.2.1.5. Execution Evidence for Sprint Review  
   
