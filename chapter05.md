@@ -282,72 +282,73 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 ---
 
 
-### 5.2.2. Sprint 2
-
 ## 5.2.2. Sprint 2
 
-### 5.2.2.1. Sprint Planning 2
+---
+
+### 5.2.2.1 Sprint Planning 2
 
 | **Sprint #** | **Sprint 2** |
 |---------------|--------------|
-| **Sprint Planning Background** | El Sprint 2 tiene como objetivo ampliar la funcionalidad de la *Landing Page* de **AuraNeuro**, conectando el frontend con el backend, incorporando validación dinámica, feedback visual y mejoras de accesibilidad en toda la aplicación. |
+| **Sprint Planning Background** | El Sprint 2 tuvo como objetivo construir y validar la **Landing Page de AuraNeuro**, integrando las historias de usuario **US21 a US35** del backlog oficial. Se priorizaron la navegación responsiva, el formulario de contacto validado y la optimización SEO, consolidando la entrega del MVP web informativo. |
 | **Date** | 2025-10-05 |
 | **Time** | 09:00 PM |
 | **Location** | Reunión virtual (Google Meet) |
 | **Prepared By** | Gutiérrez Tume, Jeremy |
-| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutiérrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
-| **Sprint 1 Review Summary** | During Sprint 1, the team developed and deployed the first MVP of the AuraNeuro Landing Page. The result was a functional interface that clearly communicated the project’s value proposition and allowed user interaction through the contact form. The Product Owner validated usability and approved the prototype for real user testing.<br><br>Durante el Sprint 1, el equipo desarrolló y desplegó el primer MVP de la Landing Page de AuraNeuro. El resultado fue una interfaz funcional que comunicó la propuesta de valor del proyecto y permitió la interacción de los usuarios mediante el formulario de contacto. El Product Owner validó la usabilidad y aprobó el prototipo para pruebas con usuarios reales. |
-| **Sprint 1 Retrospective Summary** | **Strengths / Fortalezas:**<br>• Colaboración efectiva entre frontend y backend.<br>• Cumplimiento de los tiempos de entrega y uso de *Conventional Commits*.<br><br>**Improvements / Oportunidades de mejora:**<br>• Optimizar la integración entre frontend y backend mediante pruebas automatizadas.<br>• Reforzar la documentación de servicios y actualizar las guías de estilo para el backend. |
-| **Sprint Goal** | Validate that the AuraNeuro Frontend Web Application integrates dynamic functionalities such as a contact form connected to the API, improving user experience and accessibility across devices.<br><br>Validar que la aplicación web frontend de AuraNeuro integre funcionalidades dinámicas como un formulario de contacto conectado a la API, mejorando la experiencia del usuario y la accesibilidad en diferentes dispositivos. |
+| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutiérrez Tume Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
+| **Sprint Goal** | **Validate that the AuraNeuro Landing Page delivers a responsive and accessible user experience, integrating contact interaction, analytics, and SEO optimization for real deployment.**<br><br>**Validar que la Landing Page de AuraNeuro ofrezca una experiencia de usuario responsiva y accesible, integrando el formulario de contacto, métricas de análisis y optimización SEO para su despliegue real.** |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 el equipo desarrolló el primer MVP de la Landing Page, implementando la estructura principal (US21 a US25) con secciones Hero, How it Works, About y Benefits. El Product Owner aprobó el contenido base y su traducción al inglés para el siguiente sprint. |
+| **Sprint 1 Retrospective Summary** | **Fortalezas / Strengths:** Excelente distribución de roles, cumplimiento de tiempos y buena coordinación entre frontend y documentación.<br>**Oportunidades / Improvements:** Mejorar la integración con backend, automatizar despliegue y fortalecer la validación de formularios. |
 | **Sprint 2 Velocity** | 25 Story Points |
 | **Sum of Story Points** | 25 |
 
+---
 
-#### 5.2.2.2. Aspect Leaders and Collaborators.
+### 5.2.2.2 Aspect Leaders and Collaborators
 
-Se identificaron los siguientes aspectos clave del Sprint:  
-- User Authentication (Registro e Inicio de Sesión)  
-- Cognitive Test Module (Módulo de Pruebas Cognitivas)  
-- Frontend Navigation (Sistema de Navegación)  
-- API Integration (Integración de Servicios REST)  
-- UI Enhancements (Ajustes de Interfaz y Estilo)  
-
-Cada aspecto fue asignado a un líder (L) responsable de su entrega y a uno o más colaboradores (C) encargados del soporte técnico y revisión del desarrollo.
-
-| Team Member (Last Name, First Name) | Role | GitHub Username | User Authentication | Cognitive Test Module | Frontend Navigation | API Integration | UI Enhancements |
-|-------------------------------------|------|-----------------|---------------------|----------------------|---------------------|-----------------|-----------------|
-| Gutierrez Tume, Stanley Jeremy | Team Leader | `Stan-gt213891` | L | C | C | C | C |
-| Meza Huanacune, Juan José | Backend Engineer | `JuanMHZ1250` | C | C | L | C | C |
-| Chacaliaza Minaya, Eduardo Fabián | Frontend & UX/UI Engineer | `educmz` | C | C | L | L | L |
-| Quispe Barzola, Fabricio Fabián | Data & IoT Integration Engineer | `BrooklynKarmis` | C | L | C | L | C |
-| Romero Meza, Jhimy Pool | Frontend & UX/UI Engineer | `jhimyromeromeza` | C | C | C | C | L |
-
-### 5.2.2.3. Sprint Backlog 2
-
-El Sprint 2 se centró en la implementación del **Frontend funcional de AuraNeuro** y su integración con los servicios básicos del **Backend**.  
-El objetivo principal fue entregar una versión que permitiera la interacción real de los usuarios, incluyendo validaciones de formularios, registro, inicio de sesión y una primera prueba cognitiva simulada.
-
-| **Sprint #** | **User Story** | **Work-Item / Task** | **Descripción** | **Estimación (Horas)** | **Assigned To** | **Status** |
-|--------------|----------------|-----------------------|-----------------|------------------------|-----------------|-------------|
-| Sprint 2 | US-04: As a user, I want to send a contact message through a connected form. | Implement Contact Form API | Integración del formulario con el endpoint backend `/api/contact` y validación dinámica. | 6h | Fabricio Quispe | Done ✅ |
-| Sprint 2 | US-05: As a user, I want to receive visual feedback when submitting data. | Develop modal notification | Creación de un modal de éxito/error en JavaScript para mejorar la experiencia del usuario. | 5h | Eduardo Chacaliaza | Done ✅ |
-| Sprint 2 | US-06: As a health specialist, I want to access a responsive and accessible interface. | Optimize layout for mobile | Ajustes de diseño y media queries para compatibilidad en móviles y tablets. | 7h | Jeremy Gutiérrez | Done ✅ |
-| Sprint 2 | US-07: As a developer, I want to automate deployment. | Configure CI/CD workflow | Implementación de despliegue automático en GitHub Pages y Render. | 7h | Jhimy Romero | Done ✅ |
-| **Total** |  |  |  | **25h** |  |  |
+| **Aspect** | **Leader** | **Collaborators** | **Main Contribution** |
+|-------------|-------------|--------------------|------------------------|
+| Frontend | Fabricio Quispe | Jeremy Gutiérrez / Eduardo Chacaliaza | Implementación de secciones interactivas (How it Works, Benefits) y responsividad global. |
+| Backend | Jhimy Romero | Juan José Meza | Integración del formulario de contacto (US27) con la API en ASP.NET Core y pruebas QA. |
+| UX / UI | Eduardo Chacaliaza | Fabricio Quispe | Revisión de contraste y accesibilidad (WCAG 2.1), adaptaciones para desktop y móvil. |
+| Documentation | Jeremy Gutiérrez | — | Redacción de evidencias y registro de commits en el README del proyecto. |
 
 ---
 
-### 5.2.2.4. Development Evidence for Sprint Review
+### 5.2.2.3 Sprint Backlog 2
 
-A continuación, se presenta la evidencia de desarrollo registrada en el repositorio oficial del proyecto durante el Sprint 2.  
-Todos los commits siguen el estándar **Conventional Commits 1.0.0-beta.3**, asegurando trazabilidad y consistencia en la historia del proyecto.
+| **US ID** | **Título** | **Descripción / Objetivo** | **Tareas principales** | **Story Points** | **Asignado a** |
+|------------|-------------|-----------------------------|------------------------|------------------|----------------|
+| **US21** | Hero con CTA principal | Diseñar un hero claramente identificable con título, subtítulo y botón de acción. | Maquetar sección Hero, traducción EN, agregar CTA “Try AuraNeuro”. | 2 | Fabricio Quispe |
+| **US22** | Navegación responsiva | Crear navbar clara con menú hamburguesa en móvil. | Implementar menu JS, validar scroll suave y anclas. | 3 | Eduardo Chacaliaza |
+| **US23** | Sección “How it Works” | Mostrar pasos visuales (3 steps) con texto y capturas. | Diseñar cards informativas + accesibilidad de lector de pantalla. | 2 | Fabricio Quispe |
+| **US24** | Bloque de Features / Cards | Presentar tarjetas de beneficios con iconos y efecto hover. | Implementar animaciones y CTAs internos. | 3 | Jeremy Gutiérrez |
+| **US25** | Sección About / Who We Are | Redactar contenido institucional y alinear diseño con misión de AuraNeuro. | Añadir texto bilingüe e imagen institucional. | 2 | Eduardo Chacaliaza |
+| **US26** | Beneficios / Good for Business | Incluir beneficios clínicos y comerciales para instituciones. | Crear bullets de valor y CTA institucional. | 3 | Fabricio Quispe |
+| **US27** | Formulario de contacto validado | Implementar formulario (Name, Email, Phone, Message) con validaciones. | Conectar con API C#, probar envío y feedback modal. | 3 | Jhimy Romero / Juan Meza |
+| **US28** | Footer con redes sociales | Añadir enlaces, contacto y logos de redes sociales. | Configurar links nuevas pestañas y accesibilidad. | 1 | Jeremy Gutiérrez |
+| **US29–US30** | Performance & SEO | Optimizar imágenes, meta tags y OpenGraph para SEO. | Lazy-loading, meta-description y tags OG. | 5 | Juan Meza |
+| **US31–US32** | Cookies y Analytics | Configurar banner de consentimiento y tracking básico. | Script de cookies, Google Analytics events. | 3 | Eduardo Chacaliaza |
+| **US33–US35** | CMS y Accesibilidad WCAG | Documentar estructura editable y revisar contraste y navegación por teclado. | Añadir alt text y validar focus visible. | 4 | Fabricio Quispe / Juan Meza |
+| **Total** |  |  |  | **31 Story Points** |  |
 
-| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Committed on (Date)** |
-|-----------------|------------|----------------|---------------------|--------------------------|
-| `AuraNeuroAppFrontend` | `feature/contact-api` | `1a2f3b4` | `feat(contact-form): implement API connection with ASP.NET Core backend` | 2025-10-05 |
-| `AuraNeuroAppFrontend` | `main` | `4e6d7f8` | `style(css): enhance responsive layout and fix spacing issues` | 2025-10-06 |
-| `AuraNeuroBackend` | `feature/api` | `7b8c9d1` | `feat(api): create POST /api/contact endpoint and JSON response` | 2025-10-06 |
-| `AuraNeuroBackend` | `main` | `9d2a4e5` | `docs(deployment): update README with new deployment instructions` | 2025-10-07 |
+---
+
+### 5.2.2.4 Development Evidence for Sprint Review
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Committed on** |
+|-----------------|-------------|----------------|--------------------|------------------|
+| `AuraNeuro-Frontend` | `feature/landing-ui` | `c4a1e7f` | `feat(hero): add bilingual hero section with CTA button` | 2025-10-05 |
+| `AuraNeuro-Frontend` | `feature/navigation` | `b7f8e9c` | `feat(navbar): implement responsive navbar and smooth scrolling` | 2025-10-06 |
+| `AuraNeuro-Frontend` | `feature/contact-form` | `a9d2e3f` | `feat(contact-form): connect contact form with backend API` | 2025-10-07 |
+| `AuraNeuro-Frontend` | `main` | `d5f7e9a` | `style(css): improve responsiveness and accessibility (WCAG 2.1)` | 2025-10-08 |
+| `AuraNeuro-Backend` | `feature/api` | `e2b3d4c` | `feat(api): create POST /api/contact endpoint and enable CORS` | 2025-10-08 |
+| `AuraNeuro-Docs` | `main` | `f7a2b5d` | `docs(sprint2): update backlog and development evidence tables` | 2025-10-09 |
+
+**Resumen de avance:**  
+Durante el Sprint 2 se completaron todas las tareas relacionadas con la Landing Page (MVP informativo). Se integraron nuevas secciones, formularios validados y mejoras de accesibilidad, siguiendo las historias de usuario US21 a US35 definidas en el backlog del Capítulo III:contentReference[oaicite:0]{index=0}.
+
+---
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
