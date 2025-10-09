@@ -284,10 +284,23 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 
 ### 5.2.2. Sprint 2
 
-#### 5.2.2.1. Sprint Planning 2.
+## 5.2.2. Sprint 2
 
-| Sprint # | Sprint 2 |
-|-----------|-----------|
+### 5.2.2.1. Sprint Planning 2
+
+| **Sprint #** | **Sprint 2** |
+|---------------|--------------|
+| **Sprint Planning Background** | El Sprint 2 tiene como objetivo ampliar la funcionalidad de la *Landing Page* de **AuraNeuro**, conectando el frontend con el backend, incorporando validación dinámica, feedback visual y mejoras de accesibilidad en toda la aplicación. |
+| **Date** | 2025-10-05 |
+| **Time** | 09:00 PM |
+| **Location** | Reunión virtual (Google Meet) |
+| **Prepared By** | Gutiérrez Tume, Jeremy |
+| **Attendees (to planning meeting)** | Eduardo Fabián Chacaliaza Minaya / Romero Meza Jhimy Pool / Gutiérrez Tume, Jeremy / Fabricio Fabián Quispe Barzola / Juan José Meza Huanacune |
+| **Sprint 1 Review Summary** | During Sprint 1, the team developed and deployed the first MVP of the AuraNeuro Landing Page. The result was a functional interface that clearly communicated the project’s value proposition and allowed user interaction through the contact form. The Product Owner validated usability and approved the prototype for real user testing.<br><br>Durante el Sprint 1, el equipo desarrolló y desplegó el primer MVP de la Landing Page de AuraNeuro. El resultado fue una interfaz funcional que comunicó la propuesta de valor del proyecto y permitió la interacción de los usuarios mediante el formulario de contacto. El Product Owner validó la usabilidad y aprobó el prototipo para pruebas con usuarios reales. |
+| **Sprint 1 Retrospective Summary** | **Strengths / Fortalezas:**<br>• Colaboración efectiva entre frontend y backend.<br>• Cumplimiento de los tiempos de entrega y uso de *Conventional Commits*.<br><br>**Improvements / Oportunidades de mejora:**<br>• Optimizar la integración entre frontend y backend mediante pruebas automatizadas.<br>• Reforzar la documentación de servicios y actualizar las guías de estilo para el backend. |
+| **Sprint Goal** | Validate that the AuraNeuro Frontend Web Application integrates dynamic functionalities such as a contact form connected to the API, improving user experience and accessibility across devices.<br><br>Validar que la aplicación web frontend de AuraNeuro integre funcionalidades dinámicas como un formulario de contacto conectado a la API, mejorando la experiencia del usuario y la accesibilidad en diferentes dispositivos. |
+| **Sprint 2 Velocity** | 25 Story Points |
+| **Sum of Story Points** | 25 |
 
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
