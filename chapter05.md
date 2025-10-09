@@ -311,7 +311,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 | Frontend | Fabricio Quispe | Jeremy Gutiérrez / Eduardo Chacaliaza | Implementación de secciones interactivas (How it Works, Benefits) y responsividad global. |
 | Backend | Jhimy Romero | Juan José Meza | Integración del formulario de contacto (US27) con la API en ASP.NET Core y pruebas QA. |
 | UX / UI | Eduardo Chacaliaza | Fabricio Quispe | Revisión de contraste y accesibilidad (WCAG 2.1), adaptaciones para desktop y móvil. |
-| Documentation | Jeremy Gutiérrez | — | Redacción de evidencias y registro de commits en el README del proyecto. |
+| Documentation | Jeremy Gutiérrez | Jeremy Gutiérrez/Juan José Meza| Redacción de evidencias y registro de commits en el README del proyecto. |
 
 ---
 
@@ -398,12 +398,4 @@ Durante el Sprint 2, el equipo trabajó de manera colaborativa en la implementac
 - Comunicación: reuniones semanales de seguimiento y coordinación técnica.  
 - Colaboración técnica: uso del repositorio central para control de versiones y trazabilidad de cambios.
   
-## 5.3. Validation Interviews.
 
-### 5.3.1. Diseño de Entrevistas.
-
-### 5.3.2. Registro de Entrevistas.
-
-### 5.3.3. Evaluaciones según heurísticas
-
-## 5.4. Video About-the-Product.
