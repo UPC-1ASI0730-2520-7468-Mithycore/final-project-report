@@ -610,76 +610,51 @@ Las relaciones entre *Goals–Impacts–Deliverables–User Stories* garantizan 
 
 ## 3.3. Product Backlog.
 
-# 🧩 Plataforma AuraNeuro
+#  Plataforma AuraNeuro
 
-| Order | User Story Id | Título                            | Descripción (Como... deseo... para...)                                                                                                 | Story Points (1 / 2 / 3 / 5 / 8) |
-|-------:|:-------------:|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------:|
-| 1     | US01          | Inicio de sesión                  | Como usuario (paciente o neurólogo) deseo iniciar sesión con mis credenciales para acceder de forma segura a mi panel personal.         | 2                                |
-| 2     | US02          | Registro de paciente              | Como paciente deseo registrarme con mis datos personales para crear una cuenta y acceder a los servicios de atención remota.            | 3                                |
-| 3     | US03          | Registro de neurólogo             | Como neurólogo deseo registrarme aportando credenciales profesionales para ofrecer consultas remotas y ser verificado por el sistema.   | 3                                |
-| 4     | US04          | Gestión de perfil                 | Como usuario deseo actualizar mi perfil (foto, contacto, datos) para mantener mi información clínica y de contacto actualizada.         | 2                                |
-| 5     | US05          | Ver agenda de citas               | Como paciente deseo ver mi agenda de citas para conocer fechas, horas y el neurólogo asignado.                                         | 2                                |
-| 6     | US06          | Solicitar nueva cita              | Como paciente deseo solicitar una nueva cita eligiendo fecha/hora disponible para programar atención remota.                            | 3                                |
-| 7     | US07          | Definir disponibilidad horaria    | Como neurólogo deseo configurar mis franjas horarias disponibles para que los pacientes puedan solicitar citas en esos periodos.         | 3                                |
-| 8     | US08          | Consulta por videollamada         | Como paciente deseo iniciar la videollamada con mi neurólogo en la hora acordada para realizar la consulta remota en tiempo real.        | 8                                |
-| 9     | US09          | Emitir receta médica electrónica  | Como neurólogo deseo generar y enviar recetas electrónicas al paciente para que pueda adquirir los medicamentos prescritos.              | 5                                |
-| 10    | US10          | Consultar recetas médicas         | Como paciente deseo acceder a mi historial de recetas para ver, descargar o imprimir las prescripciones recibidas.                       | 2                                |
-| 11    | US11          | Chat con el neurólogo             | Como paciente deseo comunicarme por chat con mi neurólogo para aclarar dudas y reportar síntomas entre consultas.                       | 5                                |
-| 12    | US12          | Visualizar ubicación del paciente | Como neurólogo deseo ver la ubicación aproximada del paciente (con permiso) para tener contexto en caso de emergencia.                   | 3                                |
-| 13    | US13          | Integrar dispositivo IoT médico   | Como paciente deseo emparejar mi dispositivo IoT para que los datos biométricos se registren automáticamente en mi historial clínico.   | 8                                |
-| 14    | US14          | Alertas automáticas de salud      | Como paciente (y neurólogo) deseo recibir alertas automáticas cuando los datos IoT indiquen valores críticos para actuar oportunamente. | 8                                |
-| 15    | US15          | Seguridad y encriptación          | Como plataforma deseo implementar HTTPS/ TLS y cifrado en reposo para proteger los datos médicos frente a accesos no autorizados.        | 5                                |
-| 16    | US16          | Rendimiento de la plataforma      | Como usuario deseo que las páginas críticas carguen rápido (ej. < 2s) para una experiencia fluida y eficiente.                          | 3                                |
-| 17    | US17          | Privacidad de datos               | Como usuario deseo que mis datos se manejen conforme a normativas (consentimientos, anonimización, borrado) para proteger mi privacidad. | 5                                |
-| 18    | US18          | Analítica de salud con IA         | Como neurólogo deseo que la plataforma analice datos con IA para sugerir patrones o riesgos que apoyen la toma de decisiones.             | 8                                |
-| 19    | US19          | Recordatorios de citas            | Como paciente deseo recibir recordatorios automáticos (email/push) sobre mis próximas citas para asegurar mi asistencia.                 | 2                                |
-| 20    | US20          | Personalización de la interfaz    | Como usuario deseo personalizar la UI (tema, tamaño de fuente) para adaptar la plataforma a mis preferencias y necesidades de accesibilidad. | 2                             |
-| 21    | US21          | Hero con CTA principal            | Como visitante deseo ver un hero claro con título, subtítulo y CTA (Try / Contact) para entender la propuesta y poder actuar rápido.     | 2                                |
-| 22    | US22          | Navegación responsiva             | Como visitante en desktop o móvil deseo una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones clave.        | 3                                |
-| 23    | US23          | Sección “How it works” con pasos  | Como visitante deseo ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.            | 2                                |
-| 24    | US24          | Bloque de Features / Cards        | Como visitante deseo ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio.     | 3                                |
-| 25    | US25          | Sección About / Who we are        | Como visitante deseo leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.                  | 2                                |
-| 26    | US26          | Beneficios y “Good for business”  | Como decisor institucional deseo ver beneficios clínicos y comerciales para evaluar el caso de negocio.                                  | 3                                |
-| 27    | US27          | Formulario de contacto validado   | Como visitante deseo completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.               | 3                                |
-| 28    | US28          | Footer con enlaces y redes sociales | Como visitante deseo ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.                             | 1                                |
-| 29    | US29          | Responsive layout y comportamiento mobile | Como usuario móvil deseo que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.               | 3                                |
-| 30    | US30          | Performance y optimización de imágenes | Como usuario deseo que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.                  | 5                                |
-| 31    | US31          | SEO básico y meta tags            | Como equipo de marketing deseo meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.        | 2                                |
-| 32    | US32          | Cookie consent y política de privacidad | Como visitante deseo aceptar/rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.       | 3                                |
-| 33    | US33          | Tracking de eventos y analytics   | Como product owner deseo trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.        | 2                                |
-| 34    | US34          | Contenidos editables (CMS)        | Como marketing deseo poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.                  | 5                                |
-| 35    | US35          | Accesibilidad (WCAG 2.1 básico)   | Como usuario con necesidades de accesibilidad deseo que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).           | 3                                |
+# Product Backlog - AuraNeuro (US01–US39)
 
----
+| Order | User Story Id | Título                            | Descripción (Como / deseo / para)                                                                                                 | Story Points (1 / 2 / 3 / 5 / 8) |
+|------:|:--------------:|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------:|
+| 1     | US01           | Inicio de sesión                  | Como usuario (paciente o neurólogo) deseo iniciar sesión con mis credenciales para acceder de forma segura a mi panel personal.    | 2                                 |
+| 2     | US02           | Registro de paciente              | Como paciente deseo registrarme con mis datos personales para crear una cuenta y acceder a los servicios de atención remota.       | 3                                 |
+| 3     | US03           | Registro de neurólogo             | Como neurólogo deseo registrarme aportando credenciales profesionales para ofrecer consultas remotas y ser verificado por el sistema. | 3                               |
+| 4     | US04           | Gestión de perfil                 | Como usuario deseo actualizar mi perfil (foto, contacto, datos) para mantener mi información clínica y de contacto actualizada.    | 2                                 |
+| 5     | US05           | Ver agenda de citas               | Como paciente deseo ver mi agenda de citas para conocer fechas, horas y el neurólogo asignado.                                     | 2                                 |
+| 6     | US06           | Solicitar nueva cita              | Como paciente deseo solicitar una nueva cita eligiendo fecha/hora disponible para programar atención remota.                       | 3                                 |
+| 7     | US07           | Definir disponibilidad horaria    | Como neurólogo deseo configurar mis franjas horarias disponibles para que los pacientes puedan solicitar citas en esos periodos.    | 3                                 |
+| 8     | US08           | Consulta por videollamada         | Como paciente deseo iniciar la videollamada con mi neurólogo en la hora acordada para realizar la consulta remota en tiempo real.   | 8                                 |
+| 9     | US09           | Emitir receta médica electrónica  | Como neurólogo deseo generar y enviar recetas médicas electrónicas al paciente para que pueda adquirir los medicamentos necesarios. | 5                                 |
+| 10    | US10           | Consultar recetas médicas         | Como paciente deseo acceder al historial de mis recetas médicas para visualizar y descargar las prescripciones recibidas.           | 2                                 |
+| 11    | US11           | Chat con el neurólogo             | Como paciente deseo comunicarme por chat con mi neurólogo para aclarar dudas y reportar síntomas entre consultas.                   | 5                                 |
+| 12    | US12           | Visualizar ubicación del paciente | Como neurólogo deseo ver la ubicación geográfica aproximada del paciente (con su permiso) durante la consulta para tener contexto en caso de emergencia. | 3                     |
+| 13    | US13           | Integrar dispositivo IoT médico   | Como paciente deseo conectar mi dispositivo médico IoT a la plataforma para que los datos de salud se registren automáticamente en mi historial médico. | 8                  |
+| 14    | US14           | Alertas automáticas de salud      | Como paciente (y neurólogo) deseo recibir alertas automáticas cuando los datos IoT indiquen valores críticos para actuar oportunamente. | 8                               |
+| 15    | US15           | Seguridad y encriptación          | Como plataforma deseo implementar HTTPS/TLS y cifrado en reposo para proteger los datos médicos frente a accesos no autorizados.   | 5                                 |
+| 16    | US16           | Rendimiento de la plataforma      | Como paciente o neurólogo deseo que las páginas críticas carguen rápido (ej. < 2s) para una experiencia fluida y eficiente.        | 3                                 |
+| 17    | US17           | Privacidad de datos               | Como paciente o neurólogo deseo que mis datos se manejen conforme a normativas (consentimientos, anonimización, borrado) para proteger mi privacidad. | 5                     |
+| 18    | US18           | Analítica de salud con IA         | Como neurólogo deseo que la plataforma analice datos con IA para sugerir patrones o riesgos que apoyen la toma de decisiones.      | 8                                 |
+| 19    | US19           | Recordatorios de citas            | Como paciente deseo recibir recordatorios automáticos (email/push) sobre mis próximas citas para asegurar mi asistencia.           | 2                                 |
+| 20    | US20           | Personalización de la interfaz    | Como usuario deseo personalizar la UI (tema, tamaño de fuente) para adaptar la plataforma a mis preferencias y necesidades de accesibilidad. | 2                        |
+| 21    | US21           | Hero con CTA principal            | Como visitante deseo ver un hero claro con título, subtítulo y CTA (Try / Contact) para entender la propuesta y poder actuar rápido. | 2                                |
+| 22    | US22           | Navegación responsiva             | Como visitante en desktop o móvil deseo una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones clave.  | 3                                 |
+| 23    | US23           | Sección “How it works” con pasos  | Como visitante deseo ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.     | 2                                 |
+| 24    | US24           | Bloque de Features / Cards        | Como visitante deseo ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio. | 3                                |
+| 25    | US25           | Sección About / Who we are        | Como visitante deseo leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.            | 2                                 |
+| 26    | US26           | Beneficios y “Good for business”  | Como decisor institucional deseo ver beneficios clínicos y comerciales para evaluar el caso de negocio.                             | 3                                 |
+| 27    | US27           | Formulario de contacto validado   | Como visitante deseo completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.          | 3                                 |
+| 28    | US28           | Footer con enlaces y redes sociales| Como visitante deseo ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.                         | 1                                 |
+| 29    | US29           | Responsive layout y comportamiento mobile | Como usuario móvil deseo que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.           | 3                                |
+| 30    | US30           | Performance y optimización de imágenes | Como usuario deseo que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.              | 5                                |
+| 31    | US31           | SEO básico y meta tags            | Como equipo de marketing deseo meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.   | 2                                 |
+| 32    | US32           | Cookie consent y política de privacidad | Como visitante deseo aceptar/rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.  | 3                                 |
+| 33    | US33           | Tracking de eventos y analytics   | Como product owner deseo trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.   | 2                                 |
+| 34    | US34           | Contenidos editables (CMS)        | Como marketing deseo poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.             | 5                                 |
+| 35    | US35           | Accesibilidad (WCAG 2.1 básico)   | Como usuario con necesidades de accesibilidad deseo que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).     | 3                                 |
+| 36    | US36           | Autenticación por número de celular| Como usuario (paciente o neurólogo) deseo registrarme e iniciar sesión usando mi número de celular para acceder de forma rápida sin contraseña. | 5                        |
+| 37    | US37           | Verificación de número de celular (OTP) | Como usuario deseo verificar mi número de celular mediante un código OTP para confirmar la titularidad y asegurar la autenticación basada en SMS. | 5                     |
+| 38    | US38           | Inicio de sesión con Google (OAuth)| Como usuario deseo autenticarme con mi cuenta de Google para agilizar el acceso y evitar recordar contraseñas.                      | 3                                 |
+| 39    | US39           | Protección y límites en el flujo OTP| Como plataforma deseo implementar límites de envío y verificación de OTP y detección básica de fraude para prevenir abuso y proteger a los usuarios. | 5                        |
 
-## Épicas principales
-
-- Épica 1: **Gestión de usuarios y autenticación**
-  - Registro de paciente y neurólogo (US02, US03)  
-  - Inicio de sesión (US01)  
-  - Gestión de perfil (US04)
-
-- Épica 2: **Atención remota y citas médicas**
-  - Agenda y solicitud de citas (US05, US06, US07, US19)  
-  - Videollamada médica (US08)  
-- Chat paciente-neurólogo (US11)
-
-- Épica 3: **Gestión clínica e IoT**
-  - Recetas electrónicas (US09, US10)  
-  - Integración IoT y alertas automáticas (US13, US14)  
-  - Analítica con IA (US18)
-
-- Épica 4: **Seguridad, rendimiento y cumplimiento**
-  - Seguridad y privacidad (US15, US17)  
-  - Rendimiento (US16, US30)  
-  - Accesibilidad (US35)
-
-- Épica 5: **Landing Page informativa y marketing**
-  - Hero, navegación y secciones informativas (US21–US26)  
-  - Formulario de contacto (US27)  
-  - Footer y redes (US28)  
-  - SEO, analytics y CMS (US31–US34)
-
----
 
 
