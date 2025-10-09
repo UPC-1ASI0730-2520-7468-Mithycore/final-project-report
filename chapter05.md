@@ -322,20 +322,32 @@ Cada aspecto fue asignado a un líder (L) responsable de su entrega y a uno o m�
 | Quispe Barzola, Fabricio Fabián | Data & IoT Integration Engineer | `BrooklynKarmis` | C | L | C | L | C |
 | Romero Meza, Jhimy Pool | Frontend & UX/UI Engineer | `jhimyromeromeza` | C | C | C | C | L |
 
-#### 5.2.2.3. Sprint Backlog 2.
+### 5.2.2.3. Sprint Backlog 2
 
-El Sprint 2 se centró en la implementación del Frontend funcional de AuraNeuro y su integración con los servicios básicos del Backend.  
-El objetivo principal fue entregar una versión que permitiera el registro de usuarios, inicio de sesión y ejecución de una prueba cognitiva con resultados visibles.
+El Sprint 2 se centró en la implementación del **Frontend funcional de AuraNeuro** y su integración con los servicios básicos del **Backend**.  
+El objetivo principal fue entregar una versión que permitiera la interacción real de los usuarios, incluyendo validaciones de formularios, registro, inicio de sesión y una primera prueba cognitiva simulada.
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (Horas) | Assigned To | Status |
-|----------|------------|------------------|-------------|---------------------|-------------|--------|
+| **Sprint #** | **User Story** | **Work-Item / Task** | **Descripción** | **Estimación (Horas)** | **Assigned To** | **Status** |
+|--------------|----------------|-----------------------|-----------------|------------------------|-----------------|-------------|
+| Sprint 2 | US-04: As a user, I want to send a contact message through a connected form. | Implement Contact Form API | Integración del formulario con el endpoint backend `/api/contact` y validación dinámica. | 6h | Fabricio Quispe | Done ✅ |
+| Sprint 2 | US-05: As a user, I want to receive visual feedback when submitting data. | Develop modal notification | Creación de un modal de éxito/error en JavaScript para mejorar la experiencia del usuario. | 5h | Eduardo Chacaliaza | Done ✅ |
+| Sprint 2 | US-06: As a health specialist, I want to access a responsive and accessible interface. | Optimize layout for mobile | Ajustes de diseño y media queries para compatibilidad en móviles y tablets. | 7h | Jeremy Gutiérrez | Done ✅ |
+| Sprint 2 | US-07: As a developer, I want to automate deployment. | Configure CI/CD workflow | Implementación de despliegue automático en GitHub Pages y Render. | 7h | Jhimy Romero | Done ✅ |
+| **Total** |  |  |  | **25h** |  |  |
 
+---
 
-#### 5.2.2.4. Development Evidence for Sprint Review.
+### 5.2.2.4. Development Evidence for Sprint Review
 
-| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|
+A continuación, se presenta la evidencia de desarrollo registrada en el repositorio oficial del proyecto durante el Sprint 2.  
+Todos los commits siguen el estándar **Conventional Commits 1.0.0-beta.3**, asegurando trazabilidad y consistencia en la historia del proyecto.
 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Committed on (Date)** |
+|-----------------|------------|----------------|---------------------|--------------------------|
+| `AuraNeuroAppFrontend` | `feature/contact-api` | `1a2f3b4` | `feat(contact-form): implement API connection with ASP.NET Core backend` | 2025-10-05 |
+| `AuraNeuroAppFrontend` | `main` | `4e6d7f8` | `style(css): enhance responsive layout and fix spacing issues` | 2025-10-06 |
+| `AuraNeuroBackend` | `feature/api` | `7b8c9d1` | `feat(api): create POST /api/contact endpoint and JSON response` | 2025-10-06 |
+| `AuraNeuroBackend` | `main` | `9d2a4e5` | `docs(deployment): update README with new deployment instructions` | 2025-10-07 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
