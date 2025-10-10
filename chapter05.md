@@ -1600,6 +1600,57 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   </p>
 </section>
 
-#### 5.2.2.6.Services Documentation Evidence for Sprint Review.
-#### 5.2.2.7.Software Deployment Evidence for Sprint Review.
-#### 5.2.2.8.Team Collaboration Insights during Sprint.
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+| **Endpoint** | **Método HTTP** | **Descripción** | **Ejemplo de Request** | **Ejemplo de Response** |
+|---------------|------------------|------------------|--------------------------|--------------------------|
+| `/api/auth/login` | `POST` | Permite a los usuarios iniciar sesión usando email y contraseña. | `{ "email": "user@example.com", "password": "12345" }` | `{ "token": "jwt1234", "user": { "name": "John Doe" } }` |
+| `/api/auth/register` | `POST` | Registra a un nuevo usuario en el sistema. | `{ "name": "Jane Doe", "email": "jane@example.com", "password": "abc123" }` | `{ "message": "User created successfully" }` |
+| `/api/auth/otp` | `POST` | Envía y valida el código OTP de autenticación móvil. | `{ "phone": "+51999999999", "otp": "123456" }` | `{ "status": "verified", "user": { "id": 5, "role": "patient" } }` |
+| `/api/health` | `GET` | Verifica el estado general del servidor. | — | `{ "status": "OK", "uptime": "3 days" }` |
+
+**Repositorio API:**  
+[AuraNeuro API Repository](https://github.com/UPC-1ASI0730-2520-7468-Mithycore/final-project-report)
+
+---
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+**Frontend:**  
+- **Desplegado en:** GitHub Pages / Vercel  
+- **Framework:** Vue 3 + PrimeVue  
+- **CI/CD:** GitHub Actions + Vercel  
+- **Branch principal:** `main`  
+- **Evidencias:**  
+  - Deploy automático tras merge en `main`.  
+  - Tests visuales de autenticación y validaciones mockeadas.  
+  - Entorno staging accesible con API simulada (mock server).
+
+**Backend:**  
+- **Desplegado en:** Render (entorno gratuito de staging).  
+- **Framework:** ASP.NET Core 8.0  
+- **Documentación API:** Swagger (OpenAPI v3).  
+- **CI/CD:** GitHub Actions (build + test + deploy pipeline).  
+
+---
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo trabajó de manera colaborativa en la implementación del **Frontend** y su integración con los servicios del **Backend**.  
+Se observó una mejor sincronización en las tareas y una comunicación constante entre las áreas de desarrollo, diseño y QA.
+
+**Distribución del trabajo:**
+- **Jeremy Gutiérrez (Team Leader):** coordinación general y soporte en la arquitectura de componentes, revisión de PR y CI/CD.  
+- **Juan José Meza (Backend Engineer / QA):** desarrollo y pruebas de endpoints mock (login, register, otp) y revisión de textos de privacidad.  
+- **Eduardo Chacaliaza (Frontend & UX/UI):** diseño de vistas de registro, login y dashboard, además de ajustes de accesibilidad y UX.  
+- **Fabricio Quispe (Frontend & Data Integration):** integración de la API mock, optimización de UI responsive y ajustes de rendimiento.  
+- **Jhimy Romero (Frontend Lead):** desarrollo de los flujos de autenticación, validaciones client-side y componentes Vue reutilizables.
+
+**Colaboración técnica:**
+- Uso de **Pull Requests** y revisiones cruzadas en GitHub para control de calidad de código.  
+- **Reuniones semanales** en Google Meet y coordinación técnica mediante Trello y Discord.  
+- **Repositorio centralizado** para control de versiones y trazabilidad de commits.  
+- **Registro de actividades** y evidencias en GitHub Projects y README de Sprint.  
+
+El equipo completó exitosamente la **interfaz de autenticación** con flujos funcionales simulados (login, registro, OTP, Google Sign-In), desplegada en staging y validada con usuarios de prueba.  
+La sincronización entre frontend y backend permitió un desarrollo estable y documentado según los criterios del *Project Statement ABET 2025*.
