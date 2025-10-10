@@ -916,7 +916,7 @@ Este proceso se llevó a cabo utilizando **GitHub Pages** como proveedor de host
 
 - Vista del Landing Page desplegado en navegador.
 
- ![Aura Neuro](https://raw.githubusercontent.com/UPC-1ASI0730-2520-7468-Mithycore/project-report/main/img/AURANEURO.png)
+ ![Aura Neuro](https://upc-1asi0730-2520-7468-mithycore.github.io/LandingPageAuraNeuro/)
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint  
 
@@ -1610,7 +1610,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 | `/api/health` | `GET` | Verifica el estado general del servidor. | — | `{ "status": "OK", "uptime": "3 days" }` |
 
 **Repositorio API:**  
-[AuraNeuro API Repository](https://github.com/UPC-1ASI0730-2520-7468-Mithycore/final-project-report)
+[AuraNeuro API Repository](https://frontend-auro-neuro-rdsn.vercel.app/#/)
 
 ---
 
