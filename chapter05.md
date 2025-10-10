@@ -1369,94 +1369,113 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   </tbody>
 </table>
 
-#### 5.2.2.5.Execution Evidence for Sprint Review.
+#### 5.2.1.5. Execution Evidence for Sprint Review.
 
-<!-- EXECUTION EVIDENCE FOR SPRINT 2 — Sprint Review (Auth UI — Frontend Vue) -->
 <section style="font-family: Arial, sans-serif; line-height:1.45;">
 
-  <!-- INTRO / RESUMEN -->
+  <!-- Introducción / Resumen -->
+  <h3 style="margin-bottom:6px;">Execution Evidence — Resumen de lo alcanzado (Sprint 1)</h3>
   <p style="margin-top:0;">
-    En el <strong>Sprint 2</strong> el equipo implementó las vistas front-end del subsistema de autenticación usando <strong>Vue</strong>.
-    Se completaron los principales flujos UI definidos en el Sprint Goal: <em>Login (email/password)</em>, <em>Registro de paciente</em>,
-    <em>Registro de neurólogo (pro)</em>, <em>Autenticación por número de celular</em> (flujo request OTP) y <em>Verificación OTP</em>,
-    además del disparador visual para <em>Google Sign-In</em>. Todo fue desarrollado con componentes reutilizables, validaciones client-side,
-    estados (loading / error / success / lockout) y mock API integration (stubs) para permitir demos en staging sin backend productivo.
+    En este Sprint se entregó el <strong>MVP de la landing page</strong> de AuraNeuro con las secciones y capacidades prioritarias
+    definidas en el Sprint Goal. Se implementaron y desplegaron en entorno de <em>staging</em> las siguientes funcionalidades clave:
+    <strong>Hero con CTA</strong>, <strong>navegación responsiva</strong>, <strong>sección "How it works"</strong>, <strong>features cards</strong>,
+    <strong>About / Benefits</strong>, <strong>formulario de contacto validado</strong> y <strong>footer</strong>. Además se aplicaron optimizaciones
+    básicas de performance (imágenes WebP / lazy-loading), se añadieron meta tags / OG tags para SEO y se configuró el pipeline de despliegue
+    automático a staging. El trabajo comprometido en el Sprint fue 29 story points (US21–US31 prioritarias) y se logró la implementación funcional
+    de todas las historias seleccionadas para esta iteración.
   </p>
 
-  <p style="margin:0;">
-    <strong>Historias completadas (resumen):</strong>
-    US01 (Inicio de sesión), US02 (Registro paciente), US03 (Registro neurólogo), US36 (Autenticación por número celular UI), US37 (OTP UI), US38 (Google Sign-In UI).
-    Estas implementaciones permiten demostrar los flujos end-to-end en entorno de staging utilizando mocks/OpenAPI stubs.
+  <p>
+    <strong>Historias implementadas (resumen):</strong>
+    US21 (Hero), US22 (Nav), US23 (How it works), US24 (Features cards), US25 (About), US26 (Benefits), US27 (Contact form),
+    US28 (Footer), US29 (Responsive), US30 (Performance), US31 (SEO/meta tags).
   </p>
 
-  <!-- SCREENSHOTS GALLERY -->
+  <!-- Screenshots gallery -->
   <h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Vistas principales implementadas</h4>
 
-  <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
-    <figure style="width:320px; margin:0;">
-      <img src="imagesChapter05/login.jpg" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
+  <div style="display:flex; flex-wrap:wrap; gap:12px;">
+    <!-- Hero -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/Hero.png" alt="Hero — US21" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Login (email/password)</strong><br/>
-        Pantalla de inicio de sesión con validaciones, show/hide password y mensajes de error.
+        <strong>Hero con CTA</strong><br/>
+        (US21) — Título, subtítulo y CTA principal visibles; CTA redirige al formulario.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="imagesChapter05/register.jpg" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- Navigation -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageMovile/Hero.png" alt="Navigation — US22" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de paciente</strong><br/>
-        Formulario con password strength indicator, confirm password y consentimiento.
+        <strong>Navegación responsiva</strong><br/>
+        (US22) — Menú desktop y hamburguesa en mobile.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/register_pro_us03.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- How it works -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/HowItWorks.png" alt="How it works — US23" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de neurólogo (pro)</strong><br/>
-        Form con campo de número de licencia y estado "pendiente de verificación" (UI).
+        <strong>How it works</strong><br/>
+        (US23) — 3 pasos ilustrados con texto alternativo.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/phone_entry_us36.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- Features cards -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/CardsServices.png" alt="Features — US24" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Entrada de número (Phone Auth)</strong><br/>
-        Selector de prefijo, input masked y consentimiento para SMS; transición al OTP.
+        <strong>Features / Cards</strong><br/>
+        (US24) — Iconos SVG integrados y CTA en cada tarjeta.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/otp_us37.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- About -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/AboutPacient.png" alt="About — US25" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Verificación OTP</strong><br/>
-        Segment inputs, contador (timer), resend disabled y UI de intentos/lockout (mock).
+        <strong>About / Who we are</strong><br/>
+        (US25) — Misión, visión e imágenes alineadas.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/google_oauth_us38.png" alt="Google Sign-In — US38" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- Benefits -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/Benefits.png" alt="Benefits — US26" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Google Sign-In (UI)</strong><br/>
-        Botón de Google y flujo mock de callback con estados de éxito/fallo.
+        <strong>Benefits / Good for business</strong><br/>
+        (US26) — Bullets para pacientes y decisores.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/components_library.png" alt="Component library" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- Contact form -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/Contact.png" alt="Contact form — US27" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Biblioteca de componentes (Vue)</strong><br/>
-        BaseInput, BaseButton, BaseModal y patterns reutilizables usados por las vistas.
+        <strong>Formulario de contacto</strong><br/>
+        (US27) — Validaciones client-side y confirmación visual.
       </figcaption>
     </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/staging_mock.png" alt="Staging demo" style="width:100%; border:1px solid #ddd; display:block;" />
+    <!-- Footer -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageDesktop/Footer.png" alt="Footer — US28" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
-        <strong>Staging (mock server)</strong><br/>
-        Ejemplo de la app desplegada en staging consumiendo mocks/OpenAPI stubs.
+        <strong>Footer</strong><br/>
+        (US28) — Enlaces legales y redes sociales.
       </figcaption>
     </figure>
-  </div>
-
-  <!-- VIDEO DEMO -->
-  <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
+    <!-- Mobile responsive -->
+    <figure style="width:320px; margin:0; font-size:0.9em;">
+      <img src="./imagesChapter04/MockupsLandingPageMovile/Navbar.png" alt="Mobile view — US29" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Mobile view</strong><br/>
+        (US29) — Ejemplo de reflow / breakpoints.
+      </figcaption>
+    </figure>
+     <h4 style="margin-top:18px; margin-bottom:6px;">Video de demostración / walkthrough</h4>
+  <p style="margin-top:0; color:#555;">
+    Se incluye un video corto que muestra la navegación y las interacciones clave del MVP. 
+  </p>
   <p style="margin:8px 0;">
     <strong>Link al video:</strong>
-    <a href="[https://example.com/auth-ui-walkthrough-sprint2](https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing)" target="_blank" rel="noopener">https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing</a>
+    <a href="https://drive.google.com/file/d/1DO8FUsUeIa6yMUwamc1Imro7JsFA-P_B/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1DO8FUsUeIa6yMUwamc1Imro7JsFA-P_B/view?usp=sharing</a>
   </p>
+
 </section>
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
