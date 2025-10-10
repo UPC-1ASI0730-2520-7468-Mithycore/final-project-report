@@ -865,8 +865,8 @@ El alcance de la iteración incluye la implementación front-end responsiva, la 
     Se incluye un video corto que muestra la navegación y las interacciones clave del MVP. 
   </p>
   <p style="margin:8px 0;">
-    <strong>Link al video (placeholder):</strong>
-    <a href="https://example.com/landing-walkthrough" target="_blank" rel="noopener">https://example.com/landing-walkthrough</a>
+    <strong>Link al video:</strong>
+    <a href="https://drive.google.com/file/d/1DO8FUsUeIa6yMUwamc1Imro7JsFA-P_B/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1DO8FUsUeIa6yMUwamc1Imro7JsFA-P_B/view?usp=sharing</a>
   </p>
 
 </section>
