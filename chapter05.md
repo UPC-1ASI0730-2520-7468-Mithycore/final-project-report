@@ -1533,18 +1533,18 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   <!-- SCREENSHOTS GALLERY -->
   <h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Vistas principales implementadas</h4>
 
-  <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/login_us01.png" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Login (email/password)</strong><br/>
-        Pantalla de inicio de sesión con validaciones, show/hide password y mensajes de error.
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/register_patient_us02.png" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de paciente</strong><br/>
+
+<p align="center">
+  <img src="./imagesChapter05/login.jpeg" alt="Pantalla de Login" width="420">
+  <br>
+  <em>Figura 1. Pantalla de inicio de sesión</em>
+</p>
+
+<p align="center">
+  <img src="./imagesChapter05/register.jpeg" alt="Pantalla de Registro" width="420">
+  <br>
+  <em>Figura 2. Pantalla de registro de usuario</em>
+</p>Registro de paciente</strong><br/>
         Formulario con password strength indicator, confirm password y consentimiento.
       </figcaption>
     </figure>
