@@ -385,7 +385,7 @@ El alcance de la iteración incluye la implementación front-end responsiva, la 
     <img src="./imagesChapter05/sprint-backlog1.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
     <p style="margin:6px 0 0 0;">
       <strong>URL del Board:</strong>
-      <a href="https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1" target="_blank" rel="noopener">https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1</a>
+      <a href="https://trello.com/invite/b/68e8592120ae5b781c165835/ATTIc1385aeb0b3d5ea0b1fb310577f51f37B5D52B13/sprint-backlog-1" target="_blank" rel="noopener">https://trello.com/invite/b/68e8592120ae5b781c165835/ATTIc1385aeb0b3d5ea0b1fb310577f51f37B5D52B13/sprint-backlog-1</a>
     </p>
   </div>
 </section>
@@ -1263,7 +1263,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
     <img src="./imagesChapter05/sprint-backlog2.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
     <p style="margin:6px 0 0 0;">
       <strong>URL del Board:</strong>
-      <a href="https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1" target="_blank" rel="noopener">https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1</a>
+      <a href="https://trello.com/invite/b/68e862cd5ff8049fdbaff83d/ATTI66d206e520486448f87c4cd3f2afad94F9CCD5AF/sprint-backlog-2" target="_blank" rel="noopener">https://trello.com/invite/b/68e862cd5ff8049fdbaff83d/ATTI66d206e520486448f87c4cd3f2afad94F9CCD5AF/sprint-backlog-2</a>
     </p>
   </div>
 </section>
@@ -1455,7 +1455,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
   <p style="margin:8px 0;">
     <strong>Link al video:</strong>
-    <a href="https://example.com/auth-ui-walkthrough-sprint2" target="_blank" rel="noopener">https://example.com/auth-ui-walkthrough-sprint2</a>
+    <a href="[https://example.com/auth-ui-walkthrough-sprint2](https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing)" target="_blank" rel="noopener">https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing</a>
   </p>
 </section>
 
