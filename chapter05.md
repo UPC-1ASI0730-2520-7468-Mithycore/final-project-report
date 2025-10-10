@@ -914,7 +914,7 @@ Este proceso se llevó a cabo utilizando **GitHub Pages** como proveedor de host
 
 - Vista del Landing Page desplegado en navegador.
 
- ![Aura Neuro](https://upc-1asi0730-2520-7468-mithycore.github.io/LandingPageAuraNeuro/)
+ [Aura Neuro](https://upc-1asi0730-2520-7468-mithycore.github.io/LandingPageAuraNeuro/)
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint  
 
@@ -1249,7 +1249,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 
 <!-- SPRINT BACKLOG - SPRINT 2 (Frontend) -->
 <section>
-  <h2>Sprint Backlog — Sprint 2 (Landing Page)</h2>
+  <h2>Sprint Backlog — Sprint 2</h2>
   <p>
     Nuestro foco está en entregar la implementación frontend completa y accesible de los flujos de autenticación (vistas de login, registro paciente y neurólogo, entrada por número de celular + OTP y botón de Google Sign-In) como componentes Vue listos para integración con mocks/OpenAPI.  
     Creemos que esto entregará una experiencia de onboarding más rápida y confiable para pacientes y neurólogos, reduciendo la fricción de registro e inicio de sesión y permitiendo validar los flujos claves de acceso antes de integrar el backend.
@@ -1405,7 +1405,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
       </figcaption>
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/register_pro_us03.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
+      <img src="imagesChapter05/pro.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
         <strong>Registro de neurólogo (pro)</strong><br/>
         Form con campo de número de licencia y estado "pendiente de verificación" (UI).
@@ -1426,7 +1426,7 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
       </figcaption>
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/google_oauth_us38.png" alt="Google Sign-In — US38" style="width:100%; border:1px solid #ddd; display:block;" />
+      <img src="imagesChapter05/us38.png" alt="Google Sign-In — US38" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
         <strong>Google Sign-In (UI)</strong><br/>
         Botón de Google y flujo mock de callback con estados de éxito/fallo.
@@ -1440,7 +1440,8 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
       </figcaption>
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/staging_mock.png" alt="Staging demo" style="width:100%; border:1px solid #ddd; display:block;" />
+      <img src="imagesChapter05/mock1.png" alt="Staging demo" style="width:100%; border:1px solid #ddd; display:block;" />
+      <img src="imagesChapter05/mock2.png" alt="Staging demo 2" style="width:100%; border:1px solid #ddd; display:block;" />
       <figcaption style="padding:6px 0 0 0;">
         <strong>Staging (mock server)</strong><br/>
         Ejemplo de la app desplegada en staging consumiendo mocks/OpenAPI stubs.
