@@ -43,26 +43,22 @@
       <td>0.1.0</td>
       <td>2025-09-13</td>
       <td>
-        - Romero Meza jhimy Pool 
-        <br/> 
-        - Meza Huanacune, Juan José  
-         <br/> 
-        - Gutierrez Tume, Stanley Jeremy 
-          <br/>   
-        - Chacaliaza Minaya, Eduardo Fabián  
-          <br/>  
+        - Romero Meza, Jhimy Pool<br/> 
+        - Meza Huanacune, Juan José<br/> 
+        - Gutierrez Tume, Stanley Jeremy<br/>   
+        - Chacaliaza Minaya, Eduardo Fabián<br/>  
         - Quispe Barzola, Fabricio Fabián  
       </td>
       <td>
-        - Carátula <br/>
+        - Carátula<br/>
         - Registro de Versiones del Informe<br/>
         - Project Report Collaboration Insights<br/>
         - Contenido<br/>
         - Student Outcome<br/>
         - Capítulo I: Introducción<br/>
         - Capítulo II: Requirements Elicitation & Analysis.<br/>
-        - Capítulo III: Requirements Specification.
-        - Capítulo IV: Product Design.
+        - Capítulo III: Requirements Specification.<br/>
+        - Capítulo IV: Product Design.<br/>
         - Capítulo V: Product Implementation, Validation & Deployment.<br/>
         - 5.1. Software Configuration Management.<br/>
         - 5.1.1. Software Development Environment Configuration.<br/>
@@ -72,7 +68,7 @@
         - 5.2. Landing Page, Services & Applications Implementation.<br/>
         - 5.2.1. Sprint 1<br/>
         - 5.2.1.1. Sprint Planning 1.<br/>
-        - 5.2.1.2. Aspect Leaders and Collaborators.
+        - 5.2.1.2. Aspect Leaders and Collaborators.<br/>
         - 5.2.1.3. Sprint Backlog 1.<br/>
         - 5.2.1.4. Development Evidence for Sprint Review.<br/>
         - 5.2.1.5. Execution Evidence for Sprint Review.<br/>
@@ -84,8 +80,31 @@
         - Anexos<br/>
       </td>
     </tr>
+    <tr>
+      <td>0.1.1</td>
+      <td>2025-10-10</td>
+      <td>
+        - Romero Meza, Jhimy Pool<br/>
+        - Meza Huanacune, Juan José<br/>
+        - Gutierrez Tume, Stanley Jeremy<br/>
+        - Chacaliaza Minaya, Eduardo Fabián<br/>
+        - Quispe Barzola, Fabricio Fabián
+      </td>
+      <td>
+        - 5.2.2. Sprint 2<br/>
+        - 5.2.2.1. Sprint Planning 2.<br/>
+        - 5.2.2.2. Aspect Leaders and Collaborators.<br/>
+        - 5.2.2.3. Sprint Backlog 2.<br/>
+        - 5.2.2.4. Development Evidence for Sprint Review.<br/>
+        - 5.2.2.5. Execution Evidence for Sprint Review.<br/>
+        - 5.2.2.6. Services Documentation Evidence for Sprint Review.<br/>
+        - 5.2.2.7. Software Deployment Evidence for Sprint Review.<br/>
+        - 5.2.2.8. Team Collaboration Insights during Sprint.<br/>
+      </td>
+    </tr>
   </tbody>
 </table>
+
 
 ---
 
