@@ -1369,147 +1369,6 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   </tbody>
 </table>
 
-#### 5.2.2.4.Development Evidence for Sprint Review.
-
-<!-- DEVELOPMENT EVIDENCE FOR SPRINT 2 — Sprint 2 (Auth UI, Frontend - Vue) -->
-<section style="font-family: Arial, sans-serif; line-height:1.45;">
-
-  <!-- INTRO -->
-  <p>
-    Durante el <strong>Sprint 2</strong> el equipo se enfocó en la implementación frontend de los flujos de autenticación
-    (Login, Registro paciente, Registro neurólogo, Autenticación por número + OTP y disparador visual para Google Sign-In) utilizando
-    <strong>Vue</strong>. Se desarrollaron componentes reutilizables, vistas completas con validaciones client-side, manejo de estados (loading / error / success)
-    y se integraron mocks/OpenAPI stubs para simular las respuestas del backend durante la demo en staging. A continuación se lista evidencia
-    de desarrollo —commits relevantes por repositorio— que documentan los cambios realizados en el sprint.
-  </p>
-
-  <!-- COMMITS TABLE -->
-  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif; margin-top:12px;">
-    <caption style="text-align:left; font-weight:bold; padding:6px 0;">Commits relacionados con Sprint 2 (Auth UI - Frontend)</caption>
-    <thead style="background:#f2f2f2;">
-      <tr>
-        <th style="width:18%;">Repository</th>
-        <th style="width:14%;">Branch</th>
-        <th style="width:12%;">Commit Id</th>
-        <th style="width:16%;">Commit Message</th>
-        <th style="width:28%;">Commit Message Body</th>
-        <th style="width:12%;">Committed on (Date)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/login-ui-vue</code></td>
-        <td><code>1a9b3c4</code></td>
-        <td>feat(login): add login view and form component</td>
-        <td>
-          Adds <code>&lt;LoginForm/&gt;</code> Vue component with email/password fields, show/hide password toggle and basic client-side validation.
-          Includes unit tests for validation rules and initial styles following design tokens.
-        </td>
-        <td style="text-align:center;">2025-10-24</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/register-patient-vue</code></td>
-        <td><code>2f4d7e9</code></td>
-        <td>feat(register): patient registration view & password strength</td>
-        <td>
-          Implements patient registration screen with password strength meter, confirm password validation and terms consent checkbox.
-          Adds form-level error display and accessibility attributes (aria-describedby).
-        </td>
-        <td style="text-align:center;">2025-10-25</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/register-pro-vue</code></td>
-        <td><code>3c6e2b1</code></td>
-        <td>feat(register-pro): neurólogo registration placeholder + license field</td>
-        <td>
-          Adds professional registration form with fields for license number and affiliation. Includes UI for file upload placeholder
-          (no backend upload) and pending-verification state UI to reflect review process.
-        </td>
-        <td style="text-align:center;">2025-10-25</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-components</code></td>
-        <td><code>chore/component-library</code></td>
-        <td><code>4b8d9a0</code></td>
-        <td>refactor(ui): base input, button and modal components</td>
-        <td>
-          Extracts reusable <code>BaseInput</code>, <code>BaseButton</code> and <code>BaseModal</code> components to the shared component library.
-          Adds props for accessibility, loading state and error display.
-        </td>
-        <td style="text-align:center;">2025-10-26</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/phone-auth-ui</code></td>
-        <td><code>5e1f0d2</code></td>
-        <td>feat(auth): phone entry screen & mock request OTP</td>
-        <td>
-          Phone number input with country prefix selector (basic), input masking and request OTP flow calling mock endpoint.
-          Adds consent checkbox for SMS and transition to OTP screen on success.
-        </td>
-        <td style="text-align:center;">2025-10-27</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/otp-ui</code></td>
-        <td><code>6a2c7f5</code></td>
-        <td>feat(otp): otp entry UI, timer and resend handling</td>
-        <td>
-          Implements OTP input UI with segmented inputs, countdown timer, resend button disabled while timer active and visual attempt counter.
-          Includes mock lockout state and user-friendly error messages.
-        </td>
-        <td style="text-align:center;">2025-10-28</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>feature/google-oauth-ui</code></td>
-        <td><code>7d3b8e6</code></td>
-        <td>feat(auth): Google sign-in button and mocked callback</td>
-        <td>
-          Adds Google Sign-In button to auth pages and implements mocked OAuth callback handling for success/failure states.
-          Adds privacy microcopy explaining data shared by Google.
-        </td>
-        <td style="text-align:center;">2025-10-28</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-mocks</code></td>
-        <td><code>mock/auth-stubs</code></td>
-        <td><code>8c9f1d4</code></td>
-        <td>chore(mocks): add auth API stubs for login/register/otp</td>
-        <td>
-          Adds JSON stubs and a small mock server (json-server / express-mock) for /api/auth/login, /api/auth/register, /api/auth/otp endpoints.
-          Documents response formats for integration with frontend mocks.
-        </td>
-        <td style="text-align:center;">2025-10-27</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>ci/staging-deploy</code></td>
-        <td><code>9b0e4a7</code></td>
-        <td>ci: update pipeline to deploy auth UI to staging</td>
-        <td>
-          CI changes to include auth UI build and deploy to staging. Adds smoke test step to verify the login page loads and mock endpoints respond.
-        </td>
-        <td style="text-align:center;">2025-10-29</td>
-      </tr>
-      <tr>
-        <td><code>aura-neuro-frontend</code></td>
-        <td><code>docs/mock-openapi</code></td>
-        <td><code>af4d2c9</code></td>
-        <td>docs: openapi stubs for auth endpoints</td>
-        <td>
-          Adds OpenAPI (YAML) minimal spec for POST /api/auth/login, POST /api/auth/register, POST /api/auth/otp and GET /api/health.
-          Includes example requests/responses to guide backend implementation.
-        </td>
-        <td style="text-align:center;">2025-10-29</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
 #### 5.2.2.5.Execution Evidence for Sprint Review.
 
 <!-- EXECUTION EVIDENCE FOR SPRINT 2 — Sprint Review (Auth UI — Frontend Vue) -->
@@ -1533,30 +1392,64 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
   <!-- SCREENSHOTS GALLERY -->
   <h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Vistas principales implementadas</h4>
 
-
-<p align="center">
-  <img src="./imagesChapter05/login.jpeg" alt="Pantalla de inicio de sesión" width="420">
-  <br>
-  <em>Figura 1. Pantalla de inicio de sesión</em>
-</p>
-
-<p align="center">
-  <img src="./imagesChapter05/register.jpeg" alt="Pantalla de registro de usuario" width="420">
-  <br>
-  <em>Figura 2. Pantalla de registro de usuario</em>
-</p>
-
-<p align="center">
-  <img src="./imagesChapter05/cellphone-entry.jpg" alt="Pantalla de ingreso de número de teléfono" width="420">
-  <br>
-  <em>Figura 3. Pantalla de ingreso de número de teléfono</em>
-</p>
-
-<p align="center">
-  <img src="./imagesChapter05/code-entry.jpg" alt="Pantalla de verificación de código" width="420">
-  <br>
-  <em>Figura 4. Pantalla de verificación de código recibido</em>
-</p>
+  <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+    <figure style="width:320px; margin:0;">
+      <img src="imagesChapter05/login.jpg" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Login (email/password)</strong><br/>
+        Pantalla de inicio de sesión con validaciones, show/hide password y mensajes de error.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="imagesChapter05/register.jpg" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Registro de paciente</strong><br/>
+        Formulario con password strength indicator, confirm password y consentimiento.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/register_pro_us03.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Registro de neurólogo (pro)</strong><br/>
+        Form con campo de número de licencia y estado "pendiente de verificación" (UI).
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/phone_entry_us36.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Entrada de número (Phone Auth)</strong><br/>
+        Selector de prefijo, input masked y consentimiento para SMS; transición al OTP.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/otp_us37.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Verificación OTP</strong><br/>
+        Segment inputs, contador (timer), resend disabled y UI de intentos/lockout (mock).
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/google_oauth_us38.png" alt="Google Sign-In — US38" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Google Sign-In (UI)</strong><br/>
+        Botón de Google y flujo mock de callback con estados de éxito/fallo.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/components_library.png" alt="Component library" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Biblioteca de componentes (Vue)</strong><br/>
+        BaseInput, BaseButton, BaseModal y patterns reutilizables usados por las vistas.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="REPLACE_WITH_URL/staging_mock.png" alt="Staging demo" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Staging (mock server)</strong><br/>
+        Ejemplo de la app desplegada en staging consumiendo mocks/OpenAPI stubs.
+      </figcaption>
+    </figure>
+  </div>
 
   <!-- VIDEO DEMO -->
   <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
