@@ -382,7 +382,7 @@ El alcance de la iteración incluye la implementación front-end responsiva, la 
   <div style="margin:12px 0;">
     <strong>Sprint Board (tool):</strong>
     <br/>
-    <img src="./imagesChapter05/product-backlog1-trello.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
+    <img src="./imagesChapter05/sprint-backlog1.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
     <p style="margin:6px 0 0 0;">
       <strong>URL del Board:</strong>
       <a href="https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1" target="_blank" rel="noopener">https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1</a>
@@ -1191,7 +1191,7 @@ El alcance de la iteración incluye la implementación front-end responsiva, la 
   <div style="margin:12px 0;">
     <strong>Sprint Board (tool):</strong>
     <br/>
-    <img src="./imagesChapter05/product-backlog2-trello.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
+    <img src="./imagesChapter05/sprint-backlog2.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
     <p style="margin:6px 0 0 0;">
       <strong>URL del Board:</strong>
       <a href="https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1" target="_blank" rel="noopener">https://romeromezajhimy0-1760025241014.atlassian.net/jira/software/projects/SCRUM/boards/1</a>
