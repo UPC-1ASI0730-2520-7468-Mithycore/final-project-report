@@ -1535,62 +1535,28 @@ Cada integrante del equipo asumió un rol específico (frontend, backend, integr
 
 
 <p align="center">
-  <img src="./imagesChapter05/login.jpeg" alt="Pantalla de Login" width="420">
+  <img src="./imagesChapter05/login.jpeg" alt="Pantalla de inicio de sesión" width="420">
   <br>
   <em>Figura 1. Pantalla de inicio de sesión</em>
 </p>
 
 <p align="center">
-  <img src="./imagesChapter05/register.jpeg" alt="Pantalla de Registro" width="420">
+  <img src="./imagesChapter05/register.jpeg" alt="Pantalla de registro de usuario" width="420">
   <br>
   <em>Figura 2. Pantalla de registro de usuario</em>
-</p>Registro de paciente</strong><br/>
-        Formulario con password strength indicator, confirm password y consentimiento.
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/register_pro_us03.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de neurólogo (pro)</strong><br/>
-        Form con campo de número de licencia y estado "pendiente de verificación" (UI).
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/phone_entry_us36.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Entrada de número (Phone Auth)</strong><br/>
-        Selector de prefijo, input masked y consentimiento para SMS; transición al OTP.
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/otp_us37.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Verificación OTP</strong><br/>
-        Segment inputs, contador (timer), resend disabled y UI de intentos/lockout (mock).
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/google_oauth_us38.png" alt="Google Sign-In — US38" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Google Sign-In (UI)</strong><br/>
-        Botón de Google y flujo mock de callback con estados de éxito/fallo.
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/components_library.png" alt="Component library" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Biblioteca de componentes (Vue)</strong><br/>
-        BaseInput, BaseButton, BaseModal y patterns reutilizables usados por las vistas.
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="REPLACE_WITH_URL/staging_mock.png" alt="Staging demo" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Staging (mock server)</strong><br/>
-        Ejemplo de la app desplegada en staging consumiendo mocks/OpenAPI stubs.
-      </figcaption>
-    </figure>
-  </div>
+</p>
+
+<p align="center">
+  <img src="./imagesChapter05/cellphone-entry.jpg" alt="Pantalla de ingreso de número de teléfono" width="420">
+  <br>
+  <em>Figura 3. Pantalla de ingreso de número de teléfono</em>
+</p>
+
+<p align="center">
+  <img src="./imagesChapter05/code-entry.jpg" alt="Pantalla de verificación de código" width="420">
+  <br>
+  <em>Figura 4. Pantalla de verificación de código recibido</em>
+</p>
 
   <!-- VIDEO DEMO -->
   <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
