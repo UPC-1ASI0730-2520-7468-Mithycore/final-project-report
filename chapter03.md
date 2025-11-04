@@ -259,7 +259,7 @@ Listas de historias de usuario
     <strong>Escenario B (móvil):</strong><br>
     Given usuario en móvil, When pulsa el icono hamburguesa, Then se abre menú vertical con enlaces a secciones y CTA visible.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-22</td>
 </tr>
 
 <tr>
@@ -272,7 +272,7 @@ Listas de historias de usuario
     <strong>Escenario B (accesibilidad):</strong><br>
     Given lector de pantalla activo, When navega la sección, Then los pasos tienen texto alternativo y semántica para ser leídos correctamente.
   </td>
-  <td style="text-align:center;">2</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -285,7 +285,7 @@ Listas de historias de usuario
     <strong>Escenario B (clic en card):</strong><br>
     Given usuario hace clic en una card, When confirma la acción, Then lo redirige a la sección interna o abre modal con detalles.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -298,7 +298,7 @@ Listas de historias de usuario
     <strong>Escenario B (descarga/print):</strong><br>
     Given un usuario desea guardar info, When imprime o guarda página, Then la sección About se muestra de forma adecuada en impresión/PDF.
   </td>
-  <td style="text-align:center;">2</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -311,7 +311,7 @@ Listas de historias de usuario
     <strong>Escenario B (cta institucional):</strong><br>
     Given interesado, When pulsa CTA de contacto al final de la sección, Then envía pre-fill indicando interés institucional al formulario.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -324,7 +324,7 @@ Listas de historias de usuario
     <strong>Escenario B (errores de validación):</strong><br>
     Given campo email inválido o campo obligatorio vacío, When intenta enviar, Then se muestran errores y no se envía el formulario.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -337,7 +337,7 @@ Listas de historias de usuario
     <strong>Escenario B (accesibilidad footer):</strong><br>
     Given navegación por teclado, When tabula hasta footer, Then los enlaces son accesibles y visibles.
   </td>
-  <td style="text-align:center;">1</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -350,7 +350,7 @@ Listas de historias de usuario
     <strong>Escenario B (pruebas tablet):</strong><br>
     Given tablet, When gira pantalla, Then elementos no se solapan y navegación funciona.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -363,7 +363,7 @@ Listas de historias de usuario
     <strong>Escenario B (navegación):</strong><br>
     Given navegación a secciones, When se desplaza, Then imágenes se muestran sin salto de layout (CLS controlado).
   </td>
-  <td style="text-align:center;">5</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -376,7 +376,7 @@ Listas de historias de usuario
     <strong>Escenario B (prueba social share):</strong><br>
     Given URL compartida en redes, When se genera el preview, Then muestra título, descripción e imagen correcta.
   </td>
-  <td style="text-align:center;">2</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -389,7 +389,7 @@ Listas de historias de usuario
     <strong>Escenario B (rechazo):</strong><br>
     Given usuario rechaza cookies, When navega, Then cookies no esenciales quedan deshabilitadas y no se ejecutan trackers.
   </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 
 <tr>
@@ -402,36 +402,10 @@ Listas de historias de usuario
     <strong>Escenario B (form submit):</strong><br>
     Given formulario enviado con éxito, When se confirma envío, Then se dispara evento de conversión con atributos (source/utm).
   </td>
-  <td style="text-align:center;">2</td>
-</tr>
-
-<tr>
-  <td>US33</td>
-  <td>Contenidos editables (CMS)</td>
-  <td>Como <strong>marketing</strong>, quiero poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.</td>
-  <td>
-    <strong>Escenario A (editar hero):</strong><br>
-    Given acceso al CMS con permisos, When actualiza título/subtítulo/imagen y publica, Then la landing muestra los cambios inmediatamente.<br><br>
-    <strong>Escenario B (rollback):</strong><br>
-    Given se publica contenido erróneo, When se solicita rollback, Then se restaura versión anterior desde el CMS.
-  </td>
-  <td style="text-align:center;">5</td>
-</tr>
-
-<tr>
-  <td>US34</td>
-  <td>Accesibilidad (WCAG 2.1 básico)</td>
-  <td>Como <strong>usuario con necesidades de accesibilidad</strong>, quiero que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).</td>
-  <td>
-    <strong>Escenario A (contraste):</strong><br>
-    Given elementos visuales, When se evalúa contraste, Then colores cumplen ratio mínimo WCAG AA para texto principal.<br><br>
-    <strong>Escenario B (navegación por teclado):</strong><br>
-    Given navegación sin mouse, When tabula por la página, Then todos los CTAs y links son alcanzables y el foco es visible.
-  </td>
-  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">EP-21</td>
 </tr>
 <tr>
-      <td>US-35</td>
+      <td>US-33</td>
       <td>Autenticación por número de celular</td>
       <td>Como usuario (paciente o neurólogo) quiero poder registrarme e iniciar sesión usando mi número de celular para acceder de forma rápida y sin contraseña.</td>
       <td>
@@ -451,7 +425,7 @@ Listas de historias de usuario
       <td>EP-01</td>
     </tr>
     <tr>
-      <td>US-36</td>
+      <td>US-34</td>
       <td>Verificación de número de celular (OTP)</td>
       <td>Como usuario quiero verificar mi número de celular mediante un código OTP para confirmar la titularidad y asegurar la autenticación basada en SMS.</td>
       <td>
@@ -471,7 +445,7 @@ Listas de historias de usuario
       <td>EP-01</td>
     </tr>
     <tr>
-      <td>US-37</td>
+      <td>US-35</td>
       <td>Inicio de sesión con Google (OAuth)</td>
       <td>Como usuario quiero poder autenticarme con mi cuenta de Google para agilizar el acceso y evitar recordar contraseñas.</td>
       <td>
@@ -491,7 +465,7 @@ Listas de historias de usuario
       <td>EP-01</td>
     </tr>
     <tr>
-      <td>US-38</td>
+      <td>US-36</td>
       <td>Consentimiento para uso del número de teléfono y comunicación SMS</td>
       <td>Como usuario quiero dar (y poder revocar) consentimiento explícito para que mi número de celular sea usado en autenticación y para recibir notificaciones/alertas por SMS, cumpliendo privacidad.</td>
       <td>
@@ -511,7 +485,7 @@ Listas de historias de usuario
       <td>EP-09</td>
     </tr>
     <tr>
-      <td>US-39</td>
+      <td>US-37</td>
       <td>Protección y límites en el flujo OTP (rate-limiting & fraude)</td>
       <td>Como plataforma quiero implementar límites de envío y verificación de OTP y detección básica de fraude para prevenir abuso y proteger a los usuarios.</td>
       <td>
@@ -530,6 +504,266 @@ Listas de historias de usuario
       </td>
       <td>EP-09</td>
     </tr>
+    <tr>
+  <td>US-38</td>
+  <td>Signup — Registro de paciente (email/phone)</td>
+  <td>Como paciente quiero registrarme (email o teléfono+OTP) para crear una cuenta en la plataforma y acceder a servicios.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/register/patient<br>
+    <strong>Body:</strong> { name, email?, phone?, password?, acceptTerms } (si phone → generar OTP)<br><br>
+    <strong>Escenario A (registro por email):</strong><br>
+    Given que un usuario proporciona email y contraseña válidos. <br>
+    When llama POST /api/auth/register/patient. <br>
+    Then el sistema crea cuenta con status=active (o pending_email_verification), devuelve 201 y emite evento user.created.<br><br>
+    <strong>Escenario B (registro por teléfono):</strong><br>
+    Given que usuario registra con phone. <br>
+    When llama al endpoint. <br>
+    Then el sistema crea cuenta con status=pending_phone_verification y envía OTP (no activa sesión hasta verificar).<br><br>
+    <strong>Escenario C (validaciones):</strong><br>
+    Given email/phone ya registrado. <br>
+    When intenta registrarse. <br>
+    Then devolver 409 Conflict con mensaje apropiado y no crear recurso.
+  </td>
+  <td>EP-01 / EP-09</td>
+</tr>
+<tr>
+  <td>US-39</td>
+  <td>Signup — Registro de neurólogo (validación de credenciales)</td>
+  <td>Como neurólogo quiero registrarme indicando mi información profesional (n.º de colegiatura) para obtener rol NEUROLOGIST y acceso a funciones clínicas.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/register/neurologist<br>
+    <strong>Body:</strong> { name, email, phone?, password, licenseNumber, specialties[] }<br><br>
+    <strong>Escenario A (registro exitoso):</strong><br>
+    Given que la info es válida y licenseNumber pasa validación básica. <br>
+    When se invoca el endpoint. <br>
+    Then crear usuario con role=NEUROLOGIST, status=pending_verification (si se requiere validación manual), devolver 201 y registrar en audit_log.<br><br>
+    <strong>Escenario B (license inválida o duplicada):</strong><br>
+    Given licenseNumber inválida/ya en uso. <br>
+    When se intenta registrar. <br>
+    Then respuesta 400/409 y no crear cuenta.
+  </td>
+  <td>EP-01 / EP-02 / EP-09</td>
+</tr>
+<tr>
+  <td>US-40</td>
+  <td>Login — Obtención de token (paciente y neurólogo)</td>
+  <td>Como usuario (paciente o neurólogo) quiero iniciar sesión con email/phone+password para recibir JWT de acceso y refresh token y consumir APIs protegidas.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/login<br>
+    <strong>Body:</strong> { username(email|phone), password }<br><br>
+    <strong>Escenario A (login correcto):</strong><br>
+    Given credenciales válidas. <br>
+    When POST /api/auth/login. <br>
+    Then devolver 200 con { accessToken(JWT), refreshToken, expiresIn, role } y escribir evento de login en audit_log.<br><br>
+    <strong>Escenario B (credenciales inválidas):</strong><br>
+    Given credenciales inválidas. <br>
+    When intenta login. <br>
+    Then 401 Unauthorized y contador de intentos incrementado (para medidas anti-brute-force).
+  </td>
+  <td>EP-01 / EP-09 / EP-10</td>
+</tr>
+<tr>
+  <td>US-41</td>
+  <td>Refresh token — Renovación de sesión</td>
+  <td>Como usuario quiero refrescar mi access token usando refresh token para mantener sesión sin volver a ingresar credenciales.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/refresh<br>
+    <strong>Body:</strong> { refreshToken }<br><br>
+    <strong>Escenario A (refresh válido):</strong><br>
+    Given refreshToken válido y no revocado. <br>
+    When POST /api/auth/refresh. <br>
+    Then devolver nuevo accessToken + nuevo refreshToken (rotación) y revocar el anterior.<br><br>
+    <strong>Escenario B (refresh inválido/robado):</strong><br>
+    Given refreshToken inválido o revocado. <br>
+    When intenta refrescar. <br>
+    Then 401 y registrar evento de seguridad en audit_log.
+  </td>
+  <td>EP-01 / EP-09</td>
+</tr>
+<tr>
+  <td>US-42</td>
+  <td>Logout — Revocar sesión (refresh token)</td>
+  <td>Como usuario quiero cerrar sesión (logout) para invalidar mi refresh token y evitar usos posteriores.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/logout (authed)<br>
+    <strong>Body:</strong> { refreshToken } (o extraer del header)<br><br>
+    <strong>Escenario A (logout exitoso):</strong><br>
+    Given usuario autenticado con refresh token activo. <br>
+    When POST /api/auth/logout. <br>
+    Then revocar refresh token, devolver 200 y registrar en audit_log.<br><br>
+    <strong>Escenario B (token ya revocado):</strong><br>
+    Given token ya revocado. <br>
+    When logout. <br>
+    Then devolver 200 idempotente y registrar intento.
+  </td>
+  <td>EP-01 / EP-09</td>
+</tr>
+<tr>
+  <td>US-43</td>
+  <td>Recuperar contraseña (forgot/reset)</td>
+  <td>Como usuario quiero poder recuperar el acceso cuando olvide mi contraseña mediante email o SMS con token/OTP seguro.</td>
+  <td>
+    <strong>Endpoints:</strong><br>
+    POST /api/auth/forgot-password { email|phone } → enviar token seguro (email/SMS)<br>
+    POST /api/auth/reset-password { token, newPassword } → cambiar password<br><br>
+    <strong>Escenario A (solicitar recuperación):</strong><br>
+    Given usuario existente solicita recuperación. <br>
+    When POST /api/auth/forgot-password. <br>
+    Then generar token caducable (p.ej. 1 h), enviar enlace/OTP y registrar en audit_log.<br><br>
+    <strong>Escenario B (reset válido):</strong><br>
+    Given token válido. <br>
+    When POST /api/auth/reset-password. <br>
+    Then actualizar password (hash), revocar refresh tokens existentes y notificar vía email/SMS.
+  </td>
+  <td>EP-01 / EP-09</td>
+</tr>
+<tr>
+  <td>US-44</td>
+  <td>Cambiar contraseña (autenticado)</td>
+  <td>Como usuario autenticado quiero cambiar mi contraseña proporcionando la antigua y la nueva para mantener seguridad.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/auth/change-password (authed)<br>
+    <strong>Body:</strong> { oldPassword, newPassword }<br><br>
+    <strong>Escenario A (cambio correcto):</strong><br>
+    Given usuario autenticado y oldPassword correcto. <br>
+    When POST /api/auth/change-password. <br>
+    Then actualizar hash de password, revocar refresh tokens y registrar evento en audit_log.<br><br>
+    <strong>Escenario B (oldPassword incorrecto):</strong><br>
+    Given oldPassword incorrecto. <br>
+    When intenta cambiar. <br>
+    Then 400 con mensaje y contador de intentos si aplica.
+  </td>
+  <td>EP-01 / EP-09</td>
+</tr>
+<tr>
+  <td>US-45</td>
+  <td>Verificación y gestión de roles</td>
+  <td>Como sistema quiero endpoints que permitan verificar roles y asignarlos (admin only) para controlar acceso según EPs clínicos.</td>
+  <td>
+    <strong>Endpoints:</strong><br>
+    GET /api/users/{id}/roles → ver roles<br>
+    POST /api/users/{id}/roles → asignar rol (admin)<br>
+    DELETE /api/users/{id}/roles/{role} → remover rol (admin)<br><br>
+    <strong>Escenario A (consulta rol):</strong><br>
+    Given token JWT con claims. <br>
+    When GET /api/users/{id}/roles. <br>
+    Then devolver lista de roles y permisos asociados (RBAC).<br><br>
+    <strong>Escenario B (asignar rol, sólo admin):</strong><br>
+    Given usuario con rol ADMIN. <br>
+    When POST /api/users/{id}/roles { role: "NEUROLOGIST" }. <br>
+    Then asignar role y registrar en audit_log; invalidar sesiones si aplica.
+  </td>
+  <td>EP-09 / EP-02</td>
+</tr>
+<tr>
+  <td>US-46</td>
+  <td>Obtener perfil (me) — Paciente y Neurólogo</td>
+  <td>Como usuario quiero acceder a mi perfil clínico/datos personales para consultarlos y verificarlos.</td>
+  <td>
+    <strong>Endpoint:</strong> GET /api/users/me → retorna user profile con role-specific fields (para neurologist: license, specialties; para patient: medicalId, devices[]).<br><br>
+    <strong>Escenario A (consulta propia):</strong><br>
+    Given usuario autenticado. <br>
+    When GET /api/users/me. <br>
+    Then devolver 200 con perfil y claims; no exponer datos sensibles (passwords, tokens).<br><br>
+    <strong>Escenario B (datos incompletos):</strong><br>
+    Given campos vacíos. <br>
+    When consulta. <br>
+    Then devolver campos null/empty y flag profileComplete=false.
+  </td>
+  <td>EP-02 / EP-09</td>
+</tr>
+<tr>
+  <td>US-47</td>
+  <td>Editar perfil (patch) — Neurólogo / paciente</td>
+  <td>Como usuario quiero actualizar partes de mi perfil clínico para mantener información vigente (teléfono, dirección, bio, afiliaciones).</td>
+  <td>
+    <strong>Endpoint:</strong> PATCH /api/users/me { campos a cambiar }<br><br>
+    <strong>Escenario A (update parcial correcto):</strong><br>
+    Given usuario autenticado y payload válido. <br>
+    When PATCH /api/users/me. <br>
+    Then aplicar cambios, validar fields (p.ej. licencia), devolver 200 y registrar en audit_log.<br><br>
+    <strong>Escenario B (permiso/role):</strong><br>
+    Given intento de cambiar campos restringidos (p.ej. role). <br>
+    When PATCH. <br>
+    Then 403 Forbidden.
+  </td>
+  <td>EP-02 / EP-09</td>
+</tr>
+<tr>
+  <td>US-48</td>
+  <td>Crear receta electrónica (solo NEUROLOGIST)</td>
+  <td>Como neurólogo quiero emitir recetas electrónicas firmadas para mis pacientes para facilitar adherencia y trazabilidad clínica.</td>
+  <td>
+    <strong>Endpoint:</strong> POST /api/recipes (authed role=NEUROLOGIST)<br>
+    <strong>Body:</strong> { patientId, medicines: [{name, dose, frequency, duration}], notes, followUpInDays }<br><br>
+    <strong>Escenario A (receta válida):</strong><br>
+    Given neurólogo autenticado y paciente existente. <br>
+    When POST /api/recipes. <br>
+    Then crear receta con id, issuedBy=neurologistId, issuedAt, status=active; devolver 201 y notificar paciente; guardar hash/firma y registrar en audit_log.<br><br>
+    <strong>Escenario B (acceso prohibido):</strong><br>
+    Given usuario sin rol NEUROLOGIST. <br>
+    When intenta crear receta. <br>
+    Then 403 Forbidden.
+  </td>
+  <td>EP-06 / EP-09 / EP-05</td>
+</tr>
+<tr>
+  <td>US-49</td>
+  <td>Listar y consultar recetas (paciente & neurólogo)</td>
+  <td>Como paciente quiero ver mis recetas y como neurólogo quiero ver recetas que yo emití para seguimiento y control.</td>
+  <td>
+    <strong>Endpoints:</strong><br>
+    GET /api/patients/{id}/recipes (necesita autorización) <br>
+    GET /api/recipes/{id} <br><br>
+    <strong>Escenario A (paciente consulta sus recetas):</strong><br>
+    Given paciente autenticado. <br>
+    When GET /api/patients/{myId}/recipes. <br>
+    Then retornar lista paginada con recetas y links a PDF/visualización, sin exponer datos extras.<br><br>
+    <strong>Escenario B (neurólogo consulta receta emitida):</strong><br>
+    Given neurologist autenticado. <br>
+    When GET /api/recipes/{id}. <br>
+    Then devolver receta completa si issuedBy==neurologistId o si tiene permiso administrativo.
+  </td>
+  <td>EP-06 / EP-05 / EP-09</td>
+</tr>
+<tr>
+  <td>US-50</td>
+  <td>Auditoría de acciones sensibles (login, cambios de contraseña, creación de recetas)</td>
+  <td>Como administrador quiero que acciones sensibles queden registradas en audit_log para cumplir normativas y trazabilidad.</td>
+  <td>
+    <strong>Implementación/Endpoint:</strong> Cada endpoint sensible escribe audit_log; opcionalmente GET /api/admin/audit?filters (admin only).<br><br>
+    <strong>Escenario A (registro de evento):</strong><br>
+    Given intento de login exitoso. <br>
+    When ocurre login. <br>
+    Then crear registro audit { userId, action: "login", timestamp, ip, userAgent, result }.<br><br>
+    <strong>Escenario B (consulta admin):</strong><br>
+    Given admin autenticado. <br>
+    When GET /api/admin/audit?userId=... . <br>
+    Then devolver eventos paginados; sólo admin/ops pueden acceder.
+  </td>
+  <td>EP-09 / EP-01</td>
+</tr>
+<tr>
+  <td>US-51</td>
+  <td>Protección y límites en OTP (referencia US-37)</td>
+  <td>Como plataforma quiero mitigar abuso en el envío/verificación de OTP aplicando rate-limits y detección básica de fraude para proteger usuarios.</td>
+  <td>
+    <strong>Endpoint/Comportamiento:</strong> Aplicar rate-limits en POST /api/auth/send-otp y POST /api/auth/verify-otp; bloquear IP/phone temporalmente; notificar al usuario.<br><br>
+    <strong>Escenario A (limitación de envíos):</strong><br>
+    Given múltiples OTP solicitados desde mismo número/IP. <br>
+    When se supera umbral. <br>
+    Then bloquear envíos temporales y mostrar tiempo de espera (see US-37).<br><br>
+    <strong>Escenario B (intentos masivos de verificación):</strong><br>
+    Given múltiples intentos fallidos OTP. <br>
+    When contador excede límite. <br>
+    Then bloquear cuenta para verificación manual y loguear evento (see US-37).<br><br>
+    <strong>Escenario C (registro y notificación):</strong><br>
+    Given bloqueo por actividad sospechosa. <br>
+    When ocurre. <br>
+    Then notificar usuario por correo/SMS y proveer pasos de recuperación.
+  </td>
+  <td>EP-09</td>
+</tr>
   </tbody>
 </table>
 
