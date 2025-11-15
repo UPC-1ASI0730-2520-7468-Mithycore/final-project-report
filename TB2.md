@@ -4,8 +4,8 @@
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|---------------------------|
-| US-01 |  |  |  |  |
-| US-02 |  |  |  |  |
+| US-01 | Crear Perfil de Paciente | Como administrador quiero registrar pacientes para que accedan al sistema. | DADO que ingreso datos válidos, CUANDO guardo el perfil, ENTONCES se crea el paciente correctamente. | EP-PAT |
+| US-02 | Editar Perfil de Paciente | Como administrador quiero actualizar información de pacientes existentes. | DADO un paciente creado, CUANDO edito los campos, ENTONCES la información se actualiza. | EP-PAT |
 | US-03 |  |  |  |  |
 | US-04 |  |  |  |  |
 | US-05 |  |  |  |  |
@@ -546,5 +546,6 @@ __
 ---
 
 ## 5.4. Video About-the-Product
+
 
 __
