@@ -1,49 +1,5 @@
 # AuraNeuro – Sprint 3
 
-## Tabla de Historias de Usuario (Backlog General)
-
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|--------------------------|---------------------------|
-| US-01 | Crear Perfil de Paciente | Como administrador quiero registrar pacientes para que accedan al sistema. | DADO que ingreso datos válidos, CUANDO guardo el perfil, ENTONCES se crea el paciente correctamente. | EP-PAT |
-| US-02 | Editar Perfil de Paciente | Como administrador quiero actualizar información de pacientes existentes. | DADO un paciente creado, CUANDO edito los campos, ENTONCES la información se actualiza. | EP-PAT |
-| US-03 |  |  |  |  |
-| US-04 |  |  |  |  |
-| US-05 |  |  |  |  |
-| US-06 |  |  |  |  |
-| US-07 |  |  |  |  |
-| US-08 |  |  |  |  |
-| US-09 |  |  |  |  |
-| US-10 |  |  |  |  |
-| US-11 |  |  |  |  |
-| US-12 |  |  |  |  |
-| US-13 |  |  |  |  |
-| US-14 |  |  |  |  |
-| US-15 |  |  |  |  |
-| US-16 |  |  |  |  |
-| US-17 |  |  |  |  |
-| US-18 |  |  |  |  |
-| US-19 |  |  |  |  |
-| US-20 |  |  |  |  |
-| US-21 |  |  |  |  |
-| US-22 |  |  |  |  |
-| US-23 |  |  |  |  |
-| US-24 |  |  |  |  |
-| US-25 |  |  |  |  |
-| US-26 |  |  |  |  |
-| US-27 |  |  |  |  |
-| US-28 |  |  |  |  |
-| US-29 |  |  |  |  |
-| US-30 |  |  |  |  |
-| US-31 |  |  |  |  |
-| US-32 |  |  |  |  |
-| US-33 |  |  |  |  |
-| US-34 |  |  |  |  |
-| US-35 |  |  |  |  |
-| US-36 |  |  |  |  |
-| US-37 |  |  |  |  |
-
----
-
 ## 5.2.3. Sprint 3
 
 ### 5.2.3.1. Sprint Planning 3
@@ -549,3 +505,4 @@ __
 
 
 __
+
