@@ -463,7 +463,7 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 
 **Entrevista N°1**
 
-![Xin](images/xin.png)
+![Xin](images/xin.jpeg)
 
 - **Entrevistado/a:** Shi Lin, Xin Yu
 - **Entrevistador:** Meza Huanacune, Juan José 
@@ -527,6 +527,7 @@ __
 
 
 __
+
 
 
 
