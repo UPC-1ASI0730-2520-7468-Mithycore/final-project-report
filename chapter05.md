@@ -1707,7 +1707,6 @@ La sincronización entre frontend y backend permitió un desarrollo estable y do
 </table>
 <br/>
 
-
 <!-- SPRINT GOAL & USER STORIES -->
 <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
   <caption style="text-align:left; font-weight:bold; padding:6px 0;">Sprint Goal & User Stories</caption>
@@ -1832,6 +1831,8 @@ La sincronización entre frontend y backend permitió un desarrollo estable y do
   </table>
 </section>
 
+<img src="./imagesChapter05/leaders3.png">
+
 #### 5.2.3.3.Sprint Backlog 3.  
 
 En este sprint, el objetivo es consolidar la experiencia integral y segura de los usuarios de **AuraNeuro** mediante la implementación completa del backend, enfocado en optimizar la autenticación, gestión de usuarios, edición de perfil, historial médico, administración de recetas y configuración de disponibilidad para neurólogos.
@@ -1840,7 +1841,7 @@ Estas funcionalidades garantizarán un acceso confiable a la plataforma, una int
 <div style="margin:12px 0;">
     <strong>Sprint Board (tool):</strong>
     <br/>
-    <img src="./imagesChapter05/sprint-backlog2.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
+    <img src="./imagesChapter05/backlog3.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
     <p style="margin:6px 0 0 0;">
       <strong>URL del Board:</strong>
       <a href="https://trello.com/invite/b/69139ce10bff9bfc6e37ecc2/ATTIb7718bb3db115796e09ec5846aab1653BDAC2C0C/sprint-backlog-3" target="_blank" rel="noopener">https://trello.com/invite/b/69139ce10bff9bfc6e37ecc2/ATTIb7718bb3db115796e09ec5846aab1653BDAC2C0C/sprint-backlog-3</a>
@@ -2381,65 +2382,41 @@ Durante este Sprint 3 el equipo centró sus esfuerzos en consolidar la capa de *
   </tbody>
 </table>
 
+<img src="./imagesChapter05/commits.png">
 
 #### 5.2.3.5.Execution Evidence for Sprint Review.
 
 Durante este Sprint 3 el equipo completó la implementación y la integración de las piezas funcionales clave que sustentan los flujos clínicos entre pacientes y neurólogos. A nivel de backend se entregaron y estabilizaron los servicios REST versionados (/api/v1/...) para la gestión de evaluaciones médicas (crear, listar, ver detalle, editar y soft-delete), el ciclo completo de citas (solicitar, listar, confirmar/rechazar y cancelar), la administración de franjas de disponibilidad de neurólogos y la emisión, consulta y revocación básica de recetas . Paralelamente se consolidó la capa de autenticación con emisión de access tokens (JWT), login por OTP y recuperación de contraseña, incluyendo controles de autorización que garantizan que solo usuarios con los permisos adecuados puedan crear o modificar recursos sensibles.  
 
-<h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Vistas principales implementadas</h4>
+<h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Bounded Context Api Core Bussines</h4>
   <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
     <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/login.jpeg" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Login (email/password)</strong><br/>
-        Pantalla de inicio de sesión con validaciones, show/hide password y mensajes de error.
-      </figcaption>
+      <img src="./imagesChapter05/SwaggerPatient.png" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/register.jpeg" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de paciente</strong><br/>
-        Formulario con password strength indicator, confirm password y consentimiento.
-      </figcaption>
+      <img src="./imagesChapter05/SwaggerNeurologist.png" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/register.jpeg" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Registro de neurólogo (pro)</strong><br/>
-        Form con campo de número de licencia y estado "pendiente de verificación" (UI).
-      </figcaption>
+      <img src="./imagesChapter05/SwaggerAppointment.png" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/enterphone.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Entrada de número (Phone Auth)</strong><br/>
-        Selector de prefijo, input masked y consentimiento para SMS; transición al OTP.
-      </figcaption>
+      <img src="./imagesChapter05/NeuroAssessment.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
     </figure>
     <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/enterOtp.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Verificación OTP</strong><br/>
-        Segment inputs, contador (timer), resend disabled y UI de intentos/lockout (mock).
-      </figcaption>
-    </figure>
-    <figure style="width:320px; margin:0;">
-      <img src="./imagesChapter05/map.png" alt="Component library" style="width:100%; border:1px solid #ddd; display:block;" />
-      <figcaption style="padding:6px 0 0 0;">
-        <strong>Biblioteca de componentes (Vue)</strong><br/>
-        BaseInput, BaseButton, BaseModal y patterns reutilizables usados por las vistas.
-      </figcaption>
+      <img src="./imagesChapter05/SwaggerPrescription.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
     </figure>
   </div>
+
+<-------------------------------------- Falta Video<----------------------------------------
   <!-- VIDEO DEMO -->
-  <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración / walkthrough</h4>
+  <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
   <p style="margin:8px 0;">
     <strong>Link al video:</strong>
     <a href="https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing</a>
   </p>
 </section>
 
---------> falta poner aevidenca capturas <------------------
+
 #### 5.2.3.6.Services Documentation Evidence for Sprint Review.  
 En el Sprint 3 se completó y publicó la documentación OpenAPI de los Web Services desarrollados para soportar los flujos esenciales entre pacientes y neurólogos. La documentación cubre los endpoints versionados api/v1 implementados en este sprint: gestión de evaluaciones (assessments), citas (appointments), disponibilidades (availability), recetas (prescriptions), así como los mecanismos de autenticación (auth) y los recursos básicos de patients y neurologists necesarios para el funcionamiento del MVP.
 La especificación OpenAPI se actualizó para describir cada operación (verbos), parámetros (path / query / body), esquemas de request y response, códigos HTTP esperados y ejemplos JSON representativos. Se expusieron estas especificaciones a través de la UI de Swagger (local) para que el equipo de frontend  puedan ejecutar ejemplos en vivo (Try it out). Como evidencia, en la tabla siguiente se relacionan los endpoints documentados, las acciones soportadas y un ejemplo de uso por cada endpoint importante desarrollado en el Sprint 3.  
@@ -2928,6 +2905,20 @@ http://localhost:5000/swagger/index.html
 
 #### 5.2.3.7.Software Deployment Evidence for Sprint Review.
 
+Durante este sprint se realizó el despliegue del backend en un servidor Linux sobre Microsoft Azure, utilizando Docker y Docker Compose como herramientas principales de contenedorización y orquestación. El objetivo fue asegurar que la aplicación pueda ejecutarse en un entorno productivo estable, escalable y reproducible.
+
+Primero, se configuró una máquina virtual Linux dentro de Azure (Ubuntu Server), en la cual se instalaron Docker Engine y Docker Compose. Posteriormente, se copiaron el proyecto backend y los archivos de configuración (Dockerfile y docker-compose.yml) a la instancia remota mediante SSH.
+
+<img src="./imagesChapter05/docker-ps.png">
+<img src="./imagesChapter05/deplegado.png">
+
+La evidencia de despliegue puede observarse en las siguientes capturas:  
+
+Figura 1: Contenedores en ejecución utilizando docker ps, mostrando que el backend se encuentra activo en la máquina Linux.  
+
+Figura 2: Prueba de despliegue exitoso, donde se visualiza la aplicación en funcionamiento desde el servidor Azure.  
+
+Con esta acción, se confirma que el backend está completamente desplegado y accesible desde la nube, cumpliendo el objetivo del Sprint y permitiendo continuar  
 
 #### 5.2.3.8.Team Collaboration Insights during Sprint.
 Durante el Sprint 3, el equipo de desarrollo de AuraNeuro mantuvo una comunicación y coordinación continua mediante el uso de diversas herramientas colaborativas que facilitaron la gestión de tareas, el seguimiento del progreso y la toma de decisiones técnicas.  
@@ -2939,6 +2930,8 @@ En cuanto al control de versiones y evidencia de trabajo colaborativo, todos los
 
 La revisión de código (code review) se implementó de forma sistemática antes de integrar cambios en la rama principal, garantizando así la calidad y consistencia del código. Los analytics de GitHub evidencian una distribución equitativa de contribuciones entre los miembros, tanto en commits como en issues y pull requests.
 En conjunto, la colaboración efectiva entre las herramientas Trello, Discord y GitHub permitió al equipo cumplir los objetivos del Sprint, mejorar la eficiencia del flujo de trabajo y mantener una comunicación constante, asegurando la entrega de los componentes planificados: Web Services (API REST con endpoints documentados), Web Application (módulos de interacción paciente-neurólogo) y Landing Page (sección informativa del sistema AuraNeuro).
+
+<img src="./imagesChapter05/network-graph.png">
 
 ## 5.3. Validation Interviews.  
 **Objetivo general**  
