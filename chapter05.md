@@ -2897,9 +2897,9 @@ curl -X POST "http://localhost:5000/api/v1/neurologists" \
 
 Tabla de Endpoints documentados (Sprint 3)  
 **Enlace base de documentación (ejemplo local):**  
-http://localhost:5000/swagger/index.html  
+http://localhost:5152/swagger/index.html  
 **Backend Desplegado:**  
-<a href="https://frontend-auro-neuro-rdsn.vercel.app/#/">https://frontend-auro-neuro-rdsn.vercel.app/#/login</a>  
+<a href="http://20.81.154.140:5152/swagger/index.html">http://20.81.154.140:5152/swagger/index.html</a>  
 
 
 
