@@ -463,18 +463,18 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 
 **Entrevista N°1**
 
-> **Figura 56.** Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+![Xin](images/xin.png)
 
-- **Entrevistado/a:** Cervantes Marreros, Melany  
-- **Entrevistador:** Cervantes Marreros, Angelo Paolo  
+- **Entrevistado/a:** Shi Lin, Xin Yu
+- **Entrevistador:** Meza Huanacune, Juan José 
 
 **Información del entrevistado**
 
-- Sexo: Femenino  
-- Edad: 19  
-- Residencia: Punchana  
+- Sexo: Masculino
+- Edad: 20  
+- Residencia: Lima
 
-**Enlace Entrevista**
+**Enlace Entrevista: ** [Segmento 1](https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing) 
 
 - YouTube: 
 
@@ -493,16 +493,16 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 
 **Entrevista N°1**
 
-> **Figura 56.** Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+![Karen](images/karen.png)
 
-- **Entrevistado/a:** Cervantes Marreros, Melany  
-- **Entrevistador:** Cervantes Marreros, Angelo Paolo  
+- **Entrevistado/a:** Villanueva Castillo, Karen Guadalupe
+- **Entrevistador:** Meza Huanacune, Juan José 
 
-**Información del entrevistado**
+**Información del entrevistado: ** [Segmento 2]([https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing](https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing)) 
 
 - Sexo: Femenino  
-- Edad: 19  
-- Residencia: Punchana  
+- Edad: 26  
+- Residencia: Magdalena del Mar - Lima  
 
 **Enlace Entrevista**
 
@@ -527,5 +527,6 @@ __
 
 
 __
+
 
 
