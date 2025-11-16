@@ -1715,12 +1715,9 @@ La sincronización entre frontend y backend permitió un desarrollo estable y do
     <tr>
       <th style="width:25%;">Sprint 3 Goal</th>
       <td>
-        Nuestro foco está en implementar el backend del módulo de autenticación y gestión de usuarios de AuraNeuro.
-        Esto incluye el desarrollo de endpoints REST en C# (.NET Core) para registro, inicio y cierre de sesión, validación de OTP,
-        gestión de roles y recuperación de contraseñas, además de los servicios básicos para recetas médicas.  
-        Se busca entregar una API funcional, segura y documentada (OpenAPI), lista para integrarse con el frontend construido en el Sprint 2.  
-        El cumplimiento se medirá cuando las vistas del frontend autentiquen correctamente contra los endpoints en entorno de staging,
-        con un 95% de éxito en los flujos de login y registro, y pruebas unitarias e integradas superiores al 90%.
+        Our focus is on habilitar una experiencia integral, segura y fluida para los usuarios de AuraNeuro mediante la implementación del backend que cubre                autenticación, gestión completa de usuarios, edición de perfil, visualización de historial médico, administración de recetas, y configuración de                   disponibilidad y agenda para neurólogos.  
+        We believe it delivers un acceso confiable a la plataforma, una interacción más completa con la información personal y médica del usuario, mayor autonomía         en la gestión de su cuenta, y nuevas capacidades para que neurólogos administren sus horarios y emitan recetas, mientras el frontend obtiene endpoints             estables, seguros y documentados para construir la experiencia del Sprint 2.  
+        This will be confirmed when el frontend integre correctamente los flujos de autenticación, perfil, gestión de recetas y disponibilidad en el entorno de           staging, logrando al menos un 95% de éxito en registro e inicio de sesión, permitiendo consultar y editar el perfil sin errores, visualizar historial               médico y recetas según permisos, y alcanzando más del 90% de cobertura en pruebas unitarias e integradas sobre los módulos desarrollados.
       </td>
     </tr>
     <tr>
@@ -1733,11 +1730,6 @@ La sincronización entre frontend y backend permitió un desarrollo estable y do
     </tr>
   </tbody>
 </table>
-
-<br/>
-
-
-
 
 <br/>
 
