@@ -1640,18 +1640,1772 @@ Se observó una mejor sincronización en las tareas y una comunicación constant
 El equipo completó exitosamente la **interfaz de autenticación** con flujos funcionales simulados (login, registro, OTP, Google Sign-In), desplegada en staging y validada con usuarios de prueba.  
 La sincronización entre frontend y backend permitió un desarrollo estable y documentado según los criterios del *Project Statement ABET 2025*.
 
-### 5.2.3. Sprint 3
-### 5.2.3.1.Spring Planning 3.
-### 5.2.3.2. Aspect Leaders and Collaborators.
-### 5.2.3.3.Sprint Backlog 3.
-### 5.2.3.4.Development Evidence for Sprint Review.
-### 5.2.3.5.Execution Evidence for Sprint Review.
-### 5.2.3.6.Services Documentation Evidence for Sprint Review.
-### 5.2.3.7.Software Deployment Evidence for Sprint Review.
-### 5.2.3.8.Team Collaboration Insights during Sprint.
+### 5.2.3. Sprint 3  
+### 5.2.3.1.Spring Planning 3
 
-### 5.3. Validation Interviews.
+<!-- SPRINT PLANNING - SPRINT 3  -->
+<section style="font-family: Arial, sans-serif; line-height:1.45;">
+   <p>
+    El <strong>Sprint 3</strong> se centra en el <strong>backend</strong> del sistema <em>AuraNeuro</em>, 
+    específicamente en la implementación de los servicios y endpoints REST del subsistema de autenticación y gestión clínica. 
+    Este sprint busca establecer la base funcional de la API en C# (.NET Core), garantizando la seguridad, roles, y el acceso controlado a recursos médicos.
+  </p>
+</section>
+<!-- SPRINT PLANNING - SPRINT 3 -->
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
+  <caption style="text-align:left; font-weight:bold; padding:6px 0;">Sprint Planning Background</caption>
+  <tbody>
+    <tr>
+      <th style="width:25%;">Sprint #</th>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <td>2025-11-05</td>
+    </tr>
+    <tr>
+      <th>Time</th>
+      <td>10:00 AM – 11:30 AM</td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td>Reunión virtual (Zoom) / Oficina central AuraNeuro</td>
+    </tr>
+    <tr>
+      <th>Prepared By</th>
+      <td>Romero Meza, Jhimy</td>
+    </tr>
+    <tr>
+      <th>Attendees (to planning meeting)</th>
+      <td>
+        Romero Meza, Jhimy — Sprint Lead (Backend)<br/>
+        Eduardo F. Chacaliaza Minaya — Product Owner<br/>
+        Gutierrez Tume, Jeremy — Lead Dev (Arquitectura / Code Reviews)<br/>
+        Fabricio F. Quispe Barzola — Backend Developer<br/>
+        Juan José Meza Huanacune — QA / DevOps Support
+      </td>
+    </tr>
+    <tr>
+      <th style="width:25%;">Summary</th>
+      <td>
+        Durante el Sprint 2 se completó la implementación del frontend del subsistema de autenticación de AuraNeuro.
+        Se desarrollaron las vistas de inicio de sesión, registro (paciente y neurólogo), verificación OTP, e integración visual con Google (OAuth).
+        Todas las vistas fueron validadas con flujos UI funcionales, manejo de errores y diseño responsivo.  
+        El Product Owner destacó la calidad visual y consistencia del diseño, y recomendó iniciar la conexión con los servicios reales en el siguiente sprint.
+      </td>
+    </tr>
+    <tr>
+    <th style="width:25%;">Retrospective Summary</th>
+      <td>
+        El equipo valoró la buena coordinación entre desarrolladores y el cumplimiento de todas las historias planificadas dentro del plazo.
+        Se identificó como mejora para el Sprint 3 fortalecer la integración continua y definir un entorno de staging para pruebas de backend.
+        Además, se acordó mantener reuniones técnicas más cortas pero con acuerdos más claros sobre dependencias y endpoints.
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+<br/>
+
+
+<!-- SPRINT GOAL & USER STORIES -->
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
+  <caption style="text-align:left; font-weight:bold; padding:6px 0;">Sprint Goal & User Stories</caption>
+  <tbody>
+    <tr>
+      <th style="width:25%;">Sprint 3 Goal</th>
+      <td>
+        Nuestro foco está en implementar el backend del módulo de autenticación y gestión de usuarios de AuraNeuro.
+        Esto incluye el desarrollo de endpoints REST en C# (.NET Core) para registro, inicio y cierre de sesión, validación de OTP,
+        gestión de roles y recuperación de contraseñas, además de los servicios básicos para recetas médicas.  
+        Se busca entregar una API funcional, segura y documentada (OpenAPI), lista para integrarse con el frontend construido en el Sprint 2.  
+        El cumplimiento se medirá cuando las vistas del frontend autentiquen correctamente contra los endpoints en entorno de staging,
+        con un 95% de éxito en los flujos de login y registro, y pruebas unitarias e integradas superiores al 90%.
+      </td>
+    </tr>
+    <tr>
+      <th>Sprint 3 Velocity</th>
+      <td>Planned: 28 SP — Committed: <strong>26 SP</strong></td>
+    </tr>
+    <tr>
+      <th>Sum of Story Points</th>
+      <td><strong>26 SP</strong> (US41, US42, US43, US44, US45, US46)</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+
+
+
+<br/>
+
+<!-- Team & Responsibilities reminder -->
+<section style="font-family:Arial, sans-serif;">
+  <h4>Equipo (Sprint 3) — Roles y responsabilidades</h4>
+  <ul>
+    <li><strong>Romero Meza, Jhimy</strong> — Sprint Lead / Backend Developer: coordinar el desarrollo backend, definir endpoints REST, asegurar seguridad y manejo de tokens JWT, revisión técnica de integración con frontend.</li>
+    <li><strong>Eduardo F. Chacaliaza Minaya</strong> — Product Owner: validar funcionalidades entregadas en API (autenticación, registro, OTP, Google OAuth), priorizar ajustes y asegurar cumplimiento de criterios de aceptación funcional.</li>
+    <li><strong>Gutierrez Tume, Jeremy</strong> — Lead Dev (Backend Architect): diseñar estructura de módulos, servicios y controladores; definir esquema de base de datos para usuarios y sesiones; configurar seguridad y middleware.</li>
+    <li><strong>Fabricio F. Quispe Barzola</strong> — Backend Developer / QA Support: implementar endpoints secundarios (verificación, manejo de errores), realizar pruebas unitarias y de integración con Postman y Jest, documentar API (Swagger).</li>
+    <li><strong>Juan José Meza Huanacune</strong> — DevOps & Deployment: configurar entorno de despliegue (Docker / Railway), gestionar variables de entorno y base de datos MongoDB Atlas, coordinar integración continua (CI/CD).</li>
+  </ul>
+</section>
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+<!-- LACX TABLE -->
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif; margin-top:12px;">
+    <caption style="text-align:left; font-weight:bold; padding:6px 0;">LACX — Sprint 2 (Auth UI)</caption>
+    <thead style="background:#f2f2f2;">
+      <tr>
+        <th style="width:18%;">Team Member (Last Name, First Name)</th>
+        <th style="width:12%;">GitHub Username</th>
+        <th style="width:12%;">Bounded Context: Patients<br/>(Aspect 1)</th>
+        <th style="width:12%;"><br/>Bounded Context: Neurologists(Aspect 2)</th>
+        <th style="width:12%;">Bounded Context: Assessments (o neurological-health)<br/>(Aspect 3)</th>
+        <th style="width:12%;">Bounded Context: Appointments<br/>(Aspect 4)</th>
+        <th style="width:12%;">Bounded Context: Availabilities<br/>(Aspect 5)</th>
+        <th style="width:12%;"><br/>Bounded Context: Prescriptions(Aspect 6)</th>
+        <th style="width:12%;">Bounded Context: Users / Auth <br/>(Aspect 7)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Romero Meza, Jhimy</strong></td>
+        <td><code>jhimyromero</code></td>
+        <td><strong>L</strong></td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td><strong>Chacaliaza Minaya, Eduardo F.</strong></td>
+        <td><code>eduardoFchac</code></td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td><strong>Gutierrez Tume, Jeremy</strong></td>
+        <td><code>jgutierrez</code></td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Fabricio Fabián Quispe Barzola</strong></td>
+        <td><code>fabricioqfb</code></td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>C</strong></td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td><strong>Juan José Meza Huanacune</strong></td>
+        <td><code>juanjosemh</code></td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td>C</td>
+        <td><strong>L</strong></td>
+        <td>C</td>
+        <td><strong>C</strong></td>
+        <td>C</td>
+        <td>C</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+#### 5.2.3.3.Sprint Backlog 3.  
+
+En este sprint, el objetivo es consolidar la experiencia integral y segura de los usuarios de **AuraNeuro** mediante la implementación completa del backend, enfocado en optimizar la autenticación, gestión de usuarios, edición de perfil, historial médico, administración de recetas y configuración de disponibilidad para neurólogos.
+Estas funcionalidades garantizarán un acceso confiable a la plataforma, una interacción fluida con la información personal y médica, y una mayor autonomía tanto para pacientes como para neurólogos en la gestión de sus cuentas y horarios. Asimismo, permitirán al frontend consumir endpoints estables, seguros y documentados para integrar los flujos de autenticación, perfil, recetas y agenda en el entorno de staging.  
+
+<div style="margin:12px 0;">
+    <strong>Sprint Board (tool):</strong>
+    <br/>
+    <img src="./imagesChapter05/sprint-backlog2.png" alt="Screenshot del Sprint Board (Trello/Tool)" style="max-width:100%; border:1px solid #ccc; padding:4px;" />
+    <p style="margin:6px 0 0 0;">
+      <strong>URL del Board:</strong>
+      <a href="https://trello.com/invite/b/69139ce10bff9bfc6e37ecc2/ATTIb7718bb3db115796e09ec5846aab1653BDAC2C0C/sprint-backlog-3" target="_blank" rel="noopener">https://trello.com/invite/b/69139ce10bff9bfc6e37ecc2/ATTIb7718bb3db115796e09ec5846aab1653BDAC2C0C/sprint-backlog-3</a>
+    </p>
+  </div>
+</section>
+
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>Story name</th>
+      <th>Task ID</th>
+      <th>Task title</th>
+      <th>Task description</th>
+      <th>Est. (hrs)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / InProcess / ToReview / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>Registro de paciente</td>
+      <td>T01.1</td>
+      <td>Implementar modelo Patient y hashing de contraseña</td>
+      <td>Definir entidad Patient y añadir campo passwordHash; implementar hashing seguro (Argon2/Bcrypt) en el servicio de registro.</td>
+      <td>5</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>US01</td>
+      <td>Registro de paciente</td>
+      <td>T01.2</td>
+      <td>Endpoint POST /api/v1/patients/register</td>
+      <td>Implementar endpoint REST que reciba DTO, valide duplicados (email/phone) y cree el paciente devolviendo 201 con id.</td>
+      <td>4</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualizar perfil del paciente</td>
+      <td>T02.1</td>
+      <td>Servicio: Obtener perfil de paciente por ID</td>
+      <td>Crear servicio que recupere paciente y mapee a DTO excluyendo campos sensibles.</td>
+      <td>3</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualizar perfil del paciente</td>
+      <td>T02.2</td>
+      <td>Endpoint GET /api/v1/patients/{patientId}</td>
+      <td>Exponer endpoint protegido que devuelva el perfil; validar permisos (paciente o neurólogo autorizado).</td>
+      <td>3</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Vincular paciente a un neurólogo</td>
+      <td>T04.1</td>
+      <td>Repositorio: persistir vínculo paciente–neurólogo</td>
+      <td>Implementar método para crear relación patient_neurologists evitando duplicados.</td>
+      <td>3</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Vincular paciente a un neurólogo</td>
+      <td>T04.2</td>
+      <td>Endpoint POST /api/v1/patients/{patientId}/neurologists/{neurologistId}</td>
+      <td>Endpoint que valida existencia de entidades y crea la solicitud/vínculo en estado requested.</td>
+      <td>3</td>
+      <td>Chacaliaza Minaya, Eduardo F.</td>
+      <td>to Review</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Crear perfil profesional de neurólogo</td>
+      <td>T05.1</td>
+      <td>Modelo Neurologist y validaciones de licencia</td>
+      <td>Definir entidad con licenseNumber, specialties, verificationStatus; validar formato de licencia.</td>
+      <td>4</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Crear perfil profesional de neurólogo</td>
+      <td>T05.2</td>
+      <td>Endpoint POST /api/v1/neurologists</td>
+      <td>Endpoint para crear perfil profesional; devuelve 201 Created con neurologistId y verificationStatus.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>NEU-002</td>
+      <td>Listar pacientes asociados</td>
+      <td>T-NEU002-1</td>
+      <td>Repositorio: Obtener pacientes por neurologistId</td>
+      <td>Método que retorna pacientes asociados con metadata (assignedAt, status).</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>NEU-002</td>
+      <td>Listar pacientes asociados</td>
+      <td>T-NEU002-2</td>
+      <td>Endpoint GET /api/v1/neurologists/{neurologistId}/patients</td>
+      <td>Endpoint protegido que devuelve la lista; admite filtro simple ?status=.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>NEU-005</td>
+      <td>Gestionar solicitudes de asociación</td>
+      <td>T-NEU005-2</td>
+      <td>Endpoint PATCH /api/v1/neurologists/{neurologistId}/requests/{requestId}</td>
+      <td>Endpoint para aceptar/rechazar solicitud; al aceptar crear relación patient_neurologists.</td>
+      <td>4</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>To Review</td>
+    </tr>
+    <tr>
+      <td>ASS-001</td>
+      <td>Crear evaluación médica básica</td>
+      <td>T-ASS001-2</td>
+      <td>Endpoint POST /api/v1/patients/{patientId}/assessments</td>
+      <td>Endpoint protegido para que el neurólogo cree la evaluación y retorne assessmentId.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>ASS-002</td>
+      <td>Listar evaluaciones de un paciente</td>
+      <td>T-ASS002-1</td>
+      <td>Repositorio: GetAssessmentsByPatient(patientId)</td>
+      <td>Método que devuelve resumen de evaluaciones (id, assessedAt, diagnosisPreview, neurologistName).</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>ASS-003</td>
+      <td>Ver detalle de una evaluación médica</td>
+      <td>T-ASS003-1</td>
+      <td>Repositorio: Obtener evaluación por Id</td>
+      <td>GetById(assessmentId) que retorna la evaluación completa si no está deleted.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>ASS-003</td>
+      <td>Ver detalle de una evaluación médica</td>
+      <td>T-ASS003-2</td>
+      <td>Endpoint GET /api/v1/assessments/{assessmentId}</td>
+      <td>Endpoint que valida permisos (paciente/creador/admin) y retorna detalle o 404.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>ASS-004</td>
+      <td>Editar evaluación médica (propietario)</td>
+      <td>T-ASS004-2</td>
+      <td>Endpoint PATCH /api/v1/assessments/{assessmentId}</td>
+      <td>Endpoint protegido que recibe cambios parciales y devuelve la evaluación actualizada.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>ASS-005</td>
+      <td>Eliminar evaluación médica (soft-delete)</td>
+      <td>T-ASS005-2</td>
+      <td>Endpoint DELETE /api/v1/assessments/{assessmentId}</td>
+      <td>Endpoint protegido que invoca SoftDelete; solo autor o admin puede ejecutar; devuelve 204.</td>
+      <td>2</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-001</td>
+      <td>Solicitar cita (paciente)</td>
+      <td>T-APP001-1</td>
+      <td>Servicio: Crear cita y validar disponibilidad simple</td>
+      <td>Crear lógica que valide startAt &lt; endAt, que el neurólogo exista y no haya cita confirmada idéntica.</td>
+      <td>4</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-001</td>
+      <td>Solicitar cita (paciente)</td>
+      <td>T-APP001-2</td>
+      <td>Endpoint POST /api/v1/appointments</td>
+      <td>Endpoint que crea cita en estado requested y devuelve appointmentId; notifica in-app al neurólogo.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-002</td>
+      <td>Ver mis citas (paciente)</td>
+      <td>T-APP002-1</td>
+      <td>Repositorio: Obtener citas por patientId</td>
+      <td>Implementar GetByPatientId(patientId) con orden por startAt.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-002</td>
+      <td>Ver mis citas (paciente)</td>
+      <td>T-APP002-2</td>
+      <td>Endpoint GET /api/v1/patients/{patientId}/appointments</td>
+      <td>Endpoint protegido que retorna citas del paciente autenticado.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-003</td>
+      <td>Listar solicitudes de cita (neurólogo)</td>
+      <td>T-APP003-1</td>
+      <td>Repositorio: Obtener solicitudes por neurologistId</td>
+      <td>Método para listar citas con estado requested y datos de paciente.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-004</td>
+      <td>Confirmar o rechazar solicitud de cita</td>
+      <td>T-APP004-1</td>
+      <td>Servicio: Actualizar estado de cita a confirmed/rejected</td>
+      <td>Lógica que cambia estado, setea respondedAt y evita colisiones de slots.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-004</td>
+      <td>Confirmar o rechazar solicitud de cita</td>
+      <td>T-APP004-2</td>
+      <td>Endpoint PATCH /api/v1/appointments/{appointmentId}/status</td>
+      <td>Endpoint protegido para que el neurólogo cambie el estado mediante action en body.</td>
+      <td>2</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-005</td>
+      <td>Cancelar cita (paciente o neurólogo)</td>
+      <td>T-APP005-1</td>
+      <td>Servicio: Cancelar cita y registrar metadata</td>
+      <td>Verificar que quien solicita pertenece a la cita; setear cancelled, cancelledBy, cancelledAt.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>APP-005</td>
+      <td>Cancelar cita (paciente o neurólogo)</td>
+      <td>T-APP005-2</td>
+      <td>Endpoint DELETE /api/v1/appointments/{appointmentId}</td>
+      <td>Endpoint que cancela la cita; devolver 204 si éxito o 403 si falta permiso.</td>
+      <td>2</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AVB-001</td>
+      <td>Crear franja de disponibilidad</td>
+      <td>T-AVB001-2</td>
+      <td>Endpoint POST /api/v1/neurologists/{neurologistId}/availability</td>
+      <td>Endpoint protegido para crear franja; validar solapamientos básicos.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AVB-002</td>
+      <td>Listar mis franjas de disponibilidad</td>
+      <td>T-AVB002-1</td>
+      <td>Repositorio: Obtener franjas por neurologistId</td>
+      <td>Implementar GetByNeurologistId que retorne franjas activas ordenadas.</td>
+      <td>2</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AVB-004</td>
+      <td>Eliminar franja de disponibilidad</td>
+      <td>T-AVB004-2</td>
+      <td>Endpoint DELETE /api/v1/availability/{slotId}</td>
+      <td>Endpoint protegido para eliminar la franja; responde 204.</td>
+      <td>1.5</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AVB-005</td>
+      <td>Consultar franjas disponibles (paciente)</td>
+      <td>T-AVB005-1</td>
+      <td>Servicio: GetAvailableSlots por fecha</td>
+      <td>Lógica que filtra franjas activas y no ocupadas por citas confirmadas.</td>
+      <td>3</td>
+      <td>Juan José Meza Huanacune</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-001</td>
+      <td>Crear receta electrónica básica</td>
+      <td>T-REC001-1</td>
+      <td>Entidad Prescription y validaciones básicas</td>
+      <td>Definir entidad con patientId, neurologistId, medicines, issuedAt, signatureHash.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-001</td>
+      <td>Crear receta electrónica básica</td>
+      <td>T-REC001-2</td>
+      <td>Endpoint POST /api/v1/recipes</td>
+      <td>Endpoint protegido (NEUROLOGIST) que crea receta y devuelve id; almacenar signatureHash.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-002</td>
+      <td>Listar recetas del paciente</td>
+      <td>T-REC002-1</td>
+      <td>Repositorio: GetByPatientId para recetas</td>
+      <td>Método que retorna resumen de recetas por paciente con orden por fecha.</td>
+      <td>2</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-002</td>
+      <td>Listar recetas del paciente</td>
+      <td>T-REC002-2</td>
+      <td>Endpoint GET /api/v1/patients/{patientId}/recipes</td>
+      <td>Endpoint protegido que devuelve la lista de recetas del paciente.</td>
+      <td>2</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-003</td>
+      <td>Ver detalle de receta</td>
+      <td>T-REC003-1</td>
+      <td>Servicio: Obtener receta completa por id</td>
+      <td>Obtener receta con medicamentos, dosis, emisor y estado; validar permisos.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-003</td>
+      <td>Ver detalle de receta</td>
+      <td>T-REC003-2</td>
+      <td>Endpoint GET /api/v1/recipes/{recipeId}</td>
+      <td>Endpoint que retorna detalle o 403/404 según permisos.</td>
+      <td>2</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>REC-004</td>
+      <td>Actualizar receta (corrección menor)</td>
+      <td>T-REC004-1</td>
+      <td>Servicio: UpdatePrescription limitado</td>
+      <td>Permitir editar campos menores (notes, instructions) solo si estado active.</td>
+      <td>3</td>
+      <td>Fabricio Fabián Quispe Barzola</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-001</td>
+      <td>Inicio de sesión con correo/contraseña</td>
+      <td>T-AUTH001-1</td>
+      <td>Servicio Auth: Validación y generación de JWT</td>
+      <td>Verificar credenciales, usuario activo y generar access token JWT con claims.</td>
+      <td>4</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-001</td>
+      <td>Inicio de sesión con correo/contraseña</td>
+      <td>T-AUTH001-2</td>
+      <td>Endpoint POST /api/v1/auth/login</td>
+      <td>Endpoint que recibe credenciales y devuelve { accessToken, user } o 401.</td>
+      <td>2</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-002</td>
+      <td>Inicio de sesión por teléfono mediante OTP</td>
+      <td>T-AUTH002-1</td>
+      <td>Servicio OTP: Validar OTP y autenticar</td>
+      <td>Verificar código OTP, TTL y estado; generar JWT si es válido.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-002</td>
+      <td>Inicio de sesión por teléfono mediante OTP</td>
+      <td>T-AUTH002-2</td>
+      <td>Endpoint POST /api/v1/auth/verify-otp</td>
+      <td>Endpoint que recibe phone + otp y devuelve token si es válido.</td>
+      <td>2</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-003</td>
+      <td>Recuperación de contraseña vía token</td>
+      <td>T-AUTH003-1</td>
+      <td>Servicio: Generar token de recuperación</td>
+      <td>Generar token temporal y guardarlo con TTL; encolar/simular envío por email.</td>
+      <td>3</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>AUTH-003</td>
+      <td>Recuperación de contraseña vía token</td>
+      <td>T-AUTH003-2</td>
+      <td>Endpoint POST /api/v1/auth/reset-password</td>
+      <td>Endpoint que recibe { token, newPassword } y actualiza hash si token válido.</td>
+      <td>2</td>
+      <td>jhimyromero</td>
+      <td>Done</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+#### 5.2.3.4.Development Evidence for Sprint Review.
+
+
+Durante este Sprint 3 el equipo centró sus esfuerzos en consolidar la capa de **Web Services** del producto, avanzando decisivamente en la implementación de los módulos que soportan la interacción clínica entre pacientes y neurólogos. Se priorizaron las piezas funcionales que permiten documentar y consultar evaluaciones médicas, gestionar citas y disponibilidades, emitir y administrar recetas electrónicas, y atender los flujos de autenticación necesarios para proteger los accesos. Estos desarrollos buscan garantizar que los flujos críticos del dominio (registro de evaluación, agendamiento, emisión de receta y autenticación) estén disponibles y sean consumibles por el frontend del Sprint 2.
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed On Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/assessments</td>
+      <td>a9f4d32</td>
+      <td>Implement CRUD endpoints for assessments</td>
+      <td>Added AssessmentController, AssessmentService and AssessmentRepository. Implemented Create, Read (list &amp; detail), Update and entity mapping; added DTOs for input/output.</td>
+      <td>2025-11-04</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/assessments</td>
+      <td>b28e9c1</td>
+      <td>Add soft-delete and author-permission checks for assessments</td>
+      <td>Introduced deleted, deletedAt fields; updated repository queries to ignore soft-deleted records; enforced that only creator or admin can edit/delete; added audit log entries for create/update/delete.</td>
+      <td>2025-11-05</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/appointments</td>
+      <td>c83d711</td>
+      <td>Implement appointment request and creation flow</td>
+      <td>Implemented AppointmentController and AppointmentService with flow to create appointment requests (status=requested), basic availability validation and initial notification enqueue.</td>
+      <td>2025-11-06</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/appointments</td>
+      <td>d97a5b0</td>
+      <td>Add confirm/reject and cancellation endpoints for appointments</td>
+      <td>Added endpoints to update appointment status (confirm/reject) and to cancel appointments; implemented state transitions, respondedAt/cancelledAt metadata and permission checks.</td>
+      <td>2025-11-07</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/availability</td>
+      <td>e42cb1a</td>
+      <td>Implement availability CRUD for neurologists</td>
+      <td>Added AvailabilitySlot entity, repository and controller; supports create/list/update/delete of availability slots with preliminary overlap checks.</td>
+      <td>2025-11-07</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/availability</td>
+      <td>f0c9de3</td>
+      <td>Improve availability validation and overlap detection</td>
+      <td>Enhanced overlap detection logic, normalized timezone handling for slots and added constraints to prevent conflicting availabilities for the same neurologist.</td>
+      <td>2025-11-08</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/prescriptions</td>
+      <td>a63bd91</td>
+      <td>Add prescriptions CRUD and revoke flow</td>
+      <td>Implemented Prescription entity, create/list/detail endpoints, basic signature hash storage and revoke (soft-revoke) behavior with revoked and revokedAt metadata.</td>
+      <td>2025-11-09</td>
+    </tr>
+    <tr>
+      <td>Backend-AuraNeuro</td>
+      <td>feature/auth</td>
+      <td>b7a9c00</td>
+      <td>Implement JWT auth, OTP login and password recovery</td>
+      <td>Added AuthService with JWT generation, OTP verification endpoints, forgot/reset password flows, and basic token blacklist for logout handling.</td>
+      <td>2025-11-10</td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### 5.2.3.5.Execution Evidence for Sprint Review.
+
+Durante este Sprint 3 el equipo completó la implementación y la integración de las piezas funcionales clave que sustentan los flujos clínicos entre pacientes y neurólogos. A nivel de backend se entregaron y estabilizaron los servicios REST versionados (/api/v1/...) para la gestión de evaluaciones médicas (crear, listar, ver detalle, editar y soft-delete), el ciclo completo de citas (solicitar, listar, confirmar/rechazar y cancelar), la administración de franjas de disponibilidad de neurólogos y la emisión, consulta y revocación básica de recetas . Paralelamente se consolidó la capa de autenticación con emisión de access tokens (JWT), login por OTP y recuperación de contraseña, incluyendo controles de autorización que garantizan que solo usuarios con los permisos adecuados puedan crear o modificar recursos sensibles.  
+
+<h4 style="margin-top:18px; margin-bottom:8px;">Screenshots — Vistas principales implementadas</h4>
+  <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/login.jpeg" alt="Login — US01" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Login (email/password)</strong><br/>
+        Pantalla de inicio de sesión con validaciones, show/hide password y mensajes de error.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/register.jpeg" alt="Register patient — US02" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Registro de paciente</strong><br/>
+        Formulario con password strength indicator, confirm password y consentimiento.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/register.jpeg" alt="Register pro — US03" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Registro de neurólogo (pro)</strong><br/>
+        Form con campo de número de licencia y estado "pendiente de verificación" (UI).
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/enterphone.png" alt="Phone entry — US36" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Entrada de número (Phone Auth)</strong><br/>
+        Selector de prefijo, input masked y consentimiento para SMS; transición al OTP.
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/enterOtp.png" alt="OTP entry — US37" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Verificación OTP</strong><br/>
+        Segment inputs, contador (timer), resend disabled y UI de intentos/lockout (mock).
+      </figcaption>
+    </figure>
+    <figure style="width:320px; margin:0;">
+      <img src="./imagesChapter05/map.png" alt="Component library" style="width:100%; border:1px solid #ddd; display:block;" />
+      <figcaption style="padding:6px 0 0 0;">
+        <strong>Biblioteca de componentes (Vue)</strong><br/>
+        BaseInput, BaseButton, BaseModal y patterns reutilizables usados por las vistas.
+      </figcaption>
+    </figure>
+  </div>
+  <!-- VIDEO DEMO -->
+  <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración / walkthrough</h4>
+  <p style="margin:8px 0;">
+    <strong>Link al video:</strong>
+    <a href="https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing</a>
+  </p>
+</section>
+
+--------> falta poner aevidenca capturas <------------------
+#### 5.2.3.6.Services Documentation Evidence for Sprint Review.  
+En el Sprint 3 se completó y publicó la documentación OpenAPI de los Web Services desarrollados para soportar los flujos esenciales entre pacientes y neurólogos. La documentación cubre los endpoints versionados api/v1 implementados en este sprint: gestión de evaluaciones (assessments), citas (appointments), disponibilidades (availability), recetas (prescriptions), así como los mecanismos de autenticación (auth) y los recursos básicos de patients y neurologists necesarios para el funcionamiento del MVP.
+La especificación OpenAPI se actualizó para describir cada operación (verbos), parámetros (path / query / body), esquemas de request y response, códigos HTTP esperados y ejemplos JSON representativos. Se expusieron estas especificaciones a través de la UI de Swagger (local) para que el equipo de frontend  puedan ejecutar ejemplos en vivo (Try it out). Como evidencia, en la tabla siguiente se relacionan los endpoints documentados, las acciones soportadas y un ejemplo de uso por cada endpoint importante desarrollado en el Sprint 3.  
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint (resource)</th>
+      <th>Actions implemented (HTTP verb)</th>
+      <th>Syntax / Call</th>
+      <th>Parameters (path / query / body)</th>
+      <th>Example Request (JSON / cURL)</th>
+      <th>Example Response (status &amp; body)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Assessments — Crear evaluación</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/patients/{patientId}/assessments</code></td>
+      <td>path: <code>patientId</code> (UUID). body: <code>{ assessedAt, diagnosis, notes }</code></td>
+      <td>
+        <pre><code>JSON:
+{"assessedAt":"2025-11-11T10:00:00Z","diagnosis":"Migraine","notes":"Follow-up in 2 weeks"}
+
+cURL:
+curl -X POST "http://localhost:5000/api/v1/patients/{id}/assessments" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"assessedAt":"2025-11-11T10:00:00Z","diagnosis":"Migraine","notes":"Follow-up in 2 weeks"}'
+</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+{
+  "assessmentId":"uuid",
+  "patientId":"...",
+  "assessedAt":"2025-11-11T10:00:00Z",
+  "diagnosis":"Migraine",
+  "createdBy":"neurologistId"
+}</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Assessments — Listar por paciente</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/patients/{patientId}/assessments</code></td>
+      <td>path: <code>patientId</code>. optional query: <code>?from=YYYY-MM-DD&amp;to=YYYY-MM-DD</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/patients/{id}/assessments" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+[
+  { "id":"..", "assessedAt":"..", "diagnosis":"..", "neurologistName":"Dr. X" },
+  ...
+]  (ordered by assessedAt desc)</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Assessments — Detalle</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/assessments/{assessmentId}</code></td>
+      <td>path: <code>assessmentId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/assessments/{aid}" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+{
+  "id":"..",
+  "patientId":"..",
+  "assessedAt":"..",
+  "diagnosis":"..",
+  "notes":"..",
+  "createdBy":".."
+}
+or 404 Not Found</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Assessments — Edit (propietario)</td>
+      <td>PATCH</td>
+      <td><code>PATCH /api/v1/assessments/{assessmentId}</code></td>
+      <td>path: <code>assessmentId</code>. body: partial fields <code>{ diagnosis?, notes?, assessedAt? }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X PATCH "http://localhost:5000/api/v1/assessments/{aid}" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"notes":"updated"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+(updated resource JSON)
+
+403 Forbidden if not owner</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Assessments — Soft-delete</td>
+      <td>DELETE</td>
+      <td><code>DELETE /api/v1/assessments/{assessmentId}</code></td>
+      <td>path: <code>assessmentId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X DELETE "http://localhost:5000/api/v1/assessments/{aid}" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>204 No Content
+(resource marked deleted=true, deletedAt set)
+
+403 if unauthorized</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Appointments — Solicitar cita</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/appointments</code></td>
+      <td>body: <code>{ patientId, neurologistId, startAt, endAt, reason }</code></td>
+      <td>
+        <pre><code>JSON:
+{"patientId":"...","neurologistId":"...","startAt":"2025-11-20T09:00:00-05:00","endAt":"2025-11-20T09:30:00-05:00","reason":"Follow-up"}
+
+cURL:
+curl -X POST "http://localhost:5000/api/v1/appointments" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{...}'</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+{
+  "appointmentId":"uuid",
+  "status":"requested",
+  "startAt":"2025-11-20T09:00:00-05:00",
+  "endAt":"2025-11-20T09:30:00-05:00"
+}</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Appointments — Listar (paciente)</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/patients/{patientId}/appointments</code></td>
+      <td>path: <code>patientId</code>. query: <code>?status=confirmed|requested|cancelled</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/patients/{id}/appointments?status=confirmed" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+[ {appointment objects...} ]</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Appointments — Listar solicitudes (neurólogo)</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/neurologists/{neurologistId}/appointments/requests</code></td>
+      <td>path: <code>neurologistId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/neurologists/{nid}/appointments/requests" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+array of requested appointments with patient info</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Appointments — Confirmar / Rechazar</td>
+      <td>PATCH</td>
+      <td><code>PATCH /api/v1/appointments/{appointmentId}/status</code></td>
+      <td>path: <code>appointmentId</code>. body: <code>{ action: "confirm" | "reject", note?: string }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X PATCH "http://localhost:5000/api/v1/appointments/{id}/status" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"action":"confirm"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+(updated appointment with new status)</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Appointments — Cancelar</td>
+      <td>DELETE</td>
+      <td><code>DELETE /api/v1/appointments/{appointmentId}</code></td>
+      <td>path: <code>appointmentId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X DELETE "http://localhost:5000/api/v1/appointments/{id}" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>204 No Content on success
+
+403 if user not part of appointment</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Availability — Crear franja</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/neurologists/{neurologistId}/availability</code></td>
+      <td>path: <code>neurologistId</code>. body: <code>{ startAt, endAt, recurrence? }</code></td>
+      <td>
+        <pre><code>JSON example with start/end timestamps
+
+cURL:
+curl -X POST "http://localhost:5000/api/v1/neurologists/{nid}/availability" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{...}'</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+slot object { id, neurologistId, startAt, endAt }
+or 409 Conflict on overlap</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Availability — Listar (neurologist)</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/neurologists/{neurologistId}/availability</code></td>
+      <td>path: <code>neurologistId</code>. query: <code>?from=&amp;to=</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/neurologists/{nid}/availability?from=2025-11-01&amp;to=2025-11-30" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+[ {id, startAt, endAt, isActive}, ... ]</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Availability — Actualizar</td>
+      <td>PATCH</td>
+      <td><code>PATCH /api/v1/availability/{slotId}</code></td>
+      <td>path: <code>slotId</code>. body: partial <code>{ startAt?, endAt?, isActive? }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X PATCH "http://localhost:5000/api/v1/availability/{slotId}" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"startAt":"2025-11-21T10:00:00-05:00"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK updated slot
+or 409 Conflict if new time overlaps</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Availability — Consultar slots disponibles (paciente)</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/neurologists/{neurologistId}/available-slots?date=YYYY-MM-DD</code></td>
+      <td>path: <code>neurologistId</code>. query: <code>date=YYYY-MM-DD</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/neurologists/{nid}/available-slots?date=2025-11-20" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+list of available slots not occupied by confirmed appointments</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Prescriptions — Crear receta</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/recipes</code></td>
+      <td>body: <code>{ patientId, medicines:[{name,dose,frequency}], instructions }</code></td>
+      <td>
+        <pre><code>JSON example:
+{"patientId":"...","medicines":[{"name":"Ibuprofen","dose":"200mg","frequency":"8h"}],"instructions":"Take after meals"}
+
+cURL:
+curl -X POST "http://localhost:5000/api/v1/recipes" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{...}'</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+{ "id":"..","issuedAt":"..","signatureHash":".." }</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Prescriptions — Listar por paciente</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/patients/{patientId}/recipes</code></td>
+      <td>path: <code>patientId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/patients/{id}/recipes" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+[ {id, issuedAt, neurologistName, status}, ... ]</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Prescriptions — Detalle</td>
+      <td>GET</td>
+      <td><code>GET /api/v1/recipes/{recipeId}</code></td>
+      <td>path: <code>recipeId</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X GET "http://localhost:5000/api/v1/recipes/{rid}" \
+ -H "Authorization: Bearer &lt;token&gt;"</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+full prescription object including medicines[] and signatureHash</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Prescriptions — Actualizar (parcial)</td>
+      <td>PATCH</td>
+      <td><code>PATCH /api/v1/recipes/{recipeId}</code></td>
+      <td>path: <code>recipeId</code>. body: partial updates</td>
+      <td>
+        <pre><code>cURL:
+curl -X PATCH "http://localhost:5000/api/v1/recipes/{rid}" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"instructions":"Take with water"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK updated resource
+or 403 if not creator</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Prescriptions — Revocar</td>
+      <td>PATCH</td>
+      <td><code>PATCH /api/v1/recipes/{recipeId}/revoke</code></td>
+      <td>path: <code>recipeId</code>. body: <code>{ reason }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X PATCH "http://localhost:5000/api/v1/recipes/{rid}/revoke" \
+ -H "Authorization: Bearer &lt;token&gt;" \
+ -H "Content-Type: application/json" \
+ -d '{"reason":"Error in dosage"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+resource with revoked: true, revokedAt: ...</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Auth — Login email/password</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/auth/login</code></td>
+      <td>body: <code>{ email, password }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/auth/login" \
+ -H "Content-Type: application/json" \
+ -d '{"email":"juan@example.com","password":"P@ssw0rd!"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+{ accessToken:"ey...", expiresIn:900, user:{id,email,role} }
+or 401 Unauthorized</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Auth — Send OTP</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/auth/send-otp</code></td>
+      <td>body: <code>{ phone }</code></td>
+      <td>
+        <pre><code>JSON:
+{"phone":"+51987654321"}
+Response:
+202 Accepted (enqueued)</code></pre>
+      </td>
+      <td>
+        <pre><code>202 Accepted
+(OTP token persisted / enqueued)</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Auth — Verify OTP</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/auth/verify-otp</code></td>
+      <td>body: <code>{ phone, otp }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/auth/verify-otp" \
+ -H "Content-Type: application/json" \
+ -d '{"phone":"+51987654321","otp":"123456"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+{ accessToken:"..." }
+or 400/429 on failures/limits</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Auth — Forgot password</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/auth/forgot-password</code></td>
+      <td>body: <code>{ emailOrPhone }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/auth/forgot-password" \
+ -H "Content-Type: application/json" \
+ -d '{"emailOrPhone":"juan@example.com"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>202 Accepted
+token created and (simulated) sent</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Auth — Reset password</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/auth/reset-password</code></td>
+      <td>body: <code>{ token, newPassword }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/auth/reset-password" \
+ -H "Content-Type: application/json" \
+ -d '{"token":"...","newPassword":"N3wP@ss!"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>200 OK
+password updated, previous sessions invalidated (if applicable)</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Patients — Registro (simplified)</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/patients/register</code></td>
+      <td>body: <code>{ fullName, email?, phone?, password }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/patients/register" \
+ -H "Content-Type: application/json" \
+ -d '{"fullName":"Juan Perez","email":"juan@example.com","phone":"+51987654321","password":"P@ssw0rd!"}'</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+{ userId: "...", nextAction: "verify_otp" }</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Neurologists — Registro profesional</td>
+      <td>POST</td>
+      <td><code>POST /api/v1/neurologists</code></td>
+      <td>body: <code>{ fullName, email, password, licenseNumber, specialties }</code></td>
+      <td>
+        <pre><code>cURL:
+curl -X POST "http://localhost:5000/api/v1/neurologists" \
+ -H "Content-Type: application/json" \
+ -d '{"fullName":"Dr. Ana","email":"ana@clinic.com","password":"DrP@ss1","licenseNumber":"LIC-12345","specialties":["Epilepsy"]}'</code></pre>
+      </td>
+      <td>
+        <pre><code>201 Created
+{ neurologistId, verificationStatus:"pending" }</code></pre>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+Tabla de Endpoints documentados (Sprint 3)  
+**Enlace base de documentación (ejemplo local):**  
+http://localhost:5000/swagger/index.html  
+**Backend Desplegado:**  
+<a href="https://frontend-auro-neuro-rdsn.vercel.app/#/">https://frontend-auro-neuro-rdsn.vercel.app/#/login</a>  
+
+
+
+#### 5.2.3.7.Software Deployment Evidence for Sprint Review.
+
+
+#### 5.2.3.8.Team Collaboration Insights during Sprint.
+Durante el Sprint 3, el equipo de desarrollo de AuraNeuro mantuvo una comunicación y coordinación continua mediante el uso de diversas herramientas colaborativas que facilitaron la gestión de tareas, el seguimiento del progreso y la toma de decisiones técnicas.  
+
+La planificación y seguimiento de tareas se gestionó principalmente a través de Trello, donde se organizaron todas las historias de usuario y sus respectivas tareas técnicas dentro de tableros estructurados por columnas (“Backlog”, “In Progress”, “Code Review”, “Done”). Cada tarjeta en Trello incluyó descripciones detalladas, criterios de aceptación y estimaciones en horas, permitiendo así una visibilidad clara del estado de avance del Sprint.
+La comunicación sincrónica y asincrónica se realizó mediante Discord, herramienta que permitió al equipo coordinar reuniones diarias, resolver bloqueos técnicos y compartir avances en tiempo real.  
+Estas sesiones incluyeron reuniones breves de daily stand-up y pair programming sessions, donde se resolvieron incidencias en la integración entre el Backend (Web Services) y el Frontend (Web Application).
+En cuanto al control de versiones y evidencia de trabajo colaborativo, todos los miembros del equipo realizaron commits y pull requests en el repositorio oficial alojado en GitHub, siguiendo las convenciones de nomenclatura acordadas. Las ramas de trabajo se gestionan bajo la estructura feature/, fix/ y doc/, facilitando la trazabilidad del desarrollo.  
+
+La revisión de código (code review) se implementó de forma sistemática antes de integrar cambios en la rama principal, garantizando así la calidad y consistencia del código. Los analytics de GitHub evidencian una distribución equitativa de contribuciones entre los miembros, tanto en commits como en issues y pull requests.
+En conjunto, la colaboración efectiva entre las herramientas Trello, Discord y GitHub permitió al equipo cumplir los objetivos del Sprint, mejorar la eficiencia del flujo de trabajo y mantener una comunicación constante, asegurando la entrega de los componentes planificados: Web Services (API REST con endpoints documentados), Web Application (módulos de interacción paciente-neurólogo) y Landing Page (sección informativa del sistema AuraNeuro).
+
+## 5.3. Validation Interviews.  
+**Objetivo general**  
+
+Validar con usuarios reales (segmentos objetivo) la usabilidad, comprensión y valor percibido de la Landing Page y de la aplicación web (Paciente / Neurólogo) en entornos reales de staging. Detectar fricciones, confirmar hipótesis de conversión y verificar que los flujos críticos funcionan end-to-end.  
+
+**Segmentos objetivo**  
+
+- Neurólogos / terapeutas — Profesionales que usarán el dashboard clínico, gestionarán pacientes, evaluaciones, citas y recetas.
+
+- Pacientes o cuidadores — Usuarios que solicitarán citas, consultarán evaluaciones y recetas, y usarán el panel personal.
+
+
+Evaluación heurística básica (aplicada post-tarea)
+Aplicar una rápida checklist heurística (moderador) por cada participante:
+- Visibilidad del estado del sistema.
+- Correspondencia entre el sistema y el mundo real (terminología clínica clara).
+- Control y libertad del usuario (cancelar/editar cita).
+- Consistencia y estándares (nomenclaturas, iconografía).
+- Prevención de errores (validaciones en formularios).
+- Reconocimiento en vez de recuerdo (labels claros).
+- Flexibilidad y eficiencia de uso (atajos para expertos).
+- Estética y diseño minimalista.
+- Ayuda y documentación (mensajes de error útiles).
+
+Registrar observaciones por heurística con severidad leve/moderada/crítica.
+
 ### 5.3.1. Diseño de Entrevistas.
+
+**Formato de la sesión:**
+- Duración: 30–45 minutos por participante
+- Modalidad: virtual
+- Registro: Video grabado con consentimiento informado
+  
+Materiales:
+
+- Landing Page final de AuraNeuro
+
+- Aplicación web funcional (frontend y backend integrados)
+
+- Guion de entrevista y hoja de observación
+
+
+Estructura general de la sesión:
+- Introducción y consentimiento
+- Preguntas demográficas y contexto
+- Exploración libre de la Landing Page
+- Tareas dirigidas (user flows en Landing y aplicación)
+- Evaluación heurística y discusión final
+
+-----
+# Guion de entrevista de validación — AuraNeuro
+
+## 1. Introducción y consentimiento (moderador)
+
+> “Hola, soy **[nombre del entrevistador/a]**, miembro del equipo de AuraNeuro. Gracias por participar en esta entrevista de validación. El propósito de esta sesión es comprender tus impresiones y nivel de satisfacción al usar la Landing Page y la aplicación web de AuraNeuro. La sesión será grabada únicamente con fines de análisis interno. ¿Das tu consentimiento para grabar la entrevista y utilizar tus comentarios de manera anónima en el informe final?”
+
+**Registrar:**  
+- **Consentimiento otorgado:** ☐ Sí  ☐ No
+
+**Moderador:** ____________________  
+**Fecha:** ____________________  
+**Grabación (ID / archivo):** ____________________
+
+---
+
+## 2. Preguntas demográficas y contexto (2–3 min)
+
+- **Nombre:** ____________________  
+- **Edad:** ____________________  
+- **Distrito (residencia):** ____________________  
+
+- **Ocupación principal:**  
+  - ☐ Médico  ☐ Terapeuta  ☐ Paciente  ☐ Familiar  ☐ Otro: ________
+
+- **¿Tienes experiencia previa utilizando plataformas de salud digital o telemedicina?**  
+  - ☐ Sí  ☐ No  
+  - **Si responde “Sí”:** ¿Cuáles y para qué las utilizas?  
+    - ________________________________________________________________
+
+- **¿Qué te motiva más?:**  
+  - ☐ Optimizar tu práctica médica  ☐ Mejorar tu experiencia como paciente
+
+**Objetivo:** Comprender el perfil del participante y su nivel de familiaridad con soluciones digitales de salud.
+
+---
+
+## 3. Exploración libre de la Landing Page (5–7 min)
+
+**Instrucción:**  
+> “Por favor, navega libremente por la Landing Page de AuraNeuro como si la hubieras encontrado por primera vez. Comenta en voz alta lo que vas observando, entendiendo o sintiendo.”
+
+**Observaciones a registrar:**  
+- **Secciones más visitadas:** Inicio / Características / Planes / Otro: ________  
+- **Elementos que generan atención o confusión:** ____________________  
+- **Tiempos de permanencia por sección:** ____________________  
+
+**Preguntas durante o después de la exploración:**
+- En una frase: **¿qué crees que ofrece AuraNeuro?**  
+  - ________________________________________________________________
+- **¿Para quién consideras que está dirigida la plataforma?**  
+  - ________________________________________________________________
+- **¿Qué parte del diseño o contenido te generó mayor confianza?**  
+  - ________________________________________________________________
+- **¿Hubo algo que te generó dudas o te pareció poco claro?**  
+  - ________________________________________________________________
+- **¿Qué esperarías que ocurra al hacer clic en “Optimizar mi práctica”?**  
+  - ________________________________________________________________
+- **¿El mensaje principal te motiva a suscribirte o explorar más?**  
+  - ☐ Sí  ☐ No  **Comentario:** ____________________
+
+**Objetivo:** Validar la claridad del mensaje, atractivo visual, y efectividad del CTA.
+
+---
+
+## 4. Tareas dirigidas (User Flows) — Landing Page y Aplicación Web
+
+### 4.A — Landing Page: Suscripción / Registro
+**Instrucción:**  
+> “Haz clic en ‘Suscribirse’ y completa el formulario.”
+
+**Observaciones:**  
+- Tiempo en encontrar el CTA: ______________  
+- Dudas al completar el formulario: ______________  
+- Percepción de seguridad al ingresar datos: ______________
+
+**Preguntas post-tarea:**
+- ¿El formulario te pareció claro y fácil de completar? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿Sentiste confianza al dejar tus datos personales? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿Cambiarías o eliminarías algún campo del formulario? ______________  
+- ¿Qué te motivaría a finalizar el registro en una situación real? ______________
+
+---
+
+### 4.B — Aplicación (Rol: Paciente): Solicitar una cita
+**Instrucción:**  
+> “Imagina que eres un paciente que desea solicitar una cita para la próxima semana con su neurólogo.”
+
+**Preguntas post-tarea:**
+- ¿Encontraste fácilmente la opción para agendar una cita? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿El proceso fue claro desde la selección hasta la confirmación? ☐ Sí ☐ No — **Comentario:** __________  
+- **¿Cómo evaluarías la rapidez y facilidad del flujo (1–5)?** ☐ 1 ☐ 2 ☐ 3 ☐ 4 ☐ 5  
+- ¿Qué mejorarías para que el proceso sea más intuitivo? ______________
+
+---
+
+### 4.C — Aplicación (Rol: Neurólogo): Revisar y confirmar una solicitud
+**Instrucción:**  
+> “Ahora imagina que eres un neurólogo. Revisa las solicitudes de cita pendientes y confirma una.”
+
+**Preguntas post-tarea:**
+- ¿Encontraste rápidamente la solicitud de cita? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿Fue claro cómo confirmar o rechazar una solicitud? ☐ Sí ☐ No — **Comentario:** __________  
+- **¿Qué información adicional te gustaría tener antes de confirmar?** (ej. historial del paciente, notas previas, alergias)  
+  - ________________________________________________________________
+
+---
+
+### 4.D — Aplicación (Rol: Paciente): Consultar evaluaciones y recetas
+**Instrucción:**  
+> “Desde tu panel, abre el historial de evaluaciones y revisa la última receta médica.”
+
+**Preguntas post-tarea:**
+- ¿Encontraste la evaluación sin dificultad? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿La información clínica y las indicaciones fueron comprensibles? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿Percibes claridad en el formato y lenguaje médico? ☐ Sí ☐ No — **Comentario:** __________  
+- ¿Qué mejorarías para hacerlo más amigable o visualmente claro? ______________
+
+---
+
+## 5. Evaluación heurística rápida y discusión final (5–7 min)
+
+**Pide al entrevistado calificar del 1 al 5 los siguientes aspectos:**  
+*(1 = Muy deficiente, 5 = Excelente)*
+
+| Criterio                                                               | Calificación (1–5) | Comentario breve |
+|------------------------------------------------------------------------|:------------------:|------------------|
+| Claridad del propósito de AuraNeuro                                     | ☐1 ☐2 ☐3 ☐4 ☐5     | __________________ |
+| Confianza que transmite la plataforma                                   | ☐1 ☐2 ☐3 ☐4 ☐5     | __________________ |
+| Facilidad de registro / suscripción                                     | ☐1 ☐2 ☐3 ☐4 ☐5     | __________________ |
+| Facilidad para solicitar o confirmar citas                              | ☐1 ☐2 ☐3 ☐4 ☐5     | __________________ |
+| Claridad de información en secciones “Cómo funciona” y “Planes”         | ☐1 ☐2 ☐3 ☐4 ☐5     | __________________ |
+
+---
+
+### Preguntas abiertas finales
+
+- **¿Qué mejorarías en la Landing Page o en la app para hacerla más atractiva o útil?**  
+  - ________________________________________________________________
+
+- **¿Qué elemento te haría más propenso a registrarte o recomendarla a otros?**  
+  - ________________________________________________________________
+
+- **¿Te genera alguna preocupación sobre la seguridad o privacidad de los datos en AuraNeuro?**  
+  - ________________________________________________________________
+
+- **En una palabra, ¿cómo describirías tu experiencia general con la plataforma?**  
+  - ______________
+
+---
+
+**Notas adicionales del entrevistador:**  
+- ________________________________________________________________
+
+**Firma del entrevistador:** ____________________  
+**Firma del participante (opcional):** ____________________
+
+
 ### 5.3.2. Registro de Entrevistas.
+
+**Segmento 1**
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 55</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 56</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 57</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+**Segmento 2**
+
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 58</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 59</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+  <div style="padding:6px 4px 18px 4px;">
+    <strong>Entrevista N°1:</strong>
+  </div>
+  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
+    <div style="font-style:italic; margin-bottom:6px;">
+      <strong>Tabla 60</strong><br/>
+      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
+      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+    </div>
+  </div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Información del entrevistado:</strong><br/>
+        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
+        <strong>Enlace Entrevista:</strong>
+        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
+        <strong>Resumen de Entrevista:</strong>
+        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
 ### 5.3.3. Evaluaciones según heurísticas.
-### 5.4. Video About-the-Product
+## 5.4. Video About-the-Product.
