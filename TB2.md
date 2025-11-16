@@ -474,7 +474,7 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 - Edad: 20  
 - Residencia: Lima
 
-**Enlace Entrevista: ** [Segmento 1](https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing) 
+**Enlace Entrevista:** [Segmento1](https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing) 
 
 - YouTube: 
 
@@ -504,7 +504,7 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 - Edad: 26  
 - Residencia: Magdalena del Mar - Lima  
 
-**Enlace Entrevista: ** [Segmento 2]([https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing](https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing)) 
+**Enlace Entrevista:** [Segmento2](https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing) 
 
 - YouTube: 
 
@@ -527,6 +527,7 @@ __
 
 
 __
+
 
 
 
