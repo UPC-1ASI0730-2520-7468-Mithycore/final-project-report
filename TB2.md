@@ -498,13 +498,13 @@ Pide al entrevistado calificar del 1 al 5 los siguientes aspectos
 - **Entrevistado/a:** Villanueva Castillo, Karen Guadalupe
 - **Entrevistador:** Meza Huanacune, Juan José 
 
-**Información del entrevistado: ** [Segmento 2]([https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing](https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing)) 
+**Información del entrevistado: **
 
 - Sexo: Femenino  
 - Edad: 26  
 - Residencia: Magdalena del Mar - Lima  
 
-**Enlace Entrevista**
+**Enlace Entrevista: ** [Segmento 2]([https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing](https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing)) 
 
 - YouTube: 
 
@@ -527,6 +527,7 @@ __
 
 
 __
+
 
 
 
