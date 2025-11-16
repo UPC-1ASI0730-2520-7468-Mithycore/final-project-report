@@ -3,7 +3,7 @@
 </p>
 <h2 style="text-align: center">Universidad Peruana de Ciencias Aplicadas</h2>  
 <h3 style="text-align: center">Carrera de Ingeniería de Sistemas</h3>  
-<h3 style="text-align: center">Ciclo 2025-2</h3>
+<h3 style="text-align: center">Ciclo 2025-20</h3>
 
 <p style="text-align: center"><strong>Código del curso:</strong> 1ASI0730</p>  
 <p style="text-align: center"><strong>Nombre del curso:</strong> Aplicaciones Web</p>  
@@ -102,6 +102,36 @@
         - 5.2.2.8. Team Collaboration Insights during Sprint.<br/>
       </td>
     </tr>
+    <tr>
+      <td>0.1.1</td>
+      <td>2025-10-10</td>
+      <td>
+        - Romero Meza, Jhimy Pool<br/>
+        - Meza Huanacune, Juan José<br/>
+        - Gutierrez Tume, Stanley Jeremy<br/>
+        - Chacaliaza Minaya, Eduardo Fabián<br/>
+        - Quispe Barzola, Fabricio Fabián
+      </td>
+      <td>
+        - 5.2.3. Sprint 3  <br/>
+        - 5.2.3.1.Spring Planning 3.<br/>
+        - 5.2.3.2. Aspect Leaders and Collaborators.<br/>
+        - 5.2.3.3.Sprint Backlog 3.<br/>
+        - 5.2.3.4.Development Evidence for Sprint Review.<br/>
+        - 5.2.3.5.Execution Evidence for Sprint Review.<br/>
+        - 5.2.3.6.Services Documentation Evidence for Sprint Review.<br/>
+        - 5.2.3.7.Software Deployment Evidence for Sprint Review.<br/>
+        - 5.2.3.8.Team Collaboration Insights during Sprint.<br/>
+        - 5.3. Validation Interviews.<br/>
+        - 5.3.1. Diseño de Entrevistas.<br/>
+        - 5.3.2. Registro de Entrevistas.<br/>
+        - 5.3.3. Evaluaciones según heurísticas.<br/>
+        - 5.4. Video About-the-Product.<br/>
+        - Conclusiones<br/>
+        - Bibliografía<br/>
+        - Anexos.<br/>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -140,14 +170,6 @@ En esta vista se observa la cantidad de commits realizados, junto con el balance
 ---
 
 En conjunto, las capturas reflejan el cumplimiento de los objetivos de colaboración: **participación activa de todos los integrantes**, registro claro de los aportes y una evolución continua y transparente del informe del proyecto.
-
-# Student Outcome
-
-El curso contribuye al cumplimiento del **ABET – EAC - Student Outcome 5**:  
-_“La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.”_
-
-En la siguiente tabla se describen las acciones realizadas y las conclusiones del equipo en relación con este Outcome.  
-La información se irá ampliando en cada entrega (TB1, TP1, TB2, TF1).
 
 ### Contenido
 
