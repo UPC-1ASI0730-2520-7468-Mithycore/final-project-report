@@ -3185,35 +3185,35 @@ Estructura general de la sesión:
 
 <div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
   <div style="padding:6px 4px 18px 4px;">
-    <strong>Entrevista N°1:</strong>
+    <strong>Entrevista N°2:</strong>
   </div>
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Tabla 56</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <strong>Entrevista 2 segmento 1</strong><br/>
+      <img src="images/eduardo.png"/><br>
+      Entrevista con Eduardo Diaz Veliz (Entrevistada) y Meza Huanacune Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Eduardo Diaz Veliz</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune Juan José</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Masculino / Edad: 21 / Residencia: La Victoria, Perú
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:10</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
@@ -3226,30 +3226,30 @@ Estructura general de la sesión:
 
 <div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
   <div style="padding:6px 4px 18px 4px;">
-    <strong>Entrevista N°1:</strong>
+    <strong>Entrevista N°3:</strong>
   </div>
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Tabla 57</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <strong>Entrevista 3 segmentoo 1</strong><br/>
+      <img src="images/aaron.png"/><br>
+      Entrevista con Cornejo, Cesar Aaron (Entrevistada) y Meza Huanacune, Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Meza Huanacune, Juan José</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cornejo, Cesar Aaron</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Masculino / Edad: 20 / Residencia: San Juan de Lurigancho, Lima
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
       </td>
     </tr>
     <tr>
@@ -3310,35 +3310,35 @@ Estructura general de la sesión:
 
 <div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
   <div style="padding:6px 4px 18px 4px;">
-    <strong>Entrevista N°1:</strong>
+    <strong>Entrevista N°2:</strong>
   </div>
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Tabla 59</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <strong>Entrevista 2 Segmento 2</strong><br/>
+      <img src="images/jesus.png"/><br>
+      Entrevista con Manrique Meza, Jesús Antonio (Entrevistada) y Meza Huanacune, Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Manrique Meza, Jesús Antonio</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune, Juan José</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Masculino / Edad: 24 / Residencia: San Juan de Lurigancho, Lima
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:58</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
@@ -3351,35 +3351,35 @@ Estructura general de la sesión:
 
 <div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
   <div style="padding:6px 4px 18px 4px;">
-    <strong>Entrevista N°1:</strong>
+    <strong>Entrevista N°3:</strong>
   </div>
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Tabla 60</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <strong>Entrevista 3 Segmento 2</strong><br/>
+      <img src="images/carlos.png"/><br>
+      Entrevista con Paredes Chavez, Carlos Augusto (Entrevistada) y Meza Huanacune, Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Paredes Chavez, Carlos Augusto</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune, Juan José</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Masculino / Edad: 26 / Residencia: San Juan de Miraflores, Lima
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:18</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
