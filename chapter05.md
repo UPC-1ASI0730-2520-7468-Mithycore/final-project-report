@@ -3148,31 +3148,31 @@ Estructura general de la sesión:
   </div>
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Tabla 55</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <strong>Evidencia</strong><br/>
+      <img src="images/xin.jpeg"/><br>
+      Entrevista con Xin Yu Shi Lin (Entrevistada) y Meza Huanacune Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado:</strong> Shi Lin, Xin Yu</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune, Juan José</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Masculino / Edad: 21 / Residencia: Lima Perú
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://youtu.be/zXrmZiJsDoo](https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:30</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
@@ -3274,30 +3274,30 @@ Estructura general de la sesión:
   <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
     <div style="font-style:italic; margin-bottom:6px;">
       <strong>Tabla 58</strong><br/>
-      <img src="./imagesChapter02/bigPicture/bigpicture1.png"/><br>
-      Entrevista con Melany Cervantes Marreros (Entrevistada) y Angelo Paolo Cervantes Marreros (Entrevistador).
+      <img src="images/karen.png"/><br>
+      Entrevista con Villanueva Castillo, Karen Guadalupe (Entrevistada) y Meza Huanacune Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
     <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Cervantes Marreros, Melany</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Cervantes Marreros, Angelo Paolo</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Villanueva Castillo, Karen Guadalupe</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune Juan José</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Información del entrevistado:</strong><br/>
-        Sexo: Femenino / Edad: 19 / Residencia: Punchana
+        Sexo: Femenino / Edad: 26 / Residencia: Magdalena del mar, Perú 
       </td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://youtu.be/zXrmZiJsDoo" target="_blank" rel="noopener">https://youtu.be/zXrmZiJsDoo</a>
+        <a href="https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:50</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
