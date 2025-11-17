@@ -2411,7 +2411,7 @@ Durante este Sprint 3 el equipo completó la implementación y la integración d
   <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
   <p style="margin:8px 0;">
     <strong>Link al video:</strong>
-    <a href="https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1xdrGSOp4atoK4BMhQepm0GHCTkNLSgt7/view?usp=sharing</a>
+    <a href="https://drive.google.com/file/d/1xdrGSOp4atoK4BMhQepm0GHCTkNLSgt7/view" target="_blank" rel="noopener">https://drive.google.com/file/d/1xdrGSOp4atoK4BMhQepm0GHCTkNLSgt7/view</a>
   </p>
 </section>
 
