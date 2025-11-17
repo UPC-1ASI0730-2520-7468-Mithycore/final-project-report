@@ -2407,12 +2407,11 @@ Durante este Sprint 3 el equipo completó la implementación y la integración d
     </figure>
   </div>
 
-<-------------------------------------- Falta Video<----------------------------------------
   <!-- VIDEO DEMO -->
   <h4 style="margin-top:10px; margin-bottom:6px;">Video de demostración</h4>
   <p style="margin:8px 0;">
     <strong>Link al video:</strong>
-    <a href="https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing</a>
+    <a href="https://drive.google.com/file/d/1edA7paR_5kUAaOHbBeWsZ5oi0LkZ_KPa/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1xdrGSOp4atoK4BMhQepm0GHCTkNLSgt7/view?usp=sharing</a>
   </p>
 </section>
 
@@ -3393,4 +3392,170 @@ Estructura general de la sesión:
 
 
 ### 5.3.3. Evaluaciones según heurísticas.
+
+Este análisis se basa en principios de usabilidad para evaluar la experiencia del usuario en la aplicación AuraNeuro. Se identifican fortalezas, debilidades y recomendaciones de mejora.
+
+---
+
+### SITE o APP A EVALUAR:
+**AuraNeuro**
+
+---
+
+### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Visualización de recetas médicas (Prescriptions)  
+2. Revisión de citas médicas (Appointments)  
+3. Navegación entre secciones usando el menú lateral  
+4. Interpretar información médica presentada (fechas, dosis, contenido)  
+5. Visualización del mapa (Map)  
+6. Reconocimiento de estados del sistema (feedback, selección, carga)
+
+---
+
+### TAREAS NO INCLUIDAS EN ESTA EVALUACIÓN:
+
+1. Conexión de dispositivos IoT
+2. Flujos del profesional médico (dashboard clínico)
+2. Administración avanzada y logs del sistema  
+
+---
+
+### ESCALA DE SEVERIDAD:
+
+Los errores son puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con baja frecuencia. No requiere corrección inmediata. |
+| **2** | Problema menor: puede presentarse con más frecuencia o requerir mayor esfuerzo para el usuario. Se recomienda resolverlo en un siguiente release. |
+| **3** | Problema mayor: ocurre frecuentemente o los usuarios no pueden resolverlo por sí mismos. Requiere corrección prioritaria. |
+| **4** | Problema crítico: impide el uso correcto de la herramienta. Debe corregirse antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN DE PROBLEMAS IDENTIFICADOS
+
+| # | Problema | Severidad | Heurística violada |
+|---|----------|-----------|---------------------|
+| 1 | No existe indicador de carga ni estado del sistema en recetas o citas | 3 | Usability: Visibilidad del estado del sistema |
+| 2 | El menú lateral usa iconos pequeños y no hay labels claros en móvil | 2 | Inclusive Design: Provide comparable experiences |
+| 3 | La jerarquía visual es débil; mucho espacio vacío y contenido centrado | 2 | Usability: Minimalist aesthetic / IA layout |
+| 4 | Las recetas se muestran sin bloques, sin cajas ni estructura visual | 3 | Usability: Recognition > recall |
+| 5 | No existen opciones de volver, deshacer ni editar dentro de las vistas | 2 | Usability: Control y libertad del usuario |
+| 6 | El texto de recetas es muy pequeño y no accesible | 2 | Inclusive Design: Ensure legibility |
+| 7 | No existe feedback al seleccionar elementos del menú | 2 | Usability: Feedback y visibilidad |
+| 8 | El contenido se pierde en pantallas grandes (mala densidad informativa) | 2 | IA: Is the layout effective? |
+
+---
+
+### DESCRIPCIÓN DETALLADA DE PROBLEMAS
+
+---
+
+#### **PROBLEMA #1: No existe indicador de carga ni estado del sistema en recetas o citas**
+
+**Severidad:** 3  
+**Heurística violada:** Usability — Visibilidad del estado del sistema  
+
+**Evidencia:**  
+El usuario no sabe si la pantalla está cargando, falló o simplemente no tiene información.
+
+**Recomendación:**  
+Agregar loader, skeletons y mensajes explícitos de estado.
+
+---
+
+#### **PROBLEMA #2: Menú lateral con iconos pequeños y sin claridad en mobile**
+
+**Severidad:** 2  
+**Heurística violada:** Inclusive Design — Provide comparable experiences  
+
+**Evidencia:**  
+Los iconos del menú son muy pequeños y carecen de etiquetas claras.
+
+**Recomendación:**  
+Aumentar tamaño, agregar labels y mejorar contraste.
+
+---
+
+#### **PROBLEMA #3: Mucho espacio vacío y pobre jerarquía visual**
+
+**Severidad:** 2  
+**Heurística violada:** Usability — Minimalist aesthetic / IA Layout  
+
+**Evidencia:**  
+El contenido se concentra a la derecha y deja grandes áreas vacías.
+
+**Recomendación:**  
+Usar tarjetas, mejorar estructura y ajustar grillas.
+
+---
+
+#### **PROBLEMA #4: Las recetas no usan contenedores ni estructura visual clara**
+
+**Severidad:** 3  
+**Heurística violada:** Usability — Recognition over recall  
+
+**Evidencia:**  
+Texto plano sin separación visual, difícil de escanear.
+
+**Recomendación:**  
+Agrupar cada receta en tarjetas con fecha resaltada.
+
+---
+
+#### **PROBLEMA #5: No hay opción de deshacer, editar o regresar**
+
+**Severidad:** 2  
+**Heurística violada:** Usability — Control y libertad del usuario  
+
+**Evidencia:**  
+Las vistas no ofrecen forma de revertir acciones o volver atrás.
+
+**Recomendación:**  
+Añadir botones “Atrás”, “Cancelar” y/o “Editar”.
+
+---
+
+#### **PROBLEMA #6: El texto de recetas es pequeño y no accesible**
+
+**Severidad:** 2  
+**Heurística violada:** Inclusive Design — Ensure legibility  
+
+**Evidencia:**  
+Dosis y texto médico aparecen en tipografías pequeñas.
+
+**Recomendación:**  
+Aumentar tamaños a 16–18px y mejorar contraste.
+
+---
+
+#### **PROBLEMA #7: No existe feedback al seleccionar ítems del menú**
+
+**Severidad:** 2  
+**Heurística violada:** Usability — Feedback y visibilidad  
+
+**Evidencia:**  
+El estado activo del menú es poco notorio.
+
+**Recomendación:**  
+Cambiar color activo, agregar hover y animaciones.
+
+---
+
+#### **PROBLEMA #8: El contenido se pierde en pantallas grandes**
+
+**Severidad:** 2  
+**Heurística violada:** IA — Effective layout  
+
+**Evidencia:**  
+Las recetas quedan pegadas al margen derecho, con exceso de espacio vacío.
+
+**Recomendación:**  
+Ajustar ancho del contenedor (70–80%), centrar contenido y aplicar márgenes consistentes.
+
+---
+
 ## 5.4. Video About-the-Product.
