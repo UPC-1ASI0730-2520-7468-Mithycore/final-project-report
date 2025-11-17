@@ -3177,7 +3177,11 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Xin Yu mostró una recepción muy positiva frente a la plataforma AuraNeuro. Comentó que el frontend le pareció moderno, limpio y agradable a la vista, destacando que las secciones están bien distribuidas y que la navegación es intuitiva incluso para usuarios nuevos. Señaló que la Landing Page comunica bien la propuesta de valor y que los colores suaves transmiten calma y profesionalismo, algo adecuado para un producto de salud mental.
+
+Al probar el flujo de registro y cita, destacó que el formulario está bien organizado y que los mensajes de validación ayudan a avanzar sin confusiones. También mencionó que las pantallas del paciente en la aplicación le parecieron rápidas y que el tiempo de carga fue mínimo.
+
+Sobre el backend, comentó que la aplicación respondió de forma inmediata al solicitar una cita y al revisar el historial, lo que le transmitió confiabilidad. Señaló que la estructura de datos, especialmente en recetas y evaluaciones, es clara y fácil de entender. Finalmente, afirmó que usaría AuraNeuro si estuviera disponible públicamente porque siente que ofrece una experiencia segura, confiable y profesional.</div>
       </td>
     </tr>
   </table>
@@ -3218,7 +3222,11 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Eduardo destacó que el frontend de AuraNeuro es ordenado, sencillo de entender y visualmente atractivo. Mencionó que la Landing Page le generó confianza desde el inicio por su diseño minimalista y su mensaje directo. Indicó que el CTA es claro y que el flujo de suscripción es bastante rápido.
+
+Durante el flujo de paciente, resaltó la facilidad para solicitar citas y la organización del panel. Comentó que los iconos y botones son visibles, y que la experiencia general se siente estable. También señaló que el diseño responsive funciona adecuadamente al cambiar entre dispositivos.
+
+Sobre el backend, Eduardo expresó que la carga de la información fue bastante fluida y que no percibió retrasos en la actualización de citas o evaluaciones. Indicó que el sistema responde bien ante peticiones y que los endpoints parecen estar bien estructurados. En sus palabras, “se siente como una plataforma profesional y confiable”, especialmente por la claridad en los datos clínicos y la rapidez al mostrar la información médica.</div>
       </td>
     </tr>
   </table>
@@ -3259,7 +3267,11 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Aarón comentó que el frontend de AuraNeuro está bien logrado, destacando la estética limpia y profesional. Mencionó que la estructura facilita que un paciente encuentre lo que necesita sin explorar demasiado. Apreciò el uso de iconografía y la claridad del flujo de usuario, especialmente al consultar evaluaciones y recetas.
+
+Además, mencionó que el menú lateral le resultó familiar y fácil de navegar. También resaltó que la experiencia visual del sistema es coherente y que los colores contribuyen a una experiencia calmada y adecuada para salud mental.
+
+Respecto al backend, señaló que todo funcionó de manera estable, especialmente en las acciones relacionadas a citas y recetas. Indicó que le gustó que las evaluaciones se carguen rápido y que el formato de las recetas sea entendible sin ser profesional de salud. Considera que el backend es eficiente y que la sincronización entre vistas es inmediata, transmitiendo que la plataforma está bien integrada y lista para uso real.</div>
       </td>
     </tr>
   </table>
@@ -3302,7 +3314,11 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Karen, como profesional del área, valoró positivamente el frontend, señalando que la interfaz es clara y que la separación entre pacientes, evaluaciones y citas está bien organizada. Destacó que el flujo para revisar solicitudes de citas es rápido y que la interfaz de evaluaciones le pareció especialmente útil por su formato limpio.
+
+Mencionó que el sistema evita sobrecargar la pantalla con demasiada información, lo cual facilita el análisis clínico. Señaló también que las recetas están presentadas en un formato profesional y entendible.
+
+Sobre el backend, comentó que las acciones más importantes para un neurólogo (confirmar citas, revisar evaluaciones, emitir recetas) son rápidas y sin errores perceptibles. La carga instantánea de datos y la correcta filtración de pacientes le transmitieron seguridad. Indicó que AuraNeuro podría ser muy útil en consultorios porque agiliza tareas administrativas y mejora la trazabilidad clínica.</div>
       </td>
     </tr>
   </table>
@@ -3343,7 +3359,9 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Jesús señaló que el frontend es altamente intuitivo, especialmente en la vista del profesional. Destacó la claridad de los botones de acción, el panel limpio y la facilidad para alternar entre pacientes, citas y evaluaciones. Mencionó que la estética transmite confianza y profesionalismo, y que la experiencia visual está bien alineada con un software de salud.
+
+En relación al backend, señaló que el sistema es estable, pues las listas de pacientes cargan rápido y las solicitudes de citas se actualizan sin demora. Mencionó que la API parece estar correctamente construida porque no percibió errores de sincronización ni tiempos de espera altos. Consideró que AuraNeuro tiene potencial real para uso clínico, especialmente porque automatiza tareas que normalmente consumen tiempo.</div>
       </td>
     </tr>
   </table>
@@ -3384,7 +3402,9 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
         <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">[Escribe aquí el resumen de la entrevista]</div>
+        <div style="margin-top:8px; white-space:pre-wrap;">Carlos mencionó que el frontend está bien diseñado, con una arquitectura de navegación clara y eficiente. Le agradó que el menú permita moverse rápidamente entre recursos clínicos y que la información esté presentada en bloques organizados. En su experiencia, la aplicación se siente ligera y amigable tanto para profesionales como para pacientes.
+
+Desde el punto de vista del backend, destacó que la respuesta del sistema fue inmediata al consultar citas, evaluaciones y recetas. Consideró que la estructura de los datos clínicos es sólida y que la plataforma maneja bien la información sensible del paciente. Resaltó que AuraNeuro tiene un buen equilibrio entre simplicidad y funciones clínicas importantes, lo que haría que la adopción sea sencilla para consultorios medianos o pequeños.</div>
       </td>
     </tr>
   </table>
