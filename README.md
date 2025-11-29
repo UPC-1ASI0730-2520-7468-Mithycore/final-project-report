@@ -1,5 +1,5 @@
 <p style="text-align: center">
-  <img src="./images/upc-logo.png" alt="Logo UPC" width="200"/>
+  <img src="./images/upc-logo.png" alt="Logo UPC" width="120"/>
 </p>
 <h2 style="text-align: center">Universidad Peruana de Ciencias Aplicadas</h2>  
 <h3 style="text-align: center">Carrera de Ingeniería de Sistemas</h3>  
@@ -16,16 +16,47 @@
 <p style="text-align: center"><strong>Producto:</strong> AuraNeuro</p>
 
 ## Integrantes
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #888; padding: 8px; background-color: #1e1e1e;">Código</th>
+      <th style="border: 1px solid #888; padding: 8px; background-color: #1e1e1e;">Nombre</th>
+      <th style="border: 1px solid #888; padding: 8px; background-color: #1e1e1e;">Rol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #888; padding: 8px;">U202118152</td>
+      <td style="border: 1px solid #888; padding: 8px;">Gutierrez Tume, Stanley Jeremy</td>
+      <td style="border: 1px solid #888; padding: 8px;">Team Leader</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #888; padding: 8px;">U202320574</td>
+      <td style="border: 1px solid #888; padding: 8px;">Meza Huanacune, Juan José</td>
+      <td style="border: 1px solid #888; padding: 8px;">Backend Engineer</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #888; padding: 8px;">U202324129</td>
+      <td style="border: 1px solid #888; padding: 8px;">Chacaliaza Minaya, Eduardo Fabián</td>
+      <td style="border: 1px solid #888; padding: 8px;">Frontend & UX/UI Engineer</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #888; padding: 8px;">U202320442</td>
+      <td style="border: 1px solid #888; padding: 8px;">Quispe Barzola, Fabricio Fabián</td>
+      <td style="border: 1px solid #888; padding: 8px;">Data & IoT Integration Engineer</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #888; padding: 8px;">U202321510</td>
+      <td style="border: 1px solid #888; padding: 8px;">Meza Jhimy Pool, Romero</td>
+      <td style="border: 1px solid #888; padding: 8px;">Frontend & UX/UI Engineer</td>
+    </tr>
+  </tbody>
+</table>
 
-- U202118152 – Gutierrez Tume, Stanley Jeremy – Team Leader
-- U202320574 – Meza Huanacune, Juan José – Backend Engineer
-- U202324129 – Chacaliaza Minaya, Eduardo Fabián – Frontend & UX/UI Engineer
-- U202320442 – Quispe Barzola, Fabricio Fabián – Data & IoT Integration Engineer
-- U202321510 – Meza Jhimy Pool, Romero – Frontend & UX/UI Engineer
 
 ---
 
-<p style="text-align: center"><strong>Septiembre 2025</strong></p>
+<p style="text-align: center"><strong>Noviembre 2025</strong></p>
 
 ---
 
