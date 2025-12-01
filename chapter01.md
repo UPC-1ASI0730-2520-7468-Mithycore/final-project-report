@@ -115,21 +115,25 @@ Se formula respondiendo a los cuatro elementos clave indicados en *Lean UX (3rd 
 
 ---
 
-**Lean UX Problem Statement (English):**
+#### 1.2.2.1. Lean UX Problem Statement  
 
-> The current state of **neurological health monitoring** depends on **occasional clinical evaluations** and **manual symptom reports**.  
-> This leads to **delayed diagnoses**, **fragmented information**, and **low treatment adherence** among patients with neurological disorders.  
-> We believe that by providing a **continuous, data-driven monitoring experience** that connects patients and neurologists through IoT devices and analytics, we can **improve diagnostic accuracy and patient engagement**.  
-> We’ll know this is true when we observe **a measurable reduction in hospital readmissions**, **an increase in weekly patient activity**, and **greater clinical data completeness**.
+El **Problem Statement** describe el contexto actual, las limitaciones y la oportunidad que busca resolver la solución digital, siguiendo el enfoque de *Lean UX (3rd Edition)* —incluyendo **dominio**, **segmentos de cliente**, **pain points**, **gap**, **visión/estrategia** e **initial segment**.  
 
----
+**Lean UX Problem Statement (English):**  
 
-**Traducción (referencial):**
+> In the domain of **outpatient neurological care in Latin America**, monitoring of chronic conditions such as epilepsy still depends on **occasional clinical visits** and **manual, fragmented symptom reports** from adult patients and their caregivers. This current state prevents neurologists and institutions from having a **continuous, interoperable view of the patient journey** and makes it difficult to adjust treatment plans in time.  
+>  
+> We believe that by introducing **AuraNeuro** as a **continuous, data-driven monitoring experience**—connecting our **initial target segment** (*adult patients aged 20–65 with epilepsy*, their caregivers, and their neurologists) to **IoT devices, a mobile app, and a clinical web dashboard**—we can **close the gap between daily life and the consultation room**, improving diagnostic accuracy, treatment adherence, and perceived quality of care.  
+>  
+> We’ll know this is true when, for this initial segment (and future neurological conditions), we observe **a measurable reduction in avoidable hospital readmissions**, **an increase in weekly symptom and biomarker logging**, **higher completeness of clinical data available during consultations**, and **evidence of institutional adoption** (pilots, HL7–FHIR integrations, and sustained usage by neurologists).  
 
-> El estado actual del **monitoreo neurológico** depende de **evaluaciones clínicas ocasionales** y **reportes manuales de síntomas**.  
-> Esto genera **diagnósticos tardíos**, **información fragmentada** y **baja adherencia terapéutica** entre los pacientes con trastornos neurológicos.  
-> Creemos que al ofrecer una **experiencia de monitoreo continuo basada en datos**, que conecte a pacientes y neurólogos mediante dispositivos IoT y analítica, podremos **mejorar la precisión diagnóstica y la participación del paciente**.  
-> Sabremos que esto es cierto cuando observemos **una reducción medible en reingresos hospitalarios**, **un aumento en la actividad semanal de los usuarios** y **una mayor completitud de datos clínicos**.
+**Traducción (referencial):**  
+
+> En el dominio de la **atención neurológica ambulatoria en Latinoamérica**, el seguimiento de enfermedades crónicas como la epilepsia sigue dependiendo de **visitas clínicas ocasionales** y de **registros manuales y fragmentados de síntomas** por parte de pacientes adultos y sus cuidadores. Este estado actual impide que los neurólogos e instituciones cuenten con una **visión continua e interoperable del recorrido del paciente**, y dificulta ajustar los planes de tratamiento de forma oportuna.  
+>  
+> Creemos que al introducir **AuraNeuro** como una **experiencia de monitoreo continuo basada en datos** —conectando a nuestro **segmento inicial objetivo** (*pacientes adultos de 20 a 65 años con epilepsia*, sus cuidadores y sus neurólogos) con **dispositivos IoT, una aplicación móvil y un panel clínico web**— podremos **cerrar la brecha entre la vida diaria y el consultorio**, mejorando la precisión diagnóstica, la adherencia terapéutica y la percepción de calidad de la atención.  
+>  
+> Sabremos que esto es cierto cuando, para este segmento inicial (y futuras condiciones neurológicas), observemos **una reducción medible en reingresos hospitalarios evitables**, **un aumento en el registro semanal de síntomas y biomarcadores**, **mayor completitud de datos clínicos disponibles durante las consultas** y **evidencia de adopción institucional** (pilotos, integraciones HL7–FHIR y uso sostenido por parte de neurólogos).  
 
 ---
 
@@ -194,50 +198,91 @@ Según *Lean UX (3rd Edition)*, las **assumptions** se agrupan en cuatro tipos:
 
 #### 1.2.2.3. Lean UX Hypothesis Statements  
 
-Cada hipótesis se formula conforme al patrón estándar del libro:
-
-> **We believe that [this outcome] will be achieved if [these users] attain [this benefit].**  
-> We will know this is true when we observe [this measurable result].
+Cada hipótesis se formula usando el patrón oficial de *Lean UX (3rd Edition)* y las métricas establecidas en el Project Statement.
 
 ---
 
-**Lean UX Hypothesis Statements (English):**
+### **a) Business Hypothesis**
 
-**a) Business Hypothesis**  
-> We believe that **hospitals and neurologists** will adopt AuraNeuro if it **reduces patient readmissions and saves monitoring costs**.  
-> We’ll know this is true when we see **pilot programs or institutional partnerships** with measurable cost reductions.
+> **We believe** that hospitals, clinics, and neurologists will adopt AuraNeuro **if** the platform reduces avoidable readmissions and increases the efficiency of outpatient follow-ups.  
+> **We will know this is true when** we observe:  
+> • institutional pilot agreements,  
+> • measurable reductions of **≥15–20%** in preventable readmissions, and  
+> • evidence of reduced clinical monitoring time per patient.
 
-**b) User Hypothesis**  
-> We believe that **patients with neurological disorders** will use AuraNeuro regularly **if it helps them visualize progress and receive useful alerts**.  
-> We’ll know this is true when we see **consistent weekly usage (≥4 sessions)** and **positive feedback on alert relevance**.
+---
 
-**c) Value Hypothesis**  
-> We believe that **continuous IoT monitoring and data-driven insights** will lead to **fewer emergency visits and better treatment adherence**.  
-> We’ll know this is true when we observe a **decrease in readmission rates (≥15%)** and **increased patient adherence metrics**.
+### **b) User Hypothesis**
 
-**d) Feature Hypothesis**  
-> We believe that **simple symptom logging, alert notifications, and clinician dashboards** will enable **better collaboration and decision-making**.  
-> We’ll know this is true when we observe **more complete patient records** and **active clinician dashboard usage**.
+> **We believe** that adult neurological patients (initial segment: 20–65 years old with epilepsy) will use AuraNeuro consistently **if** it helps them track symptoms easily, visualize trends, and receive alerts and reminders that feel meaningful.  
+> **We will know this is true when** we observe:  
+> • **≥4 meaningful logs per week** per active patient,  
+> • high retention after 8–12 weeks of use, and  
+> • positive qualitative feedback about alert usefulness and usability.
+
+---
+
+### **c) Value Hypothesis**
+
+> **We believe** that combining continuous IoT monitoring with data-driven insights will lead to earlier clinical interventions, fewer emergencies, and improved treatment adherence.  
+> **We will know this is true when** we observe:  
+> • reductions of **≥15%** in emergency visits/readmissions,  
+> • significant improvements in medication adherence rates, and  
+> • increased completeness of digital clinical histories during consultations (**≥60%**).
+
+---
+
+### **d) Feature Hypothesis**
+
+> **We believe** that simple logging flows, automated alerts, electronic prescriptions, and a clinician dashboard will enable better collaboration and decision-making between patients and neurologists.  
+> **We will know this is true when** we observe:  
+> • frequent usage of the logging module and clinician dashboard,  
+> • more complete time-series histories, and  
+> • neurologists actively referencing AuraNeuro data during consultations.
 
 ---
 
 **Traducción (referencial):**
 
-**a) Hipótesis de Negocio**  
-> Creemos que los **hospitales y neurólogos** adoptarán AuraNeuro si **reduce los reingresos hospitalarios y los costos de monitoreo**.  
-> Sabremos que esto es cierto cuando veamos **programas piloto o alianzas institucionales** con reducciones de costos medibles.
+---
 
-**b) Hipótesis de Usuario**  
-> Creemos que los **pacientes con trastornos neurológicos** usarán AuraNeuro regularmente **si les ayuda a visualizar su progreso y recibir alertas útiles**.  
-> Sabremos que esto es cierto cuando observemos **uso semanal constante (≥4 sesiones)** y **retroalimentación positiva sobre la relevancia de las alertas**.
+### **a) Hipótesis de Negocio**
 
-**c) Hipótesis de Valor**  
-> Creemos que el **monitoreo IoT continuo y los reportes basados en datos** conducirán a **menos visitas de emergencia y mejor adherencia al tratamiento**.  
-> Sabremos que esto es cierto cuando observemos **una disminución en los reingresos (≥15%)** y **mayores métricas de adherencia**.
+> **Creemos** que los hospitales, clínicas y neurólogos adoptarán AuraNeuro **si** la plataforma reduce los reingresos evitables y aumenta la eficiencia del seguimiento ambulatorio.  
+> **Sabremos que esto es cierto cuando** observemos:  
+> • acuerdos de pilotos institucionales,  
+> • reducciones medibles de **≥15–20 %** en reingresos prevenibles, y  
+> • evidencia de menor tiempo destinado al monitoreo clínico por paciente.
 
-**d) Hipótesis de Funcionalidad**  
-> Creemos que el **registro simple de síntomas, las alertas y el panel clínico** permitirán **una mejor colaboración y toma de decisiones**.  
-> Sabremos que esto es cierto cuando veamos **registros de pacientes más completos** y **uso activo del panel por parte de los médicos**.
+---
+
+### **b) Hipótesis de Usuario**
+
+> **Creemos** que los pacientes neurológicos adultos (segmento inicial: 20–65 años con epilepsia) usarán AuraNeuro de manera constante **si** la plataforma les facilita registrar síntomas, visualizar tendencias y recibir alertas y recordatorios que les resulten útiles.  
+> **Sabremos que esto es cierto cuando** observemos:  
+> • **≥4 registros significativos por semana** por paciente activo,  
+> • alta retención después de 8–12 semanas de uso, y  
+> • retroalimentación positiva sobre la utilidad de las alertas y la facilidad de uso.
+
+---
+
+### **c) Hipótesis de Valor**
+
+> **Creemos** que combinar monitoreo IoT continuo con análisis basados en datos permitirá intervenciones clínicas más tempranas, menos emergencias y una mejor adherencia al tratamiento.  
+> **Sabremos que esto es cierto cuando** observemos:  
+> • reducciones de **≥15 %** en visitas de emergencia/reingresos,  
+> • mejoras significativas en métricas de adherencia, y  
+> • mayor completitud de historiales clínicos digitales durante las consultas (**≥60 %**).
+
+---
+
+### **d) Hipótesis de Funcionalidad**
+
+> **Creemos** que flujos simples de registro, alertas automáticas, recetas electrónicas y un panel clínico permitirán una mejor colaboración y toma de decisiones entre pacientes y neurólogos.  
+> **Sabremos que esto es cierto cuando** observemos:  
+> • uso frecuente del módulo de registro y del panel clínico,  
+> • historiales de tiempo más completos, y  
+> • neurólogos haciendo referencia activa a los datos de AuraNeuro en sus consultas.
 
 ---
 
