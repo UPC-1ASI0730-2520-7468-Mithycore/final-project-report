@@ -3029,7 +3029,7 @@ Se validó el funcionamiento completo del sistema integrado:
 
 ### **Backend: Render**
 - Entorno productivo habilitado
-- Swagger activo para pruebas
+- Swagger activo para pruebas: **http://20.81.154.140:5152/swagger/index.html**
 
 Validaciones realizadas:
 
