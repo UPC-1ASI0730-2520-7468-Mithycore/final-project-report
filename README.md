@@ -135,7 +135,7 @@ https://github.com/upc-2025-1asi0730-MithyCore/final-project-report
 
 ---
 
-## Colaboración en TB1 (Versión 0.1.0)
+## Colaboración en la Versión 0.1.0
 
 Durante la primera entrega, el equipo construyó la versión inicial del documento. Las principales actividades incluyeron:
 
@@ -144,7 +144,7 @@ Durante la primera entrega, el equipo construyó la versión inicial del documen
 - incorporación de contenido introductorio de análisis y diseño;  
 - primeros ajustes de formato y organización del repositorio.
 
-### Evidencias de TB1
+### Evidencias
 
 <div style="text-align: center">
   <img src="images/insights1.png" alt="Insights TB1" width="700px"/>
@@ -156,7 +156,7 @@ Durante la primera entrega, el equipo construyó la versión inicial del documen
 
 ---
 
-## Colaboración en TP1 (Versión 0.1.1)
+## Colaboración en la Versión 0.1.1
 
 Durante la segunda entrega, el equipo amplió y profundizó el contenido del informe. Las actividades incluyeron:
 
@@ -165,7 +165,7 @@ Durante la segunda entrega, el equipo amplió y profundizó el contenido del inf
 - reorganización del contenido para mejorar continuidad;  
 - correcciones colaborativas de estilo y redacción.
 
-### Evidencias de TP1
+### Evidencias
 
 <div style="text-align: center">
   <img src="images/insights2.png" alt="Insights TP1" width="700px"/>
@@ -177,7 +177,7 @@ Durante la segunda entrega, el equipo amplió y profundizó el contenido del inf
 
 ---
 
-## Colaboración en TB2 (Versión 0.1.2)
+## Colaboración en la Versión 0.1.2
 
 Durante la tercera entrega, el equipo consolidó contenido avanzado. Las principales actividades fueron:
 
@@ -186,7 +186,7 @@ Durante la tercera entrega, el equipo consolidó contenido avanzado. Las princip
 - mejoras estructurales en capítulos técnicos;  
 - correcciones derivadas de retroalimentación del docente.
 
-### Evidencias de TB2
+### Evidencias
 
 <div style="text-align: center">
   <img src="images/insights3.png" alt="Insights TB2" width="700px"/>
@@ -207,7 +207,7 @@ En la etapa más reciente, el equipo realizó ajustes y ampliaciones finales. En
 - ajustes solicitados por el docente en formato y coherencia;  
 - revisión general del documento en preparación para la versión final.
 
-### Evidencias de la versión 0.1.3
+### Evidencias
 
 <div style="text-align: center">
   <img src="images/insights4.png" alt="Insights 0.1.3" width="700px"/>
