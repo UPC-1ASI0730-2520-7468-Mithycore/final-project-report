@@ -84,7 +84,6 @@
   <td>
     - Romero Meza, Jhimy Pool<br/>
     - Meza Huanacune, Juan José<br/>
-    - Gutierrez Tume, Stanley Jeremy<br/>
     - Chacaliaza Minaya, Eduardo Fabián<br/>
     - Quispe Barzola, Fabricio Fabián
   </td>
@@ -99,7 +98,6 @@
   <td>
     - Romero Meza, Jhimy Pool<br/>
     - Meza Huanacune, Juan José<br/>
-    - Gutierrez Tume, Stanley Jeremy<br/>
     - Chacaliaza Minaya, Eduardo Fabián<br/>
     - Quispe Barzola, Fabricio Fabián
   </td>
@@ -114,7 +112,6 @@
   <td>
     - Romero Meza, Jhimy Pool<br/>
     - Meza Huanacune, Juan José<br/>
-    - Gutierrez Tume, Stanley Jeremy<br/>
     - Chacaliaza Minaya, Eduardo Fabián<br/>
     - Quispe Barzola, Fabricio Fabián
   </td>
