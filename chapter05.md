@@ -3367,48 +3367,34 @@ En relación al backend, señaló que el sistema es estable, pues las listas de 
   </table>
 </div>
 
-<div style="border:1px solid #111; padding:8px; border-radius:2px; max-width:760px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">
-  <div style="padding:6px 4px 18px 4px;">
-    <strong>Entrevista N°3:</strong>
-  </div>
-  <div style="border-top:1px solid #111; padding-top:8px; margin-bottom:8px;">
-    <div style="font-style:italic; margin-bottom:6px;">
-      <strong>Entrevista 3 Segmento 2</strong><br/>
-      <img src="images/carlos.png"/><br>
-      Entrevista con Paredes Chavez, Carlos Augusto (Entrevistada) y Meza Huanacune, Juan José (Entrevistador).
-    </div>
-  </div>
-  <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
-    <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistado/a:</strong> Paredes Chavez, Carlos Augusto</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Entrevistador:</strong> Meza Huanacune, Juan José</td>
-    </tr>
-    <tr>
-      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
-        <strong>Información del entrevistado:</strong><br/>
-        Sexo: Masculino / Edad: 26 / Residencia: San Juan de Miraflores, Lima
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
-        <strong>Enlace Entrevista:</strong>
-        <a href="https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 7:18</td>
-    </tr>
-    <tr>
-      <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
-        <strong>Resumen de Entrevista:</strong>
-        <div style="margin-top:8px; white-space:pre-wrap;">Carlos mencionó que el frontend está bien diseñado, con una arquitectura de navegación clara y eficiente. Le agradó que el menú permita moverse rápidamente entre recursos clínicos y que la información esté presentada en bloques organizados. En su experiencia, la aplicación se siente ligera y amigable tanto para profesionales como para pacientes.
+### Entrevista N°3 
 
-Desde el punto de vista del backend, destacó que la respuesta del sistema fue inmediata al consultar citas, evaluaciones y recetas. Consideró que la estructura de los datos clínicos es sólida y que la plataforma maneja bien la información sensible del paciente. Resaltó que AuraNeuro tiene un buen equilibrio entre simplicidad y funciones clínicas importantes, lo que haría que la adopción sea sencilla para consultorios medianos o pequeños.</div>
-      </td>
-    </tr>
-  </table>
-</div>
+**Entrevista con:** Paredes Paredes, Carlos Augusto (Entrevistado)   
+**Entrevistador:** Meza Huanacune, Juan José
+
+---
+
+| **Entrevistado/a:** | Paredes Paredes, Carlos Augusto | **Entrevistador:** | Meza Huanacune, Juan José |
+|---------------------|----------------------------------|---------------------|---------------------------|
+
+| **Información del entrevistado:** <br> **Sexo:** Masculino • **Edad:** 26 • **Residencia:** San Juan de Miraflores, Lima |
+|----------------------------------|------------------------------------------------------------------------------------------------|
+
+| **Enlace de la Entrevista:** | https://tinyurl.com/4p76sbjp |
+|------------------------------|--------------------------------|
+
+| **Inicio:** 0:00 | **Duración:** 4:26 |
+|-----------------|-------------------|
+
+### **Resumen de Entrevista**
+
+Carlos indicó que la Landing Page de AuraNeuro le pareció clara, moderna y bien estructurada. Destacó que el diseño transmite profesionalismo y un enfoque clínico gracias al uso de colores suaves, tipografía limpia y secciones organizadas de forma lógica. Mencionó que los apartados “Cómo funciona” y “Beneficios” permiten entender muy rápido la propuesta de valor del producto.
+
+Sobre la navegación, comentó que el flujo es intuitivo y que tanto el menú superior como el footer facilitan encontrar la información necesaria. Percibió que la experiencia general es coherente y que la interfaz resulta accesible para cualquier usuario, incluso para pacientes sin experiencia previa en plataformas de salud digital.
+
+Respecto al frontend, Carlos señaló que las páginas de Inicio de Sesión y Registro le parecieron sencillas y fáciles de usar, y que la estructura minimalista ayuda a evitar confusiones. Consideró que, aunque el frontend está en versión inicial, transmite correctamente la intención del producto y se siente listo para integrarse con funcionalidades más avanzadas como citas, IoT y telemedicina.
+
+Finalmente, destacó que AuraNeuro tiene un buen equilibrio entre claridad, simplicidad y enfoque clínico, lo que facilitaría la adopción por parte de consultorios pequeños o medianos.
 
 
 ### 5.3.3. Evaluaciones según heurísticas.
