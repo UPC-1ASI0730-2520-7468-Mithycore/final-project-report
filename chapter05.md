@@ -2932,6 +2932,130 @@ En conjunto, la colaboración efectiva entre las herramientas Trello, Discord y 
 
 <img src="./imagesChapter05/network-graph.png">
 
+## 5.2.4. Sprint 4
+
+### 5.2.4.1. Sprint Planning 4
+
+El Sprint 4 se centra en la integración final del sistema *AuraNeuro*, uniendo el frontend y backend, cerrando todas las funcionalidades pendientes, realizando pruebas end-to-end y preparando el despliegue final del producto.  
+Durante esta iteración se logró integrar completamente el flujo real entre la aplicación web, los servicios REST del backend, la visualización de métricas, dispositivos IoT simulados y los módulos clínicos. Además, se validaron las HU completas y se generaron las evidencias finales del ciclo de vida del proyecto.
+
+---
+
+### Sprint Planning Background
+
+| **Sprint #** | Sprint 4 |
+|--------------|----------|
+| **Date** | 2025-11-12 |
+| **Time** | 10:00 AM – 11:25 AM |
+| **Location** | Reunión virtual (Zoom) / Oficina central AuraNeuro |
+| **Prepared By** | Romero Meza, Jhimy |
+| **Attendees (to planning meeting)** | Romero Meza — Sprint Lead (Backend) <br> Eduardo F. Chacaliaza Minaya — Product Owner <br> Gutierrez Tume, Jeremy — Lead Dev (Arquitectura / Code Reviews) <br> Fabricio F. Quispe Barzola — Backend Developer / QA <br> Juan José Meza Huanacune — DevOps & Deployment |
+| **Sprint 4 – Summary** | Durante el Sprint 3 se completó la base estable del backend (autenticación, agendas, recetas, historial médico y perfil). Para el Sprint 4, el Product Owner priorizó la entrega del sistema *integrado end-to-end*, habilitando: <br><br> - Teleconsulta MVP (chat + sala virtual simulada) <br> - Integración IoT simulada (biomarcadores automáticos conectados al backend) <br> - Consolidación del historial médico completo <br> - Integración total Frontend ↔ Backend en todos los módulos <br> - Despliegue final en producción (Frontend en Firebase, Backend en Render) <br> - Evidencias finales, capturas y validación de HU completas. |
+| **Sprint 4 – Retrospective Summary** | El equipo destacó como fortaleza la madurez del backend, la estabilidad del frontend y la fluidez del trabajo coordinado. Se identificaron mejoras aplicadas dentro del sprint: <br><br> - Optimización de comunicación técnica diaria <br> - Consolidación y limpieza de documentación de endpoints <br> - Incremento de pruebas unitarias y E2E <br><br> Con estos ajustes, la integración final se completó sin bloqueos y se entregó una versión estable y funcional para su despliegue. | **Sprint 4 Goal** | Our focus is on enabling the final integrated version of *AuraNeuro*, connecting the frontend with the backend, stabilizing all modules, completing clinical workflows, incorporating IoT data, and delivering a production-ready release. We believe it delivers a full neurological monitoring experience with real metrics, clinical records, stress tests, and appointment management. This will be confirmed when all modules run smoothly with real API data, all HU pass E2E testing, and the system is deployed successfully. <br><br> **Traducción:** El enfoque está en integrar completamente el sistema, asegurar estabilidad, finalizar UI/UX, integrar datos clínicos, pruebas de estrés y agenda, y desplegar la versión final de AuraNeuro. Esto se confirmará cuando todos los módulos funcionen con datos reales desde la API, pasen validaciones E2E, y el despliegue final sea exitoso. |
+| **Sprint 4 Velocity** | Se completaron 11 historias de usuario, con ~46 Story Points. |
+| **Sum of Story Points** | 46 |
+
+## 5.2.4.2. Aspect Leaders and Collaborators
+
+En este sprint se mantuvo la lógica LACX, orientada a integración técnica y despliegue.
+
+| **Team Member** | **GitHub Username** | **Frontend (Angular/UI)** | **Backend (C# / .NET)** | **API Integration** | **Testing & QA** | **Deployment** |
+|------------------|----------------------|---------------------------|--------------------------|----------------------|------------------|-----------------|
+| Romero Meza, Jhimy | @jhimyromero | C | L | C | L | C |
+| Eduardo F. Chacaliaza Minaya | @educmz | L | — | C | C | L |
+| Gutierrez Tume, Jeremy | @jgutierrerz | C | C | L | C | C |
+| Fabricio F. Quispe Barzola | @BrooklynKarmis | — | C | — | L | C |
+| Juan José Meza Huanacune | @JuanMHZ12 | C | L | C | C | L |
+
+---
+
+## 5.2.4.3. Sprint Backlog 4 – Tareas Técnicas
+
+| **Sprint #** | **Sprint 4** |
+|--------------|--------------|
+| **Task ID** | **Work-Item / Task** |
+| T01 | Integración del Test de Estrés ↔ API (US04, US05, US06) |
+| T02 | Integración completa del módulo de Recomendaciones ↔ API (US07, US08, US09) |
+| T03 | Integración del Dashboard clínico ↔ API (US10, US11, US12) |
+| T04 | Integración de módulo de Psicólogos ↔ API (US13, US14, US15) |
+| T05 | Correcciones de validación y manejo de errores en frontend |
+| T06 | Mejoras de UI/UX: colores, consistencia visual, responsive |
+| T07 | Optimización de carga, DOM y rendimiento |
+| T08 | Pruebas funcionales completas (Testing de cada módulo ↔ API) |
+| T09 | Pruebas End-to-End para flujos de usuario |
+| T10 | Configuración de despliegue backend (Render / Railway / Docker) |
+| T11 | Configuración de despliegue frontend (Firebase Hosting) |
+| T12 | Documentación del Sprint 4 + Evidencias finales |
+
+---
+
+## 5.2.4.4. Development Evidence for Sprint Review
+
+| **Repositorio** | **Branch** | **Commit ID** | **Mensaje del Commit** | **Descripción** | **Fecha** |
+|------------------|------------|----------------|--------------------------|------------------|-----------|
+| /auraneuro-frontend | feature/api-sync | c91f2ab | feat(api): connected dashboard to neuro-metrics | Dashboard conectado a métricas reales del backend | 2025-10-24 |
+| /auraneuro-frontend | feature/auth-jwt | 1b2ca77 | feat(auth): implemented JWT login flow | Autenticación real usando JWT | 2025-10-26 |
+| /auraneuro-frontend | feature/appointments | f51a9e3 | feat(appointments): wired booking module to API | Integración real del módulo de citas | 2025-11-02 |
+| /auraneuro-backend | feature/swagger-update | 5fe17af | docs(api): updated Swagger documentation | Actualización final de documentación OpenAPI | 2025-11-08 |
+| /auraneuro-backend | feature/final-services | 8dcebe1 | fix(services): improved stress & metrics engine | Ajustes finales en servicios de backend | 2025-11-16 |
+| /auraneuro-frontend | main | 9f812e2 | chore(deploy): final build and firebase deploy | Despliegue final del frontend | 2025-11-19 |
+| /auraneuro-backend | main | af92cd7 | chore(deploy): backend deployment on Render | Deploy final backend | 2025-11-26 |
+
+---
+
+## 5.2.4.5. Execution Evidence for Sprint Review
+
+Se validó el funcionamiento completo del sistema integrado:
+
+- Inicio de sesión con JWT  
+- Registro conectado al backend  
+- Test de estrés conectado a API  
+- Dashboard con métricas reales  
+- Recomendaciones dinámicas  
+- Búsqueda de psicólogos conectada  
+- Módulo de citas operativo  
+- Navegación fluida y responsiva  
+- Comprobación en múltiples dispositivos  
+
+*(Insertar capturas: Dashboard, JWT Login, Psicólogos, Citas, Swagger)*
+
+---
+
+## 5.2.4.6. Software Deployment Evidence for Sprint Review
+
+### **Frontend: Firebase Hosting**
+- Build: `npm run build`
+- Hosting activo: **https://tinyurl.com/p28fk93x**
+
+### **Backend: Render**
+- Entorno productivo habilitado
+- Swagger activo para pruebas
+
+Validaciones realizadas:
+
+- Integración completa Frontend ↔ Backend  
+- Pruebas de rutas, componentes y servicios  
+- Flujo funcional estable  
+- Compatibilidad multiplataforma  
+
+---
+
+## 5.2.4.7. Team Collaboration Insights during Sprint
+
+El equipo mantuvo comunicación constante mediante:
+
+- Reuniones semanales y checkpoints diarios  
+- Gestión mediante Trello  
+- Uso disciplinado de GitFlow  
+- Revisiones cruzadas de código  
+- GitHub Insights para seguimiento  
+- Coordinación frontend, backend y DevOps  
+
+El Sprint 4 consolidó los avances previos y entregó una versión final lista para presentación.
+
+<img src="./imagesChapter05/collaboratorstf.png">
+
+
 ## 5.3. Validation Interviews.  
 **Objetivo general**  
 
