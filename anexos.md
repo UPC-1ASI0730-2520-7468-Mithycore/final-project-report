@@ -5,3 +5,7 @@
 - [Link de GitHub](https://github.com/UPC-1ASI0730-2520-7468-Mithycore/final-project-report/tree/main)
 
 - [Link del Figma](https://www.figma.com/design/RIQVtBeFRPI34VYMCM7hHG/figma-aplicaciones-web?node-id=0-1&t=kRS3v9CrUle5B1fO-1)
+  
+- [Link del Frontend](https://frontend-auro-neuro-two.vercel.app/)
+
+- [Link del Backend](http://20.81.154.140:5152/swagger/index.htm)
