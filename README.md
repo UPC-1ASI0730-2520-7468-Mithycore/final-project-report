@@ -168,7 +168,7 @@ Durante la segunda entrega, el equipo amplió y profundizó el contenido del inf
 ### Evidencias
 
 <div style="text-align: center">
-  <img src="images/insights2.png" alt="Insights TP1" width="700px"/>
+  <img src="images/insights2.jpeg" alt="Insights TP1" width="700px"/>
 </div>
 
 <div style="text-align: center">
@@ -189,7 +189,7 @@ Durante la tercera entrega, el equipo consolidó contenido avanzado. Las princip
 ### Evidencias
 
 <div style="text-align: center">
-  <img src="images/insights3.png" alt="Insights TB2" width="700px"/>
+  <img src="images/insights3.jpeg" alt="Insights TB2" width="700px"/>
 </div>
 
 <div style="text-align: center">
