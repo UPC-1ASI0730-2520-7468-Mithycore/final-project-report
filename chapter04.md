@@ -528,11 +528,8 @@ Los prototipos de escritorio muestran los siguientes flujos clave:
    - Cómo funciona.  
 4. **Interacción con beneficios y servicios**, como la explicación de ventajas para pacientes y para negocios.  
 
-**Screenshot de ejemplo (Desktop):**  
-![Inicio Desktop](img/inicio.png)
-
 Enlace al video de simulación (Microsoft Stream):  
- [Video Prototipo Desktop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EU3tLSOOMqBKoPOduEP8hT8B5YirLUIadNh7OPgbE-ZeIg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=7NroAo)
+ [Video Prototipo Desktop]([https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EU3tLSOOMqBKoPOduEP8hT8B5YirLUIadNh7OPgbE-ZeIg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=7NroAo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/IQBOj9fQr8gvSpkYcsnEP5jRAWL7OA8wUIxQMv2EOs8FKj8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pPYjfA))
 
 ---
 
@@ -548,7 +545,7 @@ Los prototipos móviles priorizan la navegación simplificada en pantallas peque
 ![Inicio Mobile](./imagesChapter04/MockupsLandingPageMovile/CardsServices.png)
 
 Enlace al video de simulación (Microsoft Stream):  
- [Video Prototipo Mobile](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EVOCLtICjRlCnIbePhVTKRkBQjhxFgmXg-lHkXVoBIPzgA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=r7TzqS) 
+ [Video Prototipo Mobile]([https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/EVOCLtICjRlCnIbePhVTKRkBQjhxFgmXg-lHkXVoBIPzgA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=r7TzqS](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320574_upc_edu_pe/IQDNbw7ZOhZbSIncP8jIPrfwAbdVPHC9TbmyE1QEWf3HuRg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=UWt9k7)) 
  
  ---
 
