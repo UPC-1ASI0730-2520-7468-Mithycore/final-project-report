@@ -3367,26 +3367,77 @@ En relación al backend, señaló que el sistema es estable, pues las listas de 
   </table>
 </div>
 
-### Entrevista N°3 
 
-**Entrevista con:** Paredes Paredes, Carlos Augusto (Entrevistado)   
-**Entrevistador:** Meza Huanacune, Juan José
 
----
+<div style="
+  max-width:900px;
+  margin:16px auto 32px auto;
+  padding:16px 18px;
+  border-radius:10px;
+  border:1px solid #3b3b3b;
+  background:#111318;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+">
 
-| **Entrevistado/a:** | Paredes Paredes, Carlos Augusto | **Entrevistador:** | Meza Huanacune, Juan José |
-|---------------------|----------------------------------|---------------------|---------------------------|
+  <div style="font-weight:bold; margin-bottom:12px; font-size:15px;">
+    Entrevista N°3
+  </div>
+<div style="text-align:center; margin-bottom:15px;">
+    <img src="imagesChapter05/carlostf.png" alt="Entrevista Carlos Paredes" style="width:400px; border-radius:8px; border:1px solid #ccc;">
+</div>
 
-| **Información del entrevistado:** <br> **Sexo:** Masculino • **Edad:** 26 • **Residencia:** San Juan de Miraflores, Lima |
-|----------------------------------|------------------------------------------------------------------------------------------------|
+  <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+    <tr>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Entrevistado/a:
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        Paredes Paredes, Carlos Augusto
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Entrevistador:
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        Meza Huancane, Juan José
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Información del entrevistado:
+      </td>
+      <td colspan="3" style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        Sexo: Masculino &nbsp;•&nbsp; Edad: 26 &nbsp;•&nbsp; Residencia: San Juan de Miraflores, Lima
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Enlace de la Entrevista:
+      </td>
+      <td colspan="3" style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        <a href="https://tinyurl.com/4p76sbjp" target="_blank" style="color:#4ea3ff; text-decoration:underline;">
+          https://tinyurl.com/4p76sbjp
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Inicio:
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        0:00
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#1f2933; font-weight:bold;">
+        Duración:
+      </td>
+      <td style="padding:8px 12px; border:1px solid #333; background:#161b22;">
+        4:26
+      </td>
+    </tr>
+  </table>
+</div>
 
-| **Enlace de la Entrevista:** | https://tinyurl.com/4p76sbjp |
-|------------------------------|--------------------------------|
-
-| **Inicio:** 0:00 | **Duración:** 4:26 |
-|-----------------|-------------------|
-
-### **Resumen de Entrevista**
+### Resumen de Entrevista
 
 Carlos indicó que la Landing Page de AuraNeuro le pareció clara, moderna y bien estructurada. Destacó que el diseño transmite profesionalismo y un enfoque clínico gracias al uso de colores suaves, tipografía limpia y secciones organizadas de forma lógica. Mencionó que los apartados “Cómo funciona” y “Beneficios” permiten entender muy rápido la propuesta de valor del producto.
 
@@ -3396,6 +3447,7 @@ Respecto al frontend, Carlos señaló que las páginas de Inicio de Sesión y Re
 
 Finalmente, destacó que AuraNeuro tiene un buen equilibrio entre claridad, simplicidad y enfoque clínico, lo que facilitaría la adopción por parte de consultorios pequeños o medianos.
 
+---
 
 ### 5.3.3. Evaluaciones según heurísticas.
 
