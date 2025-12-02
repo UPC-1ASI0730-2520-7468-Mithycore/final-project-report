@@ -247,16 +247,19 @@ Finalmente, menciona que ha participado en comunidades online como foros de la *
 - **Link:** [Entrevista Xin](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320442_upc_edu_pe/EVgqZffZGQtFmtniG8D9sCMBK5K39T_bMbQSLhM_WlAlsg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=h8BhtU)
 - **Condición:** Paciente diagnosticado con epilepsia  
 
-**Detalles de la entrevista:**  
-Xin Yu Shi Lin es un joven de 25 años que reside en Lima y trabaja como mesero en un chifa. Durante la entrevista compartió que una de sus principales preocupaciones es la posibilidad de sufrir una crisis en el trabajo y no poder avisar a tiempo a alguien. Para su familia también es un reto, ya que viven con la preocupación constante de que pueda pasarle algo de forma repentina.  
+### Detalles de la entrevista
 
-Actualmente lleva un control limitado de su condición, anotando a veces en papeles o recordando los episodios de memoria, lo que reconoce como un método poco confiable. Señala que le cuesta recordar detalles importantes como la hora, la duración o los síntomas de cada crisis, lo que genera un seguimiento incompleto y dificulta la labor de sus médicos.  
+El entrevistado es Xin Yu Shi Lin, tiene 25 años, vive en Lima y trabaja como mesero en un restaurante de comida china (chifa). Está diagnosticado con epilepsia y su mayor preocupación es sufrir una crisis inesperada mientras trabaja o en la calle sin poder avisar a tiempo a alguien de confianza. Esta situación genera angustia tanto para él como para su familia.
 
-Considera que un sistema de alertas tempranas sería muy útil, ya que le permitiría tomar precauciones antes de que la crisis empeore y daría tranquilidad tanto a él como a su familia y compañeros de trabajo. También le gustaría contar con una aplicación móvil que registre de forma clara y confiable la frecuencia y duración de sus crisis, factores desencadenantes y recordatorios de medicación, presentados en gráficos y estadísticas fáciles de consultar.  
+Según su perfil de usuario (persona UXPressia), Xin usa principalmente **smartphones Android**, se comunica con **WhatsApp y SMS**, y navega en internet usando el navegador **Google Chrome**. También utiliza una laptop con **Windows**, aunque su experiencia digital es básica. Tiene un nivel medio de familiaridad con mensajería y navegación, pero presenta dificultades para recordar y registrar información médica con precisión.
 
-En cuanto al uso de dispositivos IoT, señala que estaría dispuesto a emplear relojes inteligentes o sensores que registren datos y los compartan directamente con su médico. Menciona que conoce dispositivos como los **Fitbit Ionic**, que pueden monitorear la salud, y cree que serían útiles para su caso. No obstante, expresa preocupaciones respecto a la seguridad de sus datos y la posibilidad de fallas en momentos críticos, por lo que para él la **confianza en la tecnología** es fundamental.  
+Actualmente lleva un control incompleto de su condición, anotando episodios en papeles o en notas del celular, lo cual reconoce como poco confiable. Por eso ve muy útil contar con una aplicación móvil que registre automáticamente sus crisis, con datos como hora, duración, síntomas y factores desencadenantes, además de gráficos y reportes fáciles de entender.
 
-Además, Xin comenta que participa en comunidades de apoyo, como grupos de Facebook y la **Asociación Peruana de Epilepsia**, lo cual le ha permitido compartir experiencias y recibir consejos útiles de otros pacientes. En cuanto a habilidades digitales, se describe con un nivel básico en smartphones y medio en el uso de laptops, destacando que está muy familiarizado con aplicaciones de mensajería como WhatsApp y SMS.  
+A Xin le gustaría usar dispositivos IoT como relojes inteligentes, que midan parámetros biométricos y se comuniquen con su médico. Sin embargo, tiene preocupaciones sobre la **seguridad de sus datos**, posibles fallas técnicas y que la tecnología no funcione en momentos críticos.
+
+Participa ocasionalmente en comunidades de apoyo como grupos de Facebook y la **Asociación Peruana de Epilepsia**, donde recibe recomendaciones de otros pacientes. Sus motivaciones principales incluyen tener mayor control sobre su enfermedad, prevenir situaciones de riesgo y ganar tranquilidad para él y para su familia. Sus frustraciones se centran en el olvido de registrar crisis, la poca integración de apps de salud con dispositivos médicos, y la falta de un historial digital claro y confiable.
+
+En general, Xin considera que una aplicación sencilla, segura y automatizada, junto con recordatorios y conectividad con dispositivos IoT, mejoraría significativamente su control de la epilepsia y su calidad de vida.
 
 - **Inicio de la entrevista:** 0:05
 - **Fin de la entrevista:** 4:22 
@@ -296,14 +299,17 @@ Además, Xin comenta que participa en comunidades de apoyo, como grupos de Faceb
 
 ---
 
-#### Detalles de la entrevista:
-Karen Guadalupe Villanueva Castillo es una neuróloga de 27 años que actualmente reside en Lima. Durante la entrevista explicó que el seguimiento de sus pacientes con epilepsia u otras condiciones neurológicas depende, en gran medida, de los registros que ellos mismos llevan en cuadernos o de la información que recuerdan en sus consultas. Aunque utiliza historias clínicas electrónicas, reconoce que la información no siempre es continua ni detallada, lo cual limita la precisión de los diagnósticos y la toma de decisiones clínicas.  
+#### Detalles de la entrevista
 
-La doctora considera que una plataforma que integre registros de crisis, calidad de sueño y datos biométricos en tiempo real sería de gran valor, pues le permitiría contar con información objetiva y confiable. En cuanto a marcas y sistemas, confía en plataformas estandarizadas como **Epic** y **Cerner** para la gestión clínica, y en dispositivos de monitoreo como los desarrollados por **Medtronic** y **Empatica**, que cuentan con certificaciones médicas.  
+La entrevistada es Karen Guadalupe Villanueva Castillo, una neuróloga especialista de 27 años que trabaja en un hospital público de Lima. Su perfil UXPressia indica que usa principalmente navegadores **Chrome y Edge**, dispositivos **iPhone, iPad y laptops Windows**, y se comunica mediante **WhatsApp, Google y correo electrónico**. Participa activamente en comunidades científicas como la **ILAE** y la **AAN**, donde se mantiene actualizada con las tendencias más recientes en neurotecnología.
 
-Señaló que poder acceder a los datos de sus pacientes desde una aplicación web conectada a la nube sería muy útil, ya que le permitiría revisar información actualizada sin necesidad de visitas presenciales tan frecuentes. Además, destacó que es miembro de comunidades científicas como la **International League Against Epilepsy (ILAE)** y participa en congresos de la **American Academy of Neurology (AAN)**, donde se difunden los avances más recientes en neurotecnología.  
+Durante la entrevista, Karen explicó que uno de los mayores problemas en el seguimiento de pacientes con epilepsia y otras condiciones neurológicas es la **falta de datos continuos y objetivos**. Muchos registros provienen de notas escritas por los propios pacientes, lo que genera inconsistencias que afectan la precisión diagnóstica. También mencionó que los sistemas HCE actuales no se integran con dispositivos IoT, obligando a registrar datos de forma manual.
 
-Respecto al impacto de estas herramientas digitales en el sistema de salud, considera que permitirían reducir costos, prevenir hospitalizaciones innecesarias y optimizar recursos en casos críticos. Finalmente, proyecta que el futuro de la neurología con IoT y plataformas digitales será **más preventivo y personalizado**, con monitoreo 24/7 que permita ajustar tratamientos en tiempo real.  
+La doctora considera de gran valor una plataforma que unifique **crisis, sueño, biometría y recordatorios en tiempo real**, pues permitiría evaluar la evolución del paciente sin necesidad de visitas presenciales frecuentes. Confía en soluciones estandarizadas como **EPIC y Cerner**, y en dispositivos certificados como los de **Medtronic y Empatica**, los cuales ofrecen datos clínicamente validados.
+
+Karen mencionó que una interfaz basada en dashboards con tendencias y reportes descargables (por ejemplo, en formato **FHIR**) facilitaría la toma de decisiones clínicas. Entre sus frustraciones se encuentran los registros subjetivos, la falta de interoperabilidad, el tiempo excesivo que demanda revisar datos no estructurados y el riesgo de pérdida de información relevante.
+
+En términos generales, visualiza la neurología del futuro como un modelo más **preventivo, personalizado y apoyado en IoT**, donde herramientas como AuraNeuro contribuyan a reducir costos hospitalarios, mejorar la adherencia del paciente y permitir diagnósticos más objetivos.
 
 - **Inicio de la entrevista:** 0:04
 - **Fin de la entrevista:** 6:58
@@ -384,16 +390,18 @@ Mencionó que forma parte de comunidades científicas como la **World Federation
 
 ---
 
-#### Detalles de la entrevista:
-Carlos Paredes es un ingeniero electrónico de 32 años que trabaja como proveedor de soluciones IoT aplicadas a la salud. Durante la entrevista explicó que actualmente desarrolla proyectos de integración de **sensores biométricos**, pulseras de monitoreo y dispositivos EEG portátiles que generan datos en tiempo real. Estos dispositivos son utilizados por hospitales y clínicas para hacer seguimiento remoto de pacientes con enfermedades crónicas.  
+### Detalles de la entrevista
 
-Comentó que uno de los principales retos es la **interoperabilidad**: muchas veces los dispositivos generan información en distintos formatos, lo que dificulta integrarlos en plataformas médicas centralizadas. También subrayó que la **seguridad de los datos** es fundamental, ya que los clientes demandan protocolos robustos de encriptación y cumplimiento de normas como **HIPAA** o equivalentes locales.  
+El entrevistado es Carlos Augusto Paredes Chávez, un ingeniero electrónico de 29 años que trabaja como proveedor de soluciones IoT aplicadas a la neurología. Vive en Lima y su mercado principal es Perú. Según su perfil UXPressia, es un profesional altamente familiarizado con la integración tecnológica, el uso de plataformas cloud como **AWS IoT Core** y **Azure Healthcare**, protocolos IoT como **MQTT, BLE y Wi-Fi seguro**, así como el desarrollo de apps móviles conectadas con sensores biométricos y wearables.
 
-Carlos confía en marcas como **Empatica**, **Medtronic** y **NeuroSky**, ya que han demostrado respaldo clínico y certificaciones internacionales. Señaló que una colaboración con startups como **Mithycore** puede acelerar la innovación porque estas empresas suelen ser más ágiles para probar pilotos y personalizar soluciones.  
+Durante la entrevista, Carlos explicó que actualmente desarrolla dispositivos multiparámetro, pulseras de monitoreo y EEG portátiles que permiten obtener datos clínicos en tiempo real. Uno de sus principales retos es la **interoperabilidad**, ya que muchos hospitales no cuentan con estándares como **HL7 FHIR**, lo que dificulta integrar sus equipos con plataformas clínicas existentes. También enfatizó la importancia de la **seguridad**, pues sus clientes exigen cifrado, cumplimiento normativo y protocolos similares a HIPAA.
 
-En cuanto a habilidades, dijo sentirse altamente competente en **protocolos IoT (MQTT, BLE, Wi-Fi seguro)**, en el uso de plataformas de nube como **AWS IoT Core** y en el manejo de dashboards analíticos con **Grafana** y **Power BI**. Reconoce que una de sus principales **frustraciones** es que muchas instituciones médicas aún son reacias a adoptar estas tecnologías por falta de presupuesto o desconocimiento.  
+Carlos confía en las soluciones de marcas como **Empatica, Medtronic y NeuroSky**, pues ofrecen dispositivos certificados que pueden usarse en entornos hospitalarios. Según su comportamiento digital (persona), utiliza con frecuencia navegadores **Chrome y Edge**, y se comunica por canales profesionales como **LinkedIn**, **Zoom** y **correo electrónico**.
 
-Su **objetivo principal** es lograr que las soluciones IoT se integren de forma fluida con historias clínicas electrónicas y plataformas de telemedicina, para que los médicos tengan información confiable y continua sin sobrecargar al paciente.  
+Entre sus motivaciones destacan posicionar su empresa en ecosistemas internacionales, impulsar la medicina preventiva con IoT y ofrecer datos objetivos que ayuden a mejorar diagnósticos. Entre sus frustraciones se encuentran la burocracia, la resistencia a adoptar nuevas tecnologías, y los altos costos de certificación clínica.
+
+Finalmente, Carlos considera que integrar IoT con historias clínicas electrónicas y dashboards clínicos permitirá que neurólogos y médicos tomen decisiones más rápidas y basadas en datos reales. También señaló que plataformas como AuraNeuro pueden ayudar a la estandarización y a abrir el camino hacia soluciones de telemedicina y monitoreo continuo.
+
 
 - **Inicio de la entrevista:** 0:09
 - **Fin de la entrevista:** 13:09 
