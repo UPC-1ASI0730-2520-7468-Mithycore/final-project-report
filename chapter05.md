@@ -3758,9 +3758,6 @@ Siguiendo el *Project Statement*, el video también incluye un **testimonio posi
 
 Finalmente, esta sección incluye el **screenshot del video**, el enlace oficial publicado en Microsoft Stream y la duración registrada del contenido.
 
-**Screenshot del Video:**  
-*(insertar imagen aquí)*
-
 **URL del video (Microsoft Stream):**  
 https://tinyurl.com/5av89yc9
 
