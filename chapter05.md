@@ -2945,9 +2945,9 @@ Durante esta iteración se logró integrar completamente el flujo real entre la 
 
 | **Sprint #** | Sprint 4 |
 |--------------|----------|
-| **Date** | 2025-11-12 |
-| **Time** | 10:00 AM – 11:25 AM |
-| **Location** | Reunión virtual (Zoom) / Oficina central AuraNeuro |
+| **Date** | 2025-11-28 |
+| **Time** | 21:00 PM – 11:30 PM |
+| **Location** | Reunión virtual (Zoom) |
 | **Prepared By** | Romero Meza, Jhimy |
 | **Attendees (to planning meeting)** | Romero Meza — Sprint Lead (Backend) <br> Eduardo F. Chacaliaza Minaya — Product Owner <br> Gutierrez Tume, Jeremy — Lead Dev (Arquitectura / Code Reviews) <br> Fabricio F. Quispe Barzola — Backend Developer / QA <br> Juan José Meza Huanacune — DevOps & Deployment |
 | **Sprint 4 – Summary** | Durante el Sprint 3 se completó la base estable del backend (autenticación, agendas, recetas, historial médico y perfil). Para el Sprint 4, el Product Owner priorizó la entrega del sistema *integrado end-to-end*, habilitando: <br><br> - Teleconsulta MVP (chat + sala virtual simulada) <br> - Integración IoT simulada (biomarcadores automáticos conectados al backend) <br> - Consolidación del historial médico completo <br> - Integración total Frontend ↔ Backend en todos los módulos <br> - Despliegue final en producción (Frontend en Firebase, Backend en Render) <br> - Evidencias finales, capturas y validación de HU completas. |
