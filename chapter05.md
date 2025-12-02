@@ -3743,9 +3743,29 @@ Ajustar ancho del contenedor (70–80%), centrar contenido y aplicar márgenes c
 ## 5.4. Video About-the-Product.
 
 <p align="center">
-  <a href="https://tinyurl.com/mtrp4d8h" target="_blank">
+  <a href="https://tinyurl.com/5av89yc9" target="_blank">
     <img src="imagesChapter05/abouttheproduct.png" alt="Video About the Product" width="800px">
   </a>
 </p>
+
+El **Video About-the-Product** presenta una demostración clara y guiada del funcionamiento de **AuraNeuro**, orientada a los visitantes de la *Landing Page* y a los usuarios potenciales del sistema. El propósito principal del video es explicar el modelo de negocio, los beneficios centrales de la plataforma y las características principales del frontend que permiten comprender cómo funciona la solución.
+
+Durante el video se realiza un recorrido completo por la **Landing Page**, mostrando secciones esenciales como *Por qué AuraNeuro*, *Beneficios*, *Cómo funciona*, *Servicios* y *Planes*. Estas secciones permiten entender rápidamente la propuesta de valor basada en diagnóstico temprano, monitoreo continuo, decisiones médicas informadas y uso de IA para apoyar a profesionales de la salud neurológica.
+
+Posteriormente, se presenta una **demo del Frontend**, en la que se evidencia la navegación fluida, el diseño responsivo, la estructura del menú, la organización visual y la interacción de los módulos principales. Esta demostración permite apreciar la experiencia real del usuario final.
+
+Siguiendo el *Project Statement*, el video también incluye un **testimonio positivo** de un usuario entrevistado durante el proceso de validación. En este caso, **Carlos Paredes**, especialista en soluciones IoT, comenta sobre la claridad visual del diseño, la rapidez del flujo de navegación y la utilidad clínica que AuraNeuro podría aportar en contextos reales de salud.
+
+Finalmente, esta sección incluye el **screenshot del video**, el enlace oficial publicado en Microsoft Stream y la duración registrada del contenido.
+
+**Screenshot del Video:**  
+*(insertar imagen aquí)*
+
+**URL del video (Microsoft Stream):**  
+https://tinyurl.com/5av89yc9
+
+**Usuario entrevistado (testimonio):** Carlos Paredes  
+**Duración:** 4:24 minutos
+
 
 
