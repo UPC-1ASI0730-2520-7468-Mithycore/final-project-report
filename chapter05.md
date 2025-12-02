@@ -3336,7 +3336,7 @@ Sobre el backend, comentó que la aplicación respondió de forma inmediata al s
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/4mhh5xma" target="_blank" rel="noopener">Entrevista a Eduardo</a>
+        <a href="https://tinyurl.com/yc76d55w" target="_blank" rel="noopener">Entrevista a Eduardo</a>
       </td>
     </tr>
     <tr>
