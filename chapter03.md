@@ -1,771 +1,94 @@
 # Capítulo III: Requirements Specification  
 
 ## 3.1. User Stories.  
-Lista de Epicas  
 
-| Epic ID | Tipo                         | Descripción (Como / quiero / para)                                                                                      | Nombre de la épica                                   |
-|---------|------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| EP-01   | Funcional                    | Como **usuario (paciente o neurólogo)**, quiero **registrarme e iniciar sesión de forma segura (incluyendo opciones por teléfono y Google)** para **acceder a mi cuenta y servicios personalizados**. | Autenticación y Gestión de Cuentas                   |
-| EP-02   | Funcional                    | Como **profesional o paciente**, quiero **editar y consultar mi perfil clínico y datos personales** para **mantener información actualizada y útil en la atención**. | Gestión de Perfiles Médicos y Datos                  |
-| EP-03   | Funcional                    | Como **paciente o neurólogo**, quiero **gestionar citas y disponibilidad** para **programar, confirmar y recibir recordatorios de consultas**. | Gestión de Citas y Agenda Médica                     |
-| EP-04   | Funcional                    | Como **paciente**, quiero **iniciar videollamadas one-click con mi neurólogo** y mantener comunicación síncrona para **realizar teleconsultas y seguimiento remoto**. | Videollamadas y Teleconsulta                         |
-| EP-05   | Funcional                    | Como **paciente y neurólogo**, quiero **comunicarme de forma segura (chat) y gestionar registros clínicos—recetas y datos biométricos** para **dar continuidad al tratamiento**. | Comunicación, Recetas y Registro Clínico             |
-| EP-06   | Funcional                    | Como **neurólogo**, quiero **emitir y consultar recetas electrónicas y revisar historial prescriptivo** para **facilitar adherencia y control farmacológico**. | Gestión de Recetas y Tratamientos                    |
-| EP-07   | Funcional                    | Como **paciente**, quiero **emparejar y sincronizar mis dispositivos IoT** para **registrar automáticamente biomarcadores en mi historial clínico**. | Monitoreo IoT y Registro de Datos                    |
-| EP-08   | Funcional / Seguridad        | Como **sistema clínico**, quiero **detectar anomalías y enviar alertas (incluyendo geolocalización con consentimiento)** para **activar respuestas rápidas ante eventos críticos**. | Alertas, Geolocalización y Respuesta                 |
-| EP-09   | No funcional / Seguridad     | Como **administrador del sistema**, quiero **garantizar cifrado, control de accesos, límites OTP y logs de auditoría** para **proteger la confidencialidad y cumplir normativas**. | Privacidad, Seguridad y Cumplimiento                 |
-| EP-10   | No funcional / Rendimiento   | Como **usuario**, quiero **tiempos de respuesta y escalabilidad garantizados** para **tener una experiencia fluida incluso con uso concurrente**. | Escalabilidad y Rendimiento                          |
-| EP-11   | Funcional / Analítica        | Como **neurólogo**, quiero **recibir análisis e informes generados por IA** sobre series temporales e IoT para **identificar patrones, priorizar pacientes y apoyar decisiones clínicas**. | Analítica con IA y Dashboard Clínico                 |
-| EP-12   | Funcional / UX               | Como **usuario (paciente o profesional)**, quiero **personalizar accesibilidad y apariencia de la interfaz** para **adaptarla a mis preferencias y necesidades**. | Usabilidad, Personalización y Accesibilidad          |
-| EP-21   | Funcional / Contenido        | Como **visitante**, quiero **encontrar información clara y convincente en la landing (hero, how-it-works, features y sección About)** para **comprender la propuesta de valor y decidir registrarme o contactar**. | Landing — Contenido y CTA principal                  |
-| EP-22   | Funcional / UI               | Como **usuario en distintos dispositivos**, quiero **una navegación responsiva y un layout adaptable** para **acceder fácilmente a secciones clave desde desktop y móvil**. | Navegación y Responsive                              |
-| EP-23   | Funcional / Conversión       | Como **visitante o responsable comercial**, quiero **canales de contacto y medición (formulario, footer, tracking)** para **comunicarme con el equipo y medir conversiones**. | Contacto, Footer y Analytics                         |
-| EP-24   | No funcional / Técnica       | Como **usuario y SEO manager**, quiero **que la landing cargue rápido y tenga meta tags configurados** para **mejorar UX y visibilidad en motores de búsqueda**. | Performance, SEO y Optimización                      |
-| EP-25   | Funcional / Contenido        | Como **equipo de marketing**, quiero **un CMS que permita editar contenidos de la landing sin despliegues** para **iterar mensajes, imágenes y CTAs con rapidez**. | CMS y Gestión de Contenido                           |
-| EP-26   | No funcional / Legal & UX    | Como **usuario**, quiero **controles de privacidad y accesibilidad (cookies, política, WCAG)** para **tener control sobre mis datos y asegurar acceso básico**. | Privacidad (Cookies) y Accesibilidad                 |
+### Lista de Epicas  
+| Epic ID | Tipo | Descripción (Como / quiero / para) | Nombre de la épica |
+|--------|--------|--------------------------------------|----------------------|
+| EP-01 | Funcional | Como **usuario (paciente o neurólogo)** quiero registrarme e iniciar sesión de forma segura (correo, teléfono, Google) para acceder a mis servicios clínicos digitales. | Autenticación y Gestión de Cuentas |
+| EP-02 | Funcional | Como **profesional o paciente**, quiero editar y consultar mi perfil clínico para mantener información actualizada y útil. | Gestión de Perfiles Médicos |
+| EP-03 | Funcional | Como **paciente o neurólogo**, quiero gestionar citas, disponibilidad y recordatorios para coordinar correctamente mis atenciones. | Agenda Médica y Citas |
+| EP-04 | Funcional | Como **paciente**, quiero iniciar videollamadas confiables para recibir atención médica remota. | Teleconsulta y Videollamadas |
+| EP-05 | Funcional | Como **paciente y neurólogo**, quiero compartir información clínica (mensajes, biomarcadores, recetas) para asegurar continuidad asistencial. | Comunicación y Registro Clínico |
+| EP-06 | Funcional | Como **neurólogo**, quiero emitir recetas electrónicas y revisar historial médico para mejorar adherencia al tratamiento. | Recetas y Tratamientos |
+| EP-07 | Funcional | Como **paciente**, quiero sincronizar mis dispositivos IoT para registrar automáticamente signos vitales. | Integración IoT y Monitoreo |
+| EP-08 | Funcional / Seguridad | Como **sistema clínico**, quiero detectar anomalías críticas y enviar alertas con geolocalización para responder rápido ante emergencias. | Alertas y Respuesta Médica |
+| EP-09 | No funcional / Seguridad | Como **administrador**, quiero garantizar cifrado, control de accesos, OTP y logs de auditoría para cumplir normas de privacidad. | Seguridad y Cumplimiento |
+| EP-10 | No funcional / Rendimiento | Como **usuario**, quiero que el sistema responda rápido y escale bajo demanda para garantizar disponibilidad constante. | Escalabilidad y Performance |
+| EP-11 | Funcional / Analítica | Como **neurólogo**, quiero dashboards con IA para interpretar datos históricos y patrones clínicos. | Analítica Médica con IA |
+| EP-12 | Funcional / UX | Como **usuario**, quiero personalizar interfaz (tema, fuente, accesibilidad) para usar la plataforma cómodamente. | Personalización y Accesibilidad |
+| EP-13 | Funcional / Contenido | Como **visitante**, quiero información clara (hero, how-it-works, features) para entender el valor antes de registrarme. | Landing – Contenido Principal |
+| EP-14 | Funcional / UI | Como **usuario**, quiero una navegación responsive para moverme entre secciones en cualquier dispositivo. | Navegación y Responsive |
+| EP-15 | Funcional / Conversión | Como **visitante**, quiero formularios y footer para contactar o solicitar información fácilmente. | Contacto y Conversión |
+| EP-16 | No funcional / Técnica | Como **SEO/Marketing**, quiero una landing rápida y optimizada para buen ranking y experiencia. | Performance y SEO |
+| EP-17 | Funcional / Técnico | Como **equipo de marketing**, quiero un CMS para actualizar contenidos sin despliegue técnico. | CMS y Gestión de Contenido |
+| EP-18 | No funcional / Legal | Como **usuario**, quiero controles de privacidad, cookies y cumplimiento WCAG para usar el sistema con seguridad. | Privacidad y Accesibilidad |
+| EP-19 | No funcional / Calidad | Como **equipo de desarrollo**, quiero definir estrategias de prueba para asegurar calidad en cada entrega. | Estrategia de Pruebas |
+| EP-20 | No funcional / QA | Como **QA Engineer**, quiero diseñar casos de prueba para asegurar funcionamiento correcto. | Pruebas Unitarias e Integración |
+| EP-21 | No funcional / Validación | Como **equipo**, quiero validar requisitos funcionales y no funcionales antes de cada entrega. | Validación de Requisitos |
+| EP-22 | No funcional / Documentación | Como **usuario**, quiero acceder a guías, manuales y documentación del sistema. | Documentación y Ayuda |
+| EP-23 | No funcional / Soporte | Como **usuario**, quiero soporte y FAQ para resolver dudas de uso. | Soporte y Atención a Usuario |
+| EP-24 | No funcional / Gestión | Como **administrador**, quiero monitorear métricas del sistema (carga, errores, rendimiento). | Monitoreo y Gestión |
+| EP-25 | No funcional / Métricas | Como **administrador**, quiero analizar métricas de calidad para identificar mejoras. | Métricas y Calidad |
+| EP-26 | No funcional / Mantenimiento | Como **plataforma**, quiero procesos de mantenimiento, actualizaciones y optimización continua. | Mantenimiento y Continuidad |
 
 
 
+### Listas de historias de usuario
+| ID (HU) | Título | Descripción (Como / quiero / para) | Criterios de aceptación (Gherkin incluido) | Epic-ID |
+|--------|--------|--------------------------------------|----------------------------------------------|---------|
+| US-01 | Inicio de sesión | Como usuario (paciente o neurólogo) quiero iniciar sesión con credenciales válidas para acceder de forma segura a mi cuenta y servicios personalizados. | **Escenario A (inicio exitoso):** Given usuario registrado; When ingresa credenciales válidas y presiona “Iniciar sesión”; Then el sistema autentica y redirige al panel correspondiente. **Escenario B (credenciales inválidas):** Given usuario ingresa contraseña incorrecta; When intenta iniciar; Then sistema muestra error y no permite acceso. | EP-01 |
+| US-02 | Registro de paciente | Como paciente quiero registrarme con mis datos personales para crear una cuenta y acceder a servicios de atención neurológica remota. | **Escenario A (registro válido):** Given formulario con datos válidos; When envía; Then la cuenta se crea, se envía verificación y se muestra confirmación. **Escenario B (correo duplicado):** Given correo existente; When intenta registrarse; Then sistema indica que debe ingresar un correo distinto. | EP-01 |
+| US-03 | Registro de neurólogo | Como neurólogo quiero registrarme ingresando mis credenciales profesionales para acceder al panel clínico y ofrecer consultas remotas. | **Escenario A (licencia válida):** Given neurólogo ingresa datos y licencia válida; When registra; Then sistema marca cuenta como “pendiente de validación” y envía notificación. **Escenario B (licencia inválida):** Given número de licencia inválido; When registra; Then sistema solicita documentación adicional. | EP-01 |
+| US-04 | Datos de usuario | Como usuario (paciente o neurólogo) quiero actualizar mis datos personales para mantener mi información vigente y correcta. | **Escenario A (actualización correcta):** Given usuario autenticado; When guarda datos válidos; Then sistema actualiza perfil. **Escenario B (datos inválidos):** Given usuario envía email inválido; When guarda; Then sistema muestra errores de validación. | EP-01 |
+| US-05 | Ver agenda de citas | Como paciente quiero visualizar las citas programadas para conocer fecha, hora y neurólogo asignado. | **Escenario A (citas existentes):** Given citas registradas; When abre Agenda; Then sistema lista citas con fecha/hora/profesional. **Escenario B (sin citas):** Given no hay citas; When abre Agenda; Then sistema muestra mensaje vacío y CTA para solicitar cita. | EP-02 |
+| US-06 | Solicitar nueva cita | Como paciente quiero solicitar una nueva cita eligiendo fecha y hora disponibles para recibir atención médica remota. | Escenario A (solicitud exitosa): Given hay franjas libres; When selecciono fecha/hora y confirmo; Then se crea cita en estado pendiente y se notifica al neurólogo. Escenario B (conflicto): Given franja ocupada simultáneamente; When confirmo; Then sistema informa no disponible y sugiere alternativas. | EP-03 |
+| US-07 | Definir disponibilidad horaria | Como neurólogo quiero configurar mis horarios disponibles para que los pacientes puedan solicitar citas. | Escenario A (válido): Given horarios sin solapamientos; When guardo; Then sistema publica disponibilidad. Escenario B (solapamiento): Given horarios se traslapan; When guardo; Then sistema muestra error de conflicto. | EP-03 |
+| US-08 | Consulta por videollamada | Como paciente quiero iniciar videollamada con mi neurólogo para recibir atención remota. | Escenario A (éxito): Given hora de la cita; When presiono “Iniciar videollamada”; Then se establece sesión WebRTC estable. Escenario B (neurólogo ausente): Given profesional no conectado; When inicio llamada; Then sistema notifica indisponibilidad y permite dejar mensaje. | EP-04 |
+| US-09 | Emitir receta electrónica | Como neurólogo quiero generar recetas médicas electrónicas para que el paciente pueda adquirir medicación. | Escenario A (válida): Given campos completos; When confirmo receta; Then se crea, se firma digitalmente y se notifica al paciente. Escenario B (incompleto): Given datos faltantes; When guardo; Then sistema muestra errores. | EP-06 |
+| US-10 | Consultar recetas | Como paciente quiero visualizar y descargar mis recetas para acceder a prescripciones anteriores. | Escenario A (con recetas): Given recetas registradas; When accedo a “Recetas”; Then veo lista y opción de PDF. Escenario B (sin recetas): Given ninguna receta; When abro sección; Then se muestra mensaje de ausencia. | EP-06 |
+| US-11 | Chat con neurólogo | Como paciente quiero enviar mensajes al neurólogo para resolver dudas entre consultas. | Escenario A (envío válido): Given mensaje no vacío; When envío; Then sistema entrega al profesional y notifica. Escenario B (mensaje vacío): Given input vacío; When envío; Then sistema bloquea envío y muestra validación. | EP-05 |
+| US-12 | Visualizar ubicación del paciente | Como neurólogo quiero visualizar ubicación aproximada del paciente (con permiso) durante consulta para contexto clínico. | Escenario A (permiso otorgado): Given paciente habilitó geolocalización; When neurólogo consulta; Then sistema muestra posición. Escenario B (sin permiso): Given permiso no otorgado; When consulta; Then sistema indica no disponible. | EP-08 |
+| US-13 | Integrar dispositivo IoT | Como paciente quiero vincular mi dispositivo IoT para registrar automáticamente datos biométricos. | Escenario A (emparejamiento válido): Given dispositivo compatible; When lo vinculo; Then sistema recibe y registra datos. Escenario B (fallo): Given credenciales IoT inválidas; When emparejo; Then sistema muestra error. | EP-07 |
+| US-14 | Alertas automáticas | Como paciente quiero recibir alertas automáticas si mis biomarcadores indican valores críticos. | Escenario A (alerta real): Given valor excede umbral; When detectado; Then se envía alerta inmediata. Escenario B (falsa alarma): Given dato inconsistente; When detectado; Then no envía alerta y marca para revisión. | EP-08 |
+| US-15 | Seguridad y encriptación | Como plataforma quiero cifrar datos sensibles y registrar auditorías para proteger información clínica. | Escenario A (comunicación segura): Given envío datos; When transmito; Then canal es HTTPS/TLS. Escenario B (intento sospechoso): Given patrón anómalo; When detectado; Then sistema bloquea e informa. | EP-09 |
+| US-16 | Rendimiento | Como usuario quiero que la plataforma cargue rápido para una experiencia fluida. | Escenario A (normal): Given carga promedio; When navego; Then respuesta <2s. Escenario B (picos): Given alta concurrencia; When carga; Then mantiene estabilidad. | EP-10 |
+| US-17 | Privacidad de datos | Como paciente quiero que mis datos se anonimicen cuando sea requerido para cumplir normativas. | Escenario A (consentimiento válido): Given lo otorgo; When datos se procesan; Then anonimización ocurre según ley. Escenario B (solicito eliminación): Given pido borrar; When proceso; Then datos se eliminan o anonimizan. | EP-09 |
+| US-18 | Analítica con IA | Como neurólogo quiero informes basados en IA para interpretar patrones clínicos. | Escenario A (suficientes datos): Given historial completo; When IA procesa; Then genera reporte. Escenario B (datos insuficientes): Given historial parcial; When solicito; Then sistema informa falta de datos. | EP-11 |
+| US-19 | Recordatorios de citas | Como paciente quiero recibir recordatorios automáticos para asistir a mis citas. | Escenario A (recordatorio enviado): Given cita en 24h; When sistema ejecuta recordatorio; Then se envía email/SMS. Escenario B (cancelada): Given cita cancelada; When actualiza; Then no se envía recordatorio. | EP-03 |
+| US-20 | Personalización UI | Como usuario quiero personalizar la interfaz para adaptarla a mis necesidades. | Escenario A (preferencia válida): Given selecciono tema; When guardo; Then cambios persisten. Escenario B (no soportado): Given dispositivo no soporta tamaño fuente; When aplico; Then sistema notifica incompatibilidad. | EP-12 |
+| US-21 | Navegación responsive | Como visitante quiero navegar fácilmente desde cualquier dispositivo. | Escenario A (desktop): Given vista PC; When cargo página; Then menú horizontal visible. Escenario B (móvil): Given vista móvil; When pulso menú; Then menú se despliega correctamente. | EP-14 |
+| US-22 | How it works | Como visitante quiero ver pasos claros que expliquen el flujo de registro y uso. | Escenario A (contenido visible): Given landing cargada; When navego a sección; Then veo pasos con título y descripción. Escenario B (lectores pantalla): Given accesibilidad activa; When leo; Then se respetan etiquetas. | EP-13 |
+| US-23 | Features Cards | Como visitante quiero ver tarjetas de features para explorar servicios. | Escenario A (hover): Given desktop; When paso cursor; Then card muestra detalle. Escenario B (clic): Given interacción; When selecciono; Then se abre detalle ampliado. | EP-22 |
+| US-24 | About / Who we are | Como visitante quiero conocer al equipo para validar credibilidad. | Escenario A (visible): Given landing; When abro sección; Then información aparece alineada. Escenario B (descarga): Given usuario imprime; When descarga; Then sección se muestra limpia. | EP-23 |
+| US-25 | Beneficios | Como decisor institucional quiero ver beneficios clínicos y comerciales para evaluar el caso. | Escenario A (listado): Given landing; When entro; Then veo beneficios para pacientes/empresas. Escenario B (CTA): Given interesado; When clic; Then se abre formulario de contacto. | EP-22 |
+| US-26 | Formulario de contacto | Como visitante quiero enviar formulario con validaciones para contactar al equipo. | Escenario A (válido): Given campos completos; When envío; Then se genera registro y notificación. Escenario B (inválido): Given email erróneo; When envío; Then se muestran errores. | EP-15 |
+| US-27 | Footer con enlaces | Como visitante quiero acceder a enlaces y redes desde el footer. | Escenario A (funciona): Given clic en enlace; When selecciono; Then abre página destino. Escenario B (accesibilidad): Given uso teclado; When tabulo; Then enlaces accesibles. | EP-15 |
+| US-28 | Responsive mobile | Como usuario móvil quiero que la landing sea totalmente adaptable. | Escenario A (pantallas pequeñas): Given <768px; When cargo; Then diseño reorganiza columnas. Escenario B (tablet): Given tablet; When giro pantalla; Then navegación sigue usable. | EP-24 |
+| US-29 | Optimización de imágenes | Como usuario quiero que la landing cargue rápido con imágenes optimizadas. | Escenario A (inicial): Given primera carga; When renderiza; Then imágenes lazy-load. Escenario B (scroll): Given desplazamiento; When imágenes aparecen; Then no saltan layout. | EP-24 |
+| US-30 | SEO básico | Como marketing quiero meta tags correctos para mejorar posicionamiento. | Escenario A (head correcto): Given inspecto; When reviso; Then title/OG/tags correctos. Escenario B (redes): Given URL compartida; When preview; Then descripción e imagen correctas. | EP-16 |
+| US-31 | Cookie consent | Como visitante quiero aceptar/rechazar cookies según mis preferencias. | Escenario A (aceptar): Given primera visita; When acepto; Then se habilitan cookies permitidas. Escenario B (rechazar): Given rechazo; When navego; Then cookies no esenciales deshabilitadas. | EP-18 |
+| US-32 | Tracking & Analytics | Como product owner quiero medir clicks y conversiones para optimizar. | Escenario A (CTA): Given visitante hace clic; When ocurre; Then evento se registra. Escenario B (form submit): Given formulario válido; When envío; Then registra conversión. | EP-25 |
+| US-33 | Login con teléfono | Como usuario quiero iniciar sesión con mi número de teléfono sin usar contraseña. | Escenario A (teléfono registrado): Given número válido; When solicito OTP; Then ingreso código y accedo. Escenario B (nuevo): Given número no registrado; When solicito OTP; Then sistema crea cuenta básica y pide completar perfil. | EP-01 |
+| US-34 | Verificación OTP | Como usuario quiero verificar mi número usando OTP para seguridad. | Escenario A (correcto): Given OTP válido; When ingreso; Then verifico acceso. Escenario B (incorrecto): Given OTP erróneo; When ingreso; Then sistema bloquea intentos tras límite. | EP-09 |
+| US-35 | Login con Google | Como usuario quiero autenticarme con Google para acceder rápidamente. | Escenario A (nuevo usuario): Given cuenta Google nueva; When autorizo; Then sistema crea cuenta vinculada. Escenario B (existente): Given correo ya registrado; When ingreso por Google; Then vincula sesión sin duplicados. | EP-01 |
+| US-36 | Consentimiento SMS | Como usuario quiero dar/revocar consentimiento para uso de SMS. | Escenario A (otorgado): Given activo consentimiento; When habilito SMS; Then se envían OTP/alertas. Escenario B (revocado): Given retiro consentimiento; When ejecuto función; Then SMS se bloquean. | EP-18 |
+| US-37 | Protección OTP | Como plataforma quiero aplicar rate-limit y monitoreo para evitar abuso de OTP. | Escenario A (límite envíos): Given muchos OTP solicitados; When supera umbral; Then bloquea temporalmente. Escenario B (fraude): Given intentos masivos; When detectados; Then bloquea IP/número. | EP-26 |
+| US-38 | Auditoría sensible | Como administrador quiero registrar en audit log eventos sensibles. | Escenario A (login): Given inicio sesión; When ocurre; Then se registra evento. Escenario B (creación receta): Given receta emitida; When generada; Then se registra en log. | EP-09 |
+| US-39 | OBTENER perfil | Como usuario quiero consultar mi perfil clínico para verificar información. | Escenario A (correcto): Given autenticado; When consulto; Then veo datos clínicos. Escenario B (incompleto): Given faltan datos; When consulto; Then indica campos faltantes. | EP-02 |
+| US-40 | Login (JWT) | Como usuario quiero iniciar sesión y recibir tokens JWT para consumir APIs protegidas. | Escenario A (correcto): Given credenciales válidas; When POST/login; Then recibo accessToken y refreshToken. Escenario B (inválido): Given credenciales erróneas; When login; Then 401. | EP-01 |
+| US-41 | Refresh token | Como usuario quiero refrescar mi sesión usando refresh token sin autenticarme otra vez. | Escenario A (refresh válido): Given refresh válido; When POST/refresh; Then recibo nuevo token. Escenario B (revocado): Given refresh revocado; When uso; Then 401 y registro en auditoría. | EP-09 |
+| US-42 | Logout | Como usuario quiero cerrar sesión y revocar refresh token. | Escenario A (correcto): Given autenticado; When POST/logout; Then tokens revocados. Escenario B (token ya revocado): Given token revocado; When logout; Then respuesta 200 idempotente. | EP-09 |
+| US-43 | Recuperar contraseña | Como usuario quiero recuperar acceso mediante token seguro. | Escenario A (solicitud): Given correo válido; When POST/forgot; Then sistema envía token. Escenario B (reset): Given token válido; When POST/reset; Then actualiza contraseña. | EP-01 |
+| US-44 | Cambiar contraseña | Como usuario quiero cambiar mi contraseña para mantener seguridad. | Escenario A (válido): Given oldPassword correcto; When POST/change; Then sistema actualiza hash. Escenario B (incorrecto): Given oldPassword incorrecto; When intento cambiar; Then 400. | EP-01 |
+| US-45 | Roles y permisos | Como sistema quiero gestionar roles (asignar/ver/quitar) para controlar acceso. | Escenario A (consulta): Given JWT con claims; When GET/roles; Then lista permisos. Escenario B (asignar): Given admin; When POST/roles; Then asigna rol y registra auditoría. | EP-09 |
+| US-46 | Obtener perfil (API) | Como usuario quiero obtener mi perfil a través de API. | Escenario A (válido): Given autenticado; When GET/me; Then retorno datos completos. Escenario B (incompleto): Given faltan campos; When consulto; Then profileComplete=false. | EP-02 |
+| US-47 | Editar perfil (API) | Como usuario quiero actualizar campos de mi perfil mediante API. | Escenario A (válido): Given autenticado; When PATCH/me; Then actualiza campos. Escenario B (permiso denegado): Given intento modificar campo restringido; When PATCH; Then 403. | EP-02 |
+| US-48 | Crear receta (API) | Como neurólogo quiero crear recetas electrónicas firmadas desde API. | Escenario A (válido): Given rol NEUROLOGIST; When POST/recipes; Then receta creada y firmada. Escenario B (prohibido): Given rol no válido; When POST; Then 403. | EP-06 |
+| US-49 | Listar recetas | Como paciente o neurólogo quiero listar recetas emitidas. | Escenario A (paciente): Given autenticado; When GET/recipes; Then lista recetas con enlaces PDF. Escenario B (neurólogo): Given profesional; When GET/recipes/{id}; Then visualiza receta completa. | EP-06 |
+| US-50 | Auditoría | Como administrador quiero visualizar y filtrar eventos del audit log. | Escenario A (consulta): Given admin; When GET/audit; Then retorno paginado. Escenario B (evento sensible): Given login exitoso; When auditoría; Then se registra. | EP-09 |
+| US-51 | Protección OTP avanzada | Como plataforma quiero mitigar abuso implementando límites y bloqueo dinámico. | Escenario A (rate limit): Given múltiples solicitudes; When supera umbral; Then bloquea temporalmente. Escenario B (fraude): Given actividad sospechosa; When detectada; Then notifica y bloquea. | EP-26 |
 
-Listas de historias de usuario
-<table>
-  <tbody>
-    <tr>
-      <th>ID (HU)</th>
-      <th>Título</th>
-      <th>Descripción</th>
-      <th>Criterios de aceptación</th>
-      <th>Epic-ID</th>
-    </tr>
-    <tr>
-      <td>US-01</td>
-        <td>Inicio de sesión</td>
-        <td>Como usuario (paciente o neurólogo) registrado, quiero iniciar sesión en la plataforma con mis credenciales para acceder de forma segura a mis datos y servicios personalizados.</td>
-        <td>
-          Escenario A (inicio exitoso): 
-          Given que el usuario tiene una cuenta registrada y credenciales válidas. 
-          When ingresa correo y contraseña correctos y presiona "Iniciar sesión". 
-          Then el sistema autentica al usuario y lo redirige al panel correspondiente.  
-          Escenario B (credenciales inválidas): 
-          Given que el usuario introduce una contraseña incorrecta. 
-          When intenta iniciar sesión. 
-          Then el sistema muestra un mensaje de error indicando credenciales inválidas y no permite acceso.
-        </td>
-        <td>EP-01</td>
-    </tr>
-    <tr>
-      <td>US-02</td>
-      <td>Registro de paciente</td>
-      <td>Como paciente, quiero registrarme en la plataforma proporcionando mis datos personales básicos para crear una cuenta y usar los servicios de atención neurológica remota.</td>
-      <td>
-        Escenario A (registro válido): 
-        Given que el paciente completa el formulario con datos válidos (email único, contraseña segura). 
-        When envía el formulario. 
-        Then el sistema crea la cuenta, envía correo de verificación y muestra confirmación.  
-        Escenario B (correo ya registrado): 
-        Given que el paciente utiliza un correo ya existente. 
-        When intenta registrarse. 
-        Then el sistema muestra error indicando que el correo ya está en uso y solicita otro.
-      </td>
-      <td>EP-01</td>
-    </tr>
-    <tr>
-      <tr>
-        <td>US-03</td>
-        <td>Registro de neurólogo</td>
-        <td>Como neurólogo, quiero registrarme en la plataforma proporcionando mis credenciales profesionales (p. ej. número de licencia) para ofrecer consultas remotas.</td>
-        <td>
-          Escenario A (registro con documentación): Given que el neurólogo ingresa datos válidos y su número de licencia. When envía el formulario. Then la cuenta queda creada en estado “pendiente de verificación” y el equipo admin recibe notificación para validar la licencia.
-          Escenario B (licencia inválida): Given que el número de licencia no pasa la validación interna. When intenta registrarse. Then el sistema muestra un mensaje indicando la incompatibilidad y solicita documentación adicional.
-        </td>
-        <td>EP-01</td>
-      </tr>
-    <tr>
-      <td>US-04</td>
-        <td>Datos de usuario</td>
-        <td>Como usuario (paciente o neurólogo), quiero actualizar mis datos de perfil personal para mantener mi información actualizada en la plataforma.</td>
-        <td>
-          Escenario A (actualización correcta): Given que el usuario está autenticado y edita sus datos con formato válido. When guarda los cambios. Then el sistema actualiza el perfil y muestra confirmación.
-          Escenario B (datos inválidos): Given que el usuario introduce un email con formato incorrecto. When intenta guardar. Then el sistema valida y muestra errores en los campos inválidos sin persistir cambios.
-        </td>
-        <td>EP-01</td>
-    </tr>
-    <tr>
-      <td>US-05</td>
-      <td>Ver agenda de citas</td>
-      <td>Como paciente, quiero consultar mi agenda de citas programadas para visualizar la fecha, hora y neurólogo asignado de cada cita.</td>
-      <td>
-        Escenario A (con citas): Given que el paciente tiene citas futuras registradas. When accede a la sección “Agenda”. Then el sistema muestra lista/calendario con fechas, horas y profesionales asignados.
-        Escenario B (sin citas): Given que el paciente no tiene citas. When abre la agenda. Then el sistema muestra un estado vacío con CTA para solicitar cita.
-      </td>
-      <td>EP-02</td>
-    </tr>  
-    <tr>
-      <td>US-06</td>
-        <td>Solicitar nueva cita</td>
-        <td>Como paciente, quiero solicitar una nueva cita con el neurólogo eligiendo una fecha y hora disponibles para recibir atención médica remota.</td>
-        <td>
-          Escenario A (solicitud exitosa): Given que existen franjas libres en la agenda del neurólogo. When el paciente selecciona una franja y confirma la solicitud. Then el sistema crea la cita en estado “pendiente/confirmación”, envía notificación al paciente y notifica al neurólogo.
-          Escenario B (conflicto de horario): Given que otro paciente reservó el mismo turno en paralelo. When el usuario intenta confirmar la cita. Then el sistema informa que la franja ya no está disponible y sugiere alternativas.
-        </td>
-        <td>EP-02</td>
-    </tr>
-    <tr>
-      <td>US-07</td>
-        <td>Definir disponibilidad horaria</td>
-        <td>Como neurólogo, quiero configurar mis franjas horarias disponibles en la plataforma para que los pacientes puedan verlas y solicitar citas en esos periodos.</td>
-        <td>
-          scenario A (guardar franjas válidas): Given que el neurólogo introduce franjas sin solapamientos. When guarda la disponibilidad. Then el sistema la publica y la hace visible a pacientes.
-          Escenario B (conflicto/solapamiento): Given que el neurólogo define franjas que se solapan. When intenta guardar. Then el sistema detecta el conflicto y muestra error pidiendo corrección.
-        </td>
-        <td>EP-02</td>
-    </tr>
-    <tr>
-      <td>US-08</td>
-        <td>Consulta por videollamada</td>
-        <td>Como paciente, quiero iniciar la videollamada con mi neurólogo en la hora acordada para recibir la consulta médica de forma remota.</td>
-        <td>
-          Escenario A (conexión exitosa): Given que es la hora de la cita y ambos están autenticados. When el paciente hace clic en “Iniciar videollamada”. Then el sistema establece conexión WebRTC y ambos participantes ven/audio funcionan correctamente.
-          Escenario B (médico no conectado): Given que el neurólogo no se ha conectado aún. When el paciente intenta iniciar la sesión. Then el sistema notifica que el profesional aún no está disponible y ofrece reintentar o dejar mensaje.
-        </td>
-        <td>EP-02</td>
-    </tr>
-    <tr>
-      <td>US-09</td>
-        <td>Emitir receta médica electrónica</td>
-        <td>Como neurólogo, quiero generar y enviar recetas médicas electrónicas al paciente al finalizar la consulta para que pueda adquirir los medicamentos necesarios.</td>
-        <td>
-          Escenario A (receta válida enviada): Given que el neurólogo completa campos requeridos (medicamento, dosis, duración). When confirma la receta. Then el sistema guarda la receta en el historial del paciente y notifica al paciente.
-          Escenario B (campos incompletos): Given que falta dosis en al menos un medicamento. When intenta guardar. Then el sistema bloquea la emisión y muestra error indicando campos obligatorios.
-        </td>
-        <td>EP-03</td>
-    </tr>
-    <tr>
-      <td>US-10</td>
-        <td>Consultar recetas médicas</td>
-        <td>Como paciente, quiero acceder al historial de mis recetas médicas para visualizar y descargar las prescripciones que me ha enviado mi neurólogo.</td>
-        <td>
-          Escenario A (recetas disponibles): Given que existen recetas emitidas al paciente. When accede a “Recetas”. Then el sistema lista recetas con fecha, médico emisor y opción de descargar PDF.
-          Escenario B (sin recetas): Given que no hay recetas registradas. When entra a la sección. Then el sistema muestra mensaje indicando ausencia y sugiere contactar al neurólogo.
-        </td>
-        <td>EP-03</td>
-    </tr>
-    <tr>
-      <td>US-11</td>
-      <td>Chat con el neurólogo</td>
-      <td>Como paciente, quiero enviar mensajes de texto a mi neurólogo mediante un chat dentro de la plataforma para aclarar dudas o informar sobre mis síntomas entre consultas.</td>
-      <td>
-        Escenario A (envío y notificación): Given que el paciente y el neurólogo están activos en la plataforma. When el paciente envía un mensaje en el chat. Then el sistema entrega el mensaje y notifica al neurólogo (push/email según preferencia).
-        Escenario B (mensaje vacío): Given que el campo del mensaje está vacío. When el usuario presiona “Enviar”. Then el sistema previene el envío y muestra validación “Ingrese un mensaje”.
-      </td>
-      <td>EP-04</td>
-    </tr>
-    <tr>
-      <td>US-12</td>
-        <td>Visualizar ubicación del paciente</td>
-        <td>Como neurólogo, quiero ver la ubicación geográfica aproximada del paciente (con su permiso) durante la consulta para tener contexto en caso de emergencia.</td>
-        <td>
-          Escenario A (permiso otorgado): Given que el paciente otorgó permiso de geolocalización y la sesión está activa. When el neurólogo solicita ver ubicación. Then el sistema muestra mapa con ubicación aproximada y tiempo de actualización.
-          Escenario B (permiso denegado): Given que el paciente no otorgó permiso o lo revocó. When el neurólogo solicita ver ubicación. Then el sistema indica “Ubicación no disponible por falta de permiso”.
-        </td>
-        <td>EP-05</td>
-    </tr>
-    <tr>
-      <td>US-13</td>
-      <td>Integrar dispositivo IoT médico</td>
-      <td>Como paciente, quiero conectar mi dispositivo médico IoT a la plataforma para que los datos de salud se registren automáticamente en mi historial médico.</td>
-      <td>
-        Escenario A (emparejamiento exitoso): Given que el dispositivo es compatible y está en modo emparejamiento. When el paciente inicia emparejamiento desde la web/app y autoriza la conexión. Then la plataforma confirma la vinculación y comienza a recibir datos.
-        Escenario B (fallo de emparejamiento): Given que hay interferencia Bluetooth o credenciales del dispositivo inválidas. When intenta emparejar. Then el sistema muestra error paso a paso y sugiere acciones (reintentar, revisar batería, soporte).
-      </td>
-      <td>EP-05</td>
-    </tr>
-     <tr>
-      <td>US-14</td>
-      <td>Alertas automáticas de salud</td>
-      <td>Como paciente, quiero recibir alertas automáticas si los datos de mi dispositivo de monitoreo indican valores críticos, para que tanto yo como mi neurólogo podamos actuar.</td>
-      <td>
-        EEscenario A (alerta crítica): Given que los datos enviados exceden umbrales críticos definidos. When el sistema detecta la anomalía. Then envía alerta inmediata al paciente, al neurólogo y a contactos de emergencia (según configuración) con detalle del evento.
-        Escenario B (falsa alarma/umbral ajustado): Given que el dato bordea el umbral pero no supera criterio validado. When el sistema procesa la señal. Then no envía alerta inmediata pero lo marca para revisión y genera nota en el historial para análisis posterior.
-      </td>
-      <td>EP-05</td>
-    </tr>
-    <tr>
-      <td>US-15</td>
-      <td>Seguridad y encriptación</td>
-      <td>Como plataforma, la aplicación debe implementar protocolos de seguridad (HTTPS, cifrado) para proteger la información médica de accesos no autorizados.</td>
-      <td>
-        Escenario A (transmisión segura): Given que el usuario envía datos sensibles por la app web. When se transmite información hacia servidor. Then la comunicación usa HTTPS/TLS y el servidor registra acceso en logs de auditoría.
-        Escenario B (intento de acceso no autorizado): Given que existe un intento de login sospechoso (IP anómala). When el sistema detecta patrón inusual. Then bloquea intentos, solicita verificación adicional (2FA) y registra incidente.
-      </td>
-      <td>EP-05</td>
-    </tr>
-    <tr>
-      <td>US-16</td>
-      <td>Rendimiento de la plataforma</td>
-      <td>Como paciente o neurólogo, quiero que la plataforma cargue las páginas rápidamente (p. ej., en -2 s) para garantizar una experiencia fluida.</td>
-      <td>
-        Escenario A (carga under load normal): Given carga promedio de usuarios. When un usuario solicita su dashboard. Then la respuesta se entrega en -2s y la interfaz se renderiza sin errores.
-        Escenario B (picos de tráfico): Given tráfico elevado (pruebas de stress). When se realizan múltiples peticiones simultáneas. Then el sistema mantiene respuesta aceptable (-4s en picos) y no presenta fallos críticos; registros de degradación quedan en logs.
-      </td>
-      <td>EP-06</td>
-    </tr>   
-    <td>US-17</td>
-      <td>Privacidad de datos</td>
-      <td>Como paciente o neurólogo, quiero que la plataforma garantice la confidencialidad de mis datos personales y médicos, cumpliendo normativas de privacidad (p. ej. GDPR/HIPAA).</td>
-      <td>
-        Escenario A (consentimiento válido): Given que un paciente firma consentimiento para uso de datos. When los datos se procesan para atención y/o investigación. Then se aplica anonimización cuando procede y acceso restringido según rol.
-        Escenario B (solicitud de eliminación): Given que usuario solicita eliminación de sus datos. When se procesa la solicitud conforme a política. Then los datos personales se borran o anonimizan y se notifica al solicitante.
-      </td>
-      <td>EP-06</td>
-    </tr>
-    <tr>
-    <td>US-18</td>
-      <td>Analítica de salud con IA</td>
-      <td>Como neurólogo, quiero que la plataforma utilice IA para analizar datos del paciente y sugerir patrones relevantes para apoyar la toma de decisiones.</td>
-      <td>
-        Escenario A (informe generado): Given suficientes datos históricos y configuraciones válidas. When se ejecuta análisis IA. Then se genera informe con hallazgos, nivel de confianza y recomendaciones claras para revisión por el neurólogo.
-        Escenario B (insuficiencia de datos): Given que hay datos insuficientes o de baja calidad. When se solicita análisis. Then la plataforma notifica que no hay datos suficientes y sugiere recolectar más información antes de ejecutar modelos.
-      </td>
-      <td>EP-06</td>
-    </tr>
-    <tr>
-      <td>US-19</td>
-      <td>Recordatorios de citas</td>
-      <td>Como paciente, quiero recibir recordatorios automáticos (email/ push) sobre mis próximas citas para asegurar mi asistencia a tiempo.</td>
-      <td>
-        Escenario A (recordatorio enviado): Given que existe una cita en 24 horas y el paciente tiene notificaciones habilitadas. When el sistema programa recordatorios. Then envía notificación por los canales configurados y registra entrega.
-        Escenario B (usuario pospone cita): Given que recibe recordatorio y decide posponer. When actualiza la cita. Then el sistema actualiza el calendario y envía confirmación de la nueva fecha/hora.
-      </td>
-      <td>EP-07</td>
-    </tr>
-    <tr>
-      <td>US-20</td>
-      <td>Personalización de la interfaz</td>
-      <td>Como paciente o neurólogo, quiero personalizar la interfaz (tema oscuro, tamaño de fuente) para adaptarla a mis preferencias de accesibilidad.</td>
-      <td>
-        Escenario A (aplicar preferencia): Given que el usuario selecciona tema oscuro y tamaño de fuente mayor. When guarda preferencias. Then la UI se aplica inmediatamente y se persisten sus preferencias para próximas sesiones.
-        Escenario B (preferencia no aplicable en componente): Given que una vista antigua no soporta cambio de fuente. When aplica nueva preferencia. Then la mayoría de la interfaz cambia y la plataforma muestra nota indicando qué componentes no son totalmente compatibles hasta actualizarse.
-      </td>
-      <td>EP-07</td>
-    </tr>
-    <tr>
-  <td>US21</td>
-  <td>Navegación responsiva</td>
-  <td>Como <strong>visitante</strong> en desktop o móvil, quiero una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones (How it works, About, Contact).</td>
-  <td>
-    <strong>Escenario A (desktop):</strong><br>
-    Given usuario en desktop, When ve la cabecera, Then muestra links horizontales y botón destacado de Contact.<br><br>
-    <strong>Escenario B (móvil):</strong><br>
-    Given usuario en móvil, When pulsa el icono hamburguesa, Then se abre menú vertical con enlaces a secciones y CTA visible.
-  </td>
-  <td style="text-align:center;">EP-22</td>
-</tr>
-
-<tr>
-  <td>US22</td>
-  <td>Sección “How it works” con pasos</td>
-  <td>Como <strong>visitante</strong>, quiero ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.</td>
-  <td>
-    <strong>Escenario A (contenido visible):</strong><br>
-    Given landing cargada, When se desplaza a How it works, Then muestra los 3 pasos con título, descripción e imagen.<br><br>
-    <strong>Escenario B (accesibilidad):</strong><br>
-    Given lector de pantalla activo, When navega la sección, Then los pasos tienen texto alternativo y semántica para ser leídos correctamente.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US23</td>
-  <td>Bloque de Features / Cards</td>
-  <td>Como <strong>visitante</strong>, quiero ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio.</td>
-  <td>
-    <strong>Escenario A (hover/acción):</strong><br>
-    Given usuario en desktop, When pone cursor sobre card, Then la card muestra efecto y enlace "Try" o "Más info".<br><br>
-    <strong>Escenario B (clic en card):</strong><br>
-    Given usuario hace clic en una card, When confirma la acción, Then lo redirige a la sección interna o abre modal con detalles.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US24</td>
-  <td>Sección About / Who we are</td>
-  <td>Como <strong>visitante</strong>, quiero leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.</td>
-  <td>
-    <strong>Escenario A (texto visible):</strong><br>
-    Given landing cargada, When se desplaza a About, Then el contenido muestra título, párrafos e imágenes correctamente alineados.<br><br>
-    <strong>Escenario B (descarga/print):</strong><br>
-    Given un usuario desea guardar info, When imprime o guarda página, Then la sección About se muestra de forma adecuada en impresión/PDF.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US25</td>
-  <td>Beneficios y “Good for business”</td>
-  <td>Como <strong>decisor institucional</strong>, quiero ver beneficios clínicos y comerciales para evaluar el caso de negocio.</td>
-  <td>
-    <strong>Escenario A (listado):</strong><br>
-    Given landing cargada, When llega a Benefits, Then muestra bullets de beneficios para pacientes y empresas.<br><br>
-    <strong>Escenario B (cta institucional):</strong><br>
-    Given interesado, When pulsa CTA de contacto al final de la sección, Then envía pre-fill indicando interés institucional al formulario.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US26</td>
-  <td>Formulario de contacto validado</td>
-  <td>Como <strong>visitante</strong>, quiero completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.</td>
-  <td>
-    <strong>Escenario A (envío válido):</strong><br>
-    Given usuario completa campos obligatorios con formato correcto, When envía formulario, Then se muestra confirmación y correo al equipo se crea/toma en CRM.<br><br>
-    <strong>Escenario B (errores de validación):</strong><br>
-    Given campo email inválido o campo obligatorio vacío, When intenta enviar, Then se muestran errores y no se envía el formulario.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US27</td>
-  <td>Footer con enlaces y redes sociales</td>
-  <td>Como <strong>visitante</strong>, quiero ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.</td>
-  <td>
-    <strong>Escenario A (enlaces funcionan):</strong><br>
-    Given landing cargada, When hace clic en un enlace de política o social, Then se abre la página correspondiente o red social en nueva pestaña.<br><br>
-    <strong>Escenario B (accesibilidad footer):</strong><br>
-    Given navegación por teclado, When tabula hasta footer, Then los enlaces son accesibles y visibles.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US28</td>
-  <td>Responsive layout y comportamiento mobile</td>
-  <td>Como <strong>usuario móvil</strong>, quiero que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.</td>
-  <td>
-    <strong>Escenario A (pantallas pequeñas):</strong><br>
-    Given viewport &lt; 768px, When carga la página, Then el diseño se reorganiza (columnas → stack), texto se redimensiona y CTAs siguen visibles.<br><br>
-    <strong>Escenario B (pruebas tablet):</strong><br>
-    Given tablet, When gira pantalla, Then elementos no se solapan y navegación funciona.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US29</td>
-  <td>Performance y optimización de imágenes</td>
-  <td>Como <strong>usuario</strong>, quiero que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.</td>
-  <td>
-    <strong>Escenario A (carga inicial):</strong><br>
-    Given visita primero, When carga la landing, Then el LCP se carga &lt; 2.5s (imágenes optimizadas y lazy load en secciones bajas).<br><br>
-    <strong>Escenario B (navegación):</strong><br>
-    Given navegación a secciones, When se desplaza, Then imágenes se muestran sin salto de layout (CLS controlado).
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US30</td>
-  <td>SEO básico y meta tags</td>
-  <td>Como <strong>equipo de marketing</strong>, quiero meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.</td>
-  <td>
-    <strong>Escenario A (meta tags):</strong><br>
-    Given HTML entregado, When inspecciona head, Then meta title, description y OG tags están presentes y relevantes.<br><br>
-    <strong>Escenario B (prueba social share):</strong><br>
-    Given URL compartida en redes, When se genera el preview, Then muestra título, descripción e imagen correcta.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US31</td>
-  <td>Cookie consent y política de privacidad</td>
-  <td>Como <strong>visitante</strong>, quiero aceptar/ rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.</td>
-  <td>
-    <strong>Escenario A (mostrar consentimiento):</strong><br>
-    Given primera visita, When carga la página, Then se muestra banner de cookies con opciones Aceptar/Rechazar y enlace a política.<br><br>
-    <strong>Escenario B (rechazo):</strong><br>
-    Given usuario rechaza cookies, When navega, Then cookies no esenciales quedan deshabilitadas y no se ejecutan trackers.
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-
-<tr>
-  <td>US32</td>
-  <td>Tracking de eventos y analytics</td>
-  <td>Como <strong>product owner</strong>, quiero trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.</td>
-  <td>
-    <strong>Escenario A (evento CTA):</strong><br>
-    Given visitante hace clic en CTA Try, When ocurre el clic, Then se registra evento en analytics (label + page) y se verifica en dashboard.<br><br>
-    <strong>Escenario B (form submit):</strong><br>
-    Given formulario enviado con éxito, When se confirma envío, Then se dispara evento de conversión con atributos (source/utm).
-  </td>
-  <td style="text-align:center;">EP-21</td>
-</tr>
-<tr>
-      <td>US-33</td>
-      <td>Autenticación por número de celular</td>
-      <td>Como usuario (paciente o neurólogo) quiero poder registrarme e iniciar sesión usando mi número de celular para acceder de forma rápida y sin contraseña.</td>
-      <td>
-        <strong>Escenario A (login con teléfono existente):</strong><br>
-        Given que el usuario introduce un número de celular registrado y solicita código OTP. <br>
-        When recibe e ingresa el OTP correcto dentro del periodo de validez. <br>
-        Then el sistema autentica al usuario y lo redirige a su panel.<br><br>
-        <strong>Escenario B (registro con teléfono nuevo):</strong><br>
-        Given que el número no está registrado en la plataforma. <br>
-        When el usuario inicia el flujo de registro introduciendo el número y verifica con OTP. <br>
-        Then el sistema crea la cuenta (o completa el registro) tras la verificación y solicita datos faltantes si procede.<br><br>
-        <strong>Escenario C (número inválido o formato incorrecto):</strong><br>
-        Given que el usuario introduce un número en formato inválido. <br>
-        When intenta continuar. <br>
-        Then el sistema muestra un error de formato y no envía OTP.
-      </td>
-      <td>EP-01</td>
-    </tr>
-    <tr>
-      <td>US-34</td>
-      <td>Verificación de número de celular (OTP)</td>
-      <td>Como usuario quiero verificar mi número de celular mediante un código OTP para confirmar la titularidad y asegurar la autenticación basada en SMS.</td>
-      <td>
-        <strong>Escenario A (OTP correcto y válido):</strong><br>
-        Given que el sistema envió un OTP al número proporcionado y este no ha expirado. <br>
-        When el usuario ingresa el OTP correcto. <br>
-        Then la verificación se completa, el número queda confirmado y se permite continuar (login o registro).<br><br>
-        <strong>Escenario B (OTP incorrecto / reintento):</strong><br>
-        Given que el usuario ingresa un OTP incorrecto. <br>
-        When lo ingresa nuevamente (hasta límite permitido). <br>
-        Then el sistema muestra error, decrementa contador de intentos y permite reintentar hasta el límite; al agotarlo bloquea temporalmente el envío.<br><br>
-        <strong>Escenario C (OTP expirado / reenvío):</strong><br>
-        Given que el OTP expiró antes de ser usado. <br>
-        When el usuario solicita reenvío. <br>
-        Then el sistema genera un nuevo OTP y lo envía, registrando timestamp y limitando reenvíos según política.
-      </td>
-      <td>EP-01</td>
-    </tr>
-    <tr>
-      <td>US-35</td>
-      <td>Inicio de sesión con Google (OAuth)</td>
-      <td>Como usuario quiero poder autenticarme con mi cuenta de Google para agilizar el acceso y evitar recordar contraseñas.</td>
-      <td>
-        <strong>Escenario A (primer login con Google - creación de cuenta):</strong><br>
-        Given que el usuario elige “Iniciar con Google” y autoriza los permisos básicos (email, nombre). <br>
-        When la plataforma recibe el token y verifica el email. <br>
-        Then se crea (o completa) una cuenta vinculada a ese email y el usuario queda autenticado; se solicita completar datos faltantes si los hubiera.<br><br>
-        <strong>Escenario B (Google email ya asociado a cuenta existente):</strong><br>
-        Given que el email de Google ya existe en la plataforma (registro previo). <br>
-        When el usuario intenta iniciar con Google. <br>
-        Then el sistema propone vincular la cuenta Google al usuario existente tras autenticación adicional (p. ej. ingreso por contraseña o verificación OTP) para evitar duplicados.<br><br>
-        <strong>Escenario C (usuario revoca permisos o cancela):</strong><br>
-        Given que el usuario cancela el flujo de autorización en Google. <br>
-        When retorna al sitio sin token. <br>
-        Then la plataforma muestra mensaje de cancelación y permite elegir otro método de ingreso.
-      </td>
-      <td>EP-01</td>
-    </tr>
-    <tr>
-      <td>US-36</td>
-      <td>Consentimiento para uso del número de teléfono y comunicación SMS</td>
-      <td>Como usuario quiero dar (y poder revocar) consentimiento explícito para que mi número de celular sea usado en autenticación y para recibir notificaciones/alertas por SMS, cumpliendo privacidad.</td>
-      <td>
-        <strong>Escenario A (consentimiento otorgado):</strong><br>
-        Given que el usuario marca la casilla de consentimiento durante registro o en configuración. <br>
-        When se almacena la elección con timestamp y alcance. <br>
-        Then el sistema puede enviar OTP y notificaciones por SMS según la preferencia y queda registrada la autorización.<br><br>
-        <strong>Escenario B (revocación de consentimiento):</strong><br>
-        Given que el usuario revoca el consentimiento desde su cuenta. <br>
-        When la acción es confirmada. <br>
-        Then la plataforma deja de enviar SMS no esenciales y actualiza la política de comunicación; se notifica al usuario sobre las implicancias (p. ej. perder opción de login por SMS si procede).<br><br>
-        <strong>Escenario C (consentimiento requerido y no otorgado):</strong><br>
-        Given que el usuario no otorga consentimiento. <br>
-        When intenta usar funciones que requieren SMS (OTP, alertas). <br>
-        Then el sistema bloquea esas acciones y sugiere métodos alternativos (correo, autenticación social).
-      </td>
-      <td>EP-09</td>
-    </tr>
-    <tr>
-      <td>US-37</td>
-      <td>Protección y límites en el flujo OTP (rate-limiting & fraude)</td>
-      <td>Como plataforma quiero implementar límites de envío y verificación de OTP y detección básica de fraude para prevenir abuso y proteger a los usuarios.</td>
-      <td>
-        <strong>Escenario A (limitación de envíos):</strong><br>
-        Given que se han solicitado múltiples OTP desde el mismo número/IP en un corto periodo. <br>
-        When se supera el umbral definido. <br>
-        Then el sistema bloquea temporalmente nuevos envíos y muestra mensaje de espera con tiempo estimado para reintentar.<br><br>
-        <strong>Escenario B (detección de intentos masivos de verificación):</strong><br>
-        Given múltiples intentos fallidos de ingreso de OTP desde la misma IP/número. <br>
-        When el contador excede el límite. <br>
-        Then la cuenta se bloquea temporalmente para verificación manual/recuperación segura y se registra el evento en logs de seguridad.<br><br>
-        <strong>Escenario C (registro y notificación al usuario):</strong><br>
-        Given que una cuenta sufre bloqueo por actividad sospechosa. <br>
-        When ocurre el bloqueo. <br>
-        Then el sistema notifica al propietario (por correo o SMS si permitido) e instruye los pasos a seguir para recuperar el acceso.
-      </td>
-      <td>EP-09</td>
-    </tr>
-    <tr>
-  <td>US-38</td>
-  <td>Signup — Registro de paciente (email/phone)</td>
-  <td>Como paciente quiero registrarme (email o teléfono+OTP) para crear una cuenta en la plataforma y acceder a servicios.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/register/patient<br>
-    <strong>Body:</strong> { name, email?, phone?, password?, acceptTerms } (si phone → generar OTP)<br><br>
-    <strong>Escenario A (registro por email):</strong><br>
-    Given que un usuario proporciona email y contraseña válidos. <br>
-    When llama POST /api/auth/register/patient. <br>
-    Then el sistema crea cuenta con status=active (o pending_email_verification), devuelve 201 y emite evento user.created.<br><br>
-    <strong>Escenario B (registro por teléfono):</strong><br>
-    Given que usuario registra con phone. <br>
-    When llama al endpoint. <br>
-    Then el sistema crea cuenta con status=pending_phone_verification y envía OTP (no activa sesión hasta verificar).<br><br>
-    <strong>Escenario C (validaciones):</strong><br>
-    Given email/phone ya registrado. <br>
-    When intenta registrarse. <br>
-    Then devolver 409 Conflict con mensaje apropiado y no crear recurso.
-  </td>
-  <td>EP-01 / EP-09</td>
-</tr>
-<tr>
-  <td>US-39</td>
-  <td>Signup — Registro de neurólogo (validación de credenciales)</td>
-  <td>Como neurólogo quiero registrarme indicando mi información profesional (n.º de colegiatura) para obtener rol NEUROLOGIST y acceso a funciones clínicas.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/register/neurologist<br>
-    <strong>Body:</strong> { name, email, phone?, password, licenseNumber, specialties[] }<br><br>
-    <strong>Escenario A (registro exitoso):</strong><br>
-    Given que la info es válida y licenseNumber pasa validación básica. <br>
-    When se invoca el endpoint. <br>
-    Then crear usuario con role=NEUROLOGIST, status=pending_verification (si se requiere validación manual), devolver 201 y registrar en audit_log.<br><br>
-    <strong>Escenario B (license inválida o duplicada):</strong><br>
-    Given licenseNumber inválida/ya en uso. <br>
-    When se intenta registrar. <br>
-    Then respuesta 400/409 y no crear cuenta.
-  </td>
-  <td>EP-01 / EP-02 / EP-09</td>
-</tr>
-<tr>
-  <td>US-40</td>
-  <td>Login — Obtención de token (paciente y neurólogo)</td>
-  <td>Como usuario (paciente o neurólogo) quiero iniciar sesión con email/phone+password para recibir JWT de acceso y refresh token y consumir APIs protegidas.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/login<br>
-    <strong>Body:</strong> { username(email|phone), password }<br><br>
-    <strong>Escenario A (login correcto):</strong><br>
-    Given credenciales válidas. <br>
-    When POST /api/auth/login. <br>
-    Then devolver 200 con { accessToken(JWT), refreshToken, expiresIn, role } y escribir evento de login en audit_log.<br><br>
-    <strong>Escenario B (credenciales inválidas):</strong><br>
-    Given credenciales inválidas. <br>
-    When intenta login. <br>
-    Then 401 Unauthorized y contador de intentos incrementado (para medidas anti-brute-force).
-  </td>
-  <td>EP-01 / EP-09 / EP-10</td>
-</tr>
-<tr>
-  <td>US-41</td>
-  <td>Refresh token — Renovación de sesión</td>
-  <td>Como usuario quiero refrescar mi access token usando refresh token para mantener sesión sin volver a ingresar credenciales.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/refresh<br>
-    <strong>Body:</strong> { refreshToken }<br><br>
-    <strong>Escenario A (refresh válido):</strong><br>
-    Given refreshToken válido y no revocado. <br>
-    When POST /api/auth/refresh. <br>
-    Then devolver nuevo accessToken + nuevo refreshToken (rotación) y revocar el anterior.<br><br>
-    <strong>Escenario B (refresh inválido/robado):</strong><br>
-    Given refreshToken inválido o revocado. <br>
-    When intenta refrescar. <br>
-    Then 401 y registrar evento de seguridad en audit_log.
-  </td>
-  <td>EP-01 / EP-09</td>
-</tr>
-<tr>
-  <td>US-42</td>
-  <td>Logout — Revocar sesión (refresh token)</td>
-  <td>Como usuario quiero cerrar sesión (logout) para invalidar mi refresh token y evitar usos posteriores.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/logout (authed)<br>
-    <strong>Body:</strong> { refreshToken } (o extraer del header)<br><br>
-    <strong>Escenario A (logout exitoso):</strong><br>
-    Given usuario autenticado con refresh token activo. <br>
-    When POST /api/auth/logout. <br>
-    Then revocar refresh token, devolver 200 y registrar en audit_log.<br><br>
-    <strong>Escenario B (token ya revocado):</strong><br>
-    Given token ya revocado. <br>
-    When logout. <br>
-    Then devolver 200 idempotente y registrar intento.
-  </td>
-  <td>EP-01 / EP-09</td>
-</tr>
-<tr>
-  <td>US-43</td>
-  <td>Recuperar contraseña (forgot/reset)</td>
-  <td>Como usuario quiero poder recuperar el acceso cuando olvide mi contraseña mediante email o SMS con token/OTP seguro.</td>
-  <td>
-    <strong>Endpoints:</strong><br>
-    POST /api/auth/forgot-password { email|phone } → enviar token seguro (email/SMS)<br>
-    POST /api/auth/reset-password { token, newPassword } → cambiar password<br><br>
-    <strong>Escenario A (solicitar recuperación):</strong><br>
-    Given usuario existente solicita recuperación. <br>
-    When POST /api/auth/forgot-password. <br>
-    Then generar token caducable (p.ej. 1 h), enviar enlace/OTP y registrar en audit_log.<br><br>
-    <strong>Escenario B (reset válido):</strong><br>
-    Given token válido. <br>
-    When POST /api/auth/reset-password. <br>
-    Then actualizar password (hash), revocar refresh tokens existentes y notificar vía email/SMS.
-  </td>
-  <td>EP-01 / EP-09</td>
-</tr>
-<tr>
-  <td>US-44</td>
-  <td>Cambiar contraseña (autenticado)</td>
-  <td>Como usuario autenticado quiero cambiar mi contraseña proporcionando la antigua y la nueva para mantener seguridad.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/auth/change-password (authed)<br>
-    <strong>Body:</strong> { oldPassword, newPassword }<br><br>
-    <strong>Escenario A (cambio correcto):</strong><br>
-    Given usuario autenticado y oldPassword correcto. <br>
-    When POST /api/auth/change-password. <br>
-    Then actualizar hash de password, revocar refresh tokens y registrar evento en audit_log.<br><br>
-    <strong>Escenario B (oldPassword incorrecto):</strong><br>
-    Given oldPassword incorrecto. <br>
-    When intenta cambiar. <br>
-    Then 400 con mensaje y contador de intentos si aplica.
-  </td>
-  <td>EP-01 / EP-09</td>
-</tr>
-<tr>
-  <td>US-45</td>
-  <td>Verificación y gestión de roles</td>
-  <td>Como sistema quiero endpoints que permitan verificar roles y asignarlos (admin only) para controlar acceso según EPs clínicos.</td>
-  <td>
-    <strong>Endpoints:</strong><br>
-    GET /api/users/{id}/roles → ver roles<br>
-    POST /api/users/{id}/roles → asignar rol (admin)<br>
-    DELETE /api/users/{id}/roles/{role} → remover rol (admin)<br><br>
-    <strong>Escenario A (consulta rol):</strong><br>
-    Given token JWT con claims. <br>
-    When GET /api/users/{id}/roles. <br>
-    Then devolver lista de roles y permisos asociados (RBAC).<br><br>
-    <strong>Escenario B (asignar rol, sólo admin):</strong><br>
-    Given usuario con rol ADMIN. <br>
-    When POST /api/users/{id}/roles { role: "NEUROLOGIST" }. <br>
-    Then asignar role y registrar en audit_log; invalidar sesiones si aplica.
-  </td>
-  <td>EP-09 / EP-02</td>
-</tr>
-<tr>
-  <td>US-46</td>
-  <td>Obtener perfil (me) — Paciente y Neurólogo</td>
-  <td>Como usuario quiero acceder a mi perfil clínico/datos personales para consultarlos y verificarlos.</td>
-  <td>
-    <strong>Endpoint:</strong> GET /api/users/me → retorna user profile con role-specific fields (para neurologist: license, specialties; para patient: medicalId, devices[]).<br><br>
-    <strong>Escenario A (consulta propia):</strong><br>
-    Given usuario autenticado. <br>
-    When GET /api/users/me. <br>
-    Then devolver 200 con perfil y claims; no exponer datos sensibles (passwords, tokens).<br><br>
-    <strong>Escenario B (datos incompletos):</strong><br>
-    Given campos vacíos. <br>
-    When consulta. <br>
-    Then devolver campos null/empty y flag profileComplete=false.
-  </td>
-  <td>EP-02 / EP-09</td>
-</tr>
-<tr>
-  <td>US-47</td>
-  <td>Editar perfil (patch) — Neurólogo / paciente</td>
-  <td>Como usuario quiero actualizar partes de mi perfil clínico para mantener información vigente (teléfono, dirección, bio, afiliaciones).</td>
-  <td>
-    <strong>Endpoint:</strong> PATCH /api/users/me { campos a cambiar }<br><br>
-    <strong>Escenario A (update parcial correcto):</strong><br>
-    Given usuario autenticado y payload válido. <br>
-    When PATCH /api/users/me. <br>
-    Then aplicar cambios, validar fields (p.ej. licencia), devolver 200 y registrar en audit_log.<br><br>
-    <strong>Escenario B (permiso/role):</strong><br>
-    Given intento de cambiar campos restringidos (p.ej. role). <br>
-    When PATCH. <br>
-    Then 403 Forbidden.
-  </td>
-  <td>EP-02 / EP-09</td>
-</tr>
-<tr>
-  <td>US-48</td>
-  <td>Crear receta electrónica (solo NEUROLOGIST)</td>
-  <td>Como neurólogo quiero emitir recetas electrónicas firmadas para mis pacientes para facilitar adherencia y trazabilidad clínica.</td>
-  <td>
-    <strong>Endpoint:</strong> POST /api/recipes (authed role=NEUROLOGIST)<br>
-    <strong>Body:</strong> { patientId, medicines: [{name, dose, frequency, duration}], notes, followUpInDays }<br><br>
-    <strong>Escenario A (receta válida):</strong><br>
-    Given neurólogo autenticado y paciente existente. <br>
-    When POST /api/recipes. <br>
-    Then crear receta con id, issuedBy=neurologistId, issuedAt, status=active; devolver 201 y notificar paciente; guardar hash/firma y registrar en audit_log.<br><br>
-    <strong>Escenario B (acceso prohibido):</strong><br>
-    Given usuario sin rol NEUROLOGIST. <br>
-    When intenta crear receta. <br>
-    Then 403 Forbidden.
-  </td>
-  <td>EP-06 / EP-09 / EP-05</td>
-</tr>
-<tr>
-  <td>US-49</td>
-  <td>Listar y consultar recetas (paciente & neurólogo)</td>
-  <td>Como paciente quiero ver mis recetas y como neurólogo quiero ver recetas que yo emití para seguimiento y control.</td>
-  <td>
-    <strong>Endpoints:</strong><br>
-    GET /api/patients/{id}/recipes (necesita autorización) <br>
-    GET /api/recipes/{id} <br><br>
-    <strong>Escenario A (paciente consulta sus recetas):</strong><br>
-    Given paciente autenticado. <br>
-    When GET /api/patients/{myId}/recipes. <br>
-    Then retornar lista paginada con recetas y links a PDF/visualización, sin exponer datos extras.<br><br>
-    <strong>Escenario B (neurólogo consulta receta emitida):</strong><br>
-    Given neurologist autenticado. <br>
-    When GET /api/recipes/{id}. <br>
-    Then devolver receta completa si issuedBy==neurologistId o si tiene permiso administrativo.
-  </td>
-  <td>EP-06 / EP-05 / EP-09</td>
-</tr>
-<tr>
-  <td>US-50</td>
-  <td>Auditoría de acciones sensibles (login, cambios de contraseña, creación de recetas)</td>
-  <td>Como administrador quiero que acciones sensibles queden registradas en audit_log para cumplir normativas y trazabilidad.</td>
-  <td>
-    <strong>Implementación/Endpoint:</strong> Cada endpoint sensible escribe audit_log; opcionalmente GET /api/admin/audit?filters (admin only).<br><br>
-    <strong>Escenario A (registro de evento):</strong><br>
-    Given intento de login exitoso. <br>
-    When ocurre login. <br>
-    Then crear registro audit { userId, action: "login", timestamp, ip, userAgent, result }.<br><br>
-    <strong>Escenario B (consulta admin):</strong><br>
-    Given admin autenticado. <br>
-    When GET /api/admin/audit?userId=... . <br>
-    Then devolver eventos paginados; sólo admin/ops pueden acceder.
-  </td>
-  <td>EP-09 / EP-01</td>
-</tr>
-<tr>
-  <td>US-51</td>
-  <td>Protección y límites en OTP (referencia US-37)</td>
-  <td>Como plataforma quiero mitigar abuso en el envío/verificación de OTP aplicando rate-limits y detección básica de fraude para proteger usuarios.</td>
-  <td>
-    <strong>Endpoint/Comportamiento:</strong> Aplicar rate-limits en POST /api/auth/send-otp y POST /api/auth/verify-otp; bloquear IP/phone temporalmente; notificar al usuario.<br><br>
-    <strong>Escenario A (limitación de envíos):</strong><br>
-    Given múltiples OTP solicitados desde mismo número/IP. <br>
-    When se supera umbral. <br>
-    Then bloquear envíos temporales y mostrar tiempo de espera (see US-37).<br><br>
-    <strong>Escenario B (intentos masivos de verificación):</strong><br>
-    Given múltiples intentos fallidos OTP. <br>
-    When contador excede límite. <br>
-    Then bloquear cuenta para verificación manual y loguear evento (see US-37).<br><br>
-    <strong>Escenario C (registro y notificación):</strong><br>
-    Given bloqueo por actividad sospechosa. <br>
-    When ocurre. <br>
-    Then notificar usuario por correo/SMS y proveer pasos de recuperación.
-  </td>
-  <td>EP-09</td>
-</tr>
-  </tbody>
-</table>
 
 ## 3.2. Impact Mapping  
 
@@ -846,49 +169,62 @@ Las relaciones entre *Goals–Impacts–Deliverables–User Stories* garantizan 
 
 #  Plataforma AuraNeuro
 
-# Product Backlog - AuraNeuro (US01–US39)
+# Product Backlog – AuraNeuro (Ordenado por Valor de Negocio)
 
-| Order | User Story Id | Título                            | Descripción (Como / deseo / para)                                                                                                 | Story Points (1 / 2 / 3 / 5 / 8) |
-|------:|:--------------:|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------:|
-| 1     | US01           | Inicio de sesión                  | Como usuario (paciente o neurólogo) deseo iniciar sesión con mis credenciales para acceder de forma segura a mi panel personal.    | 2                                 |
-| 2     | US02           | Registro de paciente              | Como paciente deseo registrarme con mis datos personales para crear una cuenta y acceder a los servicios de atención remota.       | 3                                 |
-| 3     | US03           | Registro de neurólogo             | Como neurólogo deseo registrarme aportando credenciales profesionales para ofrecer consultas remotas y ser verificado por el sistema. | 3                               |
-| 4     | US04           | Gestión de perfil                 | Como usuario deseo actualizar mi perfil (foto, contacto, datos) para mantener mi información clínica y de contacto actualizada.    | 2                                 |
-| 5     | US05           | Ver agenda de citas               | Como paciente deseo ver mi agenda de citas para conocer fechas, horas y el neurólogo asignado.                                     | 2                                 |
-| 6     | US06           | Solicitar nueva cita              | Como paciente deseo solicitar una nueva cita eligiendo fecha/hora disponible para programar atención remota.                       | 3                                 |
-| 7     | US07           | Definir disponibilidad horaria    | Como neurólogo deseo configurar mis franjas horarias disponibles para que los pacientes puedan solicitar citas en esos periodos.    | 3                                 |
-| 8     | US08           | Consulta por videollamada         | Como paciente deseo iniciar la videollamada con mi neurólogo en la hora acordada para realizar la consulta remota en tiempo real.   | 8                                 |
-| 9     | US09           | Emitir receta médica electrónica  | Como neurólogo deseo generar y enviar recetas médicas electrónicas al paciente para que pueda adquirir los medicamentos necesarios. | 5                                 |
-| 10    | US10           | Consultar recetas médicas         | Como paciente deseo acceder al historial de mis recetas médicas para visualizar y descargar las prescripciones recibidas.           | 2                                 |
-| 11    | US11           | Chat con el neurólogo             | Como paciente deseo comunicarme por chat con mi neurólogo para aclarar dudas y reportar síntomas entre consultas.                   | 5                                 |
-| 12    | US12           | Visualizar ubicación del paciente | Como neurólogo deseo ver la ubicación geográfica aproximada del paciente (con su permiso) durante la consulta para tener contexto en caso de emergencia. | 3                     |
-| 13    | US13           | Integrar dispositivo IoT médico   | Como paciente deseo conectar mi dispositivo médico IoT a la plataforma para que los datos de salud se registren automáticamente en mi historial médico. | 8                  |
-| 14    | US14           | Alertas automáticas de salud      | Como paciente (y neurólogo) deseo recibir alertas automáticas cuando los datos IoT indiquen valores críticos para actuar oportunamente. | 8                               |
-| 15    | US15           | Seguridad y encriptación          | Como plataforma deseo implementar HTTPS/TLS y cifrado en reposo para proteger los datos médicos frente a accesos no autorizados.   | 5                                 |
-| 16    | US16           | Rendimiento de la plataforma      | Como paciente o neurólogo deseo que las páginas críticas carguen rápido (ej. < 2s) para una experiencia fluida y eficiente.        | 3                                 |
-| 17    | US17           | Privacidad de datos               | Como paciente o neurólogo deseo que mis datos se manejen conforme a normativas (consentimientos, anonimización, borrado) para proteger mi privacidad. | 5                     |
-| 18    | US18           | Analítica de salud con IA         | Como neurólogo deseo que la plataforma analice datos con IA para sugerir patrones o riesgos que apoyen la toma de decisiones.      | 8                                 |
-| 19    | US19           | Recordatorios de citas            | Como paciente deseo recibir recordatorios automáticos (email/push) sobre mis próximas citas para asegurar mi asistencia.           | 2                                 |
-| 20    | US20           | Personalización de la interfaz    | Como usuario deseo personalizar la UI (tema, tamaño de fuente) para adaptar la plataforma a mis preferencias y necesidades de accesibilidad. | 2                        |
-| 21    | US21           | Hero con CTA principal            | Como visitante deseo ver un hero claro con título, subtítulo y CTA (Try / Contact) para entender la propuesta y poder actuar rápido. | 2                                |
-| 22    | US22           | Navegación responsiva             | Como visitante en desktop o móvil deseo una barra de navegación clara y menú hamburguesa en móvil para acceder a secciones clave.  | 3                                 |
-| 23    | US23           | Sección “How it works” con pasos  | Como visitante deseo ver pasos visuales (Register → Enter number → Welcome) con capturas para comprender el flujo en 3 pasos.     | 2                                 |
-| 24    | US24           | Bloque de Features / Cards        | Como visitante deseo ver tarjetas de beneficios (Telemedicine, Pharmacy/Devices, etc.) con iconos y CTA para explorar cada servicio. | 3                                |
-| 25    | US25           | Sección About / Who we are        | Como visitante deseo leer acerca de la misión y cómo funciona AuraNeuro para evaluar credibilidad antes de registrarme.            | 2                                 |
-| 26    | US26           | Beneficios y “Good for business”  | Como decisor institucional deseo ver beneficios clínicos y comerciales para evaluar el caso de negocio.                             | 3                                 |
-| 27    | US27           | Formulario de contacto validado   | Como visitante deseo completar un formulario (nombre, email, teléfono, mensaje) con validaciones para contactar al equipo.          | 3                                 |
-| 28    | US28           | Footer con enlaces y redes sociales| Como visitante deseo ver en el footer enlaces, contacto y redes sociales para seguir o contactar más tarde.                         | 1                                 |
-| 29    | US29           | Responsive layout y comportamiento mobile | Como usuario móvil deseo que la landing se adapte (colapsado, imágenes y texto legible) para una experiencia óptima.           | 3                                |
-| 30    | US30           | Performance y optimización de imágenes | Como usuario deseo que la landing cargue rápido (imágenes optimizadas, lazy-loading) para buena experiencia y SEO.              | 5                                |
-| 31    | US31           | SEO básico y meta tags            | Como equipo de marketing deseo meta tags y OG tags configurados en la landing para mejorar posicionamiento y compartir en redes.   | 2                                 |
-| 32    | US32           | Cookie consent y política de privacidad | Como visitante deseo aceptar/rechazar cookies y ver la política de privacidad para control sobre mis datos y geolocalización.  | 3                                 |
-| 33    | US33           | Tracking de eventos y analytics   | Como product owner deseo trackear clicks a CTA, envíos de formulario y scroll depth para medir conversión y optimizar la landing.   | 2                                 |
-| 34    | US34           | Contenidos editables (CMS)        | Como marketing deseo poder editar títulos, textos, imágenes y CTAs desde un CMS para actualizar la landing sin deploy.             | 5                                 |
-| 35    | US35           | Accesibilidad (WCAG 2.1 básico)   | Como usuario con necesidades de accesibilidad deseo que la landing cumpla WCAG 2.1 mínimo (contraste, alt text, keyboard nav).     | 3                                 |
-| 36    | US36           | Autenticación por número de celular| Como usuario (paciente o neurólogo) deseo registrarme e iniciar sesión usando mi número de celular para acceder de forma rápida sin contraseña. | 5                        |
-| 37    | US37           | Verificación de número de celular (OTP) | Como usuario deseo verificar mi número de celular mediante un código OTP para confirmar la titularidad y asegurar la autenticación basada en SMS. | 5                     |
-| 38    | US38           | Inicio de sesión con Google (OAuth)| Como usuario deseo autenticarme con mi cuenta de Google para agilizar el acceso y evitar recordar contraseñas.                      | 3                                 |
-| 39    | US39           | Protección y límites en el flujo OTP| Como plataforma deseo implementar límites de envío y verificación de OTP y detección básica de fraude para prevenir abuso y proteger a los usuarios. | 5                        |
+| # Orden | User Story ID | Título | Descripción (Como / deseo / para) | Story Points |
+|--------|----------------|--------|------------------------------------|--------------|
+| 1 | US-21 | Navegación responsive | Como visitante deseo una navegación clara y adaptable para acceder a secciones clave desde cualquier dispositivo. | 3 |
+| 2 | US-22 | Sección “How it works” | Como visitante deseo ver pasos claros para comprender el flujo de registro y uso del servicio. | 2 |
+| 3 | US-23 | Features Cards | Como visitante deseo ver tarjetas de beneficios para entender los servicios disponibles. | 3 |
+| 4 | US-24 | About / Who we are | Como visitante deseo conocer al equipo para validar confianza y credibilidad. | 2 |
+| 5 | US-26 | Formulario de contacto | Como visitante deseo contactar al equipo mediante un formulario validado. | 3 |
+| 6 | US-27 | Footer con enlaces | Como visitante deseo acceder rápidamente a políticas, redes y contactos desde el footer. | 2 |
+| 7 | US-31 | Cookie consent | Como visitante deseo aceptar/rechazar cookies para controlar el manejo de mis datos. | 3 |
+| 8 | US-01 | Inicio de sesión | Como usuario registrado deseo iniciar sesión para acceder a mis datos y servicios. | 2 |
+| 9 | US-02 | Registro de paciente | Como paciente deseo registrarme para crear una cuenta y acceder a atención neurológica remota. | 3 |
+| 10 | US-03 | Registro de neurólogo | Como neurólogo deseo registrarme con credenciales verificadas para ofrecer consultas. | 3 |
+| 11 | US-20 | Personalización UI | Como usuario deseo personalizar la interfaz para mejorar mi accesibilidad. | 2 |
+| 12 | US-33 | Login con teléfono | Como usuario deseo iniciar sesión usando número celular y OTP. | 5 |
+| 13 | US-35 | Login con Google OAuth | Como usuario deseo ingresar con mi cuenta de Google para agilizar acceso. | 3 |
+| 14 | US-05 | Ver agenda de citas | Como paciente deseo ver mis citas programadas para organizar mis atenciones. | 2 |
+| 15 | US-06 | Solicitar nueva cita | Como paciente deseo solicitar una cita eligiendo fecha/hora disponible. | 3 |
+| 16 | US-07 | Definir disponibilidad | Como neurólogo deseo definir mis horarios para habilitar citas. | 3 |
+| 17 | US-19 | Recordatorios de citas | Como paciente deseo recibir recordatorios automáticos de mis próximas citas. | 2 |
+| 18 | US-08 | Consulta por videollamada | Como paciente deseo conectarme mediante videollamada con mi neurólogo. | 8 |
+| 19 | US-11 | Chat con neurólogo | Como paciente deseo comunicarme por chat para resolver dudas entre consultas. | 5 |
+| 20 | US-10 | Consultar recetas | Como paciente deseo ver mis recetas y descargarlas en PDF. | 2 |
+| 21 | US-09 | Emitir receta médica | Como neurólogo deseo generar y firmar recetas electrónicas. | 5 |
+| 22 | US-12 | Visualizar ubicación del paciente | Como neurólogo deseo ver la ubicación aproximada del paciente (con permiso). | 3 |
+| 23 | US-13 | Integración IoT | Como paciente deseo vincular un dispositivo IoT para registrar biomarcadores automáticamente. | 8 |
+| 24 | US-14 | Alertas automáticas | Como paciente deseo recibir alertas si mis biomarcadores indican riesgo. | 8 |
+| 25 | US-18 | Analítica médica con IA | Como neurólogo deseo dashboards con IA para interpretar patrones clínicos. | 8 |
+| 26 | US-29 | Optimización de imágenes | Como usuario deseo carga rápida con imágenes optimizadas. | 2 |
+| 27 | US-28 | Responsive mobile | Como usuario móvil deseo que la landing se adapte totalmente. | 3 |
+| 28 | US-30 | SEO básico | Como marketing deseo meta tags correctos para mejorar posicionamiento. | 2 |
+| 29 | US-32 | Tracking & Analytics | Como product owner deseo registrar eventos para optimizar conversión. | 3 |
+| 30 | US-15 | Seguridad y encriptación | Como plataforma deseo cifrar datos para proteger la información clínica. | 5 |
+| 31 | US-17 | Privacidad de datos | Como paciente deseo garantizar confidencialidad y anonimización de mis datos. | 5 |
+| 32 | US-36 | Consentimiento SMS | Como usuario deseo otorgar/revocar consentimiento de notificaciones por SMS. | 3 |
+| 33 | US-37 | Protección OTP avanzada | Como plataforma deseo aplicar rate-limits y detección de fraude. | 5 |
+| 34 | US-50 | Auditoría de acciones sensibles | Como administrador deseo registrar eventos críticos para trazabilidad. | 5 |
+| 35 | US-40 | Login JWT | Como usuario deseo recibir tokens JWT para consumir APIs seguras. | 3 |
+| 36 | US-41 | Refresh token | Como usuario deseo renovar sesión mediante refresh token. | 2 |
+| 37 | US-42 | Logout | Como usuario deseo cerrar sesión y revocar tokens de forma segura. | 2 |
+| 38 | US-43 | Recuperar contraseña | Como usuario deseo recuperar mi cuenta mediante token seguro. | 3 |
+| 39 | US-44 | Cambiar contraseña | Como usuario deseo actualizar mi contraseña para mantener seguridad. | 2 |
+| 40 | US-45 | Roles y permisos | Como sistema deseo asignar/ver/quitar roles para controlar accesos. | 3 |
+| 41 | US-39 | Obtener perfil (API) | Como usuario deseo consultar mi perfil clínico desde API. | 2 |
+| 42 | US-46 | Obtener perfil (me) | Como usuario deseo ver mis datos desde endpoint dedicado. | 2 |
+| 43 | US-47 | Editar perfil (API) | Como usuario deseo actualizar campos mediante API. | 3 |
+| 44 | US-48 | Crear receta (API) | Como neurólogo deseo generar recetas firmadas desde el backend. | 5 |
+| 45 | US-49 | Listar recetas por API | Como paciente o neurólogo deseo listar recetas desde backend. | 3 |
+| 46 | US-25 | Beneficios “Good for Business” | Como decisor deseo ver beneficios clínicos y comerciales. | 3 |
+| 47 | US-16 | Rendimiento | Como usuario deseo que la plataforma cargue rápido incluso con alta concurrencia. | 5 |
+| 48 | US-38 | Auditoría sensible | Como administrador deseo registrar eventos críticos del sistema. | 3 |
+| 49 | US-51 | Protección OTP avanzada (backend) | Como plataforma deseo bloquear intentos sospechosos de OTP. | 5 |
+| 50 | US-34 | Verificación OTP | Como usuario deseo validar mi número mediante SMS/OTP. | 3 |
+| 51 | US-33 | Autenticación por teléfono | Como usuario deseo autenticación rápida basada en celular. | 5 |
+
 
 
 
