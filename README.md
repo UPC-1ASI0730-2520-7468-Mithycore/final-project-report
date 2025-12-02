@@ -62,145 +62,164 @@
 
 ## Registro de Versiones del Informe
 
-<table>
-  <thead>
-      <th>Versión</th>
-      <th>Fecha</th>
-      <th>Autor</th>
-      <th>Descripción</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0.1.0</td>
-      <td>2025-09-13</td>
-      <td>
-        - Romero Meza, Jhimy Pool<br/> 
-        - Meza Huanacune, Juan José<br/> 
-        - Gutierrez Tume, Stanley Jeremy<br/>   
-        - Chacaliaza Minaya, Eduardo Fabián<br/>  
-        - Quispe Barzola, Fabricio Fabián  
-      </td>
-      <td>
-        - Carátula<br/>
-        - Registro de Versiones del Informe<br/>
-        - Project Report Collaboration Insights<br/>
-        - Contenido<br/>
-        - Student Outcome<br/>
-        - Capítulo I: Introducción<br/>
-        - Capítulo II: Requirements Elicitation & Analysis.<br/>
-        - Capítulo III: Requirements Specification.<br/>
-        - Capítulo IV: Product Design.<br/>
-        - Capítulo V: Product Implementation, Validation & Deployment.<br/>
-        - 5.1. Software Configuration Management.<br/>
-        - 5.1.1. Software Development Environment Configuration.<br/>
-        - 5.1.2. Source Code Management.<br/>
-        - 5.1.3. Source Code Style Guide & Conventions.<br/>
-        - 5.1.4. Software Deployment Configuration.<br/>
-        - 5.2. Landing Page, Services & Applications Implementation.<br/>
-        - 5.2.1. Sprint 1<br/>
-        - 5.2.1.1. Sprint Planning 1.<br/>
-        - 5.2.1.2. Aspect Leaders and Collaborators.<br/>
-        - 5.2.1.3. Sprint Backlog 1.<br/>
-        - 5.2.1.4. Development Evidence for Sprint Review.<br/>
-        - 5.2.1.5. Execution Evidence for Sprint Review.<br/>
-        - 5.2.1.6. Services Documentation Evidence for Sprint Review.<br/>
-        - 5.2.1.7. Software Deployment Evidence for Sprint Review.<br/>
-        - 5.2.1.8. Team Collaboration Insights during Sprint.<br/>
-        - Conclusiones<br/>
-        - Bibliografía<br/>
-        - Anexos<br/>
-      </td>
-    </tr>
-    <tr>
-      <td>0.1.1</td>
-      <td>2025-10-10</td>
-      <td>
-        - Romero Meza, Jhimy Pool<br/>
-        - Meza Huanacune, Juan José<br/>
-        - Gutierrez Tume, Stanley Jeremy<br/>
-        - Chacaliaza Minaya, Eduardo Fabián<br/>
-        - Quispe Barzola, Fabricio Fabián
-      </td>
-      <td>
-        - 5.2.2. Sprint 2<br/>
-        - 5.2.2.1. Sprint Planning 2.<br/>
-        - 5.2.2.2. Aspect Leaders and Collaborators.<br/>
-        - 5.2.2.3. Sprint Backlog 2.<br/>
-        - 5.2.2.4. Development Evidence for Sprint Review.<br/>
-        - 5.2.2.5. Execution Evidence for Sprint Review.<br/>
-        - 5.2.2.6. Services Documentation Evidence for Sprint Review.<br/>
-        - 5.2.2.7. Software Deployment Evidence for Sprint Review.<br/>
-        - 5.2.2.8. Team Collaboration Insights during Sprint.<br/>
-      </td>
-    </tr>
-    <tr>
-      <td>0.1.1</td>
-      <td>2025-10-10</td>
-      <td>
-        - Romero Meza, Jhimy Pool<br/>
-        - Meza Huanacune, Juan José<br/>
-        - Gutierrez Tume, Stanley Jeremy<br/>
-        - Chacaliaza Minaya, Eduardo Fabián<br/>
-        - Quispe Barzola, Fabricio Fabián
-      </td>
-      <td>
-        - 5.2.3. Sprint 3  <br/>
-        - 5.2.3.1.Spring Planning 3.<br/>
-        - 5.2.3.2. Aspect Leaders and Collaborators.<br/>
-        - 5.2.3.3.Sprint Backlog 3.<br/>
-        - 5.2.3.4.Development Evidence for Sprint Review.<br/>
-        - 5.2.3.5.Execution Evidence for Sprint Review.<br/>
-        - 5.2.3.6.Services Documentation Evidence for Sprint Review.<br/>
-        - 5.2.3.7.Software Deployment Evidence for Sprint Review.<br/>
-        - 5.2.3.8.Team Collaboration Insights during Sprint.<br/>
-        - 5.3. Validation Interviews.<br/>
-        - 5.3.1. Diseño de Entrevistas.<br/>
-        - 5.3.2. Registro de Entrevistas.<br/>
-        - 5.3.3. Evaluaciones según heurísticas.<br/>
-        - 5.4. Video About-the-Product.<br/>
-        - Conclusiones<br/>
-        - Bibliografía<br/>
-        - Anexos.<br/>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<table> <thead> <tr> <th>Versión</th> <th>Fecha</th> <th>Autor</th> <th>Descripción</th> </tr> </thead> <tbody>
+<tr>
+  <td>0.1.0</td>
+  <td>2025-09-10</td>
+  <td>
+    - Romero Meza, Jhimy Pool<br/>
+    - Meza Huanacune, Juan José<br/>
+    - Gutierrez Tume, Stanley Jeremy<br/>
+    - Chacaliaza Minaya, Eduardo Fabián<br/>
+    - Quispe Barzola, Fabricio Fabián
+  </td>
+  <td>
+    Primera versión del informe. Se estableció la estructura general, se redactaron los capítulos principales de manera preliminar y se incorporaron secciones iniciales de investigación, análisis, diseño y planificación. Documento armado casi por completo, pero con contenido incompleto.
+  </td>
+</tr>
 
+<tr>
+  <td>0.1.1</td>
+  <td>2025-10-03</td>
+  <td>
+    - Romero Meza, Jhimy Pool<br/>
+    - Meza Huanacune, Juan José<br/>
+    - Gutierrez Tume, Stanley Jeremy<br/>
+    - Chacaliaza Minaya, Eduardo Fabián<br/>
+    - Quispe Barzola, Fabricio Fabián
+  </td>
+  <td>
+    Se añadieron nuevas secciones completas, resultados de análisis, artefactos del proceso, evidencias y documentación técnica. Se ampliaron capítulos existentes, se incorporaron imágenes, se reorganizó contenido y se realizaron correcciones de redacción y estilo.
+  </td>
+</tr>
+
+<tr>
+  <td>0.1.2</td>
+  <td>2025-11-08</td>
+  <td>
+    - Romero Meza, Jhimy Pool<br/>
+    - Meza Huanacune, Juan José<br/>
+    - Gutierrez Tume, Stanley Jeremy<br/>
+    - Chacaliaza Minaya, Eduardo Fabián<br/>
+    - Quispe Barzola, Fabricio Fabián
+  </td>
+  <td>
+    Se integraron secciones avanzadas del informe, evidencias ampliadas, entrevistas y validaciones, anexos complementarios, mejoras en capítulos técnicos, correcciones de estructura y claridad, y ajustes globales según retroalimentación.
+  </td>
+</tr>
+
+<tr>
+  <td>0.1.3</td>
+  <td>2025-12-02</td>
+  <td>
+    - Romero Meza, Jhimy Pool<br/>
+    - Meza Huanacune, Juan José<br/>
+    - Gutierrez Tume, Stanley Jeremy<br/>
+    - Chacaliaza Minaya, Eduardo Fabián<br/>
+    - Quispe Barzola, Fabricio Fabián
+  </td>
+  <td>
+    Se añadieron contenidos del Sprint 4, refinamiento de artefactos, actualización de evidencias, mejora de resúmenes de entrevistas, correcciones solicitadas por el docente, ajustes de formato, tablas y redacción, y revisión completa del documento para mayor coherencia.
+  </td>
+</tr>
+</tbody> </table>
 
 ---
 
 ## Project Report Collaboration Insights
 
-El equipo ha trabajado de manera colaborativa en el repositorio de GitHub, registrando avances constantes en la construcción del informe.  
-Repositorio del informe: [https://github.com/upc-2025-1asi0730-MithyCore/project-report](https://github.com/upc-2025-1asi0730-MithyCore/final-project-report)
+Este apartado describe la colaboración del equipo en la elaboración del informe, según lo establecido en el *Final Project Statement*. Se detalla el trabajo desarrollado en cada entrega, junto con evidencias del repositorio que muestran la participación de los integrantes.
 
-A continuación, se presentan las evidencias de participación y colaboración de los integrantes:
+Repositorio del informe:  
+https://github.com/upc-2025-1asi0730-MithyCore/final-project-report
 
-- Cada integrante del grupo realizó commits, modificaciones y carga de archivos en distintas secciones del informe.
-- Se refleja la división de tareas entre redacción, correcciones de estilo, incorporación de imágenes y ajustes técnicos en Markdown.
-- Todos los miembros participaron en mayor o menor medida, garantizando que el documento evolucionara de forma colaborativa y transparente.
-- La evidencia gráfica incluye la vista de contribuciones, así como el historial de actividad donde se observa el detalle de commits y cambios en el repositorio.
+---
 
-### Contribuciones por integrante
+## Colaboración en TB1 (Versión 0.1.0)
 
-<div style="align: center">
-  <img src="images/Insights.png" alt="Contribuciones de los integrantes" width="700px"/>
+Durante la primera entrega, el equipo construyó la versión inicial del documento. Las principales actividades incluyeron:
+
+- creación de la estructura general del informe;  
+- redacción preliminar de capítulos iniciales;  
+- incorporación de contenido introductorio de análisis y diseño;  
+- primeros ajustes de formato y organización del repositorio.
+
+### Evidencias de TB1
+
+<div style="text-align: center">
+  <img src="images/insights1.png" alt="Insights TB1" width="700px"/>
 </div>
 
-En esta vista se observa la cantidad de commits realizados, junto con el balance de líneas añadidas y eliminadas.
-
-### Historial de actividad del repositorio
-
-<div style="align: center">
-  <img src="images/activity1.png" alt="Historial de commits en el repositorio" width="700px"/>
-</div> 
-<div style="align: center">
-  <img src="images/activity2.png" alt="Historial de commits en el repositorio" width="700px"/>
+<div style="text-align: center">
+  <img src="images/activity1.png" alt="Actividad TB1" width="700px"/>
 </div>
 
 ---
 
-En conjunto, las capturas reflejan el cumplimiento de los objetivos de colaboración: **participación activa de todos los integrantes**, registro claro de los aportes y una evolución continua y transparente del informe del proyecto.
+## Colaboración en TP1 (Versión 0.1.1)
+
+Durante la segunda entrega, el equipo amplió y profundizó el contenido del informe. Las actividades incluyeron:
+
+- adición de nuevas secciones completas;  
+- incorporación de artefactos, tablas e imágenes;  
+- reorganización del contenido para mejorar continuidad;  
+- correcciones colaborativas de estilo y redacción.
+
+### Evidencias de TP1
+
+<div style="text-align: center">
+  <img src="images/insights2.png" alt="Insights TP1" width="700px"/>
+</div>
+
+<div style="text-align: center">
+  <img src="images/activity2.png" alt="Actividad TP1" width="700px"/>
+</div>
+
+---
+
+## Colaboración en TB2 (Versión 0.1.2)
+
+Durante la tercera entrega, el equipo consolidó contenido avanzado. Las principales actividades fueron:
+
+- integración de entrevistas y validaciones;  
+- ampliación de anexos y evidencias;  
+- mejoras estructurales en capítulos técnicos;  
+- correcciones derivadas de retroalimentación del docente.
+
+### Evidencias de TB2
+
+<div style="text-align: center">
+  <img src="images/insights3.png" alt="Insights TB2" width="700px"/>
+</div>
+
+<div style="text-align: center">
+  <img src="images/activity3.png" alt="Actividad TB2" width="700px"/>
+</div>
+
+---
+
+## Colaboración en la versión 0.1.3
+
+En la etapa más reciente, el equipo realizó ajustes y ampliaciones finales. Entre las actividades se encuentran:
+
+- incorporación del contenido correspondiente al Sprint 4;  
+- actualización de evidencias y resúmenes de entrevistas;  
+- ajustes solicitados por el docente en formato y coherencia;  
+- revisión general del documento en preparación para la versión final.
+
+### Evidencias de la versión 0.1.3
+
+<div style="text-align: center">
+  <img src="images/insights4.png" alt="Insights 0.1.3" width="700px"/>
+</div>
+
+<div style="text-align: center">
+  <img src="images/activity4.png" alt="Actividad 0.1.3" width="700px"/>
+</div>
+
+---
+
+En conjunto, estas evidencias reflejan la participación activa de todos los integrantes en cada entrega, manteniendo coherencia con el Registro de Versiones del Informe y demostrando una evolución continua y colaborativa del documento.
 
 ### Contenido
 
