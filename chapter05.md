@@ -3428,7 +3428,7 @@ Respecto al backend, señaló que todo funcionó de manera estable, especialment
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/27esh9e7" target="_blank" rel="noopener">Entrevista a Karen</a>
+        <a href="https://tinyurl.com/yy3t2k65" target="_blank" rel="noopener">Entrevista a Karen</a>
       </td>
     </tr>
     <tr>
