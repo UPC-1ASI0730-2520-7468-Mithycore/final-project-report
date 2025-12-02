@@ -3167,7 +3167,7 @@ Estructura general de la sesión:
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/njtfjbam" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
+        <a href="https://tinyurl.com/njtfjbam" target="_blank" rel="noopener">entrevista a Xin</a>
       </td>
     </tr>
     <tr>
@@ -3212,7 +3212,7 @@ Sobre el backend, comentó que la aplicación respondió de forma inmediata al s
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/4mhh5xma" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
+        <a href="https://tinyurl.com/4mhh5xma" target="_blank" rel="noopener">Entrevista a Eduardo</a>
       </td>
     </tr>
     <tr>
@@ -3257,12 +3257,12 @@ Sobre el backend, Eduardo expresó que la carga de la información fue bastante 
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/f5kaj2fz" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1VBndkbpcM_iixfeDW2mb7fPw4qr6-Shi?usp=sharing</a>
+        <a href="https://tinyurl.com/f5kaj2fz" target="_blank" rel="noopener">Entrevista a Aaron</a>
       </td>
     </tr>
     <tr>
       <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Inicio:</strong> 0:00</td>
-      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 16:18</td>
+      <td style="border:1px solid #111; padding:8px; vertical-align:top; width:50%;"><strong>Duración:</strong> 8:20</td>
     </tr>
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:12px; vertical-align:top; min-height:120px;">
@@ -3304,7 +3304,7 @@ Respecto al backend, señaló que todo funcionó de manera estable, especialment
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/27esh9e7" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
+        <a href="https://tinyurl.com/27esh9e7" target="_blank" rel="noopener">Entrevista a Karen</a>
       </td>
     </tr>
     <tr>
@@ -3332,7 +3332,7 @@ Sobre el backend, comentó que las acciones más importantes para un neurólogo 
     <div style="font-style:italic; margin-bottom:6px;">
       <strong>Entrevista 2 Segmento 2</strong><br/>
       <img src="images/jesus.png"/><br>
-      Entrevista con Manrique Meza, Jesús Antonio (Entrevistada) y Meza Huanacune, Juan José (Entrevistador).
+      Entrevista con Manrique Meza, Jesús Antonio (Entrevistado) y Meza Huanacune, Juan José (Entrevistador).
     </div>
   </div>
   <table style="width:100%; border-collapse:collapse; margin-bottom:8px;">
@@ -3349,7 +3349,7 @@ Sobre el backend, comentó que las acciones más importantes para un neurólogo 
     <tr>
       <td colspan="2" style="border:1px solid #111; padding:8px; vertical-align:top;">
         <strong>Enlace Entrevista:</strong>
-        <a href="https://tinyurl.com/2ss85hfc" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1sv-trro2bY8jTttOsEPvxzbDPJMOhjXc?usp=sharing</a>
+        <a href="https://tinyurl.com/2ss85hfc" target="_blank" rel="noopener">Entrevista a Jesús</a>
       </td>
     </tr>
     <tr>
