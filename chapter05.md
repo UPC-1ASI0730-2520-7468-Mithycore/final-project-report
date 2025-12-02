@@ -3617,3 +3617,11 @@ Ajustar ancho del contenedor (70–80%), centrar contenido y aplicar márgenes c
 ---
 
 ## 5.4. Video About-the-Product.
+
+<p align="center">
+  <a href="https://tinyurl.com/mtrp4d8h" target="_blank">
+    <img src="imagesChapter05/abouttheproduct.png" alt="Video About the Product" width="800px">
+  </a>
+</p>
+
+
